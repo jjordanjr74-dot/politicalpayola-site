@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://politicalpayola.com/sitemap.xml

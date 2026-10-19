@@ -1,0 +1,16 @@
+{
+  "name": "Political Payola \u2014 Verified Multi-Source Civic Atlas",
+  "short_name": "PoliticalPayola",
+  "description": "What both parties did since 1981, what it cost, who voted for it, and who paid them \u2014 multi-sourced to scientific, medical, and academic research.",
+  "start_url": "./index.html",
+  "display": "standalone",
+  "background_color": "#0b1020",
+  "theme_color": "#f59e0b",
+  "icons": [
+    {
+      "src": "assets/congress_photo_comparison.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

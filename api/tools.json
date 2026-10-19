@@ -1,0 +1,82 @@
+{
+  "schema_version": "webmcp-1.0",
+  "site": "https://politicalpayola.com",
+  "name": "Political Payola — Verified Multi-Source Civic Atlas (1981–2026)",
+  "bilingual_languages": [
+    "en",
+    "es"
+  ],
+  "description": "5,050 verified records across 21 modules (presidential vacations, 539 119th Congress portraits & demographics, 50-state x 25+ peer-reviewed medical/academic/economic metrics, 36 landmark federal laws since 1981, formal corruption scandals, and top-20 labor/police/firefighter union PACs).",
+  "tools": [
+    {
+      "name": "search_civic_records",
+      "description": "Search all 5,050 multi-sourced civic, medical, academic, and legislative records by keyword, state, lawmaker, president, or journal.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "query"
+        ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "filter_congress_119",
+      "description": "Filter all 539 voting and non-voting members of the 119th U.S. Congress by chamber (Senate/House), party (D/R/I), gender (F/M), or state.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "chamber": {
+            "type": "string",
+            "enum": [
+              "ALL",
+              "Senate",
+              "House"
+            ]
+          },
+          "party": {
+            "type": "string",
+            "enum": [
+              "ALL",
+              "D",
+              "R",
+              "I"
+            ]
+          },
+          "gender": {
+            "type": "string",
+            "enum": [
+              "ALL",
+              "F",
+              "M"
+            ]
+          },
+          "state": {
+            "type": "string"
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "get_state_metric_ranking",
+      "description": "Retrieve 50-state ranking, Republican vs. Democratic Top-10 split, and peer-reviewed citations for any of 25+ state metrics.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "metric_id": {
+            "type": "string"
+          }
+        },
+        "required": [
+          "metric_id"
+        ],
+        "additionalProperties": false
+      }
+    }
+  ]
+}
