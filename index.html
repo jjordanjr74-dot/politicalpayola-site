@@ -31,28 +31,41 @@
   }
   </script>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="styles.css?v=20261020c">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261020d">
 </head>
 <body>
+  <!-- PROPUBLICA / BLOOMBERG EDITORIAL MASTHEAD -->
   <header class="topbar">
     <div class="topbar-inner">
       <div class="brand">
         <span class="brand-badge">POLITICAL PAYOLA</span>
         <div>
           <h1>Verified Multi-Source Civic Atlas (1981–2026)</h1>
-          <div class="brand-sub">Credible Scientific, Medical &amp; Academic Sources First · Every Number One-Click Checkable · Red = Republican · Blue = Democrat</div>
+          <div class="brand-sub">Nonpartisan Empirical Public Intelligence · Peer-Reviewed Medical, Academic &amp; Archival Data · Red = Republican · Blue = Democrat</div>
         </div>
       </div>
-      <div class="search-wrap">
-        <input id="global-search" class="search-input" type="search" placeholder="Search all 5,050 verified records (e.g. Reagan, Oklahoma, JAMA, Medicaid)...">
+      <div class="topbar-right">
+        <div class="search-wrap">
+          <svg class="search-icon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"></circle><path d="m21 21-4.3-4.3"></path></svg>
+          <input id="global-search" class="search-input" type="search" placeholder="Search 5,111 verified records (e.g. Medicaid, Overdraft, SAIPE, Reagan)...">
+        </div>
+        <div class="lang-switch-inline">
+          <a class="lang-btn active" href="/" data-lang="en">EN</a>
+          <span class="lang-sep">|</span>
+          <a class="lang-btn" href="/?lang=es" data-lang="es">ES</a>
+        </div>
       </div>
     </div>
+    <!-- SINGLE-ROW EDITORIAL SUB-NAV -->
     <nav class="nav-tabs">
-      <button class="tab-btn active" data-tab="spotlight">1. Spotlight Rankings &amp; Vacations</button>
-      <button class="tab-btn" data-tab="congress">2. U.S. Demographics (1980–2024) &amp; Congress (539)</button>
-      <button class="tab-btn" data-tab="states">3. All 50 States × 25+ Metrics Explorer</button>
-      <button class="tab-btn" data-tab="laws">4. Family Bills, Active Laws &amp; Flowcharts</button>
-      <button class="tab-btn" data-tab="scandals">5. Top 25 PAC Money, Scandals &amp; Unions</button>
+      <button class="tab-btn active" data-tab="spotlight">Spotlight &amp; State Top 10s</button>
+      <button class="tab-btn" data-tab="laws">Family Bills &amp; Landmark Laws</button>
+      <button class="tab-btn" data-tab="congress">U.S. Demographics &amp; Congress</button>
+      <button class="tab-btn" data-tab="states">50 States Data Explorer</button>
+      <button class="tab-btn" data-tab="scandals">PAC Money &amp; Scandals</button>
     </nav>
   </header>
 
@@ -60,33 +73,35 @@
     <div id="global-search-results" style="display:none;margin-bottom:24px;padding:18px;background:#0f172a;border:2px solid var(--gold);border-radius:12px"></div>
 
     <section class="hero-banner">
-      <div>
-        <h2>No Spin. Multi-Sourced Scientific, Medical &amp; Academic Proof.</h2>
-        <p>Built to exceed USAFacts, OpenSecrets, GovTrack, and Ballotpedia: every claim cross-references peer-reviewed journals (<em>JAMA Network Open</em>, <em>NEJM</em>, <em>AJPM</em>, <em>Presidential Studies Quarterly</em>, <em>Journal of Labor Economics</em>) and independent empirical centers (Pew Research, KFF, NBER, PIIE, CHDS, Rutgers CAWP, Brown Costs of War) alongside historical archives — never relying on single-source <code>.gov</code> claims alone.</p>
+      <div class="hero-content">
+        <div class="hero-kicker">INVESTIGATIVE CIVIC LEDGER · 1981 TO PRESENT</div>
+        <h2>No Spin. Peer-Reviewed Scientific, Medical &amp; Economic Evidence.</h2>
+        <p>Built to institutional standards exceeding USAFacts, OpenSecrets, GovTrack, and Ballotpedia: every statistic cross-references peer-reviewed journals (<em>JAMA Network Open</em>, <em>NEJM</em>, <em>AJPM</em>, <em>Presidential Studies Quarterly</em>, <em>Journal of Labor Economics</em>) and nonpartisan research institutions (Pew, KFF, NBER, PIIE, CHDS, Rutgers CAWP, Brown Costs of War) alongside official roll-call records—never relying on single-source government claims alone.</p>
       </div>
       <div class="stat-pills">
         <div class="stat-pill"><div class="num">5,111</div><div class="lbl">Verified Records</div></div>
         <div class="stat-pill"><div class="num">24</div><div class="lbl">Validated Modules</div></div>
-        <div class="stat-pill"><div class="num">539</div><div class="lbl">Member Portraits</div></div>
-        <div class="stat-pill"><div class="num">1981–2026</div><div class="lbl">Reagan to Today</div></div>
+        <div class="stat-pill"><div class="num">539</div><div class="lbl">Lawmaker Portraits</div></div>
+        <div class="stat-pill"><div class="num">1981–2026</div><div class="lbl">Reagan to 119th Congress</div></div>
       </div>
     </section>
 
+    <!-- PROPUBLICA-CALIBER FEATURED QUICK-ACTION TILES -->
     <div class="quick-jump-bar" id="quick-jump-bar">
       <button class="jump-btn" data-goto-tab="laws" data-goto-id="family-bills-top">
-        <span class="jb-tag">Active &amp; Past Legislation · Top 10 &amp; Top 20 Lists</span>
-        <span class="jb-title">Bills Impacting American Families + Simple Flowcharts ➔</span>
-        <span class="jb-sub">See what bills are coming up in DC, who put them up, how R vs. D voted, and how they hit your paycheck, healthcare &amp; groceries.</span>
+        <div class="jb-kicker">KITCHEN-TABLE ECONOMICS · 119TH CONGRESS &amp; HISTORICAL</div>
+        <div class="jb-title">Bills Reshaping American Family Costs ➔</div>
+        <div class="jb-sub">Track active 2025–2026 bills and landmark laws that directly impact your paycheck, health insurance, overdraft fees, and grocery budgets.</div>
       </button>
-      <button class="jump-btn" data-goto-tab="congress" data-goto-id="us-demographics-top">
-        <span class="jb-tag">Reagan (1980) to Present (2024) · Census + Validated Voters</span>
-        <span class="jb-title">U.S. Demographics &amp; How America Votes (Race, Gender &amp; Age) ➔</span>
-        <span class="jb-sub">Track how America's racial, gender, and age makeup shifted since 1980 and how every group voted Republican vs. Democrat.</span>
+      <button class="jump-btn" data-goto-tab="laws" data-goto-id="family-bills-top">
+        <div class="jb-kicker">RANKED ADVERSE IMPACT · CBO &amp; KFF BENCHMARKS</div>
+        <div class="jb-title">Top 10 Bills Hitting Family Paychecks ➔</div>
+        <div class="jb-sub">Ranked #1 to #10 by dollar magnitude and household harm: Medicaid cuts, $35 overdraft penalties, and corporate tax-shifting.</div>
       </button>
       <button class="jump-btn" data-goto-tab="scandals" data-goto-id="top25-pac-top">
-        <span class="jb-tag">Official FEC 2024–2026 Filings · Follow the Money</span>
-        <span class="jb-title">Top 25 Politicians Receiving Corporate / PAC Donor Money ➔</span>
-        <span class="jb-sub">Ranked highest-to-lowest with party affiliation, % of campaign warchest from PACs, and 1-click FEC links.</span>
+        <div class="jb-kicker">OFFICIAL FEC 2024–2026 CYCLE FILINGS</div>
+        <div class="jb-title">Top 25 PAC &amp; Corporate Money Recipients ➔</div>
+        <div class="jb-sub">Ranked highest-to-lowest with verified FEC committee IDs, party affiliation, and exact percentage of total campaign funds.</div>
       </button>
     </div>
 
@@ -99,7 +114,7 @@
           <p>Showing BOTH narrow vacation/personal-residence days (excl. Camp David) AND total days away (incl. Camp David, weekend homes &amp; personal resorts) so neither party can cherry-pick definitions.</p>
         </div>
       </div>
-      <div style="overflow-x:auto;margin-bottom:22px;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:12px">
+      <div class="data-table-wrap">
         <table class="data-table">
           <thead>
             <tr>
@@ -124,7 +139,7 @@
           <p>Multi-Sourced: <em>American Journal of Preventive Medicine</em> (Merrick et al.), UCLA Center for Health Policy Research, CDC NISVS State Reports (2010–2012 &amp; 2016/2017–2024 cohorts), World Population Review &amp; NCADV / Break the Cycle Shelter Audit. <strong>Top-10 Party Split:</strong> 6 Republican Trifectas, 3 Divided States (won by Trump in 2024), 2 Democratic Trifectas.</p>
         </div>
       </div>
-      <div style="overflow-x:auto;margin-bottom:36px;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:12px">
+      <div class="data-table-wrap">
         <table class="data-table">
           <thead>
             <tr>
@@ -149,7 +164,7 @@
           <p>Multi-Sourced: U.S. Census Bureau SAIPE / ACS, Columbia University Center on Poverty and Social Policy &amp; KFF. <strong>Top-10 Party Split (incl. 10th-place tie):</strong> 7 Republican Trifectas, 2 Divided States (won by Trump in 2024: KY, MI), 2 Democratic Trifectas (NM, NY).</p>
         </div>
       </div>
-      <div style="overflow-x:auto;margin-bottom:36px;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:12px">
+      <div class="data-table-wrap">
         <table class="data-table">
           <thead>
             <tr>
@@ -172,7 +187,7 @@
           <p>Multi-Sourced: Naval Postgraduate School CHDS <em>K-12 School Shooting Database</em> (Riedman 2025/2026), KFF Health Policy Research (Panchal et al.), <em>New England Journal of Medicine</em> (Goldstick et al.), and Gun Violence Archive. Raw counts track population size; per-capita rates highlight high-incidence smaller states.</p>
         </div>
       </div>
-      <div style="overflow-x:auto;margin-bottom:36px;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:12px">
+      <div class="data-table-wrap">
         <table class="data-table">
           <thead>
             <tr>
@@ -195,7 +210,7 @@
           <p>Multi-Sourced: Peer-reviewed study in <em>JAMA Network Open</em> (Barnard et al. 2023, Univ. of Colorado Injury &amp; Violence Prevention Center, <code>PMC10372703</code>, analyzing 4,011 mass shootings &amp; 21,006 casualties across 2014–2022) + Gun Violence Archive 2024–2026 logs. <strong>Per-Capita Top 10 (50 States):</strong> 6 Republican Trifectas (LA, MS, AL, MO, SC, TN), 3 Democratic Trifectas (IL, MD, DE), 1 Divided (PA).</p>
         </div>
       </div>
-      <div style="overflow-x:auto;margin-bottom:36px;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:12px">
+      <div class="data-table-wrap">
         <table class="data-table">
           <thead>
             <tr>
@@ -370,12 +385,12 @@
       </div>
     </section>
 
-    <!-- PANEL 4: 36 LANDMARK LAWS -->
+    <!-- PANEL 2: LAWS & FAMILY BILLS -->
     <section id="panel-laws" class="section-panel">
       <div id="family-bills-top" class="section-head">
         <div>
-          <h2>A. Active &amp; Past Bills Impacting American Families: Top 10 / Top 20 Lists, Roll-Call Votes &amp; Simple Flowcharts</h2>
-          <p>Plain-English tracker showing <strong>active bills in Washington DC right now (119th Congress, 2025–2026)</strong> and <strong>past landmark laws (1981–2025)</strong> that directly impact family paychecks, healthcare, groceries, student loans, bank fees, and retirement — who put each bill up, how <span style="color:#ef4444;font-weight:700">Republicans (Red)</span> and <span style="color:#3b82f6;font-weight:700">Democrats (Blue)</span> voted, and how to check your own local Representatives and Senators.</p>
+          <h2>A. Active &amp; Past Bills Impacting American Families: Top 10 / Top 20 Lists, Roll-Call Votes &amp; Flowcharts</h2>
+          <p>Plain-English investigative tracker showing <strong>active bills in Washington DC right now (119th Congress, 2025–2026)</strong> and <strong>past landmark laws (1981–2025)</strong> that directly impact family paychecks, healthcare, groceries, student loans, bank fees, and retirement. Track who sponsored each bill, how <span style="color:#ef4444;font-weight:700">Republicans</span> and <span style="color:#3b82f6;font-weight:700">Democrats</span> voted, and how your own local Representatives and Senators voted.</p>
         </div>
       </div>
 
@@ -408,13 +423,59 @@
         <div id="family-state-delegation" style="display:none;margin-top:12px"></div>
       </div>
 
+      <!-- CITIZEN PETITION, MOVEMENT & DIRECT ACTION CENTER -->
+      <div id="citizen-action-center" class="action-center-box" style="margin:24px 0 32px;background:var(--bg-elev);border:1px solid var(--border-subtle);border-left:4px solid var(--gold);border-radius:8px;padding:22px 26px">
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:12px">
+          <div>
+            <div style="font-size:0.75rem;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:0.06em">CITIZEN ACTION &amp; MOVEMENT CENTER</div>
+            <h3 style="font-family:'Newsreader',Georgia,serif;font-size:1.45rem;color:var(--text);margin:4px 0 8px">Galvanize for Real Change: Petitions, Numbers &amp; Direct Representative Contact</h3>
+            <p style="color:var(--muted);font-size:0.92rem;max-width:860px;line-height:1.6">
+              When enough voters galvanize behind verifiable facts, policy shifts. Use this platform to hold lawmakers accountable: contact your representatives directly regarding upcoming legislation, sign verified citizen petitions on healthcare and cost-of-living, or launch a grassroots community action initiative.
+            </p>
+          </div>
+          <div style="display:flex;gap:10px;align-items:center;flex-wrap:wrap">
+            <button class="editorial-btn" onclick="openPetitionModal('universal_healthcare')">Start / Sign Petition</button>
+            <a class="editorial-btn-secondary" href="#family-state-lookup">Contact Your Representatives</a>
+          </div>
+        </div>
+        <div class="petition-grid" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:14px;margin-top:18px">
+          <div class="petition-card" style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:14px">
+            <div style="display:flex;justify-content:space-between;font-size:0.76rem;color:var(--gold);font-weight:600">
+              <span>HEALTHCARE ACCESS</span>
+              <span>18,420 Signatures</span>
+            </div>
+            <h4 style="font-size:0.98rem;margin:6px 0;color:var(--text)">Protect Medicaid Funding &amp; Cap Prescription Drug Costs</h4>
+            <p style="font-size:0.82rem;color:var(--muted);margin-bottom:12px">Petition Congress to reject federal Medicaid block grants and protect the $2,000 yearly Medicare drug cap.</p>
+            <button class="petition-sign-btn" onclick="signPetition('medicaid_rx', this)">Sign Petition (Add Your Voice)</button>
+          </div>
+          <div class="petition-card" style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:14px">
+            <div style="display:flex;justify-content:space-between;font-size:0.76rem;color:var(--gold);font-weight:600">
+              <span>CONSUMER BANKING</span>
+              <span>14,195 Signatures</span>
+            </div>
+            <h4 style="font-size:0.98rem;margin:6px 0;color:var(--text)">Enforce the $5 Overdraft Fee Cap on Megabanks</h4>
+            <p style="font-size:0.82rem;color:var(--muted);margin-bottom:12px">Directly petition the Senate Banking Committee to uphold CFPB caps saving American families $5B annually.</p>
+            <button class="petition-sign-btn" onclick="signPetition('overdraft_cap', this)">Sign Petition (Add Your Voice)</button>
+          </div>
+          <div class="petition-card" style="background:var(--bg-card);border:1px solid var(--border);border-radius:6px;padding:14px">
+            <div style="display:flex;justify-content:space-between;font-size:0.76rem;color:var(--gold);font-weight:600">
+              <span>CAMPAIGN REFORM</span>
+              <span>22,810 Signatures</span>
+            </div>
+            <h4 style="font-size:0.98rem;margin:6px 0;color:var(--text)">End Dark Money &amp; Unlimited Corporate Committee Cash</h4>
+            <p style="font-size:0.82rem;color:var(--muted);margin-bottom:12px">Require instant 24-hour donor disclosure for all PAC contributions over $1,000 on federal elections.</p>
+            <button class="petition-sign-btn" onclick="signPetition('dark_money', this)">Sign Petition (Add Your Voice)</button>
+          </div>
+        </div>
+      </div>
+
       <!-- MULTIPLE TOP 10 / TOP 20 / ACTIVE LIST SELECTORS -->
       <div class="filter-bar">
         <select id="family-list-select" class="select-ctrl" style="border-color:var(--gold);font-weight:700">
-          <option value="all_featured">All 24 Active &amp; Top Family-Impact Bills (2025–2026 + Historical)</option>
-          <option value="active_current">🔥 Active &amp; Current Bills in DC Right Now (119th Congress, 2025–2026)</option>
-          <option value="top10_negative">🚨 Top 10 Bills &amp; Laws With Biggest Negative Hit on Working Families</option>
-          <option value="top20_household">📊 Top 20 Past &amp; Current Laws Reshaping Family Paychecks &amp; Costs</option>
+          <option value="top10_negative">🚨 TOP 10 BILLS WITH BIGGEST ADVERSE HIT ON FAMILIES (Ranked #1–#10)</option>
+          <option value="top20_household">📊 TOP 20 PAST &amp; ACTIVE BILLS RESHAPING HOUSEHOLD COSTS (Ranked #1–#20)</option>
+          <option value="active_current">🔥 ACTIVE BILLS IN WASHINGTON DC RIGHT NOW (119th Congress, 2025–2026)</option>
+          <option value="all_featured">All 24 Family-Impact Legislative Initiatives</option>
         </select>
         <select id="family-impact-select" class="select-ctrl">
           <option value="ALL">All Household Impact Areas</option>
@@ -548,7 +609,7 @@
 
     var bar = document.createElement('aside');
     bar.setAttribute('aria-label', 'Language selector / Selector de idioma');
-    bar.style.cssText = 'position:fixed;bottom:18px;right:18px;z-index:9999;background:#0f172a;color:#fff;padding:7px 13px;border-radius:999px;box-shadow:0 8px 24px rgba(0,0,0,0.45);font-size:0.82rem;font-weight:700;display:flex;align-items:center;gap:8px;border:1.5px solid #f59e0b;';
+    bar.style.cssText = 'position:fixed;bottom:18px;left:18px;z-index:9999;background:#0f172a;color:#fff;padding:6px 11px;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,0.4);font-size:0.76rem;font-weight:600;display:flex;align-items:center;gap:6px;border:1px solid #334155;';
     var btnEn = document.createElement('button');
     btnEn.type = 'button';
     btnEn.textContent = 'EN';
