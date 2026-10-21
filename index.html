@@ -31,7 +31,7 @@
   }
   </script>
   <link rel="manifest" href="manifest.json">
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=20261020c">
 </head>
 <body>
   <header class="topbar">
@@ -240,9 +240,77 @@
 
     <!-- PANEL 2: CONGRESS RACE & GENDER PHOTO COMPARISON -->
     <section id="panel-congress" class="section-panel">
-      <div class="section-head">
+      <div id="us-demographics-top" class="section-head">
         <div>
-          <h2>119th U.S. Congress (2025–2026): Racial &amp; Gender Photo Comparison</h2>
+          <h2>A. U.S. Demographics &amp; How America Votes Since Reagan (1980–2024): Race, Gender &amp; Age</h2>
+          <p>Official U.S. Census Bureau population &amp; voter composition paired with Pew Research Center Validated Voters and National Exit Poll two-party splits (<span style="color:#ef4444;font-weight:700">Red = Republican %</span> · <span style="color:#3b82f6;font-weight:700">Blue = Democrat %</span>) across all 12 presidential elections from Ronald Reagan (1980) to 2024.</p>
+        </div>
+      </div>
+
+      <div class="grid-4" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:18px">
+        <div class="card">
+          <div style="font-size:0.75rem;color:var(--gold);font-weight:700">NON-HISPANIC WHITE SHARE (1980 ➔ 2024)</div>
+          <div style="font-size:1.35rem;font-weight:800;margin:4px 0">79.6% ➔ 57.5% <span style="font-size:0.8rem;color:var(--muted)">of U.S. Pop</span></div>
+          <div style="font-size:0.82rem;color:#cbd5e1">Share of voters shifted from <strong>88% (1980)</strong> to <strong>71% (2024)</strong>. Voted <strong>56% R / 36% D</strong> in 1980 and <strong>57% R / 41% D</strong> in 2024.</div>
+        </div>
+        <div class="card">
+          <div style="font-size:0.75rem;color:var(--gold);font-weight:700">HISPANIC / LATINO SHARE (1980 ➔ 2024)</div>
+          <div style="font-size:1.35rem;font-weight:800;margin:4px 0">6.4% ➔ 19.5% <span style="font-size:0.8rem;color:var(--muted)">of U.S. Pop</span></div>
+          <div style="font-size:0.82rem;color:#cbd5e1">Share of voters grew 6× from <strong>2% (1980)</strong> to <strong>12% (2024)</strong>. Voted <strong>35% R / 56% D</strong> in 1980, <strong>28% R / 66% D</strong> in 2016, and surged to <strong>46% R / 52% D</strong> in 2024.</div>
+        </div>
+        <div class="card">
+          <div style="font-size:0.75rem;color:var(--gold);font-weight:700">BLACK AMERICANS &amp; ASIAN / MULTIRACIAL</div>
+          <div style="font-size:1.35rem;font-weight:800;margin:4px 0">12.1% Black · 10.9% Asian/Multi</div>
+          <div style="font-size:0.82rem;color:#cbd5e1">Black voters voted <strong>14% R / 83% D</strong> in 1980, <strong>4% R / 95% D</strong> in 2008, and <strong>15% R / 83% D</strong> in 2024. Asian voters shifted from <strong>55% R (1992)</strong> to <strong>39% R / 58% D (2024)</strong>.</div>
+        </div>
+        <div class="card">
+          <div style="font-size:0.75rem;color:var(--gold);font-weight:700">THE GENDER &amp; AGE GAP (1980 ➔ 2024)</div>
+          <div style="font-size:1.35rem;font-weight:800;margin:4px 0">Men 55% R · Women 53% D</div>
+          <div style="font-size:0.82rem;color:#cbd5e1">Men backed Reagan <strong>55% R / 36% D</strong> (1980) and Trump <strong>55% R / 43% D</strong> (2024). Young voters 18–29 swung from <strong>66% D (2008)</strong> to <strong>54% D / 43% R (2024)</strong>.</div>
+        </div>
+      </div>
+
+      <div class="filter-bar">
+        <select id="demo-year-filter" class="select-ctrl">
+          <option value="ALL">All 12 Presidential Elections (1980–2024)</option>
+          <option value="2024">2024 — Trump (R) vs. Harris (D)</option>
+          <option value="2020">2020 — Biden (D) vs. Trump (R)</option>
+          <option value="2016">2016 — Trump (R) vs. Clinton (D)</option>
+          <option value="2012">2012 — Obama (D) vs. Romney (R)</option>
+          <option value="2008">2008 — Obama (D) vs. McCain (R)</option>
+          <option value="2004">2004 — G.W. Bush (R) vs. Kerry (D)</option>
+          <option value="2000">2000 — G.W. Bush (R) vs. Gore (D)</option>
+          <option value="1996">1996 — Clinton (D) vs. Dole (R)</option>
+          <option value="1992">1992 — Clinton (D) vs. G.H.W. Bush (R)</option>
+          <option value="1988">1988 — G.H.W. Bush (R) vs. Dukakis (D)</option>
+          <option value="1984">1984 — Reagan (R) vs. Mondale (D)</option>
+          <option value="1980">1980 — Reagan (R) vs. Carter (D)</option>
+        </select>
+        <select id="demo-dim-filter" class="select-ctrl">
+          <option value="ALL">Show All Dimensions (Race + Gender + Age)</option>
+          <option value="RACE">By Race &amp; Ethnicity (White, Black, Hispanic, Asian)</option>
+          <option value="GENDER">By Gender (Men vs. Women)</option>
+          <option value="AGE">By Age Group (18–29, 30–44, 45–59, 60+)</option>
+        </select>
+      </div>
+
+      <div style="overflow-x:auto;margin-bottom:32px;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:12px">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>Year &amp; Matchup</th>
+              <th>U.S. Pop &amp; Voter Racial Makeup</th>
+              <th id="th-demo-race">Vote by Race (R% vs. D%)</th>
+              <th id="th-demo-gender">Vote by Gender (Men / Women)</th>
+              <th id="th-demo-age">Vote by Age (18–29 / 30–44 / 45–59 / 60+)</th>
+            </tr>
+          </thead>
+          <tbody id="us-demographics-tbody"></tbody>
+        </table>
+      </div>
+      <div class="section-head" style="margin-top:28px">
+        <div>
+          <h2>B. 119th U.S. Congress (2025–2026): Racial &amp; Gender Photo Comparison</h2>
           <p>High-resolution editorial infographic + live filterable photo wall of all 539 official portraits (Senators, House Representatives &amp; Delegates). Sources: Pew Research Center (2025), Rutgers CAWP, Brookings Vital Statistics, CRS Report R48535.</p>
         </div>
       </div>
@@ -304,9 +372,73 @@
 
     <!-- PANEL 4: 36 LANDMARK LAWS -->
     <section id="panel-laws" class="section-panel">
-      <div class="section-head">
+      <div id="family-bills-top" class="section-head">
         <div>
-          <h2>36 Landmark Federal Laws Since 1981: What They Did, Who Voted Yea/Nay &amp; CBO Cost</h2>
+          <h2>A. Active &amp; Past Bills Impacting American Families: Top 10 / Top 20 Lists, Roll-Call Votes &amp; Simple Flowcharts</h2>
+          <p>Plain-English tracker showing <strong>active bills in Washington DC right now (119th Congress, 2025–2026)</strong> and <strong>past landmark laws (1981–2025)</strong> that directly impact family paychecks, healthcare, groceries, student loans, bank fees, and retirement — who put each bill up, how <span style="color:#ef4444;font-weight:700">Republicans (Red)</span> and <span style="color:#3b82f6;font-weight:700">Democrats (Blue)</span> voted, and how to check your own local Representatives and Senators.</p>
+        </div>
+      </div>
+
+      <!-- INTERACTIVE SIMPLE FLOWCHARTS -->
+      <div class="flowchart-wrap">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:8px;margin-bottom:10px">
+          <h3 style="color:var(--gold);margin:0;font-size:1.05rem">Simple Visual Flowcharts: How a Washington Bill Hits Your Community, Household &amp; Paycheck</h3>
+          <span style="font-size:0.8rem;color:var(--muted)">Click any pathway below to trace how Congress &amp; donor money affect your kitchen table:</span>
+        </div>
+        <div class="flow-tabs" id="family-flow-tabs">
+          <button class="flow-tab-btn active" data-flow="general">1. Follow the Bill: Lobbyists ➔ Roll-Call Vote ➔ Your Paycheck</button>
+          <button class="flow-tab-btn" data-flow="healthcare">2. Healthcare &amp; Medicaid Cuts ➔ Rural Hospitals &amp; Family Premiums</button>
+          <button class="flow-tab-btn" data-flow="wallet">3. Bank Fees, Tariffs &amp; SNAP Cuts ➔ Grocery &amp; Checking Account</button>
+          <button class="flow-tab-btn" data-flow="choose">4. Why Your Politician's Vote Matters (How to Choose Better)</button>
+        </div>
+        <div id="family-flow-display" class="flow-pipeline"></div>
+      </div>
+
+      <!-- LOCAL POLITICIAN & STATE DELEGATION LOOKUP -->
+      <div style="background:rgba(30,41,59,0.65);border:1px solid var(--border);border-radius:12px;padding:16px;margin-bottom:22px">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:12px;margin-bottom:10px">
+          <div>
+            <h3 style="margin:0;font-size:1rem;color:#f8fafc">Check Your Local Politicians: Who Represents Your State, Who Funds Them &amp; How Their Party Votes</h3>
+            <p style="margin:4px 0 0;font-size:0.82rem;color:var(--muted)">Select your state to see your 2 U.S. Senators and House Representatives, their party, whether they rank in the Top 25 for corporate/PAC money, and how their party caucus voted on the family bills below.</p>
+          </div>
+          <select id="family-state-lookup" class="select-ctrl" style="min-width:240px">
+            <option value="">Select Your State (All 50 States + DC)...</option>
+          </select>
+        </div>
+        <div id="family-state-delegation" style="display:none;margin-top:12px"></div>
+      </div>
+
+      <!-- MULTIPLE TOP 10 / TOP 20 / ACTIVE LIST SELECTORS -->
+      <div class="filter-bar">
+        <select id="family-list-select" class="select-ctrl" style="border-color:var(--gold);font-weight:700">
+          <option value="all_featured">All 24 Active &amp; Top Family-Impact Bills (2025–2026 + Historical)</option>
+          <option value="active_current">🔥 Active &amp; Current Bills in DC Right Now (119th Congress, 2025–2026)</option>
+          <option value="top10_negative">🚨 Top 10 Bills &amp; Laws With Biggest Negative Hit on Working Families</option>
+          <option value="top20_household">📊 Top 20 Past &amp; Current Laws Reshaping Family Paychecks &amp; Costs</option>
+        </select>
+        <select id="family-impact-select" class="select-ctrl">
+          <option value="ALL">All Household Impact Areas</option>
+          <option value="paychecks_taxes">💵 Paychecks, Taxes &amp; Tariffs</option>
+          <option value="healthcare">🏥 Healthcare, Medicaid &amp; Rx Drugs</option>
+          <option value="groceries_snap">🛒 Groceries &amp; SNAP Food Aid</option>
+          <option value="housing_debt">🏠 Housing, Credit Reports &amp; Bank Fees</option>
+          <option value="education_childcare">🎓 Student Loans, Education &amp; Childcare</option>
+          <option value="jobs_wages">👷 Jobs, Wages &amp; Trade</option>
+          <option value="retirement">🧓 Retirement &amp; Social Security</option>
+        </select>
+        <select id="family-party-select" class="select-ctrl">
+          <option value="ALL">All Sponsors (Republican &amp; Democrat)</option>
+          <option value="R">Sponsored by Republicans (Red)</option>
+          <option value="D">Sponsored by Democrats (Blue)</option>
+        </select>
+        <input id="family-bill-search" class="search-input" style="max-width:240px" type="search" placeholder="Search bill, topic (e.g. Medicaid, overdraft)...">
+        <div id="family-bills-count" style="font-size:0.9rem;color:var(--muted)"></div>
+      </div>
+
+      <div id="family-bills-cards" class="grid-2" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(380px,1fr));gap:16px;margin-bottom:36px"></div>
+      <div class="section-head" style="margin-top:28px">
+        <div>
+          <h2>B. 36 Landmark Federal Laws Since 1981: What They Did, Who Voted Yea/Nay &amp; CBO Cost</h2>
           <p>Every major tax, healthcare, crime, trade, financial, infrastructure, and reconciliation bill from Ronald Reagan's 1981 tax cut to the 2025 reconciliation act.</p>
         </div>
       </div>
@@ -376,8 +508,8 @@
     </section>
   </main>
 
-  <script src="data_bundle.js"></script>
-  <script src="app.js"></script>
+  <script src="data_bundle.js?v=20261020c"></script>
+  <script src="app.js?v=20261020c"></script>
   <script>
   (function initPayolaBilingualAndWebMCP() {
     if (navigator.modelContext && typeof navigator.modelContext.registerTool === 'function') {
