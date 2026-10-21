@@ -246,6 +246,436 @@
     if (metrics.length) updateTable();
   }
 
+  // 3b. Render Top 25 Politicians Receiving the Most Donor/Corporate (PAC) Money
+  function renderTop25Pac() {
+    const recs = mods.money_top25_pac || [];
+    const tbody = document.getElementById('top25-tbody');
+    const cardsEl = document.getElementById('top25-cards');
+    const partySel = document.getElementById('top25-party');
+    const chamberSel = document.getElementById('top25-chamber');
+    const searchIn = document.getElementById('top25-search');
+    const countEl = document.getElementById('top25-count');
+    if (!tbody || !cardsEl) return;
+
+    const fmt = n => '$' + Math.round(n).toLocaleString('en-US');
+
+    function applyFilter() {
+      const party = partySel.value;
+      const chamber = chamberSel.value;
+      const q = (searchIn.value || '').trim().toLowerCase();
+      const filtered = recs.filter(r => {
+        if (party !== 'ALL' && r.party !== party) return false;
+        if (chamber !== 'ALL' && r.chamber !== chamber) return false;
+        if (q && !(r.name.toLowerCase().includes(q) || r.geo.toLowerCase().includes(q))) return false;
+        return true;
+      });
+
+      tbody.innerHTML = filtered.map(r => {
+        const maxPac = Math.max(...recs.map(x => x.value || 1));
+        const pctW = Math.round((r.value / maxPac) * 100);
+        return `<tr>
+          <td><strong>${r.metric.split(' ')[0]}</strong></td>
+          <td>
+            <strong>${esc(r.name)}</strong> ${partyChip(r.party, r.party_full)}<br>
+            <span style="color:var(--muted);font-size:0.78rem">${esc(r.geo)}${r.district ? '-' + r.district : ''}</span>
+          </td>
+          <td>${esc(r.chamber)}</td>
+          <td><strong style="color:var(--gold)">${fmt(r.value)}</strong></td>
+          <td>
+            <div class="bar-track" style="max-width:150px"><div class="bar-fill-${r.party === 'R' ? 'R' : r.party === 'D' ? 'D' : 'G'}" style="width:${pctW}%"></div></div>
+            <span style="font-size:0.78rem;color:var(--muted)">${r.pac_pct_of_total}%</span>
+          </td>
+          <td>${fmt(r.total_receipts)}</td>
+          <td><a class="chip-src" href="${esc(r.fec_url)}" target="_blank" rel="noopener">FEC ↗</a></td>
+        </tr>`;
+      }).join('');
+
+      cardsEl.innerHTML = filtered.map(r => `
+        <div class="member-card party-${r.party === 'R' ? 'R' : r.party === 'D' ? 'D' : 'I'}">
+          <div class="member-photo-wrap">
+            <img src="${esc(r.photo)}" loading="lazy" alt="${esc(r.name)}">
+            <div class="member-badges">
+              <span class="chip chip-${r.party === 'R' ? 'R' : r.party === 'D' ? 'D' : 'I'}">${r.party}</span>
+              <span class="chip chip-src">#${r.metric.split(' ')[0].replace('#','')}</span>
+            </div>
+          </div>
+          <div class="member-body">
+            <strong>${esc(r.name)}</strong>
+            <span style="color:var(--muted)">${esc(r.chamber)} · ${esc(r.geo)}${r.district ? '-' + r.district : ''}</span>
+            <strong style="color:var(--gold)">${fmt(r.value)}</strong>
+            <span style="font-size:0.78rem;color:var(--muted)">PAC money · ${r.pac_pct_of_total}% of ${fmt(r.total_receipts)} raised</span>
+            <div class="member-actions">
+              <a href="${esc(r.fec_url)}" target="_blank" rel="noopener">FEC ↗</a>
+            </div>
+          </div>
+        </div>`).join('');
+
+      countEl.textContent = filtered.length + ' / ' + recs.length + ' lawmakers';
+    }
+
+    [partySel, chamberSel].forEach(el => el.addEventListener('change', applyFilter));
+    searchIn.addEventListener('input', applyFilter);
+    applyFilter();
+  }
+
+
+  // =========================================================================
+  // 3c. Render U.S. Demographics & How America Votes Since Reagan (1980–2024)
+  // =========================================================================
+  function renderVoterDemographics() {
+    const recs = mods.us_voter_demographics || [];
+    const tbody = document.getElementById('us-demographics-tbody');
+    const yrFilter = document.getElementById('demo-year-filter');
+    const dimFilter = document.getElementById('demo-dim-filter');
+    if (!tbody || !yrFilter || !dimFilter) return;
+
+    function renderDualBar(rVal, dVal, label) {
+      if (rVal == null && dVal == null) return `<span style="color:var(--muted);font-size:0.75rem">${esc(label)}: N/A</span>`;
+      const r = rVal || 0;
+      const d = dVal || 0;
+      const other = Math.max(0, 100 - r - d);
+      return `
+        <div style="margin-bottom:6px">
+          <div style="display:flex;justify-content:space-between;font-size:0.78rem;font-weight:600">
+            <span>${esc(label)}</span>
+            <span><strong style="color:#ef4444">${r}% R</strong> · <strong style="color:#3b82f6">${d}% D</strong></span>
+          </div>
+          <div class="dual-bar">
+            <div class="dual-bar-r" style="width:${r}%"></div>
+            ${other > 0 ? `<div class="dual-bar-o" style="width:${other}%"></div>` : ''}
+            <div class="dual-bar-d" style="width:${d}%"></div>
+          </div>
+        </div>`;
+    }
+
+    function applyFilters() {
+      const yr = yrFilter.value;
+      const dim = dimFilter.value;
+
+      const filtered = recs.filter(r => {
+        if (yr !== 'ALL' && r.period !== yr) return false;
+        return true;
+      });
+
+      // Update table headers based on dimension
+      const thRace = document.getElementById('th-demo-race');
+      const thGender = document.getElementById('th-demo-gender');
+      const thAge = document.getElementById('th-demo-age');
+      if (thRace) thRace.style.display = (dim === 'ALL' || dim === 'RACE') ? '' : 'none';
+      if (thGender) thGender.style.display = (dim === 'ALL' || dim === 'GENDER') ? '' : 'none';
+      if (thAge) thAge.style.display = (dim === 'ALL' || dim === 'AGE') ? '' : 'none';
+
+      tbody.innerHTML = filtered.map(r => {
+        const race = r.vote_by_race || {};
+        const gender = r.vote_by_gender || {};
+        const age = r.vote_by_age || {};
+        const pop = r.us_pop_race || {};
+        const vShare = r.electorate_share_race || {};
+
+        return `<tr>
+          <td>
+            <div style="font-size:1.1rem;font-weight:800;color:var(--gold)">${r.period}</div>
+            <div style="font-weight:700;font-size:0.88rem;color:#f8fafc">${esc(r.matchup)}</div>
+            <div style="font-size:0.8rem;color:var(--muted);margin-top:2px">Winner: <strong>${esc(r.winner)}</strong> (${r.overall.R}% R / ${r.overall.D}% D)</div>
+            <div style="font-size:0.78rem;color:#cbd5e1;margin-top:4px;max-width:280px">${esc(r.plain_english)}</div>
+          </td>
+          <td>
+            <div style="font-size:0.8rem;line-height:1.45;color:#cbd5e1">
+              <div><strong>White (NH):</strong> ${pop.white_nh}% pop · ${vShare.white_nh}% voters</div>
+              <div><strong>Hispanic:</strong> ${pop.hispanic}% pop · ${vShare.hispanic}% voters</div>
+              <div><strong>Black:</strong> ${pop.black}% pop · ${vShare.black}% voters</div>
+              <div><strong>Asian/Other:</strong> ${pop.asian_other}% pop · ${vShare.asian_other}% voters</div>
+            </div>
+          </td>
+          ${(dim === 'ALL' || dim === 'RACE') ? `<td>
+            <div style="min-width:180px">
+              ${renderDualBar(race.white ? race.white.R : null, race.white ? race.white.D : null, 'White Voters')}
+              ${renderDualBar(race.hispanic ? race.hispanic.R : null, race.hispanic ? race.hispanic.D : null, 'Hispanic Voters')}
+              ${renderDualBar(race.black ? race.black.R : null, race.black ? race.black.D : null, 'Black Voters')}
+              ${renderDualBar(race.asian ? race.asian.R : null, race.asian ? race.asian.D : null, 'Asian Voters')}
+            </div>
+          </td>` : ''}
+          ${(dim === 'ALL' || dim === 'GENDER') ? `<td>
+            <div style="min-width:170px">
+              ${renderDualBar(gender.men ? gender.men.R : null, gender.men ? gender.men.D : null, 'Men')}
+              ${renderDualBar(gender.women ? gender.women.R : null, gender.women ? gender.women.D : null, 'Women')}
+            </div>
+          </td>` : ''}
+          ${(dim === 'ALL' || dim === 'AGE') ? `<td>
+            <div style="min-width:180px">
+              ${renderDualBar(age.age_18_29 ? age.age_18_29.R : null, age.age_18_29 ? age.age_18_29.D : null, 'Age 18–29')}
+              ${renderDualBar(age.age_30_44 ? age.age_30_44.R : null, age.age_30_44 ? age.age_30_44.D : null, 'Age 30–44')}
+              ${renderDualBar(age.age_45_59 ? age.age_45_59.R : null, age.age_45_59 ? age.age_45_59.D : null, 'Age 45–59')}
+              ${renderDualBar(age.age_60_plus ? age.age_60_plus.R : null, age.age_60_plus ? age.age_60_plus.D : null, 'Age 60+')}
+            </div>
+          </td>` : ''}
+        </tr>`;
+      }).join('');
+    }
+
+    yrFilter.addEventListener('change', applyFilters);
+    dimFilter.addEventListener('change', applyFilters);
+    applyFilters();
+  }
+
+  // =========================================================================
+  // 3d. Render Active & Past Bills Impacting American Families + Flowcharts
+  // =========================================================================
+  function renderFamilyImpactBills() {
+    const bills = mods.bills_family_impact || [];
+    const members = mods.members || [];
+    const pacRecs = mods.money_top25_pac || [];
+    const pacCandidateIds = new Set(pacRecs.map(r => r.fec_candidate_id));
+
+    const cardsEl = document.getElementById('family-bills-cards');
+    const listSel = document.getElementById('family-list-select');
+    const impactSel = document.getElementById('family-impact-select');
+    const partySel = document.getElementById('family-party-select');
+    const searchIn = document.getElementById('family-bill-search');
+    const countEl = document.getElementById('family-bills-count');
+    const flowTabs = document.getElementById('family-flow-tabs');
+    const flowDisplay = document.getElementById('family-flow-display');
+    const stateLookup = document.getElementById('family-state-lookup');
+    const stateDelegation = document.getElementById('family-state-delegation');
+
+    if (!cardsEl || !listSel) return;
+
+    // 1. Flowchart Interactive Pipelines
+    const FLOWCHARTS = {
+      general: [
+        { step: "Step 1", title: "Donors & PACs Fund Sponsors", desc: "Corporate PACs, financial institutions, and industry lobbies donate millions to congressional leadership and committee chairs." },
+        { step: "Step 2", title: "Bill Written & Introduced", desc: "Sponsors write bill text—often shaping tax brackets, Medicaid match formulas, or bank fee rules to favor top campaign contributors." },
+        { step: "Step 3", title: "Roll-Call Party Vote", desc: "House and Senate hold roll-call votes. Most economic & healthcare bills pass on strict or near-strict party lines." },
+        { step: "Step 4", title: "Federal Rule Shift", desc: "Statutes take effect: federal funding formulas change, statutory debt rules restart, or regulatory fee caps are wiped out." },
+        { step: "Step 5", title: "Your Paycheck & Household", desc: "The impact lands directly on working families: higher healthcare premiums, $35 overdraft fees, tighter food aid, or shifted tax burdens." }
+      ],
+      healthcare: [
+        { step: "Step 1", title: "Medicaid & ACA Funding Cut", desc: "Reconciliation legislation cuts $911B from federal Medicaid over 10 years and lets enhanced ACA premium tax credits expire." },
+        { step: "Step 2", title: "State Budgets Strained", desc: "States face sudden multi-billion dollar Medicaid budget holes and respond by imposing monthly paperwork hurdles and eligibility purges." },
+        { step: "Step 3", title: "10.9M Americans Lose Coverage", desc: "Nonpartisan CBO & KFF calculate ~10.9 million Americans lose health insurance, while safety-net hospitals face insolvency." },
+        { step: "Step 4", title: "Family Premiums & ER Costs Jump", desc: "Working families face $700–$2,400/yr higher marketplace premiums; local emergency rooms close maternity and trauma services." }
+      ],
+      wallet: [
+        { step: "Step 1", title: "$5 Overdraft Cap Overturned", desc: "Congress passes S.J.Res. 18 using the Congressional Review Act to kill the CFPB rule capping bank overdraft fees at $5." },
+        { step: "Step 2", title: "Big Banks Keep $35 Fees", desc: "Large banks continue charging $35 overdraft penalties, extracting $5 billion per year from cash-strapped American households." },
+        { step: "Step 3", title: "Import Tariffs Raised", desc: "Broad consumer tariffs on food, lumber, autos, and electronics are imposed; importers pass duties directly into retail store prices." },
+        { step: "Step 4", title: "Paycheck Purchasing Power Falls", desc: "The typical family pays $1,200–$2,100/yr more at grocery stores, car dealerships, and banks—eroding wage gains." }
+      ],
+      choose: [
+        { step: "Step 1", title: "Read What the Bill Does", desc: "Look past party slogans. Check plain-English, nonpartisan CBO, KFF, and CRS findings on who actually benefits and who pays." },
+        { step: "Step 2", title: "Check Who Sponsored It", desc: "Identify which representative or senator put the bill up, what party they belong to, and who their top committee donors are." },
+        { step: "Step 3", title: "Look Up Your Own Reps", desc: "Use the state lookup below to see how your 2 U.S. Senators and House Representative voted on these exact family bills." },
+        { step: "Step 4", title: "Vote With Real Facts", desc: "Hold lawmakers accountable for their actual roll-call voting record on kitchen-table economics rather than 30-second campaign ads." }
+      ]
+    };
+
+    function renderFlow(flowKey) {
+      if (!flowDisplay) return;
+      const nodes = FLOWCHARTS[flowKey] || FLOWCHARTS.general;
+      flowDisplay.innerHTML = nodes.map(n => `
+        <div class="flow-node">
+          <div class="fn-step">${esc(n.step)}</div>
+          <div class="fn-title">${esc(n.title)}</div>
+          <div class="fn-desc">${esc(n.desc)}</div>
+        </div>`).join('');
+    }
+    renderFlow('general');
+
+    if (flowTabs) {
+      flowTabs.querySelectorAll('.flow-tab-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+          flowTabs.querySelectorAll('.flow-tab-btn').forEach(b => b.classList.remove('active'));
+          btn.classList.add('active');
+          renderFlow(btn.getAttribute('data-flow'));
+        });
+      });
+    }
+
+    // 2. Populate State Lookup
+    if (stateLookup) {
+      const states = Array.from(new Set(members.map(m => m.geo))).filter(Boolean).sort();
+      stateLookup.innerHTML = '<option value="">Select Your State (All 50 States + DC)...</option>' +
+        states.map(st => `<option value="${st}">${st} — ${getStateName(st)}</option>`).join('');
+
+      stateLookup.addEventListener('change', () => {
+        const st = stateLookup.value;
+        if (!st || !stateDelegation) {
+          if (stateDelegation) stateDelegation.style.display = 'none';
+          return;
+        }
+        const stMembers = members.filter(m => m.geo === st);
+        const sens = stMembers.filter(m => m.chamber === 'Senate');
+        const reps = stMembers.filter(m => m.chamber === 'House');
+
+        stateDelegation.style.display = 'block';
+        stateDelegation.innerHTML = `
+          <div style="background:var(--bg-card);border:1px solid rgba(250,204,21,0.3);border-radius:10px;padding:12px;margin-top:8px">
+            <h4 style="color:var(--gold);margin:0 0 8px;font-size:0.95rem">Congressional Delegation for ${getStateName(st)} (${st})</h4>
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:10px">
+              ${sens.concat(reps).map(m => {
+                const isPacTop25 = m.fec_candidate_ids && m.fec_candidate_ids.some(id => pacCandidateIds.has(id));
+                return `
+                  <div style="display:flex;gap:10px;align-items:center;background:rgba(15,23,42,0.8);border:1px solid var(--border);border-radius:8px;padding:8px 10px">
+                    <img src="${esc(m.photo_file || 'assets/members/' + m.bioguide_id + '.jpg')}" loading="lazy" style="width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid ${m.party === 'R' ? '#ef4444' : m.party === 'D' ? '#3b82f6' : '#facc15'}" alt="${esc(m.name)}">
+                    <div style="flex:1;min-width:0">
+                      <div style="font-weight:700;font-size:0.86rem;color:#f8fafc">${esc(m.name)} <span class="chip chip-${m.party}">${m.party}</span></div>
+                      <div style="font-size:0.76rem;color:var(--muted)">${esc(m.chamber)} · ${esc(m.geo)}${m.district ? '-' + m.district : ''}</div>
+                      ${isPacTop25 ? `<div style="font-size:0.72rem;color:var(--gold);font-weight:700">★ Top 25 Corporate/PAC Money Recipient</div>` : ''}
+                    </div>
+                    <a class="chip-src" href="${esc(m.official_website || '#')}" target="_blank" rel="noopener" style="font-size:0.72rem">Official ↗</a>
+                  </div>`;
+              }).join('')}
+            </div>
+          </div>`;
+      });
+    }
+
+    function getStateName(code) {
+      const names = {
+        AL:"Alabama",AK:"Alaska",AZ:"Arizona",AR:"Arkansas",CA:"California",CO:"Colorado",CT:"Connecticut",DE:"Delaware",FL:"Florida",GA:"Georgia",
+        HI:"Hawaii",ID:"Idaho",IL:"Illinois",IN:"Indiana",IA:"Iowa",KS:"Kansas",KY:"Kentucky",LA:"Louisiana",ME:"Maine",MD:"Maryland",
+        MA:"Massachusetts",MI:"Michigan",MN:"Minnesota",MS:"Mississippi",MO:"Missouri",MT:"Montana",NE:"Nebraska",NV:"Nevada",NH:"New Hampshire",NJ:"New Jersey",
+        NM:"New Mexico",NY:"New York",NC:"North Carolina",ND:"North Dakota",OH:"Ohio",OK:"Oklahoma",OR:"Oregon",PA:"Pennsylvania",RI:"Rhode Island",SC:"South Carolina",
+        SD:"South Dakota",TN:"Tennessee",TX:"Texas",UT:"Utah",VT:"Vermont",VA:"Virginia",WA:"Washington",WV:"West Virginia",WI:"Wisconsin",WY:"Wyoming",DC:"District of Columbia"
+      };
+      return names[code] || code;
+    }
+
+    function renderVoteBar(v, title) {
+      if (!v) return `<div style="font-size:0.76rem;color:var(--muted)">${esc(title)}: Pending / No Roll Call</div>`;
+      const tot = v.yea + v.nay;
+      const rYea = v.R_yea || 0;
+      const rNay = v.R_nay || 0;
+      const dYea = v.D_yea || 0;
+      const dNay = v.D_nay || 0;
+      return `
+        <div style="margin-top:6px;background:rgba(15,23,42,0.7);border-radius:6px;padding:6px 8px;border:1px solid rgba(148,163,184,0.18)">
+          <div style="display:flex;justify-content:space-between;font-size:0.76rem;font-weight:700">
+            <span>${esc(title)}: <strong style="color:var(--gold)">${v.yea} Yea</strong> to <strong>${v.nay} Nay</strong></span>
+          </div>
+          <div style="display:flex;gap:12px;font-size:0.73rem;margin-top:3px">
+            <span style="color:#ef4444">Republicans: <strong>${rYea} Yes</strong> · ${rNay} No</span>
+            <span style="color:#3b82f6">Democrats: <strong>${dYea} Yes</strong> · ${dNay} No</span>
+          </div>
+        </div>`;
+    }
+
+    // 3. Filter & Render Bills Cards
+    function applyBillFilters() {
+      const listVal = listSel.value;
+      const impactVal = impactSel.value;
+      const partyVal = partySel.value;
+      const q = (searchIn.value || '').trim().toLowerCase();
+
+      const filtered = bills.filter(b => {
+        if (listVal === 'active_current' && b.status_type !== 'active_current') return false;
+        if (listVal === 'top10_negative' && !b.rank_top10_negative) return false;
+        if (listVal === 'top20_household' && !b.rank_top20_household) return false;
+        if (impactVal !== 'ALL' && (!b.impact_categories || !b.impact_categories.includes(impactVal))) return false;
+        if (partyVal !== 'ALL' && (!b.sponsor || b.sponsor.party !== partyVal)) return false;
+        if (q) {
+          const str = (b.title + ' ' + b.bill_code + ' ' + b.what_it_is + ' ' + b.family_impact_summary + ' ' + (b.sponsor ? b.sponsor.name : '')).toLowerCase();
+          if (!str.includes(q)) return false;
+        }
+        return true;
+      });
+
+      cardsEl.innerHTML = filtered.map(b => {
+        const sp = b.sponsor || {};
+        const isRelief = b.family_impact_direction === 'household_relief';
+        const isMixed = b.family_impact_direction === 'mixed_cost_shift';
+        const boxClass = isRelief ? 'impact-box relief' : (isMixed ? 'impact-box mixed' : 'impact-box');
+
+        const flowHtml = (b.flowchart_steps && b.flowchart_steps.length) ? `
+          <div style="margin-top:10px">
+            <div style="font-size:0.74rem;font-weight:700;color:var(--gold);text-transform:uppercase;letter-spacing:0.04em">4-Step Household Impact Flowchart:</div>
+            <div class="mini-flow">
+              ${b.flowchart_steps.map(step => `<div class="mini-flow-step">${esc(step)}</div>`).join('')}
+            </div>
+          </div>` : '';
+
+        return `
+          <div class="card ${sp.party === 'R' ? 'rep-card' : (sp.party === 'D' ? 'dem-card' : '')}" style="display:flex;flex-direction:column">
+            <div class="card-top">
+              <div>
+                <div style="display:flex;align-items:center;gap:6px;flex-wrap:wrap;margin-bottom:4px">
+                  <span class="chip ${b.status_type === 'active_current' ? 'chip-R' : 'chip-src'}" style="font-weight:700">${esc(b.status_badge)}</span>
+                  ${b.rank_top10_negative ? `<span class="chip chip-R" style="background:#dc2626;color:#fff">#${b.rank_top10_negative} Negative Impact</span>` : ''}
+                  ${b.rank_top20_household ? `<span class="chip chip-src">Top 20 #${b.rank_top20_household}</span>` : ''}
+                </div>
+                <h3 style="font-size:1.05rem;line-height:1.3;margin:0 0 2px">${esc(b.title)}</h3>
+                <span style="font-size:0.78rem;color:var(--gold);font-weight:600">${esc(b.bill_code)}</span>
+              </div>
+              <div>${partyChip(sp.party, sp.party || 'Bipartisan')}</div>
+            </div>
+
+            <div style="font-size:0.8rem;color:var(--muted);margin:4px 0 8px">
+              <strong>Who Put It Up:</strong> ${esc(sp.name || 'Bipartisan')} ${sp.party ? partyChip(sp.party, sp.party) : ''} (${esc(sp.state || '')} · ${esc(sp.chamber || '')})
+            </div>
+
+            <p style="font-size:0.86rem;color:#cbd5e1;line-height:1.42;margin:0 0 8px">
+              <strong>What It Does:</strong> ${esc(b.what_it_is)}
+            </p>
+
+            <div class="${boxClass}">
+              <strong style="display:block;margin-bottom:2px;font-size:0.82rem;color:${isRelief ? '#4ade80' : (isMixed ? '#fde047' : '#f87171')}">
+                ${isRelief ? '✓ Direct Family & Household Benefit:' : (isMixed ? '⚡ Shifted Cost / Mixed Impact:' : '⚠️ Direct Family & Household Risk:')}
+              </strong>
+              ${esc(b.family_impact_summary)}
+            </div>
+
+            ${flowHtml}
+
+            <div style="margin-top:auto;padding-top:10px">
+              <div style="font-size:0.74rem;font-weight:700;color:var(--muted);text-transform:uppercase;letter-spacing:0.04em">How Republicans &amp; Democrats Voted:</div>
+              ${renderVoteBar(b.house_vote, 'U.S. House Vote')}
+              ${renderVoteBar(b.senate_vote, 'U.S. Senate Vote')}
+            </div>
+
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;padding-top:8px;border-top:1px solid rgba(148,163,184,0.18)">
+              <span style="font-size:0.76rem;color:var(--muted)">Source: Library of Congress / CBO</span>
+              <a class="chip-src" href="${esc(b.bill_url || b.source.url)}" target="_blank" rel="noopener">Official Record ↗</a>
+            </div>
+          </div>`;
+      }).join('');
+
+      countEl.textContent = `${filtered.length} / ${bills.length} bills & laws`;
+    }
+
+    [listSel, impactSel, partySel].forEach(el => el.addEventListener('change', applyBillFilters));
+    searchIn.addEventListener('input', applyBillFilters);
+    applyBillFilters();
+  }
+
+  // =========================================================================
+  // 3e. Wire Quick Jump Bar Navigation
+  // =========================================================================
+  function initQuickJumpBar() {
+    document.querySelectorAll('.jump-btn').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const tabKey = btn.getAttribute('data-goto-tab');
+        const targetId = btn.getAttribute('data-goto-id');
+        if (!tabKey) return;
+
+        // Switch active tab
+        document.querySelectorAll('.tab-btn').forEach(b => {
+          b.classList.toggle('active', b.getAttribute('data-tab') === tabKey);
+        });
+        document.querySelectorAll('.section-panel').forEach(p => {
+          p.classList.toggle('active', p.id === 'panel-' + tabKey);
+        });
+
+        // Smooth scroll to target
+        if (targetId) {
+          setTimeout(() => {
+            const el = document.getElementById(targetId);
+            if (el) el.scrollIntoView({ behavior: 'smooth', block: 'start' });
+          }, 80);
+        }
+      });
+    });
+  }
+
   // 4. Render 539-Member Interactive Congress & Senate Photo Wall
   function initCongressWall() {
     const members = mods.members || [];
@@ -419,5 +849,9 @@
   renderSpecialStateTables();
   initFullStateExplorer();
   initCongressWall();
+  renderTop25Pac();
+  renderVoterDemographics();
+  renderFamilyImpactBills();
+  initQuickJumpBar();
   renderOtherPanels();
 })();

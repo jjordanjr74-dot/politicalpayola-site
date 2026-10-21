@@ -49,10 +49,10 @@
     </div>
     <nav class="nav-tabs">
       <button class="tab-btn active" data-tab="spotlight">1. Spotlight Rankings &amp; Vacations</button>
-      <button class="tab-btn" data-tab="congress">2. Congress Race &amp; Gender Photo Wall (539)</button>
+      <button class="tab-btn" data-tab="congress">2. U.S. Demographics (1980–2024) &amp; Congress (539)</button>
       <button class="tab-btn" data-tab="states">3. All 50 States × 25+ Metrics Explorer</button>
-      <button class="tab-btn" data-tab="laws">4. 36 Landmark Laws &amp; Roll-Call Votes</button>
-      <button class="tab-btn" data-tab="scandals">5. Formal Scandals, Lobbying &amp; Unions</button>
+      <button class="tab-btn" data-tab="laws">4. Family Bills, Active Laws &amp; Flowcharts</button>
+      <button class="tab-btn" data-tab="scandals">5. Top 25 PAC Money, Scandals &amp; Unions</button>
     </nav>
   </header>
 
@@ -65,12 +65,31 @@
         <p>Built to exceed USAFacts, OpenSecrets, GovTrack, and Ballotpedia: every claim cross-references peer-reviewed journals (<em>JAMA Network Open</em>, <em>NEJM</em>, <em>AJPM</em>, <em>Presidential Studies Quarterly</em>, <em>Journal of Labor Economics</em>) and independent empirical centers (Pew Research, KFF, NBER, PIIE, CHDS, Rutgers CAWP, Brown Costs of War) alongside historical archives — never relying on single-source <code>.gov</code> claims alone.</p>
       </div>
       <div class="stat-pills">
-        <div class="stat-pill"><div class="num">5,050</div><div class="lbl">Verified Records</div></div>
-        <div class="stat-pill"><div class="num">21</div><div class="lbl">Validated Modules</div></div>
+        <div class="stat-pill"><div class="num">5,111</div><div class="lbl">Verified Records</div></div>
+        <div class="stat-pill"><div class="num">24</div><div class="lbl">Validated Modules</div></div>
         <div class="stat-pill"><div class="num">539</div><div class="lbl">Member Portraits</div></div>
         <div class="stat-pill"><div class="num">1981–2026</div><div class="lbl">Reagan to Today</div></div>
       </div>
     </section>
+
+    <div class="quick-jump-bar" id="quick-jump-bar">
+      <button class="jump-btn" data-goto-tab="laws" data-goto-id="family-bills-top">
+        <span class="jb-tag">Active &amp; Past Legislation · Top 10 &amp; Top 20 Lists</span>
+        <span class="jb-title">Bills Impacting American Families + Simple Flowcharts ➔</span>
+        <span class="jb-sub">See what bills are coming up in DC, who put them up, how R vs. D voted, and how they hit your paycheck, healthcare &amp; groceries.</span>
+      </button>
+      <button class="jump-btn" data-goto-tab="congress" data-goto-id="us-demographics-top">
+        <span class="jb-tag">Reagan (1980) to Present (2024) · Census + Validated Voters</span>
+        <span class="jb-title">U.S. Demographics &amp; How America Votes (Race, Gender &amp; Age) ➔</span>
+        <span class="jb-sub">Track how America's racial, gender, and age makeup shifted since 1980 and how every group voted Republican vs. Democrat.</span>
+      </button>
+      <button class="jump-btn" data-goto-tab="scandals" data-goto-id="top25-pac-top">
+        <span class="jb-tag">Official FEC 2024–2026 Filings · Follow the Money</span>
+        <span class="jb-title">Top 25 Politicians Receiving Corporate / PAC Donor Money ➔</span>
+        <span class="jb-sub">Ranked highest-to-lowest with party affiliation, % of campaign warchest from PACs, and 1-click FEC links.</span>
+      </button>
+    </div>
+
 
     <!-- PANEL 1: SPOTLIGHT RANKINGS & PRESIDENTIAL VACATIONS -->
     <section id="panel-spotlight" class="section-panel active">
@@ -302,7 +321,42 @@
           <p>Formal outcomes only (convictions, guilty pleas, expulsions, censures, ethics findings) + PAC contributions &amp; presidential endorsements from top labor, police (FOP, NAPO, IUPA) &amp; firefighter (IAFF) unions.</p>
         </div>
       </div>
-      <h3 style="margin-bottom:12px;color:var(--gold)">Major Corruption Scandals &amp; Congressional Convictions / Censures</h3>
+      <h3 id="top25-pac-top" style="margin-bottom:12px;color:var(--gold)">Top 25 Politicians Receiving the Most Donor / Corporate (PAC) Money — 2024 Cycle</h3>
+      <p style="color:var(--muted);font-size:0.9rem;margin-bottom:14px">Official FEC figures for "other political committee contributions" (PAC, corporate &amp; trade-association committees) to each member of Congress, ranked highest-to-lowest, with each lawmaker's party. Sorted by total PAC/committee dollars received in the 2024 election cycle. <strong>Party split in the Top 25:</strong> 13 Republicans, 11 Democrats, 1 Independent.</p>
+      <div class="filter-bar">
+        <select id="top25-party" class="select-ctrl">
+          <option value="ALL">All Parties</option>
+          <option value="R">Republicans</option>
+          <option value="D">Democrats</option>
+          <option value="I">Independents</option>
+        </select>
+        <select id="top25-chamber" class="select-ctrl">
+          <option value="ALL">All Chambers</option>
+          <option value="Senate">Senate</option>
+          <option value="House">House</option>
+        </select>
+        <input id="top25-search" class="search-input" style="max-width:240px" type="search" placeholder="Filter by name or state...">
+        <div id="top25-count" style="font-size:0.9rem;color:var(--muted)"></div>
+      </div>
+      <div style="overflow-x:auto;margin-bottom:26px;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:12px">
+        <table class="data-table">
+          <thead>
+            <tr>
+              <th>#</th>
+              <th>Lawmaker &amp; Party</th>
+              <th>Chamber</th>
+              <th>PAC / Corporate Money</th>
+              <th>% of Total Raised</th>
+              <th>Total Receipts</th>
+              <th>FEC Record</th>
+            </tr>
+          </thead>
+          <tbody id="top25-tbody"></tbody>
+        </table>
+      </div>
+      <div id="top25-cards" class="member-grid" style="margin-bottom:36px"></div>
+
+<h3 style="margin-bottom:12px;color:var(--gold)">Major Corruption Scandals &amp; Congressional Convictions / Censures</h3>
       <div id="scandals-cards" class="grid-3" style="margin-bottom:32px"></div>
       <h3 style="margin-bottom:12px;color:var(--gold)">Top-20 Unions: Federal PAC Contributions (D vs. R) &amp; Endorsements</h3>
       <div style="overflow-x:auto;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:12px">
