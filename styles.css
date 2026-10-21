@@ -71,31 +71,36 @@ a:hover { color: #7dd3fc; text-decoration: underline; }
   padding-bottom: 12px;
 }
 
-.brand { display: flex; align-items: center; gap: 14px; }
+.brand { display: flex; align-items: center; gap: 18px; }
 
-.brand-badge {
-  background: transparent;
-  color: var(--gold);
-  border: 1px solid var(--gold-border);
-  font-family: var(--font-mono);
-  font-weight: 700;
-  padding: 4px 10px;
-  border-radius: 4px;
-  font-size: 0.8rem;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
+.brand-wordmark {
+  font-family: var(--font-serif);
+  font-size: 1.9rem;
+  font-weight: 600;
+  color: #ffffff;
+  letter-spacing: -0.02em;
+  line-height: 1;
+  white-space: nowrap;
+}
+
+.brand-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  padding-left: 18px;
+  border-left: 1px solid var(--border);
 }
 
 .brand h1 {
-  font-family: var(--font-serif);
-  font-size: 1.55rem;
+  font-family: var(--font-sans);
+  font-size: 0.95rem;
   font-weight: 600;
-  letter-spacing: -0.01em;
-  color: #ffffff;
-  line-height: 1.2;
+  letter-spacing: 0.01em;
+  color: var(--text-secondary);
+  line-height: 1.3;
 }
 
-.brand-sub { font-size: 0.78rem; color: var(--muted); font-weight: 400; margin-top: 2px; }
+.brand-sub { font-size: 0.76rem; color: var(--muted); font-weight: 400; }
 
 .topbar-right {
   display: flex;
@@ -201,32 +206,34 @@ a:hover { color: #7dd3fc; text-decoration: underline; }
 
 .hero-content p { color: var(--text-secondary); font-size: 0.96rem; line-height: 1.68; max-width: 780px; }
 
-.stat-pills { display: grid; grid-template-columns: repeat(2, 1fr); gap: 16px; }
+.stat-pills {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px 24px;
+}
 
 .stat-pill {
-  background: var(--bg-elev);
-  border: 1px solid var(--border-subtle);
-  border-radius: 6px;
-  padding: 16px 20px;
+  border-top: 2px solid var(--border-strong);
+  padding-top: 10px;
   text-align: left;
 }
 
 .stat-pill .num {
-  font-family: var(--font-mono);
-  font-size: 1.65rem;
-  font-weight: 700;
-  color: var(--text);
-  line-height: 1.1;
+  font-family: var(--font-serif);
+  font-size: 2rem;
+  font-weight: 600;
+  color: #ffffff;
+  line-height: 1;
   letter-spacing: -0.02em;
 }
 
 .stat-pill .lbl {
-  font-size: 0.76rem;
+  font-size: 0.72rem;
   text-transform: uppercase;
-  letter-spacing: 0.06em;
+  letter-spacing: 0.07em;
   color: var(--muted);
   font-weight: 600;
-  margin-top: 6px;
+  margin-top: 4px;
 }
 
 /* FEATURED QUICK JUMP CARDS */

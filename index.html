@@ -41,10 +41,10 @@
   <header class="topbar">
     <div class="topbar-inner">
       <div class="brand">
-        <span class="brand-badge">POLITICAL PAYOLA</span>
-        <div>
-          <h1>Verified Multi-Source Civic Atlas (1981–2026)</h1>
-          <div class="brand-sub">Nonpartisan Empirical Public Intelligence · Peer-Reviewed Medical, Academic &amp; Archival Data · Red = Republican · Blue = Democrat</div>
+        <span class="brand-wordmark">Political Payola</span>
+        <div class="brand-meta">
+          <h1>Verified Multi-Source Civic Atlas</h1>
+          <div class="brand-sub">Nonpartisan Empirical Public Intelligence · 1981–2026 · Peer-Reviewed Medical, Academic &amp; Archival Data</div>
         </div>
       </div>
       <div class="topbar-right">
@@ -75,13 +75,13 @@
     <section class="hero-banner">
       <div class="hero-content">
         <div class="hero-kicker">INVESTIGATIVE CIVIC LEDGER · 1981 TO PRESENT</div>
-        <h2>No Spin. Peer-Reviewed Scientific, Medical &amp; Economic Evidence.</h2>
-        <p>Built to institutional standards exceeding USAFacts, OpenSecrets, GovTrack, and Ballotpedia: every statistic cross-references peer-reviewed journals (<em>JAMA Network Open</em>, <em>NEJM</em>, <em>AJPM</em>, <em>Presidential Studies Quarterly</em>, <em>Journal of Labor Economics</em>) and nonpartisan research institutions (Pew, KFF, NBER, PIIE, CHDS, Rutgers CAWP, Brown Costs of War) alongside official roll-call records—never relying on single-source government claims alone.</p>
+        <h2>Money in politics. Laws on the table. Votes on the record.</h2>
+        <p>Every statistic cross-references peer-reviewed journals (<em>JAMA Network Open</em>, <em>NEJM</em>, <em>AJPM</em>, <em>Presidential Studies Quarterly</em>, <em>Journal of Labor Economics</em>) and nonpartisan research institutions (Pew, KFF, NBER, PIIE, CHDS, Rutgers CAWP, Brown Costs of War) alongside official roll-call records.</p>
       </div>
       <div class="stat-pills">
-        <div class="stat-pill"><div class="num">5,111</div><div class="lbl">Verified Records</div></div>
-        <div class="stat-pill"><div class="num">24</div><div class="lbl">Validated Modules</div></div>
-        <div class="stat-pill"><div class="num">539</div><div class="lbl">Lawmaker Portraits</div></div>
+        <div class="stat-pill"><div class="num">5,111</div><div class="lbl">Verified records</div></div>
+        <div class="stat-pill"><div class="num">24</div><div class="lbl">Validated modules</div></div>
+        <div class="stat-pill"><div class="num">539</div><div class="lbl">Lawmaker portraits</div></div>
         <div class="stat-pill"><div class="num">1981–2026</div><div class="lbl">Reagan to 119th Congress</div></div>
       </div>
     </section>
@@ -607,20 +607,8 @@
     var revMap = {};
     Object.keys(esMap).forEach(function(k){ revMap[esMap[k]] = k; });
 
-    var bar = document.createElement('aside');
-    bar.setAttribute('aria-label', 'Language selector / Selector de idioma');
-    bar.style.cssText = 'position:fixed;bottom:18px;left:18px;z-index:9999;background:#0f172a;color:#fff;padding:6px 11px;border-radius:6px;box-shadow:0 6px 18px rgba(0,0,0,0.4);font-size:0.76rem;font-weight:600;display:flex;align-items:center;gap:6px;border:1px solid #334155;';
-    var btnEn = document.createElement('button');
-    btnEn.type = 'button';
-    btnEn.textContent = 'EN';
-    btnEn.style.cssText = 'background:#f59e0b;color:#0f172a;border:none;border-radius:999px;padding:4px 10px;cursor:pointer;font-weight:800;font-size:0.78rem;';
-    var btnEs = document.createElement('button');
-    btnEs.type = 'button';
-    btnEs.textContent = 'Español (ES)';
-    btnEs.style.cssText = 'background:transparent;color:#fde68a;border:1px solid #fde68a;border-radius:999px;padding:4px 10px;cursor:pointer;font-weight:800;font-size:0.78rem;';
-    bar.appendChild(btnEn);
-    bar.appendChild(btnEs);
-    document.body.appendChild(bar);
+    var btnEn = document.querySelector('.lang-btn[data-lang="en"]');
+    var btnEs = document.querySelector('.lang-btn[data-lang="es"]');
 
     function applyLang(lang) {
       document.documentElement.setAttribute('data-lang', lang);
@@ -634,17 +622,15 @@
       var sIn = document.getElementById('global-search');
       if (sIn) {
         sIn.placeholder = lang === 'es'
-          ? 'Buscar en los 5,050 registros verificados (ej. Reagan, Oklahoma, JAMA, Medicaid)...'
-          : 'Search all 5,050 verified records (e.g. Reagan, Oklahoma, JAMA, Medicaid)...';
+          ? 'Buscar en los 5,111 registros verificados (ej. Reagan, Oklahoma, JAMA, Medicaid)...'
+          : 'Search 5,111 verified records (e.g. Medicaid, Overdraft, SAIPE, Reagan)...';
       }
-      btnEn.style.background = lang === 'en' ? '#f59e0b' : 'transparent';
-      btnEn.style.color = lang === 'en' ? '#0f172a' : '#fff';
-      btnEs.style.background = lang === 'es' ? '#f59e0b' : 'transparent';
-      btnEs.style.color = lang === 'es' ? '#0f172a' : '#fde68a';
+      if (btnEn) btnEn.classList.toggle('active', lang === 'en');
+      if (btnEs) btnEs.classList.toggle('active', lang === 'es');
       try { localStorage.setItem('pp_lang', lang); } catch(e) {}
     }
-    btnEn.addEventListener('click', function() { applyLang('en'); });
-    btnEs.addEventListener('click', function() { applyLang('es'); });
+    if (btnEn) btnEn.addEventListener('click', function(e) { e.preventDefault(); applyLang('en'); });
+    if (btnEs) btnEs.addEventListener('click', function(e) { e.preventDefault(); applyLang('es'); });
     var qLang = new URLSearchParams(location.search).get('lang');
     var saved = null;
     try { saved = localStorage.getItem('pp_lang'); } catch(e) {}
