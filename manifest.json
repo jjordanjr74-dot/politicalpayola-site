@@ -1,16 +1,44 @@
 {
-  "name": "Political Payola \u2014 Verified Multi-Source Civic Atlas",
-  "short_name": "PoliticalPayola",
-  "description": "What both parties did since 1981, what it cost, who voted for it, and who paid them \u2014 multi-sourced to scientific, medical, and academic research.",
-  "start_url": "./index.html",
+  "id": "/",
+  "name": "Political Payola \u2014 Verified Civic Money Atlas",
+  "short_name": "Political Payola",
+  "description": "Follow the money in US politics: 5,050+ primary-sourced FEC, Senate LDA, and stock trade records.",
+  "start_url": "/",
+  "scope": "/",
   "display": "standalone",
-  "background_color": "#0b1020",
-  "theme_color": "#f59e0b",
+  "display_override": [
+    "standalone",
+    "minimal-ui"
+  ],
+  "orientation": "portrait",
+  "background_color": "#0a0e17",
+  "theme_color": "#d4af37",
+  "lang": "en-US",
+  "dir": "ltr",
   "icons": [
     {
-      "src": "assets/congress_photo_comparison.png",
+      "src": "/assets/icons/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-512.png",
       "sizes": "512x512",
-      "type": "image/png"
+      "type": "image/png",
+      "purpose": "any"
+    },
+    {
+      "src": "/assets/icons/icon-maskable-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/icons/icon-maskable-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
     }
   ]
 }

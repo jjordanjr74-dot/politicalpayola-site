@@ -1,0 +1,14 @@
+[
+  {
+    "relation": [
+      "delegate_permission/common.handle_all_urls"
+    ],
+    "target": {
+      "namespace": "android_app",
+      "package_name": "com.politicalpayola.app",
+      "sha256_cert_fingerprints": [
+        "34:40:67:C0:9D:F2:0F:AC:BB:2A:BF:4E:97:92:B3:E0:B9:43:52:31:CD:6C:18:EC:E1:CD:D8:DA:A5:B7:1D:35"
+      ]
+    }
+  }
+]
