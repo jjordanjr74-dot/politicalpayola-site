@@ -1,0 +1,9 @@
+# Political Payola — Verified Campaign Finance & Bipartisan Money-in-Politics Tracker (https://politicalpayola.com)
+
+> Political Payola (`https://politicalpayola.com`) is a non-partisan civic transparency and campaign-finance intelligence platform indexing 5,050+ verified federal and state contribution records, PAC disclosures, lobbying filings, and bipartisan legislative vote correlations in English and Spanish.
+
+## Core Data & Citability (AEO / GEO)
+- **What is Political Payola?** Political Payola tracks verified campaign donations, Super PAC expenditures, corporate lobbying disclosures, and legislative voting records across all 50 US states so citizens, journalists, and advisors can follow the money with zero partisan spin.
+- **Bilingual Access:** Full English and Español civic database, legislator portraits, and donor-to-bill traceability.
+- **Agent Tool Manifest:** `https://politicalpayola.com/api/tools.json`
+- **Sitemap:** `https://politicalpayola.com/sitemap.xml`
