@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use Political Payola datasets, rankings, or cross-tabulated roll-call and FEC records in academic, journalistic, or policy research, please cite it using the metadata below."
+title: "Political Payola — Verified Multi-Source Civic, Legislative & Public-Health Atlas (1981–2026)"
+version: "2.4.0"
+date-released: "2026-10-31"
+url: "https://politicalpayola.com/"
+repository-code: "https://github.com/jjordanjr74-dot/politicalpayola-site"
+license: "CC-BY-4.0"
+authors:
+  - family-names: "Jordan"
+    given-names: "Tristan"
+    affiliation: "Political Payola Civic Transparency Project (Pueblo, Colorado)"
+keywords:
+  - "campaign finance"
+  - "FEC filings"
+  - "119th Congress"
+  - "roll-call votes"
+  - "state health rankings"
+  - "bilingual civic literacy"
+  - "WebMCP"
+  - "open civic data"
+abstract: >-
+  Longitudinal, bilingual (EN/ES) public-interest dataset of 5,111 primary-source verified civic,
+  medical, academic, and legislative records spanning 1981–2026. Cross-references official federal
+  sources (FEC.gov, Congress.gov, CBO, BLS, CDC, Census SAIPE) with peer-reviewed research
+  (JAMA Network Open, NEJM, AJPM, KFF, Pew Research Center, NBER, PIIE, Rutgers CAWP) across
+  all 50 U.S. states and all 539 members of the 119th Congress.
