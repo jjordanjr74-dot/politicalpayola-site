@@ -632,9 +632,12 @@
               ${renderVoteBar(b.senate_vote, 'U.S. Senate Vote')}
             </div>
 
-            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;padding-top:8px;border-top:1px solid rgba(148,163,184,0.18)">
+            <div style="display:flex;justify-content:space-between;align-items:center;margin-top:12px;padding-top:8px;border-top:1px solid rgba(148,163,184,0.18);gap:8px;flex-wrap:wrap">
               <span style="font-size:0.76rem;color:var(--muted)">Source: Library of Congress / CBO</span>
-              <a class="chip-src" href="${esc(b.bill_url || b.source.url)}" target="_blank" rel="noopener">Official Record ↗</a>
+              <div style="display:flex;gap:6px;align-items:center">
+                <a class="chip-src" href="https://buy.stripe.com/eVq5kwdlxeTh0H2e8V08g1h" target="_blank" rel="noopener" style="background:#fef3c7;color:#92400e;border-color:#f59e0b;font-weight:700">Unbought Alert Pass ($10/mo) ↗</a>
+                <a class="chip-src" href="${esc(b.bill_url || b.source.url)}" target="_blank" rel="noopener">Official Record ↗</a>
+              </div>
             </div>
           </div>`;
       }).join('');
@@ -731,6 +734,7 @@
               ${m.contact_form ? `<a href="${esc(m.contact_form)}" target="_blank" rel="noopener">Contact ↗</a>` : ''}
               ${m.fec_candidate_url ? `<a href="${esc(m.fec_candidate_url)}" target="_blank" rel="noopener">FEC $ ↗</a>` : ''}
             </div>
+            <a href="https://buy.stripe.com/dRm5kwepBeThdtOd4R08g1i" target="_blank" rel="noopener" style="margin-top:4px;display:block;text-align:center;padding:5px 8px;border-radius:4px;background:#fef3c7;color:#92400e;border:1px solid #f59e0b;font-size:0.71rem;font-weight:800;text-decoration:none">★ Oppo Brief &amp; CSV ($99/mo)</a>
           </div>
         </div>`;
       }).join('');

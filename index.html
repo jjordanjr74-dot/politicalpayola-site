@@ -34,7 +34,7 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css?v=20261020d">
+  <link rel="stylesheet" href="styles.css?v=20261031a">
 </head>
 <body>
   <!-- PROPUBLICA / BLOOMBERG EDITORIAL MASTHEAD -->
@@ -66,6 +66,7 @@
       <button class="tab-btn" data-tab="congress">U.S. Demographics &amp; Congress</button>
       <button class="tab-btn" data-tab="states">50 States Data Explorer</button>
       <button class="tab-btn" data-tab="scandals">PAC Money &amp; Scandals</button>
+      <button class="tab-btn" data-tab="pro" style="color:var(--gold);font-weight:800">★ Pro Data, API &amp; Dossiers</button>
     </nav>
   </header>
 
@@ -102,6 +103,11 @@
         <div class="jb-kicker">OFFICIAL FEC 2024–2026 CYCLE FILINGS</div>
         <div class="jb-title">Top 25 PAC &amp; Corporate Money Recipients ➔</div>
         <div class="jb-sub">Ranked highest-to-lowest with verified FEC committee IDs, party affiliation, and exact percentage of total campaign funds.</div>
+      </button>
+      <button class="jump-btn" data-goto-tab="pro" data-goto-id="pro-pricing-top" style="border-color:rgba(245,158,11,0.55);background:linear-gradient(135deg,#fffbeb 0%,#fef3c7 100%);color:#1e293b">
+        <div class="jb-kicker" style="color:#b45309">PRO DATA · WEBMCP API · STATION-LEGAL DOSSIERS</div>
+        <div class="jb-title" style="color:#0f172a">Oppo-in-a-Box, API Keys &amp; Custom Briefs ➔</div>
+        <div class="jb-sub" style="color:#334155">Instant bulk CSV/JSON downloads, union/newsroom embed widgets, TV-ad legal backup binders &amp; unbought reader memberships.</div>
       </button>
     </div>
 
@@ -567,10 +573,120 @@
         </table>
       </div>
     </section>
+
+    <!-- PANEL 6: PRO DATA, API, EMBED WIDGETS, DOSSIERS & UNBOUGHT READER PASS -->
+    <section id="panel-pro" class="section-panel">
+      <div id="pro-pricing-top" class="pro-editorial-shell">
+        <div class="pro-editorial-hero">
+          <div>
+            <div class="pro-kicker">POLITICAL PAYOLA PRO · CAMPAIGN WAR-ROOM, WEBMCP API &amp; RESEARCH DESK</div>
+            <h2>Turn 5,111 Primary-Source Receipts Into Instant Campaign, Union &amp; Newsroom Firepower.</h2>
+            <p>Corporate PACs spent over $4.2 Billion lobbying Congress this cycle. Political Payola takes $0 from politicians or corporate lobbyists. Every statistic links 1:1 to official <code>FEC.gov</code> committee filings, <code>Congress.gov</code> roll-call votes, <code>CBO</code> cost scores, and peer-reviewed journals (<em>JAMA</em>, <em>NEJM</em>, <em>KFF</em>, <em>NBER</em>) — giving campaigns, unions, journalists, and citizens station-legal proof in seconds.</p>
+          </div>
+          <div class="pro-trust-badge">
+            <div class="ptb-title">100% FEC-Compliant Direct Data &amp; Research</div>
+            <div class="ptb-sub">All memberships, API keys, widget licenses, and custom research dossiers are direct software &amp; publication purchases from Political Payola (zero candidate conduit fees under 11 CFR &sect; 110.6).</div>
+          </div>
+        </div>
+
+        <!-- 4 LIVE STRIPE PRICING TIERS -->
+        <div class="pro-tier-grid">
+          <article class="pro-tier-card">
+            <div class="pt-badge">LANE 01 · READER &amp; INSIDER</div>
+            <h3>Unbought &amp; Ad-Free Supporter Pass</h3>
+            <div class="pt-price">$10<span>/month</span></div>
+            <p class="pt-desc">Keep all 5,111 civic records free from corporate lobbyist ads and unlock <em>The Payola Ledger</em> weekly roll-call &amp; dark-money insider briefing.</p>
+            <ul class="pt-list">
+              <li>Weekly "Who Got Paid &amp; How They Voted" insider email digest</li>
+              <li>Downloadable 1-page printable district &amp; state scorecards</li>
+              <li>Early access to quarterly FEC PAC &amp; dark-money updates</li>
+              <li>100% independent — zero corporate or candidate sponsors</li>
+            </ul>
+            <a class="pt-cta pt-cta-outline" href="https://buy.stripe.com/eVq5kwdlxeTh0H2e8V08g1h" target="_blank" rel="noopener">Become a Supporter ($10/mo) ➔</a>
+          </article>
+
+          <article class="pro-tier-card pro-tier-featured">
+            <div class="pt-badge pt-badge-gold">MOST POPULAR · CAMPAIGNS, STAFFERS &amp; AI/API</div>
+            <h3>Oppo-in-a-Box Pro &amp; WebMCP API</h3>
+            <div class="pt-price">$99<span>/month</span></div>
+            <p class="pt-desc">Built for campaign staffers, political advisors, investigative journalists, and AI developers who need instant bulk exports and donor-to-vote cross-tabs.</p>
+            <ul class="pt-list">
+              <li>Unlimited 1-click bulk CSV &amp; JSON downloads across all 24 modules</li>
+              <li>10,000 metered WebMCP &amp; REST API calls/mo (<code>/api/tools.json</code>)</li>
+              <li>All 539 119th Congress lawmaker vulnerability &amp; PAC cross-tabs</li>
+              <li>50-state × 25+ peer-reviewed medical &amp; economic rankings dataset</li>
+            </ul>
+            <a class="pt-cta pt-cta-gold" href="https://buy.stripe.com/dRm5kwepBeThdtOd4R08g1i" target="_blank" rel="noopener">Unlock Pro Data &amp; API ($99/mo) ➔</a>
+          </article>
+
+          <article class="pro-tier-card">
+            <div class="pt-badge">LANE 03 · AGENCIES, UNIONS &amp; NEWSROOMS</div>
+            <h3>War-Room Agency &amp; White-Label Widgets</h3>
+            <div class="pt-price">$499<span>/month</span></div>
+            <p class="pt-desc">For political consulting firms, labor unions (<code>SEIU</code>, <code>NEA</code>, <code>AFT</code>, <code>IBEW</code>, <code>IAFF</code>, <code>AFSCME</code>), and newsrooms embedding live scorecards.</p>
+            <ul class="pt-list">
+              <li>White-label PDF &amp; slide opposition briefs for up to 5 team seats</li>
+              <li>Embeddable <code>&lt;iframe&gt;</code> Union Legislative Scorecards &amp; 50-State Maps</li>
+              <li>Bilingual (EN/ES) toggle &amp; custom organization branding</li>
+              <li>Unlimited WebMCP API queries + real-time FEC filing webhooks</li>
+            </ul>
+            <a class="pt-cta pt-cta-dark" href="https://buy.stripe.com/6oU6oAcht26vfBW8OB08g1j" target="_blank" rel="noopener">Launch War-Room License ($499/mo) ➔</a>
+          </article>
+
+          <article class="pro-tier-card">
+            <div class="pt-badge">LANE 04 · TURNKEY BROADCAST LEGAL BACKUP</div>
+            <h3>Custom Station-Legal TV Ad &amp; District Dossier</h3>
+            <div class="pt-price">$1,500<span>/dossier</span></div>
+            <p class="pt-desc">Every TV and streaming attack ad requires a line-by-line primary-source backup binder for station legal clearance. We deliver it in 48 hours.</p>
+            <ul class="pt-list">
+              <li>15–25 page citation-locked District Impact &amp; Opposition Dossier</li>
+              <li>Every claim pinned to FEC committee IDs, roll-call votes &amp; CBO/JAMA</li>
+              <li>Formatted for broadcast TV legal clearance &amp; debate prep binders</li>
+              <li>Includes custom Kitchen-Table Cost impact breakdown for your district</li>
+            </ul>
+            <a class="pt-cta pt-cta-dark" href="https://buy.stripe.com/cNi6oAftF8uTblGc0N08g1k" target="_blank" rel="noopener">Order Custom Dossier ($1,500) ➔</a>
+          </article>
+        </div>
+
+        <!-- UNION / NEWSROOM EMBED WIDGET GENERATOR + PAYOLA LEDGER SIGNUP -->
+        <div class="pro-split-row">
+          <div class="pro-box">
+            <div class="pro-kicker" style="color:#0f172a">WHITE-LABEL EMBED PREVIEW · UNIONS, ADVOCACY &amp; MEDIA</div>
+            <h3>Embed Live 50-State Rankings &amp; PAC Scorecards on Your Site</h3>
+            <p>Drop our bilingual (EN/ES), citation-locked civic modules directly into your union portal, campaign site, or local newsroom article with one line of HTML:</p>
+            <pre class="pro-code-snippet">&lt;iframe src="https://politicalpayola.com/?embed=top25-pac&amp;lang=en" width="100%" height="540" style="border:1px solid #cbd5e1;border-radius:8px;" title="Political Payola Verified PAC &amp; Roll-Call Scorecard"&gt;&lt;/iframe&gt;</pre>
+            <div style="display:flex;gap:10px;flex-wrap:wrap;margin-top:12px">
+              <a class="pt-cta pt-cta-gold" style="width:auto;padding:10px 18px" href="https://buy.stripe.com/6oU6oAcht26vfBW8OB08g1j" target="_blank" rel="noopener">License Commercial Embed ($499/mo)</a>
+              <a class="pt-cta pt-cta-outline" style="width:auto;padding:10px 18px" href="/api/tools.json" target="_blank" rel="noopener">Inspect WebMCP /api/tools.json ↗</a>
+            </div>
+          </div>
+
+          <div class="pro-box">
+            <div class="pro-kicker" style="color:#b45309">THE PAYOLA LEDGER · WEEKLY BRIEFING &amp; VOTER ACTION ALERTS</div>
+            <h3>Get "Who Got Paid &amp; How They Voted" Every Week</h3>
+            <p>Join Capitol Hill staffers, union organizers, journalists, and voters receiving our weekly breakdown of the Top 3 Kitchen-Table Bills &amp; PAC Money Flows — or inquire about B2B newsletter sponsorships and civic-tech foundation grants.</p>
+            <form id="payola-ledger-form" class="pro-signup-form" onsubmit="event.preventDefault();var em=document.getElementById('pl-email').value;var st=document.getElementById('pl-state').value;var rl=document.getElementById('pl-role').value;try{var L=JSON.parse(localStorage.getItem('pp_ledger_leads')||'[]');L.push({email:em,state:st,role:rl,ts:new Date().toISOString()});localStorage.setItem('pp_ledger_leads',JSON.stringify(L));}catch(e){}document.getElementById('pl-msg').style.display='block';this.reset();">
+              <div style="display:grid;grid-template-columns:1fr 1fr;gap:10px">
+                <input id="pl-email" type="email" required placeholder="Your email address..." class="pro-input">
+                <input id="pl-state" type="text" required placeholder="State or District (e.g. CO-03)" class="pro-input">
+              </div>
+              <select id="pl-role" class="pro-input" style="margin-top:10px">
+                <option value="voter">Engaged Citizen / Voter (Free Weekly Digest + District Alerts)</option>
+                <option value="campaign">Campaign Staffer / Political Consultant (Oppo-in-a-Box Demo)</option>
+                <option value="union">Labor Union / Advocacy Coalition (Embed Scorecard Inquiry)</option>
+                <option value="sponsor">Newsletter Sponsor / Foundation Grant Officer ($1,500+ Blast / Grant)</option>
+              </select>
+              <button type="submit" class="pt-cta pt-cta-gold" style="margin-top:10px;border:none;cursor:pointer">Subscribe &amp; Request Instant Access ➔</button>
+              <div id="pl-msg" style="display:none;margin-top:8px;font-weight:700;color:#15803d;font-size:0.88rem">✓ You're on The Payola Ledger list! Check out our Pro &amp; Supporter passes above for instant CSV/API downloads.</div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
   </main>
 
-  <script src="data_bundle.js?v=20261020c"></script>
-  <script src="app.js?v=20261020c"></script>
+  <script src="data_bundle.js?v=20261031a"></script>
+  <script src="app.js?v=20261031a"></script>
   <script>
   (function initPayolaBilingualAndWebMCP() {
     if (navigator.modelContext && typeof navigator.modelContext.registerTool === 'function') {
@@ -582,6 +698,13 @@
     }
     var esMap = {
       'Verified Multi-Source Civic Atlas (1981–2026)': 'Atlas Cívico Verificado de Múltiples Fuentes (1981–2026)',
+      '★ Pro Data, API & Dossiers': '★ Datos Pro, API y Dossiers',
+      'Oppo-in-a-Box, API Keys & Custom Briefs ➔': 'Oppo-in-a-Box, Claves API e Informes a Medida ➔',
+      'Turn 5,111 Primary-Source Receipts Into Instant Campaign, Union & Newsroom Firepower.': 'Convierte 5,111 Registros Oficiales en Evidencia Instantánea para Campañas, Sindicatos y Medios.',
+      'Unbought & Ad-Free Supporter Pass': 'Pase de Lector Independiente y Sin Anuncios',
+      'Oppo-in-a-Box Pro & WebMCP API': 'Oppo-in-a-Box Pro y API WebMCP',
+      'War-Room Agency & White-Label Widgets': 'Licencia de Agencia War-Room y Widgets de Marca Blanca',
+      'Custom Station-Legal TV Ad & District Dossier': 'Dossier Legal para Anuncios de TV e Impacto de Distrito',
       'Credible Scientific, Medical & Academic Sources First · Every Number One-Click Checkable · Red = Republican · Blue = Democrat': 'Fuentes Científicas, Médicas y Académicas Primero · Cada Dato Verificable con Un Clic · Rojo = Republicano · Azul = Demócrata',
       '1. Spotlight Rankings & Vacations': '1. Rankings Destacados y Vacaciones Presidenciales',
       '2. Congress Race & Gender Photo Wall (539)': '2. Muro Fotográfico de Raza y Género del Congreso (539)',

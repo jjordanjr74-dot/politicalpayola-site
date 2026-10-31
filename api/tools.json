@@ -1,16 +1,16 @@
 {
-  "schema_version": "webmcp-1.0",
+  "schema_version": "webmcp-1.1",
   "site": "https://politicalpayola.com",
   "name": "Political Payola — Verified Multi-Source Civic Atlas (1981–2026)",
   "bilingual_languages": [
     "en",
     "es"
   ],
-  "description": "5,050 verified records across 21 modules (presidential vacations, 539 119th Congress portraits & demographics, 50-state x 25+ peer-reviewed medical/academic/economic metrics, 36 landmark federal laws since 1981, formal corruption scandals, and top-20 labor/police/firefighter union PACs).",
+  "description": "5,111 verified records across 24 modules (presidential vacations, 539 119th Congress portraits & demographics, 50-state x 25+ peer-reviewed medical/academic/economic metrics, 36 landmark federal laws since 1981, formal corruption scandals, and top-20 labor/police/firefighter union PACs), plus Oppo-in-a-Box Pro Data, WebMCP API, White-Label Union/Newsroom Embed Widgets, and Custom Station-Legal TV Ad Dossiers.",
   "tools": [
     {
       "name": "search_civic_records",
-      "description": "Search all 5,050 multi-sourced civic, medical, academic, and legislative records by keyword, state, lawmaker, president, or journal.",
+      "description": "Search all 5,111 multi-sourced civic, medical, academic, and legislative records by keyword, state, lawmaker, president, or journal.",
       "input_schema": {
         "type": "object",
         "properties": {
@@ -75,6 +75,26 @@
         "required": [
           "metric_id"
         ],
+        "additionalProperties": false
+      }
+    },
+    {
+      "name": "get_pro_subscription_and_dossier_plans",
+      "description": "Return Political Payola commercial licensing tiers, live Stripe checkout URLs, WebMCP API access plans, union/newsroom white-label embed widgets, and custom station-legal TV ad backup dossiers.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "tier": {
+            "type": "string",
+            "enum": [
+              "ALL",
+              "supporter_10",
+              "pro_api_99",
+              "warroom_499",
+              "dossier_1500"
+            ]
+          }
+        },
         "additionalProperties": false
       }
     }
