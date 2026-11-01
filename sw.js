@@ -1,4 +1,4 @@
-const CACHE_NAME = 'payola-v4';
+const CACHE_NAME = 'payola-v5';
 const ASSETS = [
   './',
   './index.html',

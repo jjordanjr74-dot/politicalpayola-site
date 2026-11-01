@@ -1016,7 +1016,7 @@
     "period": "2024-2026",
     "geo": "US",
     "source": {
-      "url": "https://www.pewresearch.org/journalism/2021/05/12/public-trust-in-news-organizations/",
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/network-news/",
       "tier": "A",
       "publisher": "Pew Research Center — Public Trust in News Organizations",
       "title": "Cross-Partisan Trust in International & Public Broadcasters",
@@ -1733,6 +1733,123 @@
       "by": "sheba",
       "at": "2026-11-01",
       "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_21_propublica",
+    "module": "media_bias_top20",
+    "rank": 21,
+    "name": "ProPublica",
+    "medium": "Nonprofit Investigative Newsroom & Digital",
+    "format_badge": "Nonprofit / Investigative Digital",
+    "ownership": "Pro Publica, Inc. — donor- and foundation-funded nonprofit newsroom",
+    "hq": "New York, NY",
+    "homepage": "https://www.propublica.org/",
+    "rss_url": "https://www.propublica.org/feed/",
+    "lean_category": "Lean Left",
+    "party_alignment": "Nonpartisan newsroom (endorses no party); AllSides community readership skews left",
+    "party_code": "C",
+    "lean_score": -24,
+    "factual_score": 92,
+    "factual_rating": "Very High Factual — document-database driven investigations",
+    "allsides_rating": "Lean Left",
+    "ad_fontes_zone": "Not cross-rated this cycle — AllSides rating + Blind Survey used",
+    "pew_audience_split": "AllSides Blind Survey community ratings: Left 55.2%, Center 28.9%, Right 15.9% (531 reader ratings)",
+    "plain_english": "ProPublica is a Pulitzer-winning nonprofit newsroom that spends months on single investigations — opioid money, prisoner treatment, tax-dodging billionaires, and officials whose side deals help companies they once regulated. It endorses no candidate and publishes its evidence as downloadable databases. Its story selection and framing lean left on accountability topics, and its reader community rates it clearly left of center.",
+    "voter_impact_translation": "This is the outlet that turns public records into tools voters can actually use: searchable detainee case files, follow-the-money charts, and conflict-of-interest papers on both parties' officials — the same evidence-first playbook this site applies to payola.",
+    "framing_signature": "Long-form document investigations, public-database releases, and accountability stories about money and power that mainstream desks drop after one day.",
+    "blindspot_warning": "Story selection skews toward harms affecting workers, tenants, and patients; recent politics output concentrates on Republican officeholders, with Democratic officials and legacy media receiving less of the same forensic treatment.",
+    "scraped_output": {
+      "scraped_count": 10,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [
+        "Election-integrity scrutiny concentrated on Trump-era Republican actions",
+        "Immigration enforcement and detainee-case accountability focus",
+        "Corporate-capture framing of carbon-capture and recycling policy"
+      ],
+      "detected_right_signals": [],
+      "observed_output_lean": "Left-leaning accountability framing",
+      "sample_headlines": [
+        {
+          "title": "Trump Has Tried to Exert More Control Over Elections. Here Are the Key Findings From Our Reporting.",
+          "url": "https://www.propublica.org/article/midterm-election-propublica-reporting-findings",
+          "published": "Fri, 30 Oct 2026 15:10:00 +000"
+        },
+        {
+          "title": "How a Secret Vote by U.N. Scientists Legitimized Carbon Capture and Skewed Decades of Climate Policy",
+          "url": "https://www.propublica.org/article/carbon-capture-storage-fossil-fuel-sally-benson",
+          "published": "Fri, 30 Oct 2026 10:00:00 +000"
+        },
+        {
+          "title": "Federal and State Officials Ramp Up Scrutiny of DraftKings, Other Sports Betting Apps",
+          "url": "https://www.propublica.org/article/sports-betting-impact-louisiana-ohio-congress",
+          "published": "Fri, 30 Oct 2026 09:00:00 +000"
+        },
+        {
+          "title": "Search More Than 500 Cases of U.S. Citizens Detained by Immigration Agents",
+          "url": "https://projects.propublica.org/american-citizens-detained-dhs-civil-rights/list",
+          "published": "Thu, 29 Oct 2026 17:50:00 +000"
+        },
+        {
+          "title": "Detroit Could Block Billionaire-Owned Concrete Plant From Further Neighborhood Expansion",
+          "url": "https://www.propublica.org/article/kronos-moroun-cadillac-heights-detroit-concrete-impact",
+          "published": "Thu, 29 Oct 2026 10:00:00 +000"
+        },
+        {
+          "title": "Top U.S. Health Official Backed a Medication Policy Shift That Benefited a Company She Has Stock In",
+          "url": "https://www.propublica.org/article/hhs-alicia-jackson-menopause-treatment-policy",
+          "published": "Thu, 29 Oct 2026 09:30:00 +000"
+        },
+        {
+          "title": "“Peak Greenwashing”: Two Bills in Congress Endorse Misleading Recycling Claims",
+          "url": "https://www.propublica.org/article/plastics-industry-recycling-legislation-congress",
+          "published": "Thu, 29 Oct 2026 09:00:00 +000"
+        },
+        {
+          "title": "Un policía de Texas se apuntó para ayudar al ICE a deportar a sus vecinos. Eso partió al pueblo en dos.",
+          "url": "https://www.propublica.org/article/deportaciones-ingram-texas-287g-jaron-alexander",
+          "published": "Wed, 28 Oct 2026 19:45:00 +000"
+        },
+        {
+          "title": "Meet ProPublica’s 2026 Class of Emerging Reporters",
+          "url": "https://www.propublica.org/article/propublica-emerging-reporters-2026",
+          "published": "Wed, 28 Oct 2026 15:45:00 +000"
+        },
+        {
+          "title": "How Cleta Mitchell Turned Trump’s “Big Lie” Into a Movement",
+          "url": "https://www.propublica.org/article/cleta-mitchell-elections-trump",
+          "published": "Wed, 28 Oct 2026 09:00:00 +000"
+        }
+      ]
+    },
+    "metric": "#21 ProPublica (Nonprofit Investigative Newsroom & Digital) — Lean Left (Nonpartisan newsroom; readership skews left)",
+    "value": -24,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/digital-news/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Digital News Fact Sheet",
+      "title": "Digital News Fact Sheet (medium anchor); bias rating: AllSides 'Lean Left' (confirmed Apr 2023)",
+      "accessed": "2026-11-01",
+      "manual_check": true
+    },
+    "secondary_sources": [
+      {
+        "url": "https://web.archive.org/web/2026/https://www.allsides.com/news-source/propublica-media-bias",
+        "name": null
+      },
+      {
+        "url": "https://www.propublica.org/feed/",
+        "name": null
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "AllSides page fetched via Internet Archive snapshot 2026-11-01 (Lean Left, blind survey 55.2/28.9/15.9); 10 headlines scraped from propublica.org feed same day"
     }
   }
 ]

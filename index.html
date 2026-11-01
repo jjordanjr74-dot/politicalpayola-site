@@ -94,7 +94,7 @@
       <button class="tab-btn" data-tab="congress">U.S. Demographics &amp; Congress</button>
       <button class="tab-btn" data-tab="states">50 States Data Explorer</button>
       <button class="tab-btn" data-tab="scandals">Corruption Archive, PAC Money &amp; Scandals</button>
-      <button class="tab-btn" data-tab="media" style="color:#0369a1;font-weight:800">📰 Top 20 News Outlets &amp; Bias Radar</button>
+      <button class="tab-btn" data-tab="media" style="color:#0369a1;font-weight:800">📰 Top 21 News Outlets &amp; Bias Radar</button>
       <button class="tab-btn" data-tab="pro" style="color:var(--gold);font-weight:800">★ Pro Data, API &amp; Dossiers</button>
     </nav>
   </header>
@@ -112,7 +112,7 @@
         <div class="stat-pill"><div class="num">5,308</div><div class="lbl">Verified records</div></div>
         <div class="stat-pill"><div class="num">26</div><div class="lbl">Validated modules</div></div>
         <div class="stat-pill"><div class="num">539</div><div class="lbl">Lawmaker portraits</div></div>
-        <div class="stat-pill"><div class="num">Top 20</div><div class="lbl">News Outlets Scraped</div></div>
+        <div class="stat-pill"><div class="num">Top 21</div><div class="lbl">News Outlets Scraped</div></div>
       </div>
     </section>
 
@@ -697,7 +697,7 @@
     <section id="panel-media" class="section-panel">
       <div id="media-bias-top" class="section-head">
         <div>
-          <h2>Top 20 News Outlets: Political Lean, Scraped Output &amp; 10th-Grade Voter-Impact Radar</h2>
+          <h2>Top 21 News Outlets: Political Lean, Scraped Output &amp; 10th-Grade Voter-Impact Radar</h2>
           <div class="sub">Instant visual guide to America's Top 20 digital, print newspaper, cable TV, broadcast TV, public radio, wire service &amp; magazine outlets — showing whether their output leans Democrat/Left, Center, or Republican/Right, backed by live scraped headlines and Pew Research, AllSides &amp; Ad Fontes benchmarks.</div>
         </div>
       </div>
@@ -736,10 +736,10 @@
         <div>
           <label for="mb-format" style="font-size:0.75rem;font-weight:800;color:#334155;display:block;margin-bottom:4px">MEDIUM (DIGITAL / HARD COPY / TV)</label>
           <select id="mb-format" aria-label="Filter by Medium">
-            <option value="ALL">All Formats (Digital, Print, Cable, Broadcast, Wire)</option>
+            <option value="ALL">All Formats (Digital, Print, Cable, Broadcast, Wire, Investigative)</option>
             <option value="Cable">Cable TV &amp; Digital (Fox, MSNBC, CNN)</option>
             <option value="Broadcast">Broadcast TV &amp; Public TV (ABC, NBC, CBS, BBC, PBS, Al Jazeera)</option>
-            <option value="Print">Hard-Copy Print Newspapers &amp; Magazines (NYT, WSJ, WaPo, NY Post, Politico, Hill, Atlantic)</option>
+            <option value="Print">Hard-Copy Print, Magazines &amp; Investigative (NYT, WSJ, WaPo, ProPublica, NY Post, Politico, Hill, Atlantic)</option>
             <option value="Wire">Global Wire Services (Reuters, AP News)</option>
             <option value="Audio">Public Radio &amp; Digital Audio (NPR, Daily Wire)</option>
           </select>
@@ -747,7 +747,7 @@
         <div>
           <label for="mb-sort" style="font-size:0.75rem;font-weight:800;color:#334155;display:block;margin-bottom:4px">SORT OUTLETS BY</label>
           <select id="mb-sort" aria-label="Sort Outlets">
-            <option value="rank">Influence &amp; Reach Rank (#1 to #20)</option>
+            <option value="rank">Influence &amp; Reach Rank (#1 to #21)</option>
             <option value="factual">Highest Factual Accuracy Score First</option>
             <option value="left">Most Left / Democrat Leaning First</option>
             <option value="right">Most Right / Republican Leaning First</option>
@@ -755,9 +755,9 @@
         </div>
         <div style="flex:1;min-width:220px">
           <label for="mb-search" style="font-size:0.75rem;font-weight:800;color:#334155;display:block;margin-bottom:4px">SEARCH OUTLETS, HEADLINES OR TOPICS</label>
-          <input id="mb-search" type="search" placeholder="Search Fox, MSNBC, Reuters, BBC, Al Jazeera, taxes, border, Medicaid..." style="width:100%" />
+          <input id="mb-search" type="search" placeholder="Search ProPublica, Fox, MSNBC, Reuters, BBC, Al Jazeera, taxes, border..." style="width:100%" />
         </div>
-        <div id="mb-count" style="font-weight:800;color:#0f172a;font-size:0.9rem;margin-left:auto">Showing 20 of 20 outlets</div>
+        <div id="mb-count" style="font-weight:800;color:#0f172a;font-size:0.9rem;margin-left:auto">Showing 21 of 21 outlets</div>
       </div>
 
       <!-- EXPANDABLE OUTLET DOSSIER DRAWER -->
@@ -767,7 +767,7 @@
       <div id="mb-cards-grid" class="grid-2" style="margin-bottom:28px"></div>
 
       <!-- FULL SEARCHABLE COMPARISON TABLE -->
-      <h3 style="margin:24px 0 10px;color:#0f172a">Complete Top 20 News Outlets Verification Matrix (Click Any Row for Live Scraped Headlines &amp; Voter Translation)</h3>
+      <h3 style="margin:24px 0 10px;color:#0f172a">Complete Top 21 News Outlets Verification Matrix (Click Any Row for Live Scraped Headlines &amp; Voter Translation)</h3>
       <div class="table-wrap">
         <table>
           <thead>
@@ -973,9 +973,9 @@
     }
     var esMap = {
       'Verified Multi-Source Civic Atlas (1981–2026)': 'Atlas Cívico Verificado de Múltiples Fuentes (1981–2026)',
-      '📰 Top 20 News Outlets & Bias Radar': '📰 Los 20 Principales Medios y Radar de Sesgo',
+      '📰 Top 21 News Outlets & Bias Radar': '📰 Los 20 Principales Medios y Radar de Sesgo',
       'Which Way Does Your News Outlet Lean? (Left vs. Center vs. Right) ➔': '¿Hacia Dónde Se Inclina Tu Medio de Noticias? (Izquierda vs. Centro vs. Derecha) ➔',
-      'Top 20 News Outlets: Political Lean, Scraped Output & 10th-Grade Voter-Impact Radar': 'Los 20 Principales Medios: Inclinación Política, Titulares en Vivo e Impacto al Votante',
+      'Top 21 News Outlets: Political Lean, Scraped Output & 10th-Grade Voter-Impact Radar': 'Los 20 Principales Medios: Inclinación Política, Titulares en Vivo e Impacto al Votante',
       '★ Pro Data, API & Dossiers': '★ Datos Pro, API y Dossiers',
       'Oppo-in-a-Box, API Keys & Custom Briefs ➔': 'Oppo-in-a-Box, Claves API e Informes a Medida ➔',
       'Turn 5,111 Primary-Source Receipts Into Instant Campaign, Union & Newsroom Firepower.': 'Convierte 5,111 Registros Oficiales en Evidencia Instantánea para Campañas, Sindicatos y Medios.',
