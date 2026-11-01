@@ -789,7 +789,211 @@
       }).join('');
     }
 
-    // Scandals & Unions
+    // Scandals & Unions + Interactive Federal & State Political Corruption Catalog (1980-2026)
+    const catalog = mods.corruption_catalog || [];
+    const ccScoreboard = document.getElementById('corruption-scoreboard');
+    const ccParty = document.getElementById('cc-party');
+    const ccLevel = document.getElementById('cc-level');
+    const ccChamber = document.getElementById('cc-chamber');
+    const ccCat = document.getElementById('cc-category');
+    const ccDecade = document.getElementById('cc-decade');
+    const ccStatus = document.getElementById('cc-status');
+    const ccSearch = document.getElementById('cc-search');
+    const ccCount = document.getElementById('cc-count');
+    const ccDrawer = document.getElementById('cc-detail-drawer');
+    const ccSplitView = document.getElementById('cc-split-view');
+    const ccDemCards = document.getElementById('cc-dem-cards');
+    const ccRepCards = document.getElementById('cc-rep-cards');
+    const ccDemTitle = document.getElementById('cc-dem-col-title');
+    const ccRepTitle = document.getElementById('cc-rep-col-title');
+    const ccCardsGrid = document.getElementById('cc-cards-grid');
+    const ccTbody = document.getElementById('cc-tbody');
+
+    function renderNewsButtons(r) {
+      const links = [];
+      if (r.source && r.source.url) {
+        links.push(`<a class="chip-src" href="${esc(r.source.url)}" target="_blank" rel="noopener" style="background:#fef3c7;color:#92400e;border:1px solid #f59e0b;font-weight:700" title="${esc(r.source.title || r.source.name || 'Official Docket')}">🏛 Official Docket / Record ↗</a>`);
+      }
+      (r.secondary_sources || []).forEach((s, idx) => {
+        if (!s || !s.url) return;
+        const label = idx === 0 ? '📰 Newspaper Article #1 ↗' : (idx === 1 ? '📰 Newspaper Clippings #2 ↗' : `📰 Press Source #${idx + 1} ↗`);
+        links.push(`<a class="chip-src" href="${esc(s.url)}" target="_blank" rel="noopener" title="${esc(s.name || 'Newspaper Article')}">${label}</a>`);
+      });
+      return links.join(' ');
+    }
+
+    window.openCorruptionCase = function(caseId) {
+      const c = catalog.find(x => x.id === caseId);
+      if (!c || !ccDrawer) return;
+      const isR = c.party === 'R';
+      const borderCol = isR ? '#dc2626' : '#2563eb';
+      const newsListHtml = (c.secondary_sources || []).map(s => `
+        <li style="margin-bottom:6px">
+          <a href="${esc(s.url)}" target="_blank" rel="noopener" style="color:#1d4ed8;font-weight:700;text-decoration:underline">
+            📰 ${esc(s.name || s.url)} ↗
+          </a>
+        </li>`).join('');
+      const primaryHtml = (c.source && c.source.url) ? `
+        <li style="margin-bottom:6px">
+          <a href="${esc(c.source.url)}" target="_blank" rel="noopener" style="color:#92400e;font-weight:800;text-decoration:underline">
+            🏛 Official Primary Record: ${esc((c.source.publisher ? c.source.publisher + ' — ' : '') + (c.source.title || c.source.name || c.source.url))} ↗
+          </a>
+        </li>` : '';
+
+      ccDrawer.style.display = 'block';
+      ccDrawer.style.borderColor = borderCol;
+      ccDrawer.innerHTML = `
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;border-bottom:1px solid #e2e8f0;padding-bottom:10px;margin-bottom:12px">
+          <div>
+            <div style="font-size:0.76rem;font-weight:800;text-transform:uppercase;letter-spacing:0.05em;color:${borderCol}">
+              VERIFIED CASE DOSSIER · ${esc(c.level)} LEVEL · ${esc(c.chamber)} · ${esc(c.year)} (${esc(c.decade)})
+            </div>
+            <h3 style="margin:4px 0;font-size:1.3rem;color:#0f172a">
+              ${esc(c.person)} ${partyChip(c.party, c.party === 'R' ? 'Republican (' + c.state + ')' : 'Democrat (' + c.state + ')')}
+            </h3>
+            <div style="font-size:0.86rem;color:#475569;font-weight:600">${esc(c.office_title)} · Category: <strong>${esc(c.category)}</strong></div>
+          </div>
+          <button type="button" onclick="document.getElementById('cc-detail-drawer').style.display='none'" style="background:#0f172a;color:#fff;border:none;border-radius:6px;padding:6px 12px;font-weight:700;cursor:pointer">✕ Close Case File</button>
+        </div>
+        <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:16px">
+          <div>
+            <div style="font-size:0.78rem;font-weight:800;color:#0f172a;text-transform:uppercase;margin-bottom:4px">Crime, Indictment &amp; Scandal Details</div>
+            <p style="font-size:0.92rem;line-height:1.5;color:#1e293b;margin:0 0 10px">${esc(c.crime_summary)}</p>
+            <div style="background:#f8fafc;border-left:4px solid ${borderCol};padding:10px 12px;border-radius:6px;font-size:0.86rem;color:#0f172a">
+              <strong>Legal Outcome / Sentence / Penalty:</strong> ${esc(c.sentence_or_penalty || c.outcome_badge)}
+            </div>
+          </div>
+          <div>
+            <div style="font-size:0.78rem;font-weight:800;color:#0f172a;text-transform:uppercase;margin-bottom:6px">Clickable Newspaper Clippings &amp; Official Court/Ethics Dockets</div>
+            <ul style="margin:0;padding-left:18px;font-size:0.86rem;line-height:1.45">
+              ${primaryHtml}
+              ${newsListHtml}
+            </ul>
+          </div>
+        </div>`;
+      ccDrawer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    };
+
+    function renderCaseCard(r) {
+      const isR = r.party === 'R';
+      const firstNews = (r.secondary_sources && r.secondary_sources[0]) ? r.secondary_sources[0] : null;
+      return `<div class="card ${isR ? 'rep-card' : 'dem-card'}" style="display:flex;flex-direction:column;cursor:pointer" onclick="if(event.target.tagName!=='A'){window.openCorruptionCase('${esc(r.id)}')}">
+        <div class="card-top">
+          <div>
+            <div style="display:flex;gap:6px;flex-wrap:wrap;align-items:center;margin-bottom:4px">
+              <span class="chip" style="background:#0f172a;color:#fff;font-weight:800">${esc(r.year)}</span>
+              <span class="chip" style="background:#e2e8f0;color:#0f172a;font-weight:700">${esc(r.level)} · ${esc(r.chamber)}</span>
+              <span class="chip" style="background:#fef3c7;color:#92400e;font-weight:700">${esc(r.category)}</span>
+            </div>
+            <h3 style="font-size:1.06rem;margin:2px 0">${esc(r.person)} <span style="font-size:0.82rem;color:var(--muted)">(${esc(r.state)})</span></h3>
+          </div>
+          ${partyChip(r.party, r.party === 'R' ? 'GOP' : 'DEM')}
+        </div>
+        <div style="font-size:0.79rem;font-weight:800;color:${isR ? '#b91c1c' : '#1d4ed8'};margin:2px 0 6px">
+          ⚖ ${esc(r.status)}: ${esc(r.outcome_badge)}
+        </div>
+        <p style="font-size:0.85rem;color:#334155;line-height:1.42;margin:0 0 10px">${esc(r.crime_summary)}</p>
+        ${firstNews ? `<div style="font-size:0.77rem;background:#f8fafc;border:1px solid #cbd5e1;border-radius:6px;padding:6px 8px;margin-bottom:8px">
+          <strong>Newspaper Headline:</strong> <a href="${esc(firstNews.url)}" target="_blank" rel="noopener" style="color:#1d4ed8;font-weight:700;text-decoration:underline">${esc(firstNews.name)} ↗</a>
+        </div>` : ''}
+        <div style="margin-top:auto;padding-top:8px;border-top:1px solid rgba(148,163,184,0.22);display:flex;gap:6px;flex-wrap:wrap;align-items:center;justify-content:space-between">
+          <div style="display:flex;gap:5px;flex-wrap:wrap">${renderNewsButtons(r)}</div>
+          <button type="button" onclick="event.stopPropagation();window.openCorruptionCase('${esc(r.id)}')" style="background:#0f172a;color:#fff;border:none;border-radius:5px;padding:4px 9px;font-size:0.74rem;font-weight:700;cursor:pointer">Inspect Full Dossier ➔</button>
+        </div>
+      </div>`;
+    }
+
+    function applyCorruptionFilters() {
+      if (!catalog.length) return;
+      const pVal = ccParty ? ccParty.value : 'ALL';
+      const lVal = ccLevel ? ccLevel.value : 'ALL';
+      const chVal = ccChamber ? ccChamber.value : 'ALL';
+      const catVal = ccCat ? ccCat.value : 'ALL';
+      const decVal = ccDecade ? ccDecade.value : 'ALL';
+      const stVal = ccStatus ? ccStatus.value : 'ALL';
+      const q = (ccSearch ? ccSearch.value : '').trim().toLowerCase();
+
+      const filtered = catalog.filter(r => {
+        if (pVal === 'D' && r.party !== 'D') return false;
+        if (pVal === 'R' && r.party !== 'R') return false;
+        if (lVal !== 'ALL' && r.level !== lVal) return false;
+        if (chVal !== 'ALL' && r.chamber !== chVal) return false;
+        if (catVal !== 'ALL' && r.category !== catVal) return false;
+        if (decVal !== 'ALL' && r.decade !== decVal) return false;
+        if (stVal !== 'ALL' && r.status !== stVal) return false;
+        if (q) {
+          const hay = `${r.person} ${r.state} ${r.chamber} ${r.office_title} ${r.category} ${r.status} ${r.crime_summary} ${r.sentence_or_penalty} ${r.year}`.toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+
+      const dList = filtered.filter(r => r.party === 'D');
+      const rList = filtered.filter(r => r.party === 'R');
+      const fedList = filtered.filter(r => r.level === 'Federal');
+      const stateList = filtered.filter(r => r.level === 'State');
+      const sexList = filtered.filter(r => r.category === 'Sexual Misconduct & Abuse');
+      const bribList = filtered.filter(r => r.category === 'Bribery & Extortion' || r.category === 'Campaign Finance & Wire Fraud');
+
+      if (ccScoreboard) {
+        ccScoreboard.innerHTML = `
+          <div class="card" style="border-left:4px solid #3b82f6">
+            <div style="font-size:0.74rem;font-weight:800;color:#1d4ed8">DEMOCRATIC PARTY CASES (FILTERED)</div>
+            <div style="font-size:1.45rem;font-weight:800;margin:4px 0">${dList.length} <span style="font-size:0.82rem;color:var(--muted)">(${filtered.length ? Math.round(dList.length*100/filtered.length) : 0}% of view)</span></div>
+            <div style="font-size:0.8rem;color:#475569">U.S. Senate: <strong>${dList.filter(x=>x.chamber==='U.S. Senate').length}</strong> · U.S. House: <strong>${dList.filter(x=>x.chamber==='U.S. House').length}</strong> · State Level: <strong>${dList.filter(x=>x.level==='State').length}</strong></div>
+          </div>
+          <div class="card" style="border-left:4px solid #ef4444">
+            <div style="font-size:0.74rem;font-weight:800;color:#b91c1c">REPUBLICAN PARTY CASES (FILTERED)</div>
+            <div style="font-size:1.45rem;font-weight:800;margin:4px 0">${rList.length} <span style="font-size:0.82rem;color:var(--muted)">(${filtered.length ? Math.round(rList.length*100/filtered.length) : 0}% of view)</span></div>
+            <div style="font-size:0.8rem;color:#475569">U.S. Senate: <strong>${rList.filter(x=>x.chamber==='U.S. Senate').length}</strong> · U.S. House: <strong>${rList.filter(x=>x.chamber==='U.S. House').length}</strong> · State Level: <strong>${rList.filter(x=>x.level==='State').length}</strong></div>
+          </div>
+          <div class="card" style="border-left:4px solid #0f172a">
+            <div style="font-size:0.74rem;font-weight:800;color:#0f172a">CHAMBER &amp; LEVEL BREAKDOWN</div>
+            <div style="font-size:1.45rem;font-weight:800;margin:4px 0">${fedList.length} Federal · ${stateList.length} State</div>
+            <div style="font-size:0.8rem;color:#475569">Convicted/Plea: <strong>${filtered.filter(x=>x.status.includes('Convicted')).length}</strong> · Expelled: <strong>${filtered.filter(x=>x.status==='Expelled').length}</strong></div>
+          </div>
+          <div class="card" style="border-left:4px solid #d97706">
+            <div style="font-size:0.74rem;font-weight:800;color:#b45309">FINANCIAL CORRUPTION VS. SEXUAL MISCONDUCT</div>
+            <div style="font-size:1.45rem;font-weight:800;margin:4px 0">${bribList.length} Financial · ${sexList.length} Sexual</div>
+            <div style="font-size:0.8rem;color:#475569">Every case includes clickable newspaper articles &amp; official court/ethics dockets.</div>
+          </div>`;
+      }
+
+      if (ccCount) {
+        ccCount.textContent = `Showing ${filtered.length} of ${catalog.length} verified cases (${dList.length} D · ${rList.length} R)`;
+      }
+
+      if (pVal === 'SPLIT') {
+        if (ccSplitView) ccSplitView.style.display = 'grid';
+        if (ccCardsGrid) ccCardsGrid.style.display = 'none';
+        if (ccDemTitle) ccDemTitle.textContent = `Democratic Party (${dList.length} Cases)`;
+        if (ccRepTitle) ccRepTitle.textContent = `Republican Party (${rList.length} Cases)`;
+        if (ccDemCards) ccDemCards.innerHTML = dList.map(renderCaseCard).join('');
+        if (ccRepCards) ccRepCards.innerHTML = rList.map(renderCaseCard).join('');
+      } else {
+        if (ccSplitView) ccSplitView.style.display = 'none';
+        if (ccCardsGrid) {
+          ccCardsGrid.style.display = 'grid';
+          ccCardsGrid.innerHTML = filtered.map(renderCaseCard).join('');
+        }
+      }
+
+      if (ccTbody) {
+        ccTbody.innerHTML = filtered.map(r => `<tr style="cursor:pointer" onclick="if(event.target.tagName!=='A'){window.openCorruptionCase('${esc(r.id)}')}">
+          <td><strong>${esc(r.year)}</strong><div style="font-size:0.72rem;color:var(--muted)">${esc(r.decade)}</div></td>
+          <td><strong>${esc(r.person)}</strong> (${esc(r.state)})<div>${partyChip(r.party, r.party === 'R' ? 'Republican' : 'Democrat')}</div></td>
+          <td><strong>${esc(r.chamber)}</strong><div style="font-size:0.75rem;color:var(--muted)">${esc(r.level)} · ${esc(r.office_title)}</div></td>
+          <td><span class="chip" style="background:#fef3c7;color:#92400e;font-weight:700">${esc(r.category)}</span></td>
+          <td style="font-size:0.82rem"><strong>${esc(r.status)}:</strong> ${esc(r.outcome_badge)}<div style="color:#475569;margin-top:2px">${esc(r.crime_summary)}</div></td>
+          <td><div style="display:flex;flex-direction:column;gap:4px">${renderNewsButtons(r)}</div></td>
+        </tr>`).join('');
+      }
+    }
+
+    [ccParty, ccLevel, ccChamber, ccCat, ccDecade, ccStatus].forEach(el => el && el.addEventListener('change', applyCorruptionFilters));
+    if (ccSearch) ccSearch.addEventListener('input', applyCorruptionFilters);
+    applyCorruptionFilters();
+
     const scanMajor = mods.scandals_major || [];
     const scanComplete = (mods.scandals || []).concat(mods.scandals_complete || []);
     const scanEl = document.getElementById('scandals-cards');

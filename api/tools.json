@@ -6,11 +6,40 @@
     "en",
     "es"
   ],
-  "description": "5,111 verified records across 24 modules (presidential vacations, 539 119th Congress portraits & demographics, 50-state x 25+ peer-reviewed medical/academic/economic metrics, 36 landmark federal laws since 1981, formal corruption scandals, and top-20 labor/police/firefighter union PACs), plus Oppo-in-a-Box Pro Data, WebMCP API, White-Label Union/Newsroom Embed Widgets, and Custom Station-Legal TV Ad Dossiers.",
+  "description": "5,253 verified records across 25 modules (presidential vacations, 539 119th Congress portraits & demographics, 50-state x 25+ peer-reviewed medical/academic/economic metrics, 36 landmark federal laws since 1981, 142-case Federal & State Political Corruption Catalog 1980–2026, formal corruption scandals, and top-20 labor/police/firefighter union PACs), plus Oppo-in-a-Box Pro Data, WebMCP API, White-Label Union/Newsroom Embed Widgets, and Custom Station-Legal TV Ad Dossiers.",
   "tools": [
     {
+      "name": "query_corruption_catalog",
+      "description": "Filter 142 verified Federal & State Political Corruption Cases (1980–2026) by party (D/R), level (Federal/State), chamber (U.S. Senate, U.S. House, State Senate, State House, Governor/Statewide), crime category (Bribery & Extortion, Campaign Finance & Wire Fraud, Sexual Misconduct & Abuse, Tax, Insider Trading & Financial, Obstruction, Perjury & Ethics Violations), or decade.",
+      "input_schema": {
+        "type": "object",
+        "properties": {
+          "party": {
+            "type": "string",
+            "enum": ["ALL", "D", "R"]
+          },
+          "level": {
+            "type": "string",
+            "enum": ["ALL", "Federal", "State"]
+          },
+          "chamber": {
+            "type": "string",
+            "enum": ["ALL", "U.S. Senate", "U.S. House", "State Senate", "State House", "Governor/Statewide"]
+          },
+          "category": {
+            "type": "string"
+          },
+          "decade": {
+            "type": "string",
+            "enum": ["ALL", "1980s", "1990s", "2000s", "2010s", "2020s"]
+          }
+        },
+        "additionalProperties": false
+      }
+    },
+    {
       "name": "search_civic_records",
-      "description": "Search all 5,111 multi-sourced civic, medical, academic, and legislative records by keyword, state, lawmaker, president, or journal.",
+      "description": "Search all 5,253 multi-sourced civic, medical, academic, and legislative records by keyword, state, lawmaker, president, or journal.",
       "input_schema": {
         "type": "object",
         "properties": {

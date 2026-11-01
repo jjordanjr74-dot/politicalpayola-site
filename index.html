@@ -28,7 +28,7 @@
     "version": "2.4.0",
     "license": "https://creativecommons.org/licenses/by/4.0/",
     "isAccessibleForFree": true,
-    "description": "Multi-sourced nonpartisan civic, medical, academic, and legislative dataset (5,111 verified records across 24 modules) covering modern U.S. presidents (1981–2026), all 539 members of the 119th Congress, 50-state empirical rankings, 36 landmark federal laws, formal corruption outcomes, Southern & Rural Colorado equity metrics, and top-20 labor/police/teacher unions.",
+    "description": "Multi-sourced nonpartisan civic, medical, academic, and legislative dataset (5,253 verified records across 25 modules) covering modern U.S. presidents (1981–2026), all 539 members of the 119th Congress, 50-state empirical rankings, 36 landmark federal laws, 142-case Federal & State Political Corruption Catalog (1980–2026), Southern & Rural Colorado equity metrics, and top-20 labor/police/teacher unions.",
     "inLanguage": ["en", "es"],
     "temporalCoverage": "1981/2026",
     "spatialCoverage": {
@@ -93,7 +93,7 @@
       <button class="tab-btn" data-tab="laws">Family Bills &amp; Landmark Laws</button>
       <button class="tab-btn" data-tab="congress">U.S. Demographics &amp; Congress</button>
       <button class="tab-btn" data-tab="states">50 States Data Explorer</button>
-      <button class="tab-btn" data-tab="scandals">PAC Money &amp; Scandals</button>
+      <button class="tab-btn" data-tab="scandals">Corruption Archive, PAC Money &amp; Scandals</button>
       <button class="tab-btn" data-tab="pro" style="color:var(--gold);font-weight:800">★ Pro Data, API &amp; Dossiers</button>
     </nav>
   </header>
@@ -108,24 +108,24 @@
         <p>Every statistic cross-references peer-reviewed journals (<em>JAMA Network Open</em>, <em>NEJM</em>, <em>AJPM</em>, <em>Presidential Studies Quarterly</em>, <em>Journal of Labor Economics</em>) and nonpartisan research institutions (Pew, KFF, NBER, PIIE, CHDS, Rutgers CAWP, Brown Costs of War) alongside official roll-call records.</p>
       </div>
       <div class="stat-pills">
-        <div class="stat-pill"><div class="num">5,111</div><div class="lbl">Verified records</div></div>
-        <div class="stat-pill"><div class="num">24</div><div class="lbl">Validated modules</div></div>
+        <div class="stat-pill"><div class="num">5,253</div><div class="lbl">Verified records</div></div>
+        <div class="stat-pill"><div class="num">25</div><div class="lbl">Validated modules</div></div>
         <div class="stat-pill"><div class="num">539</div><div class="lbl">Lawmaker portraits</div></div>
-        <div class="stat-pill"><div class="num">1981–2026</div><div class="lbl">Reagan to 119th Congress</div></div>
+        <div class="stat-pill"><div class="num">1980–2026</div><div class="lbl">Modern Era to 119th Congress</div></div>
       </div>
     </section>
 
     <!-- PROPUBLICA-CALIBER FEATURED QUICK-ACTION TILES -->
     <div class="quick-jump-bar" id="quick-jump-bar">
+      <button class="jump-btn" data-goto-tab="scandals" data-goto-id="corruption-catalog-top" style="border-color:rgba(220,38,38,0.45);background:linear-gradient(135deg,#fef2f2 0%,#eff6ff 100%)">
+        <div class="jb-kicker" style="color:#b91c1c">FEDERAL &amp; STATE CORRUPTION ARCHIVE · 1980–2026</div>
+        <div class="jb-title" style="color:#0f172a">Senators &amp; Congressmen Indicted, Arrested &amp; Convicted ➔</div>
+        <div class="jb-sub" style="color:#334155">142 verified Democrat &amp; Republican cases separated by party, year, chamber &amp; crime (bribery, campaign finance, sexual misconduct) with clickable newspaper clippings.</div>
+      </button>
       <button class="jump-btn" data-goto-tab="laws" data-goto-id="family-bills-top">
         <div class="jb-kicker">KITCHEN-TABLE ECONOMICS · 119TH CONGRESS &amp; HISTORICAL</div>
         <div class="jb-title">Bills Reshaping American Family Costs ➔</div>
         <div class="jb-sub">Track active 2025–2026 bills and landmark laws that directly impact your paycheck, health insurance, overdraft fees, and grocery budgets.</div>
-      </button>
-      <button class="jump-btn" data-goto-tab="laws" data-goto-id="family-bills-top">
-        <div class="jb-kicker">RANKED ADVERSE IMPACT · CBO &amp; KFF BENCHMARKS</div>
-        <div class="jb-title">Top 10 Bills Hitting Family Paychecks ➔</div>
-        <div class="jb-sub">Ranked #1 to #10 by dollar magnitude and household harm: Medicaid cuts, $35 overdraft penalties, and corporate tax-shifting.</div>
       </button>
       <button class="jump-btn" data-goto-tab="scandals" data-goto-id="top25-pac-top">
         <div class="jb-kicker">OFFICIAL FEC 2024–2026 CYCLE FILINGS</div>
@@ -542,13 +542,103 @@
 
     <!-- PANEL 5: SCANDALS & UNIONS -->
     <section id="panel-scandals" class="section-panel">
-      <div class="section-head">
+      <div id="corruption-catalog-top" class="section-head">
         <div>
-          <h2>Formal Congressional Misconduct, Major Corruption Scandals &amp; Top-20 Labor/Police Unions</h2>
-          <p>Formal outcomes only (convictions, guilty pleas, expulsions, censures, ethics findings) + PAC contributions &amp; presidential endorsements from top labor, police (FOP, NAPO, IUPA) &amp; firefighter (IAFF) unions.</p>
+          <h2>A. Prolific Political Corruption Archive (1980–2026): Federal &amp; State Senators, Congressmen &amp; Governors</h2>
+          <p>Interactive, primary-source verified catalog of <strong>142 modern political corruption cases (75 Democrats · 67 Republicans)</strong> across federal and state levels — covering indictments, arrests, convictions, expulsions, censures, campaign finance fraud, bribery, and sexual misconduct. Click any case to inspect full crime details, sentences, official DOJ/Ethics dockets, and contemporary newspaper clippings.</p>
         </div>
       </div>
-      <h3 id="top25-pac-top" style="margin-bottom:12px;color:var(--gold)">Top 25 Politicians Receiving the Most Donor / Corporate (PAC) Money — 2024 Cycle</h3>
+
+      <!-- INTERACTIVE PARTY, CHAMBER & CRIME SCOREBOARD -->
+      <div id="corruption-scoreboard" class="grid-4" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:12px;margin-bottom:16px"></div>
+
+      <!-- MULTI-DIMENSIONAL INTERACTIVE FILTER BAR -->
+      <div class="filter-bar" style="flex-wrap:wrap;gap:10px;margin-bottom:16px;background:var(--bg-card);padding:14px;border:1px solid var(--border);border-radius:12px">
+        <select id="cc-party" class="select-ctrl" aria-label="Filter by Political Party">
+          <option value="ALL">All Parties (Democrat vs. Republican)</option>
+          <option value="D">Democrats Only (Blue)</option>
+          <option value="R">Republicans Only (Red)</option>
+          <option value="SPLIT">Side-by-Side Party Split View (D vs. R Columns)</option>
+        </select>
+        <select id="cc-level" class="select-ctrl" aria-label="Filter by Federal or State Level">
+          <option value="ALL">All Levels (Federal &amp; State)</option>
+          <option value="Federal">Federal Level (U.S. Senate &amp; U.S. House)</option>
+          <option value="State">State Level (State Senate, State House &amp; Governors)</option>
+        </select>
+        <select id="cc-chamber" class="select-ctrl" aria-label="Filter by Legislative Chamber">
+          <option value="ALL">All Chambers (Senate, House &amp; Statewide)</option>
+          <option value="U.S. Senate">U.S. Senate (Federal Senators)</option>
+          <option value="U.S. House">U.S. House (Federal Congressmen)</option>
+          <option value="State Senate">State Senate (State Senators)</option>
+          <option value="State House">State House / Assembly (Speakers &amp; Reps)</option>
+          <option value="Governor/Statewide">Governors &amp; Statewide Officials</option>
+        </select>
+        <select id="cc-category" class="select-ctrl" aria-label="Filter by Crime or Scandal Category">
+          <option value="ALL">All Crime &amp; Scandal Categories</option>
+          <option value="Bribery & Extortion">Bribery, Kickbacks &amp; Extortion</option>
+          <option value="Campaign Finance & Wire Fraud">Campaign Finance, Embezzlement &amp; Wire Fraud</option>
+          <option value="Sexual Misconduct & Abuse">Sexual Misconduct, Harassment &amp; Abuse</option>
+          <option value="Tax, Insider Trading & Financial">Tax Evasion, Insider Trading &amp; Financial</option>
+          <option value="Obstruction, Perjury & Ethics Violations">Obstruction, Perjury &amp; Ethics Violations</option>
+        </select>
+        <select id="cc-decade" class="select-ctrl" aria-label="Filter by Era or Year">
+          <option value="ALL">All Modern Eras (1980–2026)</option>
+          <option value="2020s">2020–2026 (Current Decade)</option>
+          <option value="2010s">2010–2019</option>
+          <option value="2000s">2000–2009</option>
+          <option value="1990s">1990–1999</option>
+          <option value="1980s">1980–1989 (Reagan / ABSCAM Era)</option>
+        </select>
+        <select id="cc-status" class="select-ctrl" aria-label="Filter by Legal Outcome">
+          <option value="ALL">All Legal &amp; Ethics Outcomes</option>
+          <option value="Convicted / Guilty Plea">Convicted / Guilty Plea</option>
+          <option value="Indicted / Arrested">Indicted / Arrested / Active Probe</option>
+          <option value="Expelled">Expelled from Legislature</option>
+          <option value="Resigned Under Investigation">Resigned Under Investigation</option>
+          <option value="Censured / Reprimanded">Censured / Reprimanded</option>
+        </select>
+        <input id="cc-search" class="search-input" style="max-width:260px" type="search" placeholder="Search name, state (e.g. CO, IL, NY), crime...">
+        <div id="cc-count" style="font-size:0.88rem;font-weight:700;color:var(--gold);margin-left:auto"></div>
+      </div>
+
+      <!-- INTERACTIVE CASE DOSSIER MODAL / DRAWER -->
+      <div id="cc-detail-drawer" style="display:none;margin-bottom:22px;padding:20px;background:#ffffff;border:2px solid #0f172a;border-radius:12px;box-shadow:0 12px 32px rgba(15,23,42,0.14)"></div>
+
+      <!-- SIDE-BY-SIDE DEMOCRAT VS REPUBLICAN COMPARISON CONTAINER (WHEN SELECTED) -->
+      <div id="cc-split-view" style="display:none;grid-template-columns:repeat(auto-fit,minmax(340px,1fr));gap:18px;margin-bottom:28px">
+        <div style="background:rgba(37,99,235,0.04);border:2px solid #3b82f6;border-radius:12px;padding:14px">
+          <h3 id="cc-dem-col-title" style="margin:0 0 12px;color:#1d4ed8;font-size:1.08rem">Democratic Party Cases (Blue)</h3>
+          <div id="cc-dem-cards" style="display:flex;flex-direction:column;gap:12px"></div>
+        </div>
+        <div style="background:rgba(220,38,38,0.04);border:2px solid #ef4444;border-radius:12px;padding:14px">
+          <h3 id="cc-rep-col-title" style="margin:0 0 12px;color:#b91c1c;font-size:1.08rem">Republican Party Cases (Red)</h3>
+          <div id="cc-rep-cards" style="display:flex;flex-direction:column;gap:12px"></div>
+        </div>
+      </div>
+
+      <!-- UNIFIED INTERACTIVE CASE CARDS & CHRONOLOGICAL LEDGER TABLE -->
+      <div id="cc-cards-grid" class="grid-3" style="margin-bottom:28px"></div>
+
+      <details open style="margin-bottom:36px;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:14px">
+        <summary style="cursor:pointer;font-weight:800;font-size:1rem;color:var(--gold);margin-bottom:10px">Full Chronological Corruption Ledger Table (1980–2026) — Click Any Row for Newspaper Clippings &amp; Court Dockets</summary>
+        <div style="overflow-x:auto">
+          <table class="data-table">
+            <thead>
+              <tr>
+                <th>Year</th>
+                <th>Official &amp; Party</th>
+                <th>Level &amp; Chamber</th>
+                <th>Category</th>
+                <th>Legal Status &amp; Sentence</th>
+                <th>Newspaper Clippings &amp; Official Docket</th>
+              </tr>
+            </thead>
+            <tbody id="cc-tbody"></tbody>
+          </table>
+        </div>
+      </details>
+
+      <h3 id="top25-pac-top" style="margin-bottom:12px;color:var(--gold)">B. Top 25 Politicians Receiving the Most Donor / Corporate (PAC) Money — 2024 Cycle</h3>
       <p style="color:var(--muted);font-size:0.9rem;margin-bottom:14px">Official FEC figures for "other political committee contributions" (PAC, corporate &amp; trade-association committees) to each member of Congress, ranked highest-to-lowest, with each lawmaker's party. Sorted by total PAC/committee dollars received in the 2024 election cycle. <strong>Party split in the Top 25:</strong> 13 Republicans, 11 Democrats, 1 Independent.</p>
       <div class="filter-bar">
         <select id="top25-party" class="select-ctrl">
@@ -777,8 +867,8 @@
     </section>
   </main>
 
-  <script src="data_bundle.js?v=20261031a"></script>
-  <script src="app.js?v=20261031a"></script>
+  <script src="data_bundle.js?v=20261031b"></script>
+  <script src="app.js?v=20261031b"></script>
   <script>
   (function initPayolaBilingualAndWebMCP() {
     if (navigator.modelContext && typeof navigator.modelContext.registerTool === 'function') {
