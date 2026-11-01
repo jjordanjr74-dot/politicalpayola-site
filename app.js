@@ -1158,7 +1158,7 @@
           const m = (r.medium + ' ' + r.format_badge).toLowerCase();
           if (fmtVal === 'Cable' && !m.includes('cable')) return false;
           if (fmtVal === 'Broadcast' && !(m.includes('broadcast') || m.includes('public tv'))) return false;
-          if (fmtVal === 'Print' && !(m.includes('print') || m.includes('magazine') || m.includes('tabloid'))) return false;
+          if (fmtVal === 'Print' && !(m.includes('print') || m.includes('magazine') || m.includes('tabloid') || m.includes('investigative'))) return false;
           if (fmtVal === 'Wire' && !m.includes('wire')) return false;
           if (fmtVal === 'Audio' && !(m.includes('radio') || m.includes('audio') || m.includes('podcast'))) return false;
         }
