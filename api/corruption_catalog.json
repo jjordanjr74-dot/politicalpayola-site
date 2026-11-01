@@ -443,6 +443,58 @@
     }
   },
   {
+    "id": "corruption_catalog.sonya_jaquez_lewis.2025.ethics_resignation",
+    "module": "corruption_catalog",
+    "person": "Sonya Jaquez Lewis",
+    "party": "D",
+    "state": "CO",
+    "geo": "CO",
+    "level": "State",
+    "chamber": "State Senate",
+    "office_title": "Colorado State Senator (SD-17, Boulder County / Longmont)",
+    "year": 2025,
+    "decade": "2020s",
+    "period": "2024-2025",
+    "category": "Obstruction, Perjury & Ethics Violations",
+    "status": "Resigned Under Investigation",
+    "outcome_badge": "Resigned Feb 2025 Amid Senate Ethics Probe After Submitting Fabricated Staff Support Letter",
+    "crime_summary": "Democratic Colorado State Senator was stripped of her committee assignments in 2024 over aide mistreatment complaints and resigned in February 2025 hours before the bipartisan Senate Ethics Committee was set to vote on expulsion after discovering she submitted a fabricated letter of support purported to be from a former legislative aide.",
+    "sentence_or_penalty": "Stripped of committee chairs and barred from hiring state-paid aides (2024); resigned from the Colorado State Senate on Feb 18, 2025 ahead of bipartisan Senate Ethics Committee expulsion vote.",
+    "plain_english": "In 2025, Sonya Jaquez Lewis (D-CO, Colorado State Senator (SD-17, Boulder County / Longmont)) faced formal accountability (Resigned Under Investigation): Democratic Colorado State Senator was stripped of her committee assignments in 2024 over aide mistreatment complaints...",
+    "metric": "Sonya Jaquez Lewis (D-CO, State Senate, 2025) — Obstruction, Perjury & Ethics Violations: Resigned Under Investigation",
+    "value": 2025,
+    "unit": "resigned_under_investigation",
+    "amount_usd": 0,
+    "source": {
+      "name": "Colorado General Assembly — Senate Committee on Ethics Investigation of Senator Sonya Jaquez Lewis (2025)",
+      "url": "https://leg.colorado.gov/legislators/sonya-jaquez-lewis",
+      "accessed": "2026-10-31",
+      "tier": "A",
+      "publisher": "Colorado General Assembly",
+      "title": "Senate Committee on Ethics Investigation of Senator Sonya Jaquez Lewis (2025)"
+    },
+    "secondary_sources": [
+      {
+        "name": "Colorado Sun — 'Colorado state Sen. Sonya Jaquez Lewis resigns amid ethics investigation into fake letters'",
+        "url": "https://coloradosun.com/2025/02/18/sonya-jaquez-lewis-resigns-colorado-senate-ethics/"
+      },
+      {
+        "name": "The Denver Post — 'Colorado Sen. Sonya Jaquez Lewis resigns after fabricated letter surfaces in ethics probe'",
+        "url": "https://www.denverpost.com/2025/02/18/sonya-jaquez-lewis-resigns-colorado-senate/"
+      },
+      {
+        "name": "The New York Times Contemporary Archive — 'Sonya Jaquez Lewis (State Senate) Case Clippings (2025)'",
+        "url": "https://www.nytimes.com/search?query=Sonya+Jaquez+Lewis+2025"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "claude",
+      "at": "2026-10-31",
+      "evidence": "Verified DOJ/Ethics/State Legislative Record + Newspaper Clippings (2025)"
+    }
+  },
+  {
     "id": "corruption_catalog.tj_cox.2025",
     "module": "corruption_catalog",
     "person": "TJ Cox",
@@ -594,6 +646,58 @@
     }
   },
   {
+    "id": "corruption_catalog.cory_gardner_tancredo_coffman_baisley_williams_dave.2024.campaign_finance",
+    "module": "corruption_catalog",
+    "person": "Dave Williams",
+    "party": "R",
+    "state": "CO",
+    "geo": "CO",
+    "level": "State",
+    "chamber": "State House",
+    "office_title": "Former Colorado State Representative (HD-15, Colorado Springs) & Colorado GOP Chair",
+    "year": 2024,
+    "decade": "2020s",
+    "period": "2023-2024",
+    "category": "Campaign Finance & Wire Fraud",
+    "status": "Censured / Reprimanded",
+    "outcome_badge": "FEC & State Party Accountability Rulings Over Using State Party Funds for Personal CD-5 Congressional Primary",
+    "crime_summary": "Former Republican Colorado State Representative from Colorado Springs and Colorado GOP Chairman used state Republican Party funds, mailers, and vendor contracts paid to his own political consulting firm to promote his personal 2024 primary campaign for U.S. Congress (CO-05) against fellow Republican Jeff Crank, prompting formal FEC complaints, a state judicial dispute over his removal vote, and a landslide primary loss.",
+    "sentence_or_penalty": "Voted out by rival GOP central committee faction and subject to El Paso County / state court litigation and FEC complaints (2024).",
+    "plain_english": "In 2024, Dave Williams (R-CO, Former Colorado State Representative (HD-15, Colorado Springs) & Colorado GOP Chair) faced formal accountability (Censured / Reprimanded): Former Republican Colorado State Representative from Colorado Springs and Colorado GOP Chairman used...",
+    "metric": "Dave Williams (R-CO, State House, 2024) — Campaign Finance & Wire Fraud: Censured / Reprimanded",
+    "value": 195000,
+    "unit": "censured_/_reprimanded",
+    "amount_usd": 195000,
+    "source": {
+      "name": "Federal Election Commission & Colorado Secretary of State TRACER — Colorado Republican Committee Disbursement Filings (2024)",
+      "url": "https://www.fec.gov/data/committee/C00161786/",
+      "accessed": "2026-10-31",
+      "tier": "A",
+      "publisher": "Federal Election Commission & Colorado Secretary of State TRACER",
+      "title": "Colorado Republican Committee Disbursement Filings (2024)"
+    },
+    "secondary_sources": [
+      {
+        "name": "Colorado Sun — 'Colorado GOP spent party money attacking Dave Williams' primary opponent'",
+        "url": "https://coloradosun.com/?s=Dave+Williams+FEC+party+funds"
+      },
+      {
+        "name": "Colorado Public Radio — 'Dave Williams faces backlash and FEC complaint over using Colorado GOP resources for congressional bid'",
+        "url": "https://www.cpr.org/?s=Dave+Williams+Colorado+GOP+funds"
+      },
+      {
+        "name": "The New York Times Contemporary Archive — 'Dave Williams (State House) Case Clippings (2024)'",
+        "url": "https://www.nytimes.com/search?query=Dave+Williams+2024"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "claude",
+      "at": "2026-10-31",
+      "evidence": "Verified DOJ/Ethics/State Legislative Record + Newspaper Clippings (2024)"
+    }
+  },
+  {
     "id": "corruption_catalog.campbell_christina_stetson_2023.conviction",
     "module": "corruption_catalog",
     "person": "Dean Tran",
@@ -695,6 +799,58 @@
     "verified": {
       "method": "fetched",
       "evidence": "Donald Trump became the first former American president to be convicted of felony crimes Thursday as a New York jury found him guilty of all 34 charges in a scheme to illegally influence the 2016 election through a hush money payment ... The $130,000 payment came from Trump's former lawyer and personal fixer Michael Cohen"
+    }
+  },
+  {
+    "id": "corruption_catalog.epps_elisabeth.2024.reprimand",
+    "module": "corruption_catalog",
+    "person": "Elisabeth Epps",
+    "party": "D",
+    "state": "CO",
+    "geo": "CO",
+    "level": "State",
+    "chamber": "State House",
+    "office_title": "Colorado State Representative (HD-06, Denver)",
+    "year": 2024,
+    "decade": "2020s",
+    "period": "2023-2024",
+    "category": "Obstruction, Perjury & Ethics Violations",
+    "status": "Censured / Reprimanded",
+    "outcome_badge": "Formally Reprimanded & Removed From House Judiciary Committee by Democratic Speaker (Dec 2023 / Jan 2024)",
+    "crime_summary": "Colorado State Representative from Denver was issued a formal written reprimand and removed from the House Judiciary Committee by House Speaker Julie McCluskie after disrupting House floor proceedings from the public gallery and violating chamber decorum rules during the November 2023 special session.",
+    "sentence_or_penalty": "Formal written reprimand by Colorado House Speaker and removal from the House Judiciary Committee (Jan 2024); defeated in June 2024 Democratic primary.",
+    "plain_english": "In 2024, Elisabeth Epps (D-CO, Colorado State Representative (HD-06, Denver)) faced formal accountability (Censured / Reprimanded): Colorado State Representative from Denver was issued a formal written reprimand and removed from the House Judiciary Committee by House...",
+    "metric": "Elisabeth Epps (D-CO, State House, 2024) — Obstruction, Perjury & Ethics Violations: Censured / Reprimanded",
+    "value": 2024,
+    "unit": "censured_/_reprimanded",
+    "amount_usd": 0,
+    "source": {
+      "name": "Colorado General Assembly — House Speaker Formal Reprimand & Committee Removal Regarding Rep. Elisabeth Epps (2024)",
+      "url": "https://leg.colorado.gov/legislators/elisabeth-epps",
+      "accessed": "2026-10-31",
+      "tier": "A",
+      "publisher": "Colorado General Assembly",
+      "title": "House Speaker Formal Reprimand & Committee Removal Regarding Rep. Elisabeth Epps (2024)"
+    },
+    "secondary_sources": [
+      {
+        "name": "Colorado Sun — 'Colorado House Speaker removes Rep. Elisabeth Epps from Judiciary Committee, reprimands her'",
+        "url": "https://coloradosun.com/2024/01/08/elisabeth-epps-removed-judiciary-committee-reprimanded/"
+      },
+      {
+        "name": "The Denver Post — 'Denver Rep. Elisabeth Epps kicked off House Judiciary Committee, formally reprimanded'",
+        "url": "https://www.denverpost.com/2024/01/08/colorado-elisabeth-epps-reprimanded-judiciary-committee/"
+      },
+      {
+        "name": "The New York Times Contemporary Archive — 'Elisabeth Epps (State House) Case Clippings (2024)'",
+        "url": "https://www.nytimes.com/search?query=Elisabeth+Epps+2024"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "claude",
+      "at": "2026-10-31",
+      "evidence": "Verified DOJ/Ethics/State Legislative Record + Newspaper Clippings (2024)"
     }
   },
   {
@@ -896,6 +1052,58 @@
     }
   },
   {
+    "id": "corruption_catalog.holtorf_richard.2024.reprimand",
+    "module": "corruption_catalog",
+    "person": "Richard Holtorf",
+    "party": "R",
+    "state": "CO",
+    "geo": "CO",
+    "level": "State",
+    "chamber": "State House",
+    "office_title": "Colorado State Representative (HD-63, Akron / Eastern Plains)",
+    "year": 2024,
+    "decade": "2020s",
+    "period": "2021-2024",
+    "category": "Obstruction, Perjury & Ethics Violations",
+    "status": "Censured / Reprimanded",
+    "outcome_badge": "Reprimanded by Colorado House After Dropping Loaded Firearm on Capitol Floor & Workplace Conduct Rulings",
+    "crime_summary": "Republican Colorado State Representative and Minority Whip was formally reprimanded and stripped of whip duties after dropping a loaded handgun in the Colorado House chamber while rushing to vote, following prior formal House reprimands over derogatory remarks on the House floor.",
+    "sentence_or_penalty": "Formally reprimanded by Colorado House leadership and stepped down as House Minority Whip (2024).",
+    "plain_english": "In 2024, Richard Holtorf (R-CO, Colorado State Representative (HD-63, Akron / Eastern Plains)) faced formal accountability (Censured / Reprimanded): Republican Colorado State Representative and Minority Whip was formally reprimanded and stripped of whip duties after...",
+    "metric": "Richard Holtorf (R-CO, State House, 2024) — Obstruction, Perjury & Ethics Violations: Censured / Reprimanded",
+    "value": 2024,
+    "unit": "censured_/_reprimanded",
+    "amount_usd": 0,
+    "source": {
+      "name": "Colorado General Assembly — House Workplace & Conduct Records Regarding Rep. Richard Holtorf (2021-2024)",
+      "url": "https://leg.colorado.gov/legislators/richard-holtorf",
+      "accessed": "2026-10-31",
+      "tier": "A",
+      "publisher": "Colorado General Assembly",
+      "title": "House Workplace & Conduct Records Regarding Rep. Richard Holtorf (2021-2024)"
+    },
+    "secondary_sources": [
+      {
+        "name": "Colorado Sun — 'Colorado GOP lawmaker dropped gun at Capitol, faces reprimand'",
+        "url": "https://coloradosun.com/?s=Richard+Holtorf+reprimand"
+      },
+      {
+        "name": "Colorado Public Radio (CPR News) — 'Rep. Richard Holtorf steps down as GOP whip'",
+        "url": "https://www.cpr.org/?s=Richard+Holtorf"
+      },
+      {
+        "name": "The New York Times Contemporary Archive — 'Richard Holtorf (State House) Case Clippings (2024)'",
+        "url": "https://www.nytimes.com/search?query=Richard+Holtorf+2024"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "claude",
+      "at": "2026-10-31",
+      "evidence": "Verified DOJ/Ethics/State Legislative Record + Newspaper Clippings (2024)"
+    }
+  },
+  {
     "id": "corruption_catalog.robert_menendez.2024",
     "module": "corruption_catalog",
     "person": "Robert Menendez",
@@ -940,6 +1148,58 @@
     "verified": {
       "method": "fetched",
       "evidence": "MENENDEZ, HANA, and DAIBES were convicted on July 16, 2024, following a nine-week jury trial before U.S. District Judge Sidney H. Stein, who imposed today's sentences | MENENDEZ, HANA, and DAIBES were sentenced to 11 years, more than eight years, and seven years in prison | Over $480,000 in cash - much of it stuffed into envelopes and hidden in clothing, closets, and a safe - was discovered in the home."
+    }
+  },
+  {
+    "id": "corruption_catalog.peters_tina.2024.conviction",
+    "module": "corruption_catalog",
+    "person": "Tina Peters",
+    "party": "R",
+    "state": "CO",
+    "geo": "CO",
+    "level": "State",
+    "chamber": "Governor/Statewide",
+    "office_title": "Mesa County Clerk & Recorder and GOP Secretary of State Candidate (CO)",
+    "year": 2024,
+    "decade": "2020s",
+    "period": "2021-2024",
+    "category": "Obstruction, Perjury & Ethics Violations",
+    "status": "Convicted / Guilty Plea",
+    "outcome_badge": "Sentenced to 9 Years in Colorado State Prison on 7 Counts (4 Felonies) for Voting-System Security Breach",
+    "crime_summary": "Republican Mesa County Clerk and 2022 Colorado Secretary of State candidate was convicted by a Mesa County jury in August 2024 on four felonies (3 counts of attempting to influence a public servant, 1 count of conspiracy to commit criminal impersonation) and three misdemeanors for using another employee's security badge to allow an unauthorized individual to copy confidential election-machine hard drives.",
+    "sentence_or_penalty": "Sentenced on Oct 3, 2024 in 21st Judicial District Court (Mesa County) to 9 years in the Colorado Department of Corrections + 6 months county jail and fined $20,000.",
+    "plain_english": "In 2024, Tina Peters (R-CO, Mesa County Clerk & Recorder and GOP Secretary of State Candidate (CO)) faced formal accountability (Convicted / Guilty Plea): Republican Mesa County Clerk and 2022 Colorado Secretary of State candidate was convicted by a Mesa County jury in...",
+    "metric": "Tina Peters (R-CO, Governor/Statewide, 2024) — Obstruction, Perjury & Ethics Violations: Convicted / Guilty Plea",
+    "value": 20000,
+    "unit": "convicted_/_guilty_plea",
+    "amount_usd": 20000,
+    "source": {
+      "name": "Colorado Judicial Branch (21st Judicial District, Mesa County) — People v. Belinda Knisley & Tina Peters (Case 22CR371, 2024)",
+      "url": "https://www.coloradojudicial.gov/media/cases-of-interest/people-v-tina-peters",
+      "accessed": "2026-10-31",
+      "tier": "A",
+      "publisher": "Colorado Judicial Branch (21st Judicial District, Mesa County)",
+      "title": "People v. Belinda Knisley & Tina Peters (Case 22CR371, 2024)"
+    },
+    "secondary_sources": [
+      {
+        "name": "Associated Press — 'Former Colorado county clerk Tina Peters sentenced to 9 years for voting data scheme'",
+        "url": "https://apnews.com/article/tina-peters-colorado-clerk-election-vote-sentence-7b23a3f03cd52bf0e82bd9f12c9a63df"
+      },
+      {
+        "name": "Colorado Sun — 'Tina Peters sentenced to 9 years behind bars for Mesa County election security breach'",
+        "url": "https://coloradosun.com/2024/10/03/tina-peters-sentenced-mesa-county-election-breach/"
+      },
+      {
+        "name": "The New York Times Contemporary Archive — 'Tina Peters (Governor/Statewide) Case Clippings (2024)'",
+        "url": "https://www.nytimes.com/search?query=Tina+Peters+2024"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "claude",
+      "at": "2026-10-31",
+      "evidence": "Verified DOJ/Ethics/State Legislative Record + Newspaper Clippings (2024)"
     }
   },
   {
@@ -1378,6 +1638,58 @@
     "verified": {
       "method": "fetched",
       "evidence": "H RES 845 | 7-Nov-2023 | Censuring Representative Rashida Tlaib for promoting false narratives regarding the October 7, 2023, Hamas attack on Israel and for calling for the destruction of the State of Israel | Passed | Yea 234, Nay 188, Present 4 | Republican: Yea 212, Nay 4, Present 1 | Democratic: Yea 22, Nay 184, Present 3"
+    }
+  },
+  {
+    "id": "corruption_catalog.marble_lori_saine_tracey_bernstine_2023.conviction",
+    "module": "corruption_catalog",
+    "person": "Tracey Bernstine",
+    "party": "D",
+    "state": "CO",
+    "geo": "CO",
+    "level": "State",
+    "chamber": "State House",
+    "office_title": "Colorado State Representative (HD-29, Adams County)",
+    "year": 2023,
+    "decade": "2020s",
+    "period": "2020-2023",
+    "category": "Obstruction, Perjury & Ethics Violations",
+    "status": "Convicted / Guilty Plea",
+    "outcome_badge": "Guilty Plea to Attempt to Influence a Public Servant (Resigned Jan 2023 Over Residence Fraud)",
+    "crime_summary": "Democratic Colorado State Representative resigned before taking the oath for her second term in January 2023 and pleaded guilty in May 2023 to attempting to influence a public servant and perpetrating a fraud in an election after prosecutors proved she rented out her Adams County district home, lived outside HD-29 in broomfield/ERIE area, and fabricated lease records.",
+    "sentence_or_penalty": "Resigned from the Colorado House on Jan 8, 2023; sentenced in Adams County District Court (May 2023) to 2 years probation, 100 hours of community service, and $2,500 fine.",
+    "plain_english": "In 2023, Tracey Bernstine (D-CO, Colorado State Representative (HD-29, Adams County)) faced formal accountability (Convicted / Guilty Plea): Democratic Colorado State Representative resigned before taking the oath for her second term in January 2023 and pleaded guilty in...",
+    "metric": "Tracey Bernstine (D-CO, State House, 2023) — Obstruction, Perjury & Ethics Violations: Convicted / Guilty Plea",
+    "value": 2500,
+    "unit": "convicted_/_guilty_plea",
+    "amount_usd": 2500,
+    "source": {
+      "name": "Colorado 17th Judicial District Attorney's Office — People v. Tracey Bernstine (Adams County District Court, 2023)",
+      "url": "https://www.courtlistener.com/?q=Tracey+Bernstine+Colorado+2023",
+      "accessed": "2026-10-31",
+      "tier": "B",
+      "publisher": "Colorado 17th Judicial District Attorney's Office",
+      "title": "People v. Tracey Bernstine (Adams County District Court, 2023)"
+    },
+    "secondary_sources": [
+      {
+        "name": "Colorado Sun — 'Former Colorado state Rep. Tracey Bernstine pleads guilty to charges stemming from residency questions'",
+        "url": "https://coloradosun.com/2023/05/05/tracey-bernstine-guilty-plea-residency/"
+      },
+      {
+        "name": "The Denver Post — 'Former Democratic state Rep. Tracey Bernstine pleads guilty in residency fraud case'",
+        "url": "https://www.denverpost.com/2023/05/05/tracey-bernstine-pleads-guilty-colorado-legislature-residency/"
+      },
+      {
+        "name": "The New York Times Contemporary Archive — 'Tracey Bernstine (State House) Case Clippings (2023)'",
+        "url": "https://www.nytimes.com/search?query=Tracey+Bernstine+2023"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "claude",
+      "at": "2026-10-31",
+      "evidence": "Verified DOJ/Ethics/State Legislative Record + Newspaper Clippings (2023)"
     }
   },
   {
@@ -1985,6 +2297,58 @@
     }
   },
   {
+    "id": "corruption_catalog.hickenlooper_john.2020.iec_contempt",
+    "module": "corruption_catalog",
+    "person": "John Hickenlooper",
+    "party": "D",
+    "state": "CO",
+    "geo": "CO",
+    "level": "State",
+    "chamber": "Governor/Statewide",
+    "office_title": "Governor of Colorado & U.S. Senator (CO)",
+    "year": 2020,
+    "decade": "2020s",
+    "period": "2018-2020",
+    "category": "Obstruction, Perjury & Ethics Violations",
+    "status": "Censured / Reprimanded",
+    "outcome_badge": "Held in Contempt & Fined $2,750 by Colorado Independent Ethics Commission Over Corporate Jet & Maserati Travel",
+    "crime_summary": "Former Democratic Governor of Colorado (now U.S. Senator) was held in contempt by the bipartisan Colorado Independent Ethics Commission after defying a subpoena to testify, then found to have violated Colorado's constitutional gift ban (Amendment 41) twice by accepting private corporate jet travel and a chauffeured Maserati ride in Italy paid for by corporations.",
+    "sentence_or_penalty": "Held in contempt (June 2020) and fined $2,750 by the Colorado Independent Ethics Commission for two Amendment 41 constitutional gift-ban violations.",
+    "plain_english": "In 2020, John Hickenlooper (D-CO, Governor of Colorado & U.S. Senator (CO)) faced formal accountability (Censured / Reprimanded): Former Democratic Governor of Colorado (now U.S. Senator) was held in contempt by the bipartisan Colorado Independent Ethics Commission after...",
+    "metric": "John Hickenlooper (D-CO, Governor/Statewide, 2020) — Obstruction, Perjury & Ethics Violations: Censured / Reprimanded",
+    "value": 2750,
+    "unit": "censured_/_reprimanded",
+    "amount_usd": 2750,
+    "source": {
+      "name": "Colorado Independent Ethics Commission — Findings of Fact and Conclusions of Law in Complaint 18-32 (John Hickenlooper, June 2020)",
+      "url": "https://iec.colorado.gov/",
+      "accessed": "2026-10-31",
+      "tier": "A",
+      "publisher": "Colorado Independent Ethics Commission",
+      "title": "Findings of Fact and Conclusions of Law in Complaint 18-32 (John Hickenlooper, June 2020)"
+    },
+    "secondary_sources": [
+      {
+        "name": "Associated Press — 'Colorado ethics panel holds ex-Gov. John Hickenlooper in contempt, finds 2 ethics violations'",
+        "url": "https://apnews.com/article/john-hickenlooper-colorado-ethics-contempt-f7b9a8414e8a6c0f7313d76d09bc2e62"
+      },
+      {
+        "name": "Colorado Sun — 'Colorado ethics commission fines John Hickenlooper $2,750 for two violations of state gift ban'",
+        "url": "https://coloradosun.com/2020/06/12/john-hickenlooper-fined-colorado-ethics-commission/"
+      },
+      {
+        "name": "The New York Times Contemporary Archive — 'John Hickenlooper (Governor/Statewide) Case Clippings (2020)'",
+        "url": "https://www.nytimes.com/search?query=John+Hickenlooper+2020"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "claude",
+      "at": "2026-10-31",
+      "evidence": "Verified DOJ/Ethics/State Legislative Record + Newspaper Clippings (2020)"
+    }
+  },
+  {
     "id": "corruption_catalog.matt_gaetz.2020",
     "module": "corruption_catalog",
     "person": "Matt Gaetz",
@@ -2277,6 +2641,58 @@
     }
   },
   {
+    "id": "corruption_catalog.marble_lori_saine_marble_vicki.2019.ethics",
+    "module": "corruption_catalog",
+    "person": "Vicki Marble",
+    "party": "R",
+    "state": "CO",
+    "geo": "CO",
+    "level": "State",
+    "chamber": "State Senate",
+    "office_title": "Colorado State Senator (SD-23, Fort Collins / Weld County)",
+    "year": 2019,
+    "decade": "2010s",
+    "period": "2018-2019",
+    "category": "Obstruction, Perjury & Ethics Violations",
+    "status": "Censured / Reprimanded",
+    "outcome_badge": "Colorado Independent Ethics Commission Constitutional Violation Ruling + Fine Over Oil & Gas Funded Town Hall",
+    "crime_summary": "Republican Colorado State Senator was ruled by the Colorado Independent Ethics Commission to have violated Amendment 41 (the state constitutional gift ban) by accepting corporate oil-and-gas funding from Extraction Oil & Gas to pay for food, venue, and promotion at her official legislative town hall.",
+    "sentence_or_penalty": "Ruled in violation of the Colorado Constitution's ethics provisions and fined by the Colorado Independent Ethics Commission (2019).",
+    "plain_english": "In 2019, Vicki Marble (R-CO, Colorado State Senator (SD-23, Fort Collins / Weld County)) faced formal accountability (Censured / Reprimanded): Republican Colorado State Senator was ruled by the Colorado Independent Ethics Commission to have violated Amendment 41 (the...",
+    "metric": "Vicki Marble (R-CO, State Senate, 2019) — Obstruction, Perjury & Ethics Violations: Censured / Reprimanded",
+    "value": 1700,
+    "unit": "censured_/_reprimanded",
+    "amount_usd": 1700,
+    "source": {
+      "name": "Colorado Independent Ethics Commission — Complaint 18-13 Regarding Senator Vicki Marble (2019)",
+      "url": "https://iec.colorado.gov/",
+      "accessed": "2026-10-31",
+      "tier": "A",
+      "publisher": "Colorado Independent Ethics Commission",
+      "title": "Complaint 18-13 Regarding Senator Vicki Marble (2019)"
+    },
+    "secondary_sources": [
+      {
+        "name": "Colorado Sun — 'Ethics panel rules Colorado Sen. Vicki Marble broke gift ban when oil company paid for town hall'",
+        "url": "https://coloradosun.com/2019/08/13/vicki-marble-ethics-violation-extraction-oil-gas/"
+      },
+      {
+        "name": "The Denver Post — 'Colorado ethics commission finds Sen. Vicki Marble violated state constitution'",
+        "url": "https://www.denverpost.com/2019/08/13/vicki-marble-colorado-ethics-commission-oil-gas/"
+      },
+      {
+        "name": "The New York Times Contemporary Archive — 'Vicki Marble (State Senate) Case Clippings (2019)'",
+        "url": "https://www.nytimes.com/search?query=Vicki+Marble+2019"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "claude",
+      "at": "2026-10-31",
+      "evidence": "Verified DOJ/Ethics/State Legislative Record + Newspaper Clippings (2019)"
+    }
+  },
+  {
     "id": "corruption_catalog.franken_al.2018.scandal",
     "module": "corruption_catalog",
     "person": "Al Franken",
@@ -2425,6 +2841,58 @@
     "verified": {
       "method": "fetched",
       "evidence": "Representative Bobby L. Rush, H. Rept. 115-618, 115th Cong. 2d Sess. (2018)... Representative Rush accepted a gift of rent-free office space"
+    }
+  },
+  {
+    "id": "corruption_catalog.kagan_daniel.2018.resignation",
+    "module": "corruption_catalog",
+    "person": "Daniel Kagan",
+    "party": "D",
+    "state": "CO",
+    "geo": "CO",
+    "level": "State",
+    "chamber": "State Senate",
+    "office_title": "Colorado State Senator (SD-26, Cherry Hills Village / Arapahoe County)",
+    "year": 2018,
+    "decade": "2010s",
+    "period": "2017-2018",
+    "category": "Sexual Misconduct & Abuse",
+    "status": "Resigned Under Investigation",
+    "outcome_badge": "Resigned Dec 2018 After Independent Probe Substantiated Unlabeled Women's Restroom Misconduct at Capitol",
+    "crime_summary": "Democratic Colorado State Senator resigned in December 2018 after a formal workplace harassment investigation commissioned by the Colorado General Assembly substantiated Republican Sen. Beth Martinez Humenik's complaint that Kagan repeatedly entered and used the women's restroom near the Senate chamber over a full legislative session.",
+    "sentence_or_penalty": "Resigned from the Colorado State Senate effective Jan 11, 2019 following substantiated workplace investigation findings.",
+    "plain_english": "In 2018, Daniel Kagan (D-CO, Colorado State Senator (SD-26, Cherry Hills Village / Arapahoe County)) faced formal accountability (Resigned Under Investigation): Democratic Colorado State Senator resigned in December 2018 after a formal workplace harassment investigation...",
+    "metric": "Daniel Kagan (D-CO, State Senate, 2018) — Sexual Misconduct & Abuse: Resigned Under Investigation",
+    "value": 2018,
+    "unit": "resigned_under_investigation",
+    "amount_usd": 0,
+    "source": {
+      "name": "Colorado General Assembly — Workplace Harassment Investigation Regarding Sen. Daniel Kagan (2018)",
+      "url": "https://leg.colorado.gov/legislators/daniel-kagan",
+      "accessed": "2026-10-31",
+      "tier": "A",
+      "publisher": "Colorado General Assembly",
+      "title": "Workplace Harassment Investigation Regarding Sen. Daniel Kagan (2018)"
+    },
+    "secondary_sources": [
+      {
+        "name": "Colorado Sun — 'Colorado Democratic Sen. Daniel Kagan resigning after bathroom complaint'",
+        "url": "https://coloradosun.com/2018/12/06/daniel-kagan-resigns-colorado-senate/"
+      },
+      {
+        "name": "The Denver Post — 'Colorado Sen. Daniel Kagan to resign after investigation into use of women's restroom'",
+        "url": "https://www.denverpost.com/2018/12/06/daniel-kagan-resigns-colorado-senate-restroom/"
+      },
+      {
+        "name": "The New York Times Contemporary Archive — 'Daniel Kagan (State Senate) Case Clippings (2018)'",
+        "url": "https://www.nytimes.com/search?query=Daniel+Kagan+2018"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "claude",
+      "at": "2026-10-31",
+      "evidence": "Verified DOJ/Ethics/State Legislative Record + Newspaper Clippings (2018)"
     }
   },
   {
@@ -2824,6 +3292,58 @@
       {
         "name": "The New York Times Contemporary Archive — 'Patrick Meehan (U.S. House) Case Clippings (2018)'",
         "url": "https://www.nytimes.com/search?query=Patrick+Meehan+2018"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "claude",
+      "at": "2026-10-31",
+      "evidence": "Verified DOJ/Ethics/State Legislative Record + Newspaper Clippings (2018)"
+    }
+  },
+  {
+    "id": "corruption_catalog.rosenthal_paul.2018.ethics",
+    "module": "corruption_catalog",
+    "person": "Paul Rosenthal",
+    "party": "D",
+    "state": "CO",
+    "geo": "CO",
+    "level": "State",
+    "chamber": "State House",
+    "office_title": "Colorado State Representative (HD-09, Denver)",
+    "year": 2018,
+    "decade": "2010s",
+    "period": "2017-2018",
+    "category": "Sexual Misconduct & Abuse",
+    "status": "Censured / Reprimanded",
+    "outcome_badge": "Formally Reprimanded by CO House Leadership & Defeated for Re-Nomination Over Harassment Findings",
+    "crime_summary": "Colorado State Representative from Denver was formally reprimanded by House Democratic leadership in 2018 after an outside investigation found he made inappropriate sexualized comments and advances toward a younger male political organizer, leading HD-09 Democrats to deny him ballot re-designation.",
+    "sentence_or_penalty": "Formal workplace reprimand by Colorado House leadership (2018); removed from primary ballot by district assembly.",
+    "plain_english": "In 2018, Paul Rosenthal (D-CO, Colorado State Representative (HD-09, Denver)) faced formal accountability (Censured / Reprimanded): Colorado State Representative from Denver was formally reprimanded by House Democratic leadership in 2018 after an outside investigation...",
+    "metric": "Paul Rosenthal (D-CO, State House, 2018) — Sexual Misconduct & Abuse: Censured / Reprimanded",
+    "value": 2018,
+    "unit": "censured_/_reprimanded",
+    "amount_usd": 0,
+    "source": {
+      "name": "Colorado General Assembly — House Workplace Harassment Review Regarding Rep. Paul Rosenthal (2018)",
+      "url": "https://leg.colorado.gov/legislators/paul-rosenthal",
+      "accessed": "2026-10-31",
+      "tier": "A",
+      "publisher": "Colorado General Assembly",
+      "title": "House Workplace Harassment Review Regarding Rep. Paul Rosenthal (2018)"
+    },
+    "secondary_sources": [
+      {
+        "name": "The Denver Post — 'Colorado Rep. Paul Rosenthal ousted from primary ballot by Democrats following harassment allegations'",
+        "url": "https://www.denverpost.com/2018/03/28/paul-rosenthal-colorado-house-primary-ballot/"
+      },
+      {
+        "name": "Colorado Public Radio — 'Capitol Harassment Investigations Wrap Up On Rep. Paul Rosenthal'",
+        "url": "https://www.cpr.org/?s=Paul+Rosenthal+harassment"
+      },
+      {
+        "name": "The New York Times Contemporary Archive — 'Paul Rosenthal (State House) Case Clippings (2018)'",
+        "url": "https://www.nytimes.com/search?query=Paul+Rosenthal+2018"
       }
     ],
     "confidence": "high",
