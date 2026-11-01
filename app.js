@@ -1025,6 +1025,215 @@
     }
   }
 
+  // Top 20 News Outlets Media Bias, Scraped Output & Voter-Impact Radar
+  function initMediaBiasRadar() {
+    const mediaList = (mods.media_bias_top20 || []).slice();
+    if (!mediaList.length) return;
+
+    const specCols = document.getElementById('media-spectrum-columns');
+    const summaryBadges = document.getElementById('media-summary-badges');
+    const mbLean = document.getElementById('mb-lean');
+    const mbFormat = document.getElementById('mb-format');
+    const mbSort = document.getElementById('mb-sort');
+    const mbSearch = document.getElementById('mb-search');
+    const mbCount = document.getElementById('mb-count');
+    const mbDrawer = document.getElementById('mb-detail-drawer');
+    const mbGrid = document.getElementById('mb-cards-grid');
+    const mbTbody = document.getElementById('mb-tbody');
+
+    const demCount = mediaList.filter(r => r.party_code === 'D').length;
+    const cenCount = mediaList.filter(r => r.party_code === 'C').length;
+    const repCount = mediaList.filter(r => r.party_code === 'R').length;
+    const totalScraped = mediaList.reduce((acc, r) => acc + ((r.scraped_output && r.scraped_output.scraped_count) || 0), 0);
+
+    if (summaryBadges) {
+      summaryBadges.innerHTML = `
+        <span style="background:#dbeafe;color:#1e40af;border:1px solid #93c5fd;padding:5px 11px;border-radius:999px;font-size:0.76rem;font-weight:800">🔵 ${demCount} Lean Democrat / Liberal</span>
+        <span style="background:#f1f5f9;color:#0f172a;border:1px solid #cbd5e1;padding:5px 11px;border-radius:999px;font-size:0.76rem;font-weight:800">⚪ ${cenCount} Nonpartisan Center / Wire</span>
+        <span style="background:#fee2e2;color:#991b1b;border:1px solid #fca5a5;padding:5px 11px;border-radius:999px;font-size:0.76rem;font-weight:800">🔴 ${repCount} Lean Republican / Conservative</span>
+        <span style="background:#fef3c7;color:#92400e;border:1px solid #fcd34d;padding:5px 11px;border-radius:999px;font-size:0.76rem;font-weight:800">⚡ ${totalScraped} Live Output Headlines Scraped</span>
+      `;
+    }
+
+    function leanBadge(r) {
+      if (r.party_code === 'D') {
+        return `<span style="background:#dbeafe;color:#1d4ed8;border:1px solid #93c5fd;padding:3px 9px;border-radius:999px;font-size:0.73rem;font-weight:800">🔵 ${esc(r.lean_category)} · ${esc(r.party_alignment)} (${r.lean_score})</span>`;
+      }
+      if (r.party_code === 'R') {
+        return `<span style="background:#fee2e2;color:#b91c1c;border:1px solid #fca5a5;padding:3px 9px;border-radius:999px;font-size:0.73rem;font-weight:800">🔴 ${esc(r.lean_category)} · ${esc(r.party_alignment)} (+${r.lean_score})</span>`;
+      }
+      return `<span style="background:#f1f5f9;color:#0f172a;border:1px solid #94a3b8;padding:3px 9px;border-radius:999px;font-size:0.73rem;font-weight:800">⚪ ${esc(r.lean_category)} · Nonpartisan Wire/Broadcaster (${r.lean_score})</span>`;
+    }
+
+    function renderSpectrumBar(score) {
+      const pct = Math.max(4, Math.min(96, Math.round(((score + 100) / 200) * 100)));
+      const dotColor = score <= -15 ? '#1d4ed8' : (score >= 15 ? '#b91c1c' : '#0f172a');
+      return `
+        <div style="margin:10px 0 6px">
+          <div style="display:flex;justify-content:space-between;font-size:0.7rem;font-weight:700;color:#475569;margin-bottom:3px">
+            <span>Left / Dem (-100)</span>
+            <span>Center (0)</span>
+            <span>Right / GOP (+100)</span>
+          </div>
+          <div style="position:relative;height:10px;border-radius:999px;background:linear-gradient(90deg,#2563eb 0%,#93c5fd 35%,#e2e8f0 50%,#fca5a5 65%,#dc2626 100%)">
+            <div style="position:absolute;left:50%;top:-2px;bottom:-2px;width:2px;background:#334155"></div>
+            <div style="position:absolute;left:calc(${pct}% - 7px);top:-3px;width:16px;height:16px;border-radius:50%;background:${dotColor};border:2.5px solid #ffffff;box-shadow:0 2px 5px rgba(0,0,0,0.3)" title="Lean Score: ${score}"></div>
+          </div>
+        </div>
+      `;
+    }
+
+    if (specCols) {
+      const groups = [
+        { code: 'D', title: '🔵 Leans Democrat / Liberal (' + demCount + ')', bg: '#eff6ff', border: '#93c5fd', color: '#1e3a8a' },
+        { code: 'C', title: '⚪ Nonpartisan Center / Wire (' + cenCount + ')', bg: '#f8fafc', border: '#cbd5e1', color: '#0f172a' },
+        { code: 'R', title: '🔴 Leans Republican / Conservative (' + repCount + ')', bg: '#fef2f2', border: '#fca5a5', color: '#991b1b' }
+      ];
+      specCols.innerHTML = groups.map(g => {
+        const items = mediaList.filter(r => r.party_code === g.code);
+        return `<div style="background:${g.bg};border:1.5px solid ${g.border};border-radius:10px;padding:12px">
+          <div style="font-weight:800;font-size:0.84rem;color:${g.color};margin-bottom:8px">${g.title}</div>
+          <div style="display:flex;flex-wrap:wrap;gap:6px">
+            ${items.map(r => `<button type="button" onclick="window.openMediaOutlet('${esc(r.id)}')" style="background:#ffffff;border:1px solid ${g.border};color:#0f172a;border-radius:999px;padding:4px 10px;font-size:0.76rem;font-weight:700;cursor:pointer;box-shadow:0 1px 2px rgba(0,0,0,0.04)">#${r.rank} ${esc(r.name)} <span style="opacity:0.7">(${r.lean_score > 0 ? '+' + r.lean_score : r.lean_score})</span></button>`).join('')}
+          </div>
+        </div>`;
+      }).join('');
+    }
+
+    window.openMediaOutlet = function(id) {
+      const r = mediaList.find(x => x.id === id);
+      if (!r || !mbDrawer) return;
+      const headlines = (r.scraped_output && r.scraped_output.sample_headlines) || [];
+      const secLinks = (r.secondary_sources || []).map(s => `<a class="src-badge" href="${esc(s.url)}" target="_blank" rel="noopener" style="padding:5px 10px;font-weight:700">🔗 ${esc(s.name)}</a>`).join(' ');
+      mbDrawer.style.display = 'block';
+      mbDrawer.innerHTML = `
+        <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:12px;flex-wrap:wrap;border-bottom:1px solid #cbd5e1;padding-bottom:12px;margin-bottom:14px">
+          <div>
+            <div style="font-size:0.75rem;font-weight:800;color:#0369a1;text-transform:uppercase">TOP 20 OUTLET DOSSIER · RANK #${r.rank} · ${esc(r.medium)}</div>
+            <h3 style="margin:4px 0 6px;font-size:1.35rem;color:#0f172a">${esc(r.name)}</h3>
+            <div style="display:flex;gap:8px;flex-wrap:wrap;align-items:center">
+              ${leanBadge(r)}
+              <span style="background:#ecfdf5;color:#065f46;border:1px solid #6ee7b7;padding:3px 9px;border-radius:999px;font-size:0.73rem;font-weight:800">✓ Factual Score: ${r.factual_score}/100 (${esc(r.factual_rating)})</span>
+              <span style="font-size:0.76rem;color:#475569"><strong>Owner:</strong> ${esc(r.ownership)} · <strong>HQ:</strong> ${esc(r.hq)}</span>
+            </div>
+          </div>
+          <button type="button" onclick="document.getElementById('mb-detail-drawer').style.display='none'" style="background:#f1f5f9;border:1px solid #94a3b8;border-radius:8px;padding:6px 12px;font-weight:800;cursor:pointer">✕ Close Dossier</button>
+        </div>
+        ${renderSpectrumBar(r.lean_score)}
+        <div class="grid-2" style="gap:14px;margin-top:12px">
+          <div style="background:#f8fafc;border:1px solid #cbd5e1;border-radius:10px;padding:14px">
+            <div style="font-size:0.74rem;font-weight:800;color:#0369a1;text-transform:uppercase;margin-bottom:4px">10TH-GRADE PLAIN-ENGLISH SUMMARY</div>
+            <p style="margin:0 0 10px;font-size:0.9rem;color:#0f172a;line-height:1.5">${esc(r.plain_english)}</p>
+            <div style="font-size:0.74rem;font-weight:800;color:#b45309;text-transform:uppercase;margin-bottom:4px">HOW THIS OUTLET TRANSLATES CONGRESSIONAL VOTES TO YOUR LIFE</div>
+            <p style="margin:0 0 10px;font-size:0.88rem;color:#1e293b;line-height:1.5">${esc(r.voter_impact_translation)}</p>
+            <div style="font-size:0.8rem;color:#475569"><strong>Audience Split:</strong> ${esc(r.pew_audience_split)}</div>
+            <div style="font-size:0.8rem;color:#991b1b;margin-top:4px"><strong>Blindspot Warning:</strong> ${esc(r.blindspot_warning)}</div>
+          </div>
+          <div style="background:#fffbeb;border:1px solid #fcd34d;border-radius:10px;padding:14px">
+            <div style="font-size:0.74rem;font-weight:800;color:#92400e;text-transform:uppercase;margin-bottom:6px">⚡ LIVE SCRAPED OUTPUT HEADLINES (${(r.scraped_output && r.scraped_output.scraped_count) || 0} RECENT STORIES ANALYZED)</div>
+            <div style="font-size:0.78rem;color:#475569;margin-bottom:8px"><strong>Framing Signature:</strong> ${esc(r.framing_signature)}</div>
+            <ul style="margin:0;padding-left:18px;font-size:0.84rem;color:#0f172a;line-height:1.45">
+              ${headlines.map(h => `<li style="margin-bottom:6px"><a href="${esc(h.url)}" target="_blank" rel="noopener" style="color:#0369a1;font-weight:700;text-decoration:underline">${esc(h.title)}</a> <span style="font-size:0.72rem;color:#64748b">(${esc(h.published)})</span></li>`).join('')}
+            </ul>
+          </div>
+        </div>
+        <div style="margin-top:14px;display:flex;flex-wrap:wrap;gap:8px;align-items:center">
+          <strong style="font-size:0.78rem;color:#0f172a">Verify Bias Ratings &amp; Live Newsroom:</strong>
+          ${srcLinks(r.source)}
+          ${secLinks}
+        </div>
+      `;
+      mbDrawer.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+    };
+
+    function applyMediaFilters() {
+      const leanVal = mbLean ? mbLean.value : 'ALL';
+      const fmtVal = mbFormat ? mbFormat.value : 'ALL';
+      const sortVal = mbSort ? mbSort.value : 'rank';
+      const q = mbSearch ? mbSearch.value.trim().toLowerCase() : '';
+
+      let filtered = mediaList.filter(r => {
+        if (leanVal !== 'ALL' && r.party_code !== leanVal) return false;
+        if (fmtVal !== 'ALL') {
+          const m = (r.medium + ' ' + r.format_badge).toLowerCase();
+          if (fmtVal === 'Cable' && !m.includes('cable')) return false;
+          if (fmtVal === 'Broadcast' && !(m.includes('broadcast') || m.includes('public tv'))) return false;
+          if (fmtVal === 'Print' && !(m.includes('print') || m.includes('magazine') || m.includes('tabloid'))) return false;
+          if (fmtVal === 'Wire' && !m.includes('wire')) return false;
+          if (fmtVal === 'Audio' && !(m.includes('radio') || m.includes('audio') || m.includes('podcast'))) return false;
+        }
+        if (q) {
+          const hText = ((r.scraped_output && r.scraped_output.sample_headlines) || []).map(h => h.title).join(' ');
+          const hay = (r.name + ' ' + r.medium + ' ' + r.party_alignment + ' ' + r.plain_english + ' ' + r.voter_impact_translation + ' ' + r.framing_signature + ' ' + hText).toLowerCase();
+          if (!hay.includes(q)) return false;
+        }
+        return true;
+      });
+
+      filtered.sort((a, b) => {
+        if (sortVal === 'factual') return b.factual_score - a.factual_score;
+        if (sortVal === 'left') return a.lean_score - b.lean_score;
+        if (sortVal === 'right') return b.lean_score - a.lean_score;
+        return a.rank - b.rank;
+      });
+
+      if (mbCount) mbCount.textContent = `Showing ${filtered.length} of ${mediaList.length} outlets`;
+
+      if (mbGrid) {
+        mbGrid.innerHTML = filtered.map(r => {
+          const borderClass = r.party_code === 'R' ? 'rep-card' : (r.party_code === 'D' ? 'dem-card' : 'gold-card');
+          const headlines = ((r.scraped_output && r.scraped_output.sample_headlines) || []).slice(0, 2);
+          return `<div class="card ${borderClass}" style="cursor:pointer;display:flex;flex-direction:column;justify-content:space-between" onclick="if(event.target.tagName!=='A'){window.openMediaOutlet('${esc(r.id)}')}">
+            <div>
+              <div style="display:flex;justify-content:space-between;align-items:flex-start;gap:8px;flex-wrap:wrap;margin-bottom:6px">
+                <div>
+                  <span style="font-size:0.72rem;font-weight:800;color:#475569;text-transform:uppercase">RANK #${r.rank} · ${esc(r.format_badge)}</span>
+                  <h3 style="margin:2px 0 4px;font-size:1.15rem;color:#0f172a">${esc(r.name)}</h3>
+                </div>
+                <span style="background:#ecfdf5;color:#065f46;border:1px solid #6ee7b7;padding:3px 8px;border-radius:999px;font-size:0.72rem;font-weight:800">Factual: ${r.factual_score}/100</span>
+              </div>
+              <div style="margin-bottom:6px">${leanBadge(r)}</div>
+              ${renderSpectrumBar(r.lean_score)}
+              <p style="font-size:0.86rem;color:#1e293b;margin:8px 0;line-height:1.45"><strong>Plain-English Lean:</strong> ${esc(r.plain_english)}</p>
+              <div style="background:#f8fafc;border-left:3px solid #0369a1;padding:8px 10px;border-radius:6px;font-size:0.82rem;color:#0f172a;margin-bottom:8px">
+                <strong>How It Impacts Your Vote:</strong> ${esc(r.voter_impact_translation)}
+              </div>
+              <div style="background:#fffbeb;border:1px solid #fde68a;border-radius:8px;padding:8px 10px;font-size:0.78rem;color:#1e293b">
+                <div style="font-weight:800;color:#92400e;margin-bottom:4px">⚡ Live Scraped Output Sample (${(r.scraped_output && r.scraped_output.scraped_count) || 0} articles):</div>
+                ${headlines.map(h => `<div style="margin-bottom:3px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis">• <a href="${esc(h.url)}" target="_blank" rel="noopener" style="color:#0369a1;font-weight:600">${esc(h.title)}</a></div>`).join('')}
+              </div>
+            </div>
+            <div style="margin-top:10px;padding-top:8px;border-top:1px solid #e2e8f0;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:6px">
+              <span style="font-size:0.74rem;font-weight:800;color:#0369a1">🔍 Click Card for Full Dossier &amp; Blindspots</span>
+              <div>${srcLinks(r.source)}</div>
+            </div>
+          </div>`;
+        }).join('');
+      }
+
+      if (mbTbody) {
+        mbTbody.innerHTML = filtered.map(r => {
+          const topHeadline = ((r.scraped_output && r.scraped_output.sample_headlines) || [])[0];
+          return `<tr style="cursor:pointer" onclick="if(event.target.tagName!=='A'){window.openMediaOutlet('${esc(r.id)}')}">
+            <td><strong>#${r.rank} ${esc(r.name)}</strong><div style="font-size:0.74rem;color:#64748b">${esc(r.ownership)}</div></td>
+            <td><span class="chip" style="background:#f1f5f9;color:#0f172a;font-weight:700">${esc(r.medium)}</span></td>
+            <td>${leanBadge(r)}<div style="font-size:0.74rem;color:#475569;margin-top:4px">${esc(r.pew_audience_split)}</div></td>
+            <td><strong>${r.factual_score}/100</strong><div style="font-size:0.74rem;color:#475569">AllSides: ${esc(r.allsides_rating)} · Ad Fontes: ${esc(r.ad_fontes_zone)}</div></td>
+            <td style="font-size:0.82rem">
+              <div style="margin-bottom:4px"><strong>Voter Impact:</strong> ${esc(r.voter_impact_translation)}</div>
+              ${topHeadline ? `<div style="font-size:0.76rem;color:#0369a1"><strong>Live Output:</strong> <a href="${esc(topHeadline.url)}" target="_blank" rel="noopener">${esc(topHeadline.title)}</a></div>` : ''}
+            </td>
+            <td>${srcLinks(r.source)}</td>
+          </tr>`;
+        }).join('');
+      }
+    }
+
+    [mbLean, mbFormat, mbSort].forEach(el => el && el.addEventListener('change', applyMediaFilters));
+    if (mbSearch) mbSearch.addEventListener('input', applyMediaFilters);
+    applyMediaFilters();
+  }
+
   // Global search across all 5,050+ records
   const searchInput = document.getElementById('global-search');
   const searchResults = document.getElementById('global-search-results');
@@ -1062,4 +1271,5 @@
   renderFamilyImpactBills();
   initQuickJumpBar();
   renderOtherPanels();
+  initMediaBiasRadar();
 })();

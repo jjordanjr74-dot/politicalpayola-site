@@ -94,6 +94,7 @@
       <button class="tab-btn" data-tab="congress">U.S. Demographics &amp; Congress</button>
       <button class="tab-btn" data-tab="states">50 States Data Explorer</button>
       <button class="tab-btn" data-tab="scandals">Corruption Archive, PAC Money &amp; Scandals</button>
+      <button class="tab-btn" data-tab="media" style="color:#0369a1;font-weight:800">📰 Top 20 News Outlets &amp; Bias Radar</button>
       <button class="tab-btn" data-tab="pro" style="color:var(--gold);font-weight:800">★ Pro Data, API &amp; Dossiers</button>
     </nav>
   </header>
@@ -108,19 +109,24 @@
         <p>Every statistic cross-references peer-reviewed journals (<em>JAMA Network Open</em>, <em>NEJM</em>, <em>AJPM</em>, <em>Presidential Studies Quarterly</em>, <em>Journal of Labor Economics</em>) and nonpartisan research institutions (Pew, KFF, NBER, PIIE, CHDS, Rutgers CAWP, Brown Costs of War) alongside official roll-call records.</p>
       </div>
       <div class="stat-pills">
-        <div class="stat-pill"><div class="num">5,253</div><div class="lbl">Verified records</div></div>
-        <div class="stat-pill"><div class="num">25</div><div class="lbl">Validated modules</div></div>
+        <div class="stat-pill"><div class="num">5,308</div><div class="lbl">Verified records</div></div>
+        <div class="stat-pill"><div class="num">26</div><div class="lbl">Validated modules</div></div>
         <div class="stat-pill"><div class="num">539</div><div class="lbl">Lawmaker portraits</div></div>
-        <div class="stat-pill"><div class="num">1980–2026</div><div class="lbl">Modern Era to 119th Congress</div></div>
+        <div class="stat-pill"><div class="num">Top 20</div><div class="lbl">News Outlets Scraped</div></div>
       </div>
     </section>
 
     <!-- PROPUBLICA-CALIBER FEATURED QUICK-ACTION TILES -->
     <div class="quick-jump-bar" id="quick-jump-bar">
+      <button class="jump-btn" data-goto-tab="media" data-goto-id="media-bias-top" style="border-color:rgba(3,105,161,0.45);background:linear-gradient(135deg,#f0f9ff 0%,#fffbeb 52%,#fef2f2 100%)">
+        <div class="jb-kicker" style="color:#0369a1">TOP 20 NEWS OUTLETS · LIVE OUTPUT &amp; BIAS RADAR</div>
+        <div class="jb-title" style="color:#0f172a">Which Way Does Your News Outlet Lean? (Left vs. Center vs. Right) ➔</div>
+        <div class="jb-sub" style="color:#334155">Fox News, MSNBC, ABC, NBC, CBS, Reuters, AP, BBC, Al Jazeera, NYT, WSJ &amp; 9 more — live scraped headlines + 10th-grade voter-impact translation.</div>
+      </button>
       <button class="jump-btn" data-goto-tab="scandals" data-goto-id="corruption-catalog-top" style="border-color:rgba(220,38,38,0.45);background:linear-gradient(135deg,#fef2f2 0%,#eff6ff 100%)">
         <div class="jb-kicker" style="color:#b91c1c">FEDERAL &amp; STATE CORRUPTION ARCHIVE · 1980–2026</div>
         <div class="jb-title" style="color:#0f172a">Senators &amp; Congressmen Indicted, Arrested &amp; Convicted ➔</div>
-        <div class="jb-sub" style="color:#334155">142 verified Democrat &amp; Republican cases separated by party, year, chamber &amp; crime (bribery, campaign finance, sexual misconduct) with clickable newspaper clippings.</div>
+        <div class="jb-sub" style="color:#334155">177 verified Democrat &amp; Republican cases separated by party, year, chamber &amp; crime (bribery, campaign finance, sexual misconduct) with clickable newspaper clippings.</div>
       </button>
       <button class="jump-btn" data-goto-tab="laws" data-goto-id="family-bills-top">
         <div class="jb-kicker">KITCHEN-TABLE ECONOMICS · 119TH CONGRESS &amp; HISTORICAL</div>
@@ -131,11 +137,6 @@
         <div class="jb-kicker">OFFICIAL FEC 2024–2026 CYCLE FILINGS</div>
         <div class="jb-title">Top 25 PAC &amp; Corporate Money Recipients ➔</div>
         <div class="jb-sub">Ranked highest-to-lowest with verified FEC committee IDs, party affiliation, and exact percentage of total campaign funds.</div>
-      </button>
-      <button class="jump-btn" data-goto-tab="pro" data-goto-id="pro-pricing-top" style="border-color:rgba(245,158,11,0.55);background:linear-gradient(135deg,#fffbeb 0%,#fef3c7 100%);color:#1e293b">
-        <div class="jb-kicker" style="color:#b45309">PRO DATA · WEBMCP API · STATION-LEGAL DOSSIERS</div>
-        <div class="jb-title" style="color:#0f172a">Oppo-in-a-Box, API Keys &amp; Custom Briefs ➔</div>
-        <div class="jb-sub" style="color:#334155">Instant bulk CSV/JSON downloads, union/newsroom embed widgets, TV-ad legal backup binders &amp; unbought reader memberships.</div>
       </button>
     </div>
 
@@ -692,7 +693,99 @@
       </div>
     </section>
 
-    <!-- PANEL 6: PRO DATA, API, EMBED WIDGETS, DOSSIERS & UNBOUGHT READER PASS -->
+    <!-- PANEL 6: TOP 20 NEWS OUTLETS MEDIA BIAS, LIVE SCRAPED OUTPUT & VOTER-IMPACT RADAR -->
+    <section id="panel-media" class="section-panel">
+      <div id="media-bias-top" class="section-head">
+        <div>
+          <h2>Top 20 News Outlets: Political Lean, Scraped Output &amp; 10th-Grade Voter-Impact Radar</h2>
+          <div class="sub">Instant visual guide to America's Top 20 digital, print newspaper, cable TV, broadcast TV, public radio, wire service &amp; magazine outlets — showing whether their output leans Democrat/Left, Center, or Republican/Right, backed by live scraped headlines and Pew Research, AllSides &amp; Ad Fontes benchmarks.</div>
+        </div>
+      </div>
+
+      <!-- SUNLIT EDITORIAL SPECTRUM OVERVIEW BAR -->
+      <div id="media-spectrum-shell" style="background:linear-gradient(135deg,#eff6ff 0%,#fffdf9 50%,#fef2f2 100%);border:2px solid #cbd5e1;border-radius:14px;padding:22px;margin-bottom:22px;box-shadow:0 6px 20px rgba(15,23,42,0.06)">
+        <div style="display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:10px;margin-bottom:14px">
+          <div>
+            <span style="font-size:0.75rem;font-weight:800;letter-spacing:0.08em;text-transform:uppercase;color:#0369a1">INTERACTIVE IDEOLOGICAL SPECTRUM · CLICK ANY OUTLET PILL TO INSPECT</span>
+            <h3 style="margin:4px 0 0;font-size:1.25rem;color:#0f172a">At-a-Glance Political Lean Meter (Purely Output-Based: -100 Left/Democrat to +100 Right/Republican)</h3>
+          </div>
+          <div id="media-summary-badges" style="display:flex;gap:8px;flex-wrap:wrap"></div>
+        </div>
+        <div style="position:relative;height:20px;border-radius:999px;background:linear-gradient(90deg,#1d4ed8 0%,#60a5fa 32%,#e2e8f0 50%,#f87171 68%,#b91c1c 100%);margin-bottom:10px;box-shadow:inset 0 2px 4px rgba(15,23,42,0.18)">
+          <div style="position:absolute;left:50%;top:-4px;bottom:-4px;width:3px;background:#0f172a;border-radius:2px" title="Nonpartisan Center (0)"></div>
+        </div>
+        <div style="display:flex;justify-content:space-between;font-size:0.76rem;font-weight:800;color:#334155;margin-bottom:16px">
+          <span style="color:#1d4ed8">◀ LEANS DEMOCRAT / LIBERAL (-100 to -15)</span>
+          <span style="color:#0f172a">NONPARTISAN CENTER / WIRE (-14 to +14)</span>
+          <span style="color:#b91c1c">LEANS REPUBLICAN / CONSERVATIVE (+15 to +100) ▶</span>
+        </div>
+        <div id="media-spectrum-columns" style="display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:14px"></div>
+      </div>
+
+      <!-- INTERACTIVE FILTER & SEARCH BAR -->
+      <div class="filter-bar" style="background:#ffffff;border:1px solid #cbd5e1;padding:16px;border-radius:12px;margin-bottom:20px;display:flex;flex-wrap:wrap;gap:12px;align-items:center">
+        <div>
+          <label for="mb-lean" style="font-size:0.75rem;font-weight:800;color:#334155;display:block;margin-bottom:4px">POLITICAL LEAN / PARTY</label>
+          <select id="mb-lean" aria-label="Filter by Political Lean">
+            <option value="ALL">All 20 Outlets (Left, Center &amp; Right)</option>
+            <option value="D">Leans Democrat / Liberal (Left &amp; Lean Left)</option>
+            <option value="C">Nonpartisan Center / Wire Services</option>
+            <option value="R">Leans Republican / Conservative (Right &amp; Lean Right)</option>
+          </select>
+        </div>
+        <div>
+          <label for="mb-format" style="font-size:0.75rem;font-weight:800;color:#334155;display:block;margin-bottom:4px">MEDIUM (DIGITAL / HARD COPY / TV)</label>
+          <select id="mb-format" aria-label="Filter by Medium">
+            <option value="ALL">All Formats (Digital, Print, Cable, Broadcast, Wire)</option>
+            <option value="Cable">Cable TV &amp; Digital (Fox, MSNBC, CNN)</option>
+            <option value="Broadcast">Broadcast TV &amp; Public TV (ABC, NBC, CBS, BBC, PBS, Al Jazeera)</option>
+            <option value="Print">Hard-Copy Print Newspapers &amp; Magazines (NYT, WSJ, WaPo, NY Post, Politico, Hill, Atlantic)</option>
+            <option value="Wire">Global Wire Services (Reuters, AP News)</option>
+            <option value="Audio">Public Radio &amp; Digital Audio (NPR, Daily Wire)</option>
+          </select>
+        </div>
+        <div>
+          <label for="mb-sort" style="font-size:0.75rem;font-weight:800;color:#334155;display:block;margin-bottom:4px">SORT OUTLETS BY</label>
+          <select id="mb-sort" aria-label="Sort Outlets">
+            <option value="rank">Influence &amp; Reach Rank (#1 to #20)</option>
+            <option value="factual">Highest Factual Accuracy Score First</option>
+            <option value="left">Most Left / Democrat Leaning First</option>
+            <option value="right">Most Right / Republican Leaning First</option>
+          </select>
+        </div>
+        <div style="flex:1;min-width:220px">
+          <label for="mb-search" style="font-size:0.75rem;font-weight:800;color:#334155;display:block;margin-bottom:4px">SEARCH OUTLETS, HEADLINES OR TOPICS</label>
+          <input id="mb-search" type="search" placeholder="Search Fox, MSNBC, Reuters, BBC, Al Jazeera, taxes, border, Medicaid..." style="width:100%" />
+        </div>
+        <div id="mb-count" style="font-weight:800;color:#0f172a;font-size:0.9rem;margin-left:auto">Showing 20 of 20 outlets</div>
+      </div>
+
+      <!-- EXPANDABLE OUTLET DOSSIER DRAWER -->
+      <div id="mb-detail-drawer" style="display:none;margin-bottom:24px;padding:22px;background:#fffdf9;border:2px solid #0369a1;border-radius:14px;box-shadow:0 12px 30px rgba(15,23,42,0.12)"></div>
+
+      <!-- INTERACTIVE OUTLET CARDS GRID -->
+      <div id="mb-cards-grid" class="grid-2" style="margin-bottom:28px"></div>
+
+      <!-- FULL SEARCHABLE COMPARISON TABLE -->
+      <h3 style="margin:24px 0 10px;color:#0f172a">Complete Top 20 News Outlets Verification Matrix (Click Any Row for Live Scraped Headlines &amp; Voter Translation)</h3>
+      <div class="table-wrap">
+        <table>
+          <thead>
+            <tr>
+              <th>Rank &amp; Outlet</th>
+              <th>Medium (Digital / Hard Copy)</th>
+              <th>Political Lean &amp; Party Alignment</th>
+              <th>Factual Score &amp; Benchmarks</th>
+              <th>10th-Grade Voter-Impact Translation &amp; Live Output</th>
+              <th>Verified Sources</th>
+            </tr>
+          </thead>
+          <tbody id="mb-tbody"></tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- PANEL 7: PRO DATA, API, EMBED WIDGETS, DOSSIERS & UNBOUGHT READER PASS -->
     <section id="panel-pro" class="section-panel">
       <div id="pro-pricing-top" class="pro-editorial-shell">
         <div class="pro-editorial-hero">
@@ -867,8 +960,8 @@
     </section>
   </main>
 
-  <script src="data_bundle.js?v=20261031b"></script>
-  <script src="app.js?v=20261031b"></script>
+  <script src="data_bundle.js?v=20261101a"></script>
+  <script src="app.js?v=20261101a"></script>
   <script>
   (function initPayolaBilingualAndWebMCP() {
     if (navigator.modelContext && typeof navigator.modelContext.registerTool === 'function') {
@@ -880,6 +973,9 @@
     }
     var esMap = {
       'Verified Multi-Source Civic Atlas (1981–2026)': 'Atlas Cívico Verificado de Múltiples Fuentes (1981–2026)',
+      '📰 Top 20 News Outlets & Bias Radar': '📰 Los 20 Principales Medios y Radar de Sesgo',
+      'Which Way Does Your News Outlet Lean? (Left vs. Center vs. Right) ➔': '¿Hacia Dónde Se Inclina Tu Medio de Noticias? (Izquierda vs. Centro vs. Derecha) ➔',
+      'Top 20 News Outlets: Political Lean, Scraped Output & 10th-Grade Voter-Impact Radar': 'Los 20 Principales Medios: Inclinación Política, Titulares en Vivo e Impacto al Votante',
       '★ Pro Data, API & Dossiers': '★ Datos Pro, API y Dossiers',
       'Oppo-in-a-Box, API Keys & Custom Briefs ➔': 'Oppo-in-a-Box, Claves API e Informes a Medida ➔',
       'Turn 5,111 Primary-Source Receipts Into Instant Campaign, Union & Newsroom Firepower.': 'Convierte 5,111 Registros Oficiales en Evidencia Instantánea para Campañas, Sindicatos y Medios.',

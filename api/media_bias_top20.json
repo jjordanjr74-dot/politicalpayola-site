@@ -1,0 +1,1738 @@
+[
+  {
+    "id": "media_01_fox_news",
+    "module": "media_bias_top20",
+    "rank": 1,
+    "name": "Fox News",
+    "medium": "Cable TV & Digital",
+    "format_badge": "Cable News / Digital",
+    "ownership": "Fox Corporation (Murdoch Family Trust)",
+    "hq": "New York, NY",
+    "homepage": "https://www.foxnews.com/politics",
+    "rss_url": "https://moxie.foxnews.com/google-publisher/politics.xml",
+    "lean_category": "Right",
+    "party_alignment": "Leans Republican / Conservative",
+    "party_code": "R",
+    "lean_score": 68,
+    "factual_score": 66,
+    "factual_rating": "Mixed — Straight News vs. Heavy Prime-Time Opinion",
+    "allsides_rating": "Right",
+    "ad_fontes_zone": "Skews Right / Hyper-Partisan Right (Opinion)",
+    "pew_audience_split": "86% of regular viewers identify as Republican or lean Republican (Pew Research Center)",
+    "plain_english": "Fox News is America's highest-rated cable network and strongly favors Republican lawmakers and conservative causes. Its daytime reporters cover breaking Capitol Hill news, but its prime-time hosts heavily attack Democratic spending bills while promoting GOP tax cuts, border ",
+    "voter_impact_translation": "When Congress votes on taxes, border funding, or Medicaid, Fox frames Republican 'Yea' votes as protecting taxpayers and border security, while framing Democratic programs as inflationary government waste.",
+    "framing_signature": "Heavy emphasis on border security, tax relief, government spending, religious liberty, and culture-war debates.",
+    "blindspot_warning": "Often downplays CBO deficit projections on Republican tax cuts and corporate deregulation.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [],
+      "detected_right_signals": [],
+      "observed_output_lean": "Republican / Conservative Framing",
+      "sample_headlines": [
+        {
+          "title": "Connecticut Dem Sen Chris Murphy hospitalized Saturday for stroke",
+          "url": "https://www.foxnews.com/politics/connecticut-dem-sen-chris-murphy-hospitalized-stroke",
+          "published": "Sun, 01 Nov 2026 13:33:11 -0400"
+        },
+        {
+          "title": "'Squad' rakes in record $2.35M while slamming the door on cop donations",
+          "url": "https://www.foxnews.com/politics/squad-rakes-record-2-35m-slamming-door-cop-donations",
+          "published": "Sun, 01 Nov 2026 12:50:54 -0400"
+        },
+        {
+          "title": "Democrat Haley Stevens endorses GOP Senate nominee Mike Rogers at Detroit church",
+          "url": "https://www.foxnews.com/politics/haley-stevens-appears-alongside-gop-rival-mike-rogers-detroit-church",
+          "published": "Sun, 01 Nov 2026 12:04:03 -0400"
+        },
+        {
+          "title": "Inside top Trump bulldog’s plan to save House GOP majority and defy history",
+          "url": "https://www.foxnews.com/politics/inside-top-trump-bulldog-plan-save-house-gop-majority-defy-history",
+          "published": "Sun, 01 Nov 2026 12:00:47 -0400"
+        }
+      ]
+    },
+    "metric": "#1 Fox News (Cable News / Digital) — Right (Leans Republican / Conservative)",
+    "value": 68,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/cable-news/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Journalism & Media Fact Sheet",
+      "title": "Political Polarization & Media Habits: Cable News Audience Ideology",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — Fox News",
+        "url": "https://www.allsides.com/news-source/fox-news-media-bias"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — Fox News Profile",
+        "url": "https://adfontesmedia.com/fox-news-bias-and-reliability/"
+      },
+      {
+        "name": "Fox News Official Politics Desk",
+        "url": "https://www.foxnews.com/politics"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_02_msnbc",
+    "module": "media_bias_top20",
+    "rank": 2,
+    "name": "MSNBC (MS NOW)",
+    "medium": "Cable TV & Digital",
+    "format_badge": "Cable News / Digital",
+    "ownership": "NBCUniversal / SpinCo (Comcast)",
+    "hq": "New York, NY",
+    "homepage": "https://www.msnbc.com",
+    "rss_url": "https://news.google.com/rss/search?q=MSNBC+Rachel+Maddow+OR+Morning+Joe+OR+Chris+Hayes+OR+Congress&hl=en-US&gl=US&ceid=US:en",
+    "lean_category": "Left",
+    "party_alignment": "Leans Democrat / Liberal",
+    "party_code": "D",
+    "lean_score": -66,
+    "factual_score": 68,
+    "factual_rating": "Opinion-Driven Analysis Backed by Court & Roll-Call Records",
+    "allsides_rating": "Left",
+    "ad_fontes_zone": "Skews Left / Hyper-Partisan Left (Prime-Time)",
+    "pew_audience_split": "89% of regular viewers identify as Democrat or lean Democrat (Pew Research Center)",
+    "plain_english": "MSNBC is the primary progressive cable network and consistently favors Democratic lawmakers, voting-rights bills, labor unions, and federal court oversight. Its hosts focus heavily on Republican corruption scandals, threats to democratic norms, and social safety-net expansio",
+    "voter_impact_translation": "When Congress debates healthcare, abortion access, or billionaire taxes, MSNBC highlights how Republican cuts hurt working families, while rarely questioning the long-term price tag of Democratic spending bills.",
+    "framing_signature": "High focus on voting rights, DOJ indictments, judicial ethics, labor unions, Medicaid, and climate legislation.",
+    "blindspot_warning": "Frequently under-covers voter frustration over border crossings, regulatory costs on small businesses, and Democratic machine corruption.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [
+        "union"
+      ],
+      "detected_right_signals": [],
+      "observed_output_lean": "Democratic / Liberal Framing",
+      "sample_headlines": [
+        {
+          "title": "FULL INTERVIEW: Rep. Ilhan Omar sits down with Chris Hayes after raid on her house",
+          "url": "https://news.google.com/rss/articles/CBMixAFBVV95cUxPYWxXVGExSmdnR0tKREFCV182WHAwbGZ5azhMajJDYXR2WHFJWnZUekRhbFhHOVI1eHZIdEFmZ2VhVDZodTlKbnR1Szg1VmNQMEhRVEFzMVMyN1d1TFNOREx2eU5aekZ3eUNHX3ZPVFBzUzNjRmpwZWJITjdUM19KM00ybVJHNkhSMGVNSzFucEU2N0R1MENZR3FyaG5oazBtX080bVJMZW1pcUUyUnZpR25fLS1lbkV3WFQwZzB4eHlzM2Vu?oc=5",
+          "published": "Wed, 21 Oct 2026 07:00:00 GMT"
+        },
+        {
+          "title": "MS NOW LIVE Presents: Together In Texas: We the People 2026",
+          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYkZZNkxWdEN5ak9HWXFBRjJ5X0RxbEQ5b3lEOVJ2NjBHc0hqbmFIVUpIdjNVcFE0amZEODZqLTlFdERURGRQUmRWWVoyVzVqYlpyc3FfdDBMT0gtZXZYYk9JMzFpcnVrMldEaXRBUDgzWmI3YklveDR2X1o2NUVIWTdvblN3cFJL?oc=5",
+          "published": "Fri, 25 Sep 2026 11:57:47 GMT"
+        },
+        {
+          "title": "Chris Hayes and Rachel Maddow Say They Didn't Believe Graham Platner Last Month When He Said There Were No More Scandals Waiting",
+          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxORUttVXg3VHZPbjZ3bjFxbFJBWjBtSkxwRUZmbkt2VXYyN3J6cno3cTIyUEh1WXdPOVBrdUM0dzJYR1d2T2hnUmFDeWZ0bEMzNFFKd0JCalRKMm9GNkZGeHNiVFBxREl4Uk9fR2tMUDY5XzNPWHl2REU0d25EYW1teTdCbzc3TUlMN3k5dlZDMWN5YUFBNmc?oc=5",
+          "published": "Tue, 07 Jul 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Together In Texas: We the People 2026",
+          "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5OVFpiUkI2U0xlM2ItbzdVb2Z1SDlfU3JHdEZTdktvUHZnZGh3QjRtczZFM2REQ0pNMlRxT0pRZmV1LVpIaHVCZ0MwT2dPSGRmRThTc0VLa2JRci1jWDhKZGVETzAtQQ?oc=5",
+          "published": "Wed, 15 Jul 2026 02:29:37 GMT"
+        }
+      ]
+    },
+    "metric": "#2 MSNBC (MS NOW) (Cable News / Digital) — Left (Leans Democrat / Liberal)",
+    "value": -66,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/cable-news/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Journalism & Media Fact Sheet",
+      "title": "Partisan Divides in Media Trust and Cable News Consumption",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — MSNBC",
+        "url": "https://www.allsides.com/news-source/msnbc"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — MSNBC Profile",
+        "url": "https://adfontesmedia.com/msnbc-bias-and-reliability/"
+      },
+      {
+        "name": "MSNBC Official Newsroom",
+        "url": "https://www.msnbc.com"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_03_cnn",
+    "module": "media_bias_top20",
+    "rank": 3,
+    "name": "CNN",
+    "medium": "Cable TV & Digital",
+    "format_badge": "Cable News / Digital",
+    "ownership": "Warner Bros. Discovery",
+    "hq": "Atlanta, GA / New York, NY",
+    "homepage": "https://www.cnn.com/politics",
+    "rss_url": "https://news.google.com/rss/search?q=site:cnn.com/2026+OR+site:cnn.com/politics+Congress+OR+Senate+OR+Trump+OR+Democrats&hl=en-US&gl=US&ceid=US:en",
+    "lean_category": "Lean Left",
+    "party_alignment": "Leans Democrat / Establishment Center-Left",
+    "party_code": "D",
+    "lean_score": -32,
+    "factual_score": 78,
+    "factual_rating": "Mostly Factual — Breaking News + Panel Debate",
+    "allsides_rating": "Lean Left",
+    "ad_fontes_zone": "Skews Left",
+    "pew_audience_split": "74% of regular viewers lean Democrat vs. 22% Republican (Pew Research Center)",
+    "plain_english": "CNN runs a massive global breaking-news operation that reports verified facts quickly, but its political story selection and panel framing lean toward moderate Democrats and institutional Washington norms.",
+    "voter_impact_translation": "CNN gives strong coverage to bipartisan compromise bills, healthcare protection, and gun control, but often frames kitchen-table economic bills like a sports horse-race ('who wins the midterms') rather than breaking down your exact dollar cost.",
+    "framing_signature": "Breaking Capitol Hill roll calls, White House palace intrigue, election map math, and institutional norms.",
+    "blindspot_warning": "Tends to obsess over Washington drama and poll swings over rural and working-class economic realities.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [],
+      "detected_right_signals": [],
+      "observed_output_lean": "Democratic / Liberal Framing",
+      "sample_headlines": [
+        {
+          "title": "Judge throws out DOJ attempt to delay certification of Alaska Senate race",
+          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1reWNnZUhhVC0tM2Y4dHd5ZjFXNEN3X3RwRUVaMlgweVYweURlekJlUXJZS0hUM3JNa1RHY1EwUUh1UnpZUTJlR3ZQY3lxbXdESm1QUlQwOEJPdmxQbi1ISmd5M3p4a0xmSmpZdEhPQnVKTlFY?oc=5",
+          "published": "Sun, 01 Nov 2026 17:57:58 GMT"
+        },
+        {
+          "title": "Sen. Dan Sullivan says he will accept election results of Alaska Senate race",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNzRXV0hSenVHUEdYU1VFVDdCeURuZ2M2QXhFS19rakNvTWlJekJfN19obFJFMDNqTmdTQmtvbjhrV3BXY3U5V3dNbjB1UmtsN3c2RHcydmdXRHVxWXRvQ2UwSEJUbjd1SFdOVzNvWk9uUl9ZRWJYYjh3akt2TER5d2pUdDM?oc=5",
+          "published": "Sun, 01 Nov 2026 14:14:36 GMT"
+        },
+        {
+          "title": "Bitter spat between Poland’s pro-Europe PM and pro-Trump president erupts",
+          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQU9wNTJvemVMSURuUU1uYXU1ellGZnp2Z19sS1NkQnYtX0t2dGl6d1RsZVJtdmozakh4WU5JMEV2WXAxaW9oZjcxU1lvMElPX3NNeGZUQzJzcTNJa2ZMV044Wk5yZU1jYklNcVJuYnhCSllyaWx2X19tRGl2cGVzRWhkSTc?oc=5",
+          "published": "Sun, 01 Nov 2026 14:28:41 GMT"
+        },
+        {
+          "title": "Mamdani says Trump agrees to grant visa to mother of teen from Ghana killed in Bronx shooting",
+          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4wUlJwUjRVQ09odmRwbXVkcXRvSkU1WlQ0bWNJX2dOQjI1UHdtMjV0RmN6dEdZbklXVEJycDN5aFNNMzVIX0p1c3lpMW92QUg1OWpZenVCTHJwSFBTUHRhYlZYU3BVczNoMnluQlpUYlBUMV8yVXlR?oc=5",
+          "published": "Sat, 31 Oct 2026 22:37:55 GMT"
+        }
+      ]
+    },
+    "metric": "#3 CNN (Cable News / Digital) — Lean Left (Leans Democrat / Establishment Center-Left)",
+    "value": -32,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/cable-news/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Journalism & Media Fact Sheet",
+      "title": "Cable News Fact Sheet & Audience Partisanship",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — CNN",
+        "url": "https://www.allsides.com/news-source/cnn-media-bias"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — CNN Profile",
+        "url": "https://adfontesmedia.com/cnn-bias-and-reliability/"
+      },
+      {
+        "name": "CNN Politics Live Desk",
+        "url": "https://www.cnn.com/politics"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_04_reuters",
+    "module": "media_bias_top20",
+    "rank": 4,
+    "name": "Reuters",
+    "medium": "Global Wire Service & Digital",
+    "format_badge": "Wire Service / Digital",
+    "ownership": "Thomson Reuters Corporation",
+    "hq": "London, UK / New York, NY",
+    "homepage": "https://www.reuters.com/world/us/",
+    "rss_url": "https://news.google.com/rss/search?q=site:reuters.com+US+politics+OR+Congress+OR+Senate&hl=en-US&gl=US&ceid=US:en",
+    "lean_category": "Center",
+    "party_alignment": "Nonpartisan Center (Strict Wire Standard)",
+    "party_code": "C",
+    "lean_score": -3,
+    "factual_score": 96,
+    "factual_rating": "Very High Factual — Primary Global Wire Benchmark",
+    "allsides_rating": "Center",
+    "ad_fontes_zone": "Middle / Most Reliable for News",
+    "pew_audience_split": "Balanced audience: ~52% lean Democrat, ~45% lean Republican",
+    "plain_english": "Reuters is one of the world's most neutral, fact-checked wire services. Because banks, courts, and newsrooms on both sides buy its data, Reuters avoids loaded adjectives and reports exact roll-call votes, dollar totals, and court rulings without taking a party's side.",
+    "voter_impact_translation": "If you want to know exactly what a tax bill, tariff, or Federal Reserve decision will do to interest rates, gas prices, and your 401(k) without partisan spin, Reuters is a gold-standard benchmark.",
+    "framing_signature": "Neutral headline verbs, exact bill text numbers, bond/market reaction, and direct quotes from both parties.",
+    "blindspot_warning": "Written for fast institutional accuracy, so it rarely pauses to explain long-term neighborhood inequality.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [],
+      "detected_right_signals": [],
+      "observed_output_lean": "Balanced / Nonpartisan Wire Framing",
+      "sample_headlines": [
+        {
+          "title": "Trump White House maps path to govern without Congress if Democrats win",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOOXdkX2hvMlBTTmRRRGlTbndZSTFnWnZyYkJ5STRjNFBOUkdwQ3VDUjRuTUQySzhQMkp2UXh0MW5VS3E4WHVXeEhQQ2JnRnUxV0pIVTM3T1J6Y0o3Y1JWamZ4YXMwNEtjazNiU3pERzRaWC1XNXZBZk56UU1KSUFNMWtZS0hrUjNUSW5ILW9kdWVQa3BqYkNPSl9tQk90SEtWcDdXRjZXdkdUT1IzS2ViaTgwTmE5MnlCclh1T0pB?oc=5",
+          "published": "Sun, 01 Nov 2026 18:01:24 GMT"
+        },
+        {
+          "title": "Democratic wins would shift Congress' trade debate but fall short of US tariff rollbacks",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObVJlTmFuVEh3WkZZZS12S0NPTjRoamIzUVJCNURKWHl6QzR5eHpjT0pobGt0b0ZSLWw0TE1seWV0S1ZLRjJOb1ByZWVCVmJEcXRlZ29kbzA0X0ppTmVTZ1M4cHVSRnhWMy1USGxhTmtROFU0V3luU1lsWTlkeVFqU3BwUXlQaTU2NEpPNC1xRTE0TlFyRjJYd1ZCNlhsZHFiaFpFbGNlem9pdm0teVZaUExyY2x6QTFnWUQzamdDYlpVT0hlUXdfY1h0bks0Zw?oc=5",
+          "published": "Sun, 01 Nov 2026 11:14:38 GMT"
+        },
+        {
+          "title": "US Senate candidate El-Sayed wants Democratic rival to stay away, source says",
+          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZk1TVThad3BBcnFwSU44RFlBSjU5NWNaOUxuTEFVQnp2c0tjU3h2Qmc3eUh1RWZGZVpnenlXRk5jcXczZmVhUENIcm53dFBPVm1pQnZxdDhGbmRRRHBXaTdBeHlaRjl3X05USjI3X1ViamRPX19Lc0ZrendnN2N0allNR0tLekhuM0ZCZFpmeWJROTdYY0YtbkdoZ2VEXzFiMlBIRzkwUUpxNXFPdFJERTNxRzNLMzZRUWc?oc=5",
+          "published": "Sat, 31 Oct 2026 18:20:00 GMT"
+        },
+        {
+          "title": "Trump heads to Iowa, Kansas with Senate control in balance",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQX2FHcHFUc2FHcFNFdlgyU2xwdjFlUDZ4ZG1aQjk1aDdCYnNFaE5WSXM5Q0E5cHB5Z0tKaWp0QXZ2dThVYjU2ZW1VemZmYmswcm1lUHA3TXhNVVBmUWdSQnRBTVJBdFlHQmlvempGUkFnTFo1aHBTZTZGeU53T3pIYUxXUTFaVGtaLXFldGwyUGRFNTNlWWtn?oc=5",
+          "published": "Sun, 01 Nov 2026 17:46:12 GMT"
+        }
+      ]
+    },
+    "metric": "#4 Reuters (Wire Service / Digital) — Center (Nonpartisan Center (Strict Wire Standard))",
+    "value": -3,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/digital-news/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Digital News & Wire Services",
+      "title": "Trust and Ideological Balance in Global Wire Services",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — Reuters",
+        "url": "https://www.allsides.com/news-source/reuters"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — Reuters Profile",
+        "url": "https://adfontesmedia.com/reuters-bias-and-reliability/"
+      },
+      {
+        "name": "Reuters U.S. Politics & Markets Desk",
+        "url": "https://www.reuters.com/world/us/"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_05_ap_news",
+    "module": "media_bias_top20",
+    "rank": 5,
+    "name": "Associated Press (AP News)",
+    "medium": "Global Wire Service & Print Syndicate",
+    "format_badge": "Wire Service / Print & Digital",
+    "ownership": "Not-for-Profit U.S. Newspaper & Broadcaster Cooperative",
+    "hq": "New York, NY",
+    "homepage": "https://apnews.com/politics",
+    "rss_url": "https://news.google.com/rss/search?q=site:apnews.com+politics+OR+Congress+OR+Senate&hl=en-US&gl=US&ceid=US:en",
+    "lean_category": "Center",
+    "party_alignment": "Nonpartisan Center (Slight Center-Left Story Selection)",
+    "party_code": "C",
+    "lean_score": -8,
+    "factual_score": 95,
+    "factual_rating": "Very High Factual — Primary U.S. Statehouse & Capitol Wire",
+    "allsides_rating": "Center / Lean Left",
+    "ad_fontes_zone": "Middle / Most Reliable for News",
+    "pew_audience_split": "Read across 1,300+ local U.S. newspapers spanning red and blue states",
+    "plain_english": "The Associated Press is the cooperative wire service that supplies statehouse and Washington reporting to almost every local newspaper and TV station in America. Its straight news is strictly verified, with a slight center-left tilt in which social topics it chooses to spotl",
+    "voter_impact_translation": "AP is the best source for tracking what your own state legislature (including the Colorado General Assembly) and local U.S. House member actually voted on this week.",
+    "framing_signature": "Verified roll-call tallies, official election call math (AP VoteCast), and 50-state capitol reporting.",
+    "blindspot_warning": "Stylebook terminology shifts on social issues occasionally draw criticism from conservative lawmakers.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [],
+      "detected_right_signals": [
+        "socialist"
+      ],
+      "observed_output_lean": "Balanced / Nonpartisan Wire Framing",
+      "sample_headlines": [
+        {
+          "title": "El-Sayed's primary opponent stuns Democrats by endorsing Republican opponent in Michigan Senate race",
+          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZTZaeEZ3WHhrS2s0VVVXSWpRLVVLb185QTR6djh1R3UtZ1F0SFJCS1BWbDBaUmZxeEI4ekkyMVBObTV3R1RyZktuX0dISE9rTmFVd2tVY3NnMm8xTUQ5SGo1VFc1bWoySVdkNHp2c2JmR0g4a2hQOEJfdFVVaFZTQ2hSZWwwMHc1Sm81clYxelpTN1JGbFJZOEpEMlRVWkRBSTdCU0RzX1VWdDRrQXc?oc=5",
+          "published": "Sun, 01 Nov 2026 20:35:00 GMT"
+        },
+        {
+          "title": "Judge dismisses lawsuit seeking to block certification of Alaska Senate race if GOP incumbent loses",
+          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNDIwVGtzRDN4cGg1V0ZoV3Nlb1Y3WGV6TGlpVmwtNVJxR1ZsTDFRd2NEZlJjWlRmV0hlMzk3a1RyREJCa0Z4Snk0cVRrd01SS3lkMUZyc2FMM3JNZWw5eE1iQm1MemZSUk13UWlMRjdVTUh0MUdOQ2taYVY5d3NNd2NoRU4zOEhlTmpkYjFCTU9qS2lFNWxLZzRHNVctazdQdVVldXhCMkg0STBl?oc=5",
+          "published": "Sun, 01 Nov 2026 18:42:00 GMT"
+        },
+        {
+          "title": "Attorneys for Alaska say 'meritless' Trump demand to set aside Senate ballots 'not even possible'",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSHh0LVpYdmRNYXJIcW9jQ1BOTlNfZDRqcG5KM2FtSFR5cXg2YWFXUHpiaml0R3hrY3VGMVdFbW56UEI1NDNjVmtrQUh3ZVVhSnY3SXQ3TzB4RWhYc0haZkYzM0VrTHIwMEhuNGNlT1dkcUNUU2RtMlFhQTlTYnZWYUNla3pFVmNsUTUyY0NaOU00OEhvNkM1aXl2QjhEU3h2OHc?oc=5",
+          "published": "Sat, 31 Oct 2026 20:30:00 GMT"
+        },
+        {
+          "title": "Meet the democratic socialists likely on their way to Congress",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbmdJTVZyUzBrOC10dFBTM1BDNkZkYjN3Yl9USDRFLTJ4ZlRfc1FXRDNSYlVYd2xWT0NaNi1FemJ4ZF9wMjNtelFpMlo4ZEI4ZldoM0JOTmg1dTFYd0dyM1hZMHdRQnRvZTRtRWN1bWRuOVY1QmhMTlBCNVowakZQMkdmMk85VTZQTnV3TTZOQXVCMFZUZVZSWkRNczYxZw?oc=5",
+          "published": "Sat, 31 Oct 2026 12:26:00 GMT"
+        }
+      ]
+    },
+    "metric": "#5 Associated Press (AP News) (Wire Service / Print & Digital) — Center (Nonpartisan Center (Slight Center-Left Story Selection))",
+    "value": -8,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/newspapers/",
+      "tier": "A",
+      "publisher": "Pew Research Center — U.S. Journalism Fact Sheet",
+      "title": "Wire Service Syndication and Statehouse Coverage",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — Associated Press",
+        "url": "https://www.allsides.com/news-source/associated-press-media-bias"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — AP Profile",
+        "url": "https://adfontesmedia.com/ap-bias-and-reliability/"
+      },
+      {
+        "name": "AP News Politics Hub",
+        "url": "https://apnews.com/politics"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_06_nyt",
+    "module": "media_bias_top20",
+    "rank": 6,
+    "name": "The New York Times",
+    "medium": "Print Newspaper & Digital",
+    "format_badge": "National Print & Digital",
+    "ownership": "The New York Times Company (Sulzberger Family / Public)",
+    "hq": "New York, NY",
+    "homepage": "https://www.nytimes.com/section/politics",
+    "rss_url": "https://rss.nytimes.com/services/xml/rss/nyt/Politics.xml",
+    "lean_category": "Lean Left",
+    "party_alignment": "Leans Democrat / Liberal",
+    "party_code": "D",
+    "lean_score": -38,
+    "factual_score": 88,
+    "factual_rating": "High Factual Reporting — Strong Center-Left Editorial Page",
+    "allsides_rating": "Lean Left",
+    "ad_fontes_zone": "Skews Left / High Reliability",
+    "pew_audience_split": "84% of regular readers identify as Democrat or lean Democrat (Pew Research Center)",
+    "plain_english": "The New York Times conducts deep, document-backed investigative journalism with high factual accuracy, but its headlines, cultural framing, and opinion pages clearly lean toward the Democratic Party and urban liberal voters.",
+    "voter_impact_translation": "NYT excels at exposing hidden lobbying giveaways, tax loopholes, and ethics scandals in both parties, though its framing generally assumes federal regulation and higher social spending are the right fix.",
+    "framing_signature": "Deep investigative document dumps, Upshot data visualizations, climate policy, and federal court analysis.",
+    "blindspot_warning": "Can reflect coastal cultural assumptions and under-appreciate how federal energy or land rules hit rural Western towns.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [],
+      "detected_right_signals": [],
+      "observed_output_lean": "Democratic / Liberal Framing",
+      "sample_headlines": [
+        {
+          "title": "Senator Chris Murphy Is ‘Awake and Alert’ After Suffering a Stroke",
+          "url": "https://www.nytimes.com/2026/11/01/us/politics/chris-murphy-stroke.html",
+          "published": "Sun, 01 Nov 2026 19:02:09 +0000"
+        },
+        {
+          "title": "Some Americans Are Fearful of Federal Interference on Election Day",
+          "url": "https://www.nytimes.com/2026/11/01/us/politics/election-fears.html",
+          "published": "Sun, 01 Nov 2026 17:54:17 +0000"
+        },
+        {
+          "title": "Democrats Want to Prove They Can Win in the Rapidly Changing South",
+          "url": "https://www.nytimes.com/2026/11/01/us/politics/southern-democrats-midterms.html",
+          "published": "Sun, 01 Nov 2026 12:50:36 +0000"
+        },
+        {
+          "title": "A Midterm Campaign Dominated by Concerns Over High Prices Nears Its End",
+          "url": "https://www.nytimes.com/2026/11/01/us/politics/election-mood-affordability.html",
+          "published": "Sun, 01 Nov 2026 17:42:25 +0000"
+        }
+      ]
+    },
+    "metric": "#6 The New York Times (National Print & Digital) — Lean Left (Leans Democrat / Liberal)",
+    "value": -38,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/newspapers/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Newspapers Fact Sheet",
+      "title": "Audience Ideology of Major U.S. National Newspapers",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — New York Times",
+        "url": "https://www.allsides.com/news-source/new-york-times"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — NYT Profile",
+        "url": "https://adfontesmedia.com/new-york-times-bias-and-reliability/"
+      },
+      {
+        "name": "The New York Times Politics Desk",
+        "url": "https://www.nytimes.com/section/politics"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_07_wsj",
+    "module": "media_bias_top20",
+    "rank": 7,
+    "name": "The Wall Street Journal",
+    "medium": "Print Newspaper & Digital",
+    "format_badge": "National Print & Digital",
+    "ownership": "Dow Jones & Company / News Corp",
+    "hq": "New York, NY",
+    "homepage": "https://www.wsj.com/politics",
+    "rss_url": "https://feeds.a.dj.com/rss/RSSOpinion.xml",
+    "lean_category": "Lean Right",
+    "party_alignment": "Leans Republican / Pro-Business Conservative",
+    "party_code": "R",
+    "lean_score": 28,
+    "factual_score": 90,
+    "factual_rating": "High Factual Newsroom — Explicitly Conservative Editorial Board",
+    "allsides_rating": "Center (News) / Lean Right (Overall)",
+    "ad_fontes_zone": "Middle to Skews Right / High Reliability",
+    "pew_audience_split": "Only major national paper read almost equally by Republicans (48%) and Democrats (49%)",
+    "plain_english": "The Wall Street Journal has a strict division: its news reporters are rigorous, neutral, and broke major investigations on both parties, while its famous Editorial Board is unapologetically conservative, pro-free-market, and favors Republican tax and regulatory cuts.",
+    "voter_impact_translation": "When a new federal law passes, WSJ is the sharpest source on how it will impact small businesses, corporate hiring, energy prices, capital gains taxes, and inflation.",
+    "framing_signature": "Tax brackets, Federal Reserve policy, supply chains, union contract costs, and regulatory compliance burdens.",
+    "blindspot_warning": "Its Editorial Board consistently opposes minimum-wage hikes, union expansions, and public healthcare subsidies.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [
+        "climate"
+      ],
+      "detected_right_signals": [
+        "dei",
+        "tariffs"
+      ],
+      "observed_output_lean": "Republican / Conservative Framing",
+      "sample_headlines": [
+        {
+          "title": "Scott Bessent Can Walk the Trade Tightrope",
+          "url": "https://www.wsj.com/articles/scott-bessent-can-walk-the-trade-tightrope-policy-economy-treasury-dfa140df",
+          "published": "Sun, 26 Jan 2025 16:18:00 -0500"
+        },
+        {
+          "title": "Why RFK Jr. Is Dangerous to Public Health",
+          "url": "https://www.wsj.com/articles/rfk-jr-senate-hearing-heath-and-human-services-vaccines-trial-lawyers-ce7703cf",
+          "published": "Sun, 26 Jan 2025 16:17:00 -0500"
+        },
+        {
+          "title": "Trump's Lumber Tariffs and Disaster Recovery",
+          "url": "https://www.wsj.com/articles/lumber-tariffs-and-disaster-recovery-canada-california-fires-4ec8f2e0",
+          "published": "Sun, 26 Jan 2025 17:11:00 -0500"
+        },
+        {
+          "title": "Trump's Reprieve for TikTok Is Legitimate",
+          "url": "https://www.wsj.com/articles/trumps-reprieve-for-tiktok-is-legitimate-constitution-law-extension-social-media-812e19ae",
+          "published": "Sun, 26 Jan 2025 15:55:00 -0500"
+        }
+      ]
+    },
+    "metric": "#7 The Wall Street Journal (National Print & Digital) — Lean Right (Leans Republican / Pro-Business Conservative)",
+    "value": 28,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/newspapers/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Newspapers Fact Sheet",
+      "title": "Cross-Partisan Trust in The Wall Street Journal",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — Wall Street Journal",
+        "url": "https://www.allsides.com/news-source/wall-street-journal-media-bias"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — WSJ Profile",
+        "url": "https://adfontesmedia.com/wall-street-journal-bias-and-reliability/"
+      },
+      {
+        "name": "Wall Street Journal Washington Desk",
+        "url": "https://www.wsj.com/politics"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_08_wapo",
+    "module": "media_bias_top20",
+    "rank": 8,
+    "name": "The Washington Post",
+    "medium": "Print Newspaper & Digital",
+    "format_badge": "National Print & Digital",
+    "ownership": "Nash Holdings (Jeff Bezos)",
+    "hq": "Washington, D.C.",
+    "homepage": "https://www.washingtonpost.com/politics/",
+    "rss_url": "https://news.google.com/rss/search?q=site:washingtonpost.com+politics+OR+Congress+OR+Senate&hl=en-US&gl=US&ceid=US:en",
+    "lean_category": "Lean Left",
+    "party_alignment": "Leans Democrat / Liberal",
+    "party_code": "D",
+    "lean_score": -34,
+    "factual_score": 87,
+    "factual_rating": "High Factual — Deep Federal Agency & Capitol Hill Investigations",
+    "allsides_rating": "Lean Left",
+    "ad_fontes_zone": "Skews Left / High Reliability",
+    "pew_audience_split": "81% of regular readers identify as Democrat or lean Democrat (Pew Research Center)",
+    "plain_english": "Based right in the nation's capital, The Washington Post is unmatched at tracking federal agencies, committee markups, and lobbying Influence, but its story selection and political tone lean toward Democrats.",
+    "voter_impact_translation": "WaPo's Fact Checker and agency reporters show you when a lawmaker's press release lies about what is actually hidden inside a 1,000-page congressional appropriations bill.",
+    "framing_signature": "Federal agency oversight, Inspector General reports, Fact Checker Pinocchio ratings, and campaign finance.",
+    "blindspot_warning": "Heavy D.C.-insider perspective that often treats federal bureaucracy growth as the default solution.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [],
+      "detected_right_signals": [],
+      "observed_output_lean": "Democratic / Liberal Framing",
+      "sample_headlines": [
+        {
+          "title": "Democrat Haley Stevens endorses Michigan GOP Senate candidate Mike Rogers",
+          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOV2VIWjBwNWdIYU1xNlFMQU5TazlOcnNhLS0tcG5aRjVrTVE4azlZUm1YRVJKTzRTSEE1UUZhX2NhLUtnTlVGbjJLREFPS1BYVlJnQWszZklmNndnV2R5MU1LRmg2RVV4dWVsSUFpZGRHT3FSYjVWeS1fS3ZWMVdvaXdMOHdNV0FJeElqMnJfNHlyQ1FXMlRoQ2REQmpzY3BERmRVTjIwLTJhSFp1dVY1SWM1Mk9xTGVvdUNrak9BQWVWZw?oc=5",
+          "published": "Sun, 01 Nov 2026 20:11:08 GMT"
+        },
+        {
+          "title": "Judge tosses DOJ’s attempt to delay Alaska Senate results if Republican loses",
+          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQb01VY1hzaERwaUN0dGt1enZaNTROVmE5N3ZYMmNjeTgycGhTOFN2NFZHR2NHMkdwTGswMEtGNWxjMlFrNEVMajNWVDBuV1pYWW5mV09DVW5FeHJ5akZXdXFFRlVRWG5kTVNYMGtLZDhwWDNkQkRBdk9zaDR1QW1Relh3ejMzRWtjQncyczAwbVFlN0kyNlpPejAwS1RfczVoclg3X3ZJcmF1T0NVUFNja0otcC1KOEh4NDg5Ul96TXRMMHM?oc=5",
+          "published": "Sun, 01 Nov 2026 20:01:45 GMT"
+        },
+        {
+          "title": "Losing Michigan Senate candidate Haley Stevens: ‘Go vote!’",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbVVFMDZydF9DWTc4VnIyTzNqV0cwWnFwaDVRcklRZVMxMHkyMkMyUFk2UEk3YVA2cV9wRld0c05ZaXdQSE5vMEhXeEFBLWlEcnNtaWNZdS00RlEwcmtoNDRqdUxFRXExSkhtZlhTTm9PdkJUZE5GUzFjYUVqNEVJWjVXdGJIckhQVXhTcTlYQmw1V25RekM1dWR2eEJnZFFRaUEwZzBuWnIwQQ?oc=5",
+          "published": "Sun, 01 Nov 2026 19:04:55 GMT"
+        },
+        {
+          "title": "Analysis | The Senate is an uphill battle for Democrats, even with the wind at their back",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcW5aQ3AzZmhUN0hvTnRIaTJfRlM2SHhMX0QzSDEzb2NEN0EzdXBxTGZMRmkxNnRwTzIwcnlST2M1TGQ0anEybVpQNTkwMTBHYm5RVzhCMFktM3loTHRxdVRTUm5MQnBHQlc0dXoxY1h4a3ROU3JoTjVfdDJlbVJWYlNMTEZWdGFmRnRnYzd0UnVxWk02ZmNyOXVXUTBSanFtTTg3bE5jaw?oc=5",
+          "published": "Sun, 01 Nov 2026 18:00:00 GMT"
+        }
+      ]
+    },
+    "metric": "#8 The Washington Post (National Print & Digital) — Lean Left (Leans Democrat / Liberal)",
+    "value": -34,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/newspapers/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Newspapers Fact Sheet",
+      "title": "National Newspaper Readership & Political Alignment",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — Washington Post",
+        "url": "https://www.allsides.com/news-source/washington-post-media-bias"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — Washington Post",
+        "url": "https://adfontesmedia.com/washington-post-bias-and-reliability/"
+      },
+      {
+        "name": "Washington Post Politics Desk",
+        "url": "https://www.washingtonpost.com/politics/"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_09_abc_news",
+    "module": "media_bias_top20",
+    "rank": 9,
+    "name": "ABC News",
+    "medium": "Broadcast TV Network & Digital",
+    "format_badge": "Broadcast TV / Digital",
+    "ownership": "The Walt Disney Company",
+    "hq": "New York, NY",
+    "homepage": "https://abcnews.go.com/Politics",
+    "rss_url": "https://abcnews.go.com/abcnews/politicsheadlines",
+    "lean_category": "Lean Left",
+    "party_alignment": "Leans Slightly Democrat / Center-Left",
+    "party_code": "D",
+    "lean_score": -18,
+    "factual_score": 86,
+    "factual_rating": "High Factual — Mainstream Broadcast Network Standard",
+    "allsides_rating": "Lean Left",
+    "ad_fontes_zone": "Middle / Skews Slightly Left",
+    "pew_audience_split": "61% of viewers lean Democrat vs. 35% Republican (Pew Research Center)",
+    "plain_english": "ABC News ('World News Tonight' and 'This Week') is America's most-watched evening broadcast newscast. Its reporting is factual and aimed at everyday families, but its question framing and social coverage lean slightly toward the Democratic side.",
+    "voter_impact_translation": "ABC focuses on how Washington gridlock, government shutdowns, prescription drug costs, and consumer recalls directly hit middle-class households.",
+    "framing_signature": "Consumer kitchen-table segments, Sunday show interviews with party leaders, and national poll tracking.",
+    "blindspot_warning": "Short broadcast segments compress complex tax or budget bills into 90-second soundbites.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [],
+      "detected_right_signals": [],
+      "observed_output_lean": "Democratic / Liberal Framing",
+      "sample_headlines": [
+        {
+          "title": "Trump administration promises US farmers $15 billion in weeks before the midterms",
+          "url": "https://abcnews.com/Politics/wireStory/trump-administration-promises-us-farmers-15-billion-weeks-137746731",
+          "published": "Sun, 01 Nov 2026 09:50:24 -0500"
+        },
+        {
+          "title": "Miami, Georgia, Utah, Notre Dame would be top-four seeds in a CFP bracket based on AP Top 25 poll",
+          "url": "https://abcnews.com/Politics/wireStory/miami-georgia-utah-notre-dame-top-seeds-cfp-137753201",
+          "published": "Sun, 01 Nov 2026 14:58:57 -0500"
+        },
+        {
+          "title": "Trump administration's social media posts ahead of elections criticized for being inflammatory",
+          "url": "https://abcnews.com/Politics/wireStory/trump-administrations-social-media-posts-ahead-elections-criticized-137743037",
+          "published": "Sun, 01 Nov 2026 00:22:19 -0400"
+        },
+        {
+          "title": "Over 40% of names on DOJ list of alleged noncitizens are not on Calif. voter rolls, analysis finds",
+          "url": "https://abcnews.com/Politics/wireStory/40-names-doj-list-alleged-noncitizens-californias-voter-137737426",
+          "published": "Sat, 31 Oct 2026 18:42:14 -0400"
+        }
+      ]
+    },
+    "metric": "#9 ABC News (Broadcast TV / Digital) — Lean Left (Leans Slightly Democrat / Center-Left)",
+    "value": -18,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/network-news/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Network News Fact Sheet",
+      "title": "Evening Broadcast Network News Audience & Trust",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — ABC News",
+        "url": "https://www.allsides.com/news-source/abc-news-media-bias"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — ABC News",
+        "url": "https://adfontesmedia.com/abc-news-bias-and-reliability/"
+      },
+      {
+        "name": "ABC News Politics Desk",
+        "url": "https://abcnews.go.com/Politics"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_10_nbc_news",
+    "module": "media_bias_top20",
+    "rank": 10,
+    "name": "NBC News",
+    "medium": "Broadcast TV Network & Digital",
+    "format_badge": "Broadcast TV / Digital",
+    "ownership": "NBCUniversal (Comcast)",
+    "hq": "New York, NY",
+    "homepage": "https://www.nbcnews.com/politics",
+    "rss_url": "https://feeds.nbcnews.com/nbcnews/public/politics",
+    "lean_category": "Lean Left",
+    "party_alignment": "Leans Democrat / Center-Left",
+    "party_code": "D",
+    "lean_score": -24,
+    "factual_score": 85,
+    "factual_rating": "High Factual — Mainstream Broadcast Network Standard",
+    "allsides_rating": "Lean Left",
+    "ad_fontes_zone": "Skews Left / High Reliability",
+    "pew_audience_split": "65% of regular viewers lean Democrat vs. 31% Republican (Pew Research Center)",
+    "plain_english": "NBC News ('Nightly News' and 'Meet the Press') is much more neutral than its cable sister MSNBC, sticking to verified Capitol Hill reporting, though its digital headlines and social-issue framing tilt center-left.",
+    "voter_impact_translation": "NBC's Capitol Hill team and national polling desk are strong at showing which swing-district lawmakers are breaking with their party on healthcare, veterans' benefits, and spending bills.",
+    "framing_signature": "'Meet the Press' Sunday accountability interviews, national voter polling, and Capitol Hill whip counts.",
+    "blindspot_warning": "Often frames conservative fiscal or populist objections primarily as political obstacles rather than policy debates.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [],
+      "detected_right_signals": [],
+      "observed_output_lean": "Democratic / Liberal Framing",
+      "sample_headlines": [
+        {
+          "title": "Poll: Voters demand change and a check on Trump, fueling a steep Democratic midterm advantage",
+          "url": "https://www.nbcnews.com/politics/2026-election/poll-voters-demand-change-check-trump-fueling-steep-democratic-midterm-rcna606183",
+          "published": "Sun, 01 Nov 2026 14:00:40 GMT"
+        },
+        {
+          "title": "Federal judge dismisses Trump attempt to interfere in Alaska Senate race",
+          "url": "https://www.nbcnews.com/politics/2026-election/federal-judge-dismisses-trump-attempt-ballots-alaska-senate-race-rcna606838",
+          "published": "Sun, 01 Nov 2026 19:03:25 GMT"
+        },
+        {
+          "title": "Rep. Haley Stevens endorses GOP candidate Mike Rogers in Michigan Senate race",
+          "url": "https://www.nbcnews.com/politics/2026-election/haley-stevens-endorses-gop-mike-rogers-michigan-senate-race-el-sayed-rcna606831",
+          "published": "Sun, 01 Nov 2026 17:49:44 GMT"
+        },
+        {
+          "title": "Nikki Haley says South Carolina ‘wants to stay a red state’ ahead of key Senate contest",
+          "url": "https://www.nbcnews.com/meet-the-press/video/nikki-haley-says-south-carolina-wants-to-stay-a-red-state-ahead-of-senate-contest-for-graham-seat-272654917961",
+          "published": "Sun, 01 Nov 2026 15:02:45 GMT"
+        }
+      ]
+    },
+    "metric": "#10 NBC News (Broadcast TV / Digital) — Lean Left (Leans Democrat / Center-Left)",
+    "value": -24,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/network-news/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Network News Fact Sheet",
+      "title": "Broadcast Network News Reach and Audience Partisanship",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — NBC News",
+        "url": "https://www.allsides.com/news-source/nbc-news-media-bias"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — NBC News",
+        "url": "https://adfontesmedia.com/nbc-news-bias-and-reliability/"
+      },
+      {
+        "name": "NBC News Politics Hub",
+        "url": "https://www.nbcnews.com/politics"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_11_cbs_news",
+    "module": "media_bias_top20",
+    "rank": 11,
+    "name": "CBS News",
+    "medium": "Broadcast TV Network & Digital",
+    "format_badge": "Broadcast TV / Digital",
+    "ownership": "Paramount Global",
+    "hq": "New York, NY",
+    "homepage": "https://www.cbsnews.com/politics/",
+    "rss_url": "https://www.cbsnews.com/latest/rss/politics",
+    "lean_category": "Lean Left",
+    "party_alignment": "Leans Slightly Democrat / Center-Left",
+    "party_code": "D",
+    "lean_score": -19,
+    "factual_score": 86,
+    "factual_rating": "High Factual — Investigative ('60 Minutes' & 'Face the Nation')",
+    "allsides_rating": "Lean Left",
+    "ad_fontes_zone": "Middle / Skews Slightly Left",
+    "pew_audience_split": "60% of regular viewers lean Democrat vs. 36% Republican (Pew Research Center)",
+    "plain_english": "CBS News combines daily Capitol Hill broadcast reporting with deep '60 Minutes' investigations. It leans slightly left on social and environmental issues, but regularly grills lawmakers from both parties on 'Face the Nation.'",
+    "voter_impact_translation": "CBS is especially strong at investigating defense-contractor waste, prescription drug middlemen (PBMs), and veterans' hospital delays that cost taxpayers billions.",
+    "framing_signature": "Long-form '60 Minutes' watchdog investigations, Pentagon spending audits, and consumer price trackers.",
+    "blindspot_warning": "Editorial selection on cultural controversies tilts toward mainstream center-left consensus.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [],
+      "detected_right_signals": [],
+      "observed_output_lean": "Democratic / Liberal Framing",
+      "sample_headlines": [
+        {
+          "title": "Live Updates: Michigan Democratic rift spills into public and more",
+          "url": "https://www.cbsnews.com/live-updates/2026-midterm-elections-campaigns-weekend-before/",
+          "published": "Sun, 01 Nov 2026 15:38:24 -0500"
+        },
+        {
+          "title": "Stevens endorses Rodgers amid rift with El-Sayed",
+          "url": "https://www.cbsnews.com/news/haley-stevens-mike-rogers-together-church-abdul-el-sayed-michigan-senate/",
+          "published": "Sun, 01 Nov 2026 15:37:47 -0500"
+        },
+        {
+          "title": "Transcript: David Becker on \"Face the Nation with Margaret Brennan,\" Nov. 1, 2026",
+          "url": "https://www.cbsnews.com/news/david-becker-election-law-face-the-nation-transcript-11-01-2026/",
+          "published": "Sun, 01 Nov 2026 14:52:21 -0500"
+        },
+        {
+          "title": "Transcript: Pennsylvania Gov. Josh Shapiro on \"Face the Nation with Margaret Brennan,\" Nov. 1, 2026",
+          "url": "https://www.cbsnews.com/news/josh-shapiro-pennsylvania-governor-11-01-2026/",
+          "published": "Sun, 01 Nov 2026 14:52:04 -0500"
+        }
+      ]
+    },
+    "metric": "#11 CBS News (Broadcast TV / Digital) — Lean Left (Leans Slightly Democrat / Center-Left)",
+    "value": -19,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/network-news/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Network News Fact Sheet",
+      "title": "Broadcast News Consumption and Trust Metrics",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — CBS News",
+        "url": "https://www.allsides.com/news-source/cbs-news-media-bias"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — CBS News",
+        "url": "https://adfontesmedia.com/cbs-news-bias-and-reliability/"
+      },
+      {
+        "name": "CBS News Politics Desk",
+        "url": "https://www.cbsnews.com/politics/"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_12_bbc_news",
+    "module": "media_bias_top20",
+    "rank": 12,
+    "name": "BBC News",
+    "medium": "International Public Broadcaster & Digital",
+    "format_badge": "Global Broadcast / Digital",
+    "ownership": "British Broadcasting Corporation (UK Royal Charter Public Trust)",
+    "hq": "London, UK / Washington, D.C.",
+    "homepage": "https://www.bbc.com/news/us-canada",
+    "rss_url": "https://feeds.bbci.co.uk/news/world/us_and_canada/rss.xml",
+    "lean_category": "Center",
+    "party_alignment": "Nonpartisan Center (Outside International Lens)",
+    "party_code": "C",
+    "lean_score": -9,
+    "factual_score": 92,
+    "factual_rating": "Very High Factual — Legally Mandated Impartiality Charter",
+    "allsides_rating": "Center",
+    "ad_fontes_zone": "Middle / High Reliability",
+    "pew_audience_split": "Trusted by both U.S. moderates and international readers as an outside referee",
+    "plain_english": "Because BBC News is a British public broadcaster bound by strict impartiality laws, it covers U.S. Republicans and Democrats from the outside looking in—without cheering for either American political party.",
+    "voter_impact_translation": "BBC is great for seeing how U.S. trade tariffs, foreign-aid bills, and immigration laws actually look to the rest of the world, stripped of domestic campaign slogans.",
+    "framing_signature": "Plain-English explainers ('What is the debt ceiling?'), global trade impact, and side-by-side party platform comparisons.",
+    "blindspot_warning": "Reflects a European consensus on gun laws and universal healthcare that sits to the left of U.S. conservatives.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [],
+      "detected_right_signals": [
+        "woke",
+        "tariffs"
+      ],
+      "observed_output_lean": "Balanced / Nonpartisan Wire Framing",
+      "sample_headlines": [
+        {
+          "title": "Democrat endorses Republican candidate in key Michigan Senate race as party spat escalates",
+          "url": "https://www.bbc.co.uk/news/articles/c95ynzv88n68o?at_medium=RSS&at_campaign=rss",
+          "published": "Sun, 01 Nov 2026 20:11:26 GMT"
+        },
+        {
+          "title": "The fight to save Canadian town threatened by Trump's tariffs",
+          "url": "https://www.bbc.co.uk/news/articles/cmly016ep243o?at_medium=RSS&at_campaign=rss",
+          "published": "Sat, 31 Oct 2026 02:39:25 GMT"
+        },
+        {
+          "title": "'The necktie is dead': How US midterm candidates are dressing for votes",
+          "url": "https://www.bbc.co.uk/news/articles/ckq6nz4286r4o?at_medium=RSS&at_campaign=rss",
+          "published": "Sat, 31 Oct 2026 00:16:03 GMT"
+        },
+        {
+          "title": "US approves sale of 500 Patriot missiles to Ukraine",
+          "url": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&at_campaign=rss",
+          "published": "Sat, 31 Oct 2026 12:21:25 GMT"
+        }
+      ]
+    },
+    "metric": "#12 BBC News (Global Broadcast / Digital) — Center (Nonpartisan Center (Outside International Lens))",
+    "value": -9,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/2021/05/12/public-trust-in-news-organizations/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Public Trust in News Organizations",
+      "title": "Cross-Partisan Trust in International & Public Broadcasters",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — BBC News",
+        "url": "https://www.allsides.com/news-source/bbc-news-media-bias"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — BBC Profile",
+        "url": "https://adfontesmedia.com/bbc-bias-and-reliability/"
+      },
+      {
+        "name": "BBC News U.S. & Canada Desk",
+        "url": "https://www.bbc.com/news/us-canada"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_13_al_jazeera",
+    "module": "media_bias_top20",
+    "rank": 13,
+    "name": "Al Jazeera English",
+    "medium": "International Broadcast & Digital",
+    "format_badge": "Global Broadcast / Digital",
+    "ownership": "Al Jazeera Media Network (State of Qatar Funded)",
+    "hq": "Doha, Qatar / Washington, D.C.",
+    "homepage": "https://www.aljazeera.com/us-canada/",
+    "rss_url": "https://news.google.com/rss/search?q=site:aljazeera.com+US+politics+OR+Congress+OR+Senate&hl=en-US&gl=US&ceid=US:en",
+    "lean_category": "Lean Left",
+    "party_alignment": "Leans Left on U.S. Domestic & Foreign Policy",
+    "party_code": "D",
+    "lean_score": -35,
+    "factual_score": 76,
+    "factual_rating": "Mostly Factual on U.S. Domestic News — Strong Foreign-Policy Lens",
+    "allsides_rating": "Lean Left",
+    "ad_fontes_zone": "Skews Left",
+    "pew_audience_split": "U.S. readership skews younger, progressive, and internationally focused",
+    "plain_english": "Al Jazeera English provides detailed global reporting and covers U.S. elections, poverty, civil rights, and Pentagon foreign-aid votes from a perspective critical of both Republican hawks and establishment Democrats.",
+    "voter_impact_translation": "When Congress votes on billions in overseas military aid, weapons sales, or sanctions, Al Jazeera scrutinizes where that U.S. taxpayer money goes far more aggressively than domestic TV networks.",
+    "framing_signature": "Pentagon budget scrutiny, U.S. foreign aid roll calls, civil liberties, labor strikes, and racial inequality.",
+    "blindspot_warning": "Funded by the Qatari government; while critical of U.S. officials, it avoids criticizing Qatari state interests.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [],
+      "detected_right_signals": [],
+      "observed_output_lean": "Democratic / Liberal Framing",
+      "sample_headlines": [
+        {
+          "title": "Trump rallies in Iowa, Kansas to maintain Republican control of US Senate",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWHhXeXl2QXVRVWwtZXFKbDBBbjdMNlVsN3lPV1BUTmZDYzhxek9ib2RBSTRnbVpGNEJnNHBPMWtPS2JKMUZsdUlTR0liY1dwMHQxbXUxbnVUaW0yd2R1SmFpY1VjekxxWXNhWnpiZ1pZT2JfRDl0TlliSUdVT0VsSWttNU9nUjdmMTNqTUhEM1ZSV0F6RF9aOFFsN2J0SXdhZ0FRNWxoUWFSOVFpMzVrMGZVQdIBuAFBVV95cUxPcGxIcVZObkxCU09hcWhxNUxHZFNxSElYNnNPUDN4em5qWmNwUnBEOGNlVkd5ZHdIYVBuY0F5Y2xvMFgyeE9uRjk0SDBWeW9GTUpOYnFldlNQcFFQQ0VIVlRzOGxDeDl6NktEd0ZvM0haUmNaOGtmWjd5Snd3ZFhkcFdVOHZwRXB0amdheW9rdkFNalBZNVRlVG9YWlkyaW1NUG04dF9scUIyS3lRTFVNeE5HaVNiZGg4?oc=5",
+          "published": "Sun, 01 Nov 2026 16:22:09 GMT"
+        },
+        {
+          "title": "Michigan Dem Haley Stevens endorses Republican Senate candidate Mike Rogers",
+          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMFczWXhxbG9HUkFGUFlaNVVDYXlOcXpJNVBiQnVXRHFqLW5Yalc5YUl3YnJ2YklwYXBEV1NwOW12TEhpd2RyalU1YjRzMC1vUWNOUFpJWElRTTBLVDFiVjJYYURqWHN1S3lHZkpxa2h2UkhrU2VNZ0lkc1RJQ2gteUplZDJzME05d1lKbUJFS3BoX1BiSWFSR042MXFTaldNNHZNdUhmY0l6VTlaempTQVBIZkRYY1nSAbwBQVVfeXFMTWdXZk93ZmVtWUtxQWFzNzIzdGJXUDY0bnhETVJlX2pwQWJObXA0QnVvNXMzZnV3MGRTaGN3UTZzcU5IX3BLOWxRM29jbEdsclRweU5PMUxnTE4xWmthR2VLNTBveXk2dFUyR3RpcmxxUEJEM25Gelcxa2h6WXotUFFHVE1Cc2s4bGtfLVJObjhnQURwclp5Z3hyQWNkeEV4dDI4SlpHR1FudXpSb0pfU0xTcm1DVmFZMVBlRlk?oc=5",
+          "published": "Sun, 01 Nov 2026 18:53:11 GMT"
+        },
+        {
+          "title": "Michigan race: All you need to know about Abdul El-Sayed v Mike Rogers",
+          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQeGNMakJSaE9TbGRQVGZMVkF0WV9nOU9waFlwX0Y3YVl0RGRSY05pZWRpck5NVE1pX3Y3YlJjZWg3RlB1SENQQ3Fta2NDNW5pR1pBSHFtT2lzdkprZTBoMDFnaWpjd29YVU9neTJiTEVlcFBKM21BUk5rY2hqcFBaZWJ5MDhHZmhmbEVoRXhlbkJCYkk0Slg1TlVTNnBSR0lZWEJGdFVVa2Z6Ml9hRHBj0gG0AUFVX3lxTE10NGNQcHZkT1hpX0c4RU45TFZMTnduR2Vja1YzM20xdjR1eXhMVGFNYWtDOVk1Y3Y2ZlZqcnpKUzVEY0dpNWw4OHoxbEdycVFwRnNkZzdFNG5kUWdvcmlWLTRSbXVQRkVZVFF6OVJjOEZlUG9PVVRnM3hYNzVJRUs2NjBLRk1hLVd2T1BraDg0XzZ0elZIMzZRRWRrbko1WkVnZDlnT3BhenFDb3p4bUdZSV9CbA?oc=5",
+          "published": "Sun, 01 Nov 2026 13:10:07 GMT"
+        },
+        {
+          "title": "US midterms: 2 days to go – Who leads in the polls as Trump rallies",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOc1FzaVh5OC1rNlI3QnlLQ3FZb2VIUl9LLXg5UXpZWlFHdUN4V0pXOVNGT2lvZzl2WVh1bWpYekdhVE93MDlWeUtBeWlWVG1tMjRnbFNHbXhWcUFBeFRUMEszWTlWRFp5ckM1SEdWcjNCNHE5ajVsNUUzUFJGdFBfekd5b2tOaFFockNVM2RNaDluNTVIWW5wLWRmb2hKQm1ha1hQRHJ2MW51OXZEU3VxUUx30gG3AUFVX3lxTE9mUmVNQXF5SmM3enFMT2hKamRpZzZnejk5aFNNdG1ydEtCb0pQNGNVUVZRQWNDXzV2dUlLT3RVdkFzemFOWk83UUxpeTVTZkphanFBSFBpTk1tTUxVdnRZZ1ZWRjlrZVhWNmNKVHpBbENXR016VWsxWUR6bzFPNGZZUXpjXzNuNmxFTkZ3YWpRLVZrNl9fMlJ5eEZkQWZxSTB6NGVua21IcVhnY2tSMFZhYkgxVUpQVQ?oc=5",
+          "published": "Sun, 01 Nov 2026 08:50:01 GMT"
+        }
+      ]
+    },
+    "metric": "#13 Al Jazeera English (Global Broadcast / Digital) — Lean Left (Leans Left on U.S. Domestic & Foreign Policy)",
+    "value": -35,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/digital-news/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Global & Digital Media Studies",
+      "title": "International News Outlets in the U.S. Information Ecosystem",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — Al Jazeera English",
+        "url": "https://www.allsides.com/news-source/al-jazeera-english"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — Al Jazeera",
+        "url": "https://adfontesmedia.com/al-jazeera-bias-and-reliability/"
+      },
+      {
+        "name": "Al Jazeera U.S. & Canada Coverage",
+        "url": "https://www.aljazeera.com/us-canada/"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_14_npr",
+    "module": "media_bias_top20",
+    "rank": 14,
+    "name": "NPR (National Public Radio)",
+    "medium": "Public Radio & Digital",
+    "format_badge": "Public Radio / Digital",
+    "ownership": "Nonprofit Member-Station Syndicate (Public/Foundation Funded)",
+    "hq": "Washington, D.C.",
+    "homepage": "https://www.npr.org/sections/politics/",
+    "rss_url": "https://feeds.npr.org/1014/rss.xml",
+    "lean_category": "Lean Left",
+    "party_alignment": "Leans Democrat / Progressive-Institutional",
+    "party_code": "D",
+    "lean_score": -26,
+    "factual_score": 89,
+    "factual_rating": "High Factual — In-Depth Audio & Policy Explainers",
+    "allsides_rating": "Lean Left",
+    "ad_fontes_zone": "Skews Slightly Left / High Reliability",
+    "pew_audience_split": "80% of regular listeners identify as Democrat or lean Democrat (Pew Research Center)",
+    "plain_english": "NPR delivers calm, fact-checked policy explainers without shouting matches, and its local member stations cover state capitols well—but its national story selection and cultural lens clearly lean toward college-educated Democrats.",
+    "voter_impact_translation": "NPR is excellent at explaining the fine print of healthcare, education, and environmental rules, though it rarely highlights conservative arguments for shrinking federal agencies.",
+    "framing_signature": "Deep policy explainers, Supreme Court audio analysis, healthcare equity, and local public-radio statehouse desks.",
+    "blindspot_warning": "Story selection heavily emphasizes identity, climate, and public-sector programs over private-sector growth.",
+    "scraped_output": {
+      "scraped_count": 10,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [],
+      "detected_right_signals": [],
+      "observed_output_lean": "Democratic / Liberal Framing",
+      "sample_headlines": [
+        {
+          "title": "Haley Stevens endorses GOP candidate in Michigan Senate race, spurning Abdul El-Sayed",
+          "url": "https://www.npr.org/2026/11/01/nx-s1-6020993/michigan-senate-race-abdul-el-sayed-haley-stevens-mike-rogers",
+          "published": "Sun, 01 Nov 2026 14:49:15 -0500"
+        },
+        {
+          "title": "Connecticut Senator Chris Murphy is hospitalized with a stroke",
+          "url": "https://www.npr.org/2026/11/01/nx-s1-6025467/chris-murphy-stroke",
+          "published": "Sun, 01 Nov 2026 14:00:58 -0500"
+        },
+        {
+          "title": "How to think about the midterms — and the political moment the country is in",
+          "url": "https://www.npr.org/2026/11/01/g-s1-151146/how-to-think-about-the-midterms-and-the-political-moment-the-country-is-in",
+          "published": "Sun, 01 Nov 2026 13:27:06 -0500"
+        },
+        {
+          "title": "Judge tosses Trump's attempt to block Alaska Senate results if GOP incumbent loses",
+          "url": "https://www.npr.org/2026/11/01/nx-s1-6023766/doj-alaska-lawsuit-senate-race-dan-sullivan",
+          "published": "Sun, 01 Nov 2026 13:00:37 -0500"
+        }
+      ]
+    },
+    "metric": "#14 NPR (National Public Radio) (Public Radio / Digital) — Lean Left (Leans Democrat / Progressive-Institutional)",
+    "value": -26,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/audio-and-podcasting/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Audio & Public Radio Fact Sheet",
+      "title": "Public Radio Audience Demographics and Political Alignment",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — NPR",
+        "url": "https://www.allsides.com/news-source/npr-media-bias"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — NPR Profile",
+        "url": "https://adfontesmedia.com/npr-bias-and-reliability/"
+      },
+      {
+        "name": "NPR Politics Desk",
+        "url": "https://www.npr.org/sections/politics/"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 10 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_15_pbs_newshour",
+    "module": "media_bias_top20",
+    "rank": 15,
+    "name": "PBS NewsHour",
+    "medium": "Public Broadcast TV & Digital",
+    "format_badge": "Public TV / Digital",
+    "ownership": "Public Broadcasting Service / WETA Nonprofit",
+    "hq": "Arlington, VA / Washington, D.C.",
+    "homepage": "https://www.pbs.org/newshour/politics",
+    "rss_url": "https://www.pbs.org/newshour/feeds/rss/politics",
+    "lean_category": "Center",
+    "party_alignment": "Center / Slight Center-Left Tilt",
+    "party_code": "C",
+    "lean_score": -10,
+    "factual_score": 93,
+    "factual_rating": "Very High Factual — Extended Dual-Party Policy Interviews",
+    "allsides_rating": "Center",
+    "ad_fontes_zone": "Middle / Most Reliable for News",
+    "pew_audience_split": "Consistently ranked among the highest-trust broadcast programs across moderates",
+    "plain_english": "PBS NewsHour is the antidote to cable-news screaming: it gives Republican and Democratic lawmakers 8 to 10 uninterrupted minutes to explain their votes and pairs conservative and liberal analysts side-by-side.",
+    "voter_impact_translation": "If you want to hear both a Republican Senator and a Democratic Senator explain in full sentences how a bill affects Social Security, rural hospitals, or taxes, PBS NewsHour lets you judge both sides yourself.",
+    "framing_signature": "Unedited long-form lawmaker interviews, Brooks & Capehart bipartisan analysis, and calm legislative breakdowns.",
+    "blindspot_warning": "Institutional tone can be overly polite to establishment lawmakers from both parties.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [],
+      "detected_right_signals": [],
+      "observed_output_lean": "Balanced / Nonpartisan Wire Framing",
+      "sample_headlines": [
+        {
+          "title": "WATCH LIVE: Trump rallies in Iowa as part of final push before Election Day",
+          "url": "https://www.pbs.org/newshour/politics/watch-live-trump-rallies-in-iowa-as-part-of-final-push-before-election-day",
+          "published": "Sun, 01 Nov 2026 14:12:43 -0500"
+        },
+        {
+          "title": "Canadian Prime Minister Carney reports progress in trade talks with Trump days before U.S. midterms",
+          "url": "https://www.pbs.org/newshour/world/canadian-prime-minister-carney-reports-progress-in-trade-talks-with-trump-days-before-u-s-midterms",
+          "published": "Sun, 01 Nov 2026 13:00:43 -0500"
+        },
+        {
+          "title": "Democrat Haley Stevens endorses GOP's Mike Rogers in Michigan Senate race 2 days before election",
+          "url": "https://www.pbs.org/newshour/politics/democrat-haley-stevens-endorses-gops-mike-rogers-in-michigan-senate-race-2-days-before-election",
+          "published": "Sun, 01 Nov 2026 12:37:32 -0500"
+        },
+        {
+          "title": "Judge dismisses lawsuit seeking to block certification of Alaska Senate race if GOP incumbent loses",
+          "url": "https://www.pbs.org/newshour/politics/sullivan-claims-peltola-is-still-lying-about-campaigns-involvement-in-alaska-ballot-controversy",
+          "published": "Sun, 01 Nov 2026 11:40:55 -0500"
+        }
+      ]
+    },
+    "metric": "#15 PBS NewsHour (Public TV / Digital) — Center (Center / Slight Center-Left Tilt)",
+    "value": -10,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/network-news/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Broadcast & Public Television",
+      "title": "Public Broadcasting Trust & Ideological Balance",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — PBS NewsHour",
+        "url": "https://www.allsides.com/news-source/pbs-newshour"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — PBS NewsHour",
+        "url": "https://adfontesmedia.com/pbs-bias-and-reliability/"
+      },
+      {
+        "name": "PBS NewsHour Politics Desk",
+        "url": "https://www.pbs.org/newshour/politics"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_16_ny_post",
+    "module": "media_bias_top20",
+    "rank": 16,
+    "name": "New York Post",
+    "medium": "Print Tabloid Newspaper & Digital",
+    "format_badge": "Print Tabloid / Digital",
+    "ownership": "News Corp (Murdoch Family)",
+    "hq": "New York, NY",
+    "homepage": "https://nypost.com/politics/",
+    "rss_url": "https://nypost.com/politics/feed/",
+    "lean_category": "Right",
+    "party_alignment": "Leans Republican / Populist Right",
+    "party_code": "R",
+    "lean_score": 52,
+    "factual_score": 69,
+    "factual_rating": "Mixed to Factual Reporting — Punchy Conservative Tabloid Framing",
+    "allsides_rating": "Lean Right / Right",
+    "ad_fontes_zone": "Skews Right",
+    "pew_audience_split": "Read heavily by conservative, working-class, and independent populist voters",
+    "plain_english": "Founded by Alexander Hamilton in 1801, the New York Post is America's punchiest conservative tabloid. It uses bold, plain-English headlines to hammer Democratic tax hikes, urban crime, and government waste while backing Republican populists.",
+    "voter_impact_translation": "The Post aggressively exposes government boondoggles, public-union pension abuse, and political family influence-peddling that polite mainstream outlets sometimes hesitate to touch.",
+    "framing_signature": "Blunt working-class headlines, urban crime and bail laws, migrant shelter costs, and political corruption scoops.",
+    "blindspot_warning": "Sensationalist headline verbs and strong loyalty to populist Republican figures.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [
+        "billionaire"
+      ],
+      "detected_right_signals": [],
+      "observed_output_lean": "Republican / Conservative Framing",
+      "sample_headlines": [
+        {
+          "title": "Bernie Sanders gives blazing interview as support for California billionaire tax plummets: ‘Disgusting’",
+          "url": "https://nypost.com/2026/11/01/us-news/bernie-sanders-gives-interview-on-california-billionaire-tax-as-support-plummets/",
+          "published": "Sun, 01 Nov 2026 15:27:57 -0500"
+        },
+        {
+          "title": "Alaska Sen. Sullivan warns alleged ‘Decoy Dan’ scheme is working: ‘I’m going to lose a lot of votes to that trickery’",
+          "url": "https://nypost.com/2026/11/01/us-news/alaska-sen-sullivan-warns-alleged-decoy-dan-scheme-is-working/",
+          "published": "Sun, 01 Nov 2026 15:21:30 -0500"
+        },
+        {
+          "title": "DOJ suit tossed as feds fought certification of Alaska Senate race over ‘Decoy Dan’ Sullivan scandal",
+          "url": "https://nypost.com/2026/11/01/us-news/doj-suit-tossed-as-feds-fought-certification-of-alaska-senate-race-over-decoy-dan-sullivan-scandal/",
+          "published": "Sun, 01 Nov 2026 15:20:26 -0500"
+        },
+        {
+          "title": "Trump pledges $15B for farmers struggling with costs ahead of midterm elections",
+          "url": "https://nypost.com/2026/11/01/us-news/trump-pledges-15b-for-farmers-struggling-with-costs/",
+          "published": "Sun, 01 Nov 2026 13:58:01 -0500"
+        }
+      ]
+    },
+    "metric": "#16 New York Post (Print Tabloid / Digital) — Right (Leans Republican / Populist Right)",
+    "value": 52,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/newspapers/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Newspapers & Digital Reach",
+      "title": "U.S. Daily Newspaper Circulation & Digital Reach",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — New York Post",
+        "url": "https://www.allsides.com/news-source/new-york-post"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — NY Post",
+        "url": "https://adfontesmedia.com/new-york-post-bias-and-reliability/"
+      },
+      {
+        "name": "New York Post Politics Desk",
+        "url": "https://nypost.com/politics/"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_17_politico",
+    "module": "media_bias_top20",
+    "rank": 17,
+    "name": "Politico",
+    "medium": "Capitol Hill Print Newspaper & Digital",
+    "format_badge": "Capitol Hill Print & Digital",
+    "ownership": "Axel Springer SE",
+    "hq": "Arlington, VA / Washington, D.C.",
+    "homepage": "https://www.politico.com/politics",
+    "rss_url": "https://rss.politico.com/politics-news.xml",
+    "lean_category": "Lean Left",
+    "party_alignment": "Center-Left / Capitol Hill Insider",
+    "party_code": "D",
+    "lean_score": -16,
+    "factual_score": 88,
+    "factual_rating": "High Factual — Primary Capitol Hill Whip & Lobbying Tracker",
+    "allsides_rating": "Lean Left",
+    "ad_fontes_zone": "Middle / Skews Slightly Left",
+    "pew_audience_split": "Read daily by 90%+ of congressional staffers, lobbyists, and campaign managers",
+    "plain_english": "Politico is the trade newspaper of Capitol Hill. Every morning its 'Playbook' and committee reporters reveal which lobbyists are writing amendments and which House or Senate members are privately threatening to tank a bill.",
+    "voter_impact_translation": "Politico shows you the backroom horse-trading—which corporate PAC or party leader pressured your representative right before a crucial committee vote.",
+    "framing_signature": "Whip counts, K-Street lobbying disclosures, committee markup leaks, and campaign fundraising numbers.",
+    "blindspot_warning": "Written by and for D.C. insiders; treats politics like a strategy game rather than focusing on household outcomes.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [],
+      "detected_right_signals": [],
+      "observed_output_lean": "Democratic / Liberal Framing",
+      "sample_headlines": [
+        {
+          "title": "Democratic Rep. Haley Stevens endorses Republican Mike Rogers for Michigan Senate",
+          "url": "https://www.politico.com/news/2026/11/01/haley-stevens-endorses-mike-rogers-michigan-senate-01144698",
+          "published": "Sun, 01 Nov 2026 12:44:25 EST"
+        },
+        {
+          "title": "November 2026",
+          "url": "https://www.politico.com/cartoons/2026/11/01/matt-wuerker-cartoons-november-2026-01144662",
+          "published": "Sun, 01 Nov 2026 10:14:31 EST"
+        },
+        {
+          "title": "The size of Democrats’ victory Tuesday could help determine their future",
+          "url": "https://www.politico.com/news/2026/11/01/poll-democratic-party-future-midterms-01141119",
+          "published": "Sun, 01 Nov 2026 10:00:00 EST"
+        },
+        {
+          "title": "Raphael Warnock is 'nauseously optimistic' about Dem's midterm chances",
+          "url": "https://www.politico.com/video/2026/11/01/raphael-warnock-is-nauseously-optimistic-about-dems-midterm-chances-2216473",
+          "published": "Sun, 01 Nov 2026 06:00:00 EST"
+        }
+      ]
+    },
+    "metric": "#17 Politico (Capitol Hill Print & Digital) — Lean Left (Center-Left / Capitol Hill Insider)",
+    "value": -16,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/digital-news/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Digital-Native News Outlets",
+      "title": "Capitol Hill Trade Publications and Political Reporting",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — Politico",
+        "url": "https://www.allsides.com/news-source/politico-media-bias"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — Politico",
+        "url": "https://adfontesmedia.com/politico-bias-and-reliability/"
+      },
+      {
+        "name": "Politico Congress & Politics Desk",
+        "url": "https://www.politico.com/congress"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_18_the_hill",
+    "module": "media_bias_top20",
+    "rank": 18,
+    "name": "The Hill",
+    "medium": "Capitol Hill Print Newspaper & Digital",
+    "format_badge": "Capitol Hill Print & Digital",
+    "ownership": "Nexstar Media Group",
+    "hq": "Washington, D.C.",
+    "homepage": "https://thehill.com/",
+    "rss_url": "https://thehill.com/feed/",
+    "lean_category": "Center",
+    "party_alignment": "Nonpartisan Center (Bipartisan Capitol Hill Coverage)",
+    "party_code": "C",
+    "lean_score": 0,
+    "factual_score": 86,
+    "factual_rating": "High Factual — Balanced Republican & Democratic Floor Coverage",
+    "allsides_rating": "Center",
+    "ad_fontes_zone": "Middle / High Reliability",
+    "pew_audience_split": "One of the most evenly split digital political audiences in America (~49% R / ~51% D)",
+    "plain_english": "Owned by local-TV giant Nexstar, The Hill is one of the most balanced political outlets in Washington. It reports straight floor votes, quotes Republican and Democratic lawmakers equally, and publishes opinion columns from both right and left.",
+    "voter_impact_translation": "Because The Hill gives equal weight to House Republicans and Senate Democrats, it is one of the fastest places to see both parties' best arguments on any bill before Congress.",
+    "framing_signature": "Fast floor-vote summaries, bipartisan committee coverage, and side-by-side GOP/Democratic quotes.",
+    "blindspot_warning": "High-volume aggregation of lawmaker statements means less time spent on multi-month investigative digging.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [],
+      "detected_right_signals": [],
+      "observed_output_lean": "Balanced / Nonpartisan Wire Framing",
+      "sample_headlines": [
+        {
+          "title": "RNC chair says Republicans have voter turnout problem",
+          "url": "https://thehill.com/homenews/campaign/6187168-rnc-acknowledges-voter-turnout-issues/",
+          "published": "Sun, 01 Nov 2026 20:01:02 +0000"
+        },
+        {
+          "title": "RNC says ‘Michigan should take notice’ of Stevens endorsing Rogers",
+          "url": "https://thehill.com/homenews/campaign/6187095-rnc-rogers-receives-stevens-support/",
+          "published": "Sun, 01 Nov 2026 20:00:39 +0000"
+        },
+        {
+          "title": "Trump commends Stevens’ ‘bravery’ for endorsing Rogers",
+          "url": "https://thehill.com/homenews/campaign/6187175-trump-praises-stevens-gop-endorsement/",
+          "published": "Sun, 01 Nov 2026 19:52:39 +0000"
+        },
+        {
+          "title": "Schumer calls Stevens’s Rogers endorsement ‘a despicable betrayal’",
+          "url": "https://thehill.com/homenews/campaign/6187117-schumer-rips-stevens-rogers-endorsement/",
+          "published": "Sun, 01 Nov 2026 19:48:32 +0000"
+        }
+      ]
+    },
+    "metric": "#18 The Hill (Capitol Hill Print & Digital) — Center (Nonpartisan Center (Bipartisan Capitol Hill Coverage))",
+    "value": 0,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/digital-news/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Digital News Fact Sheet",
+      "title": "Ideological Balance in Capitol Hill News Outlets",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — The Hill",
+        "url": "https://www.allsides.com/news-source/hill-media-bias"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — The Hill",
+        "url": "https://adfontesmedia.com/the-hill-bias-and-reliability/"
+      },
+      {
+        "name": "The Hill Official Newsroom",
+        "url": "https://thehill.com/"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_19_daily_wire",
+    "module": "media_bias_top20",
+    "rank": 19,
+    "name": "The Daily Wire",
+    "medium": "Digital News, Podcasts & Investigate",
+    "format_badge": "Digital Native / Audio",
+    "ownership": "Bentkey Ventures (Shapiro, Boreing & Wilks)",
+    "hq": "Nashville, TN",
+    "homepage": "https://www.dailywire.com/",
+    "rss_url": "https://www.dailywire.com/feeds/rss.xml",
+    "lean_category": "Right",
+    "party_alignment": "Strong Republican / Conservative",
+    "party_code": "R",
+    "lean_score": 70,
+    "factual_score": 65,
+    "factual_rating": "Opinion-Forward Conservative News & Investigative Reporting",
+    "allsides_rating": "Right",
+    "ad_fontes_zone": "Skews Right / Hyper-Partisan Right",
+    "pew_audience_split": "Over 88% of audience identifies as conservative or Republican-leaning",
+    "plain_english": "The Daily Wire is one of the largest conservative digital and podcast networks in the country. It openly champions Republican policies, free-market economics, and traditional social values while aggressively targeting progressive school boards, DEI mandates, and Democratic s",
+    "voter_impact_translation": "When lawmakers vote on education rules, gender policy, taxes, or Second Amendment laws, The Daily Wire frames the vote through a strict constitutional-conservative lens.",
+    "framing_signature": "Parental rights in schools, DEI & ESG corporate mandates, Second Amendment rights, and conservative tax policy.",
+    "blindspot_warning": "Heavy culture-war focus; rarely criticizes Republican lawmakers on healthcare access or corporate pollution.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [
+        "medicaid"
+      ],
+      "detected_right_signals": [],
+      "observed_output_lean": "Republican / Conservative Framing",
+      "sample_headlines": [
+        {
+          "title": "El-Sayed Begs Reporters Not To Ask About Haley Stevens’ Shock Endorsement Of Mike Rogers",
+          "url": "https://www.dailywire.com/news/el-sayed-begs-reporters-not-to-ask-about-haley-stevens-shock-endorsement-of-mike-rogers",
+          "published": "Sun, 01 Nov 2026 14:05:50 GMT"
+        },
+        {
+          "title": "Dems Lose It After Haley Stevens Rejects El-Sayed And Endorses Republican Mike Rogers",
+          "url": "https://www.dailywire.com/news/dems-lose-it-after-haley-stevens-rejects-el-sayed-and-endorses-republican-mike-rogers",
+          "published": "Sun, 01 Nov 2026 13:21:27 GMT"
+        },
+        {
+          "title": "To Catch A Fraudster: Watch Us Bust A Refugee Medicaid Scammer Red-Handed",
+          "url": "https://www.dailywire.com/news/to-catch-a-fraudster-watch-us-bust-a-refugee-medicaid-scammer-red-handed",
+          "published": "Sun, 01 Nov 2026 12:38:27 GMT"
+        },
+        {
+          "title": "Outspoken Dem Senator Suffers Stroke At Son’s Hockey Game",
+          "url": "https://www.dailywire.com/news/outspoken-dem-senator-suffers-stroke-at-sons-hockey-game",
+          "published": "Sun, 01 Nov 2026 12:36:47 GMT"
+        }
+      ]
+    },
+    "metric": "#19 The Daily Wire (Digital Native / Audio) — Right (Strong Republican / Conservative)",
+    "value": 70,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/digital-news/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Digital & Podcast News Ecosystem",
+      "title": "Partisan Digital Outlets and Podcast News Audiences",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — The Daily Wire",
+        "url": "https://www.allsides.com/news-source/daily-wire"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — Daily Wire",
+        "url": "https://adfontesmedia.com/daily-wire-bias-and-reliability/"
+      },
+      {
+        "name": "The Daily Wire News Desk",
+        "url": "https://www.dailywire.com/"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  },
+  {
+    "id": "media_20_the_atlantic",
+    "module": "media_bias_top20",
+    "rank": 20,
+    "name": "The Atlantic (Print Magazine & Digital)",
+    "medium": "Print Magazine & Digital",
+    "format_badge": "Print Magazine / Digital",
+    "ownership": "Emerson Collective (Laurene Powell Jobs)",
+    "hq": "Washington, D.C.",
+    "homepage": "https://www.theatlantic.com/politics/",
+    "rss_url": "https://news.google.com/rss/search?q=site:theatlantic.com+politics+OR+Congress+OR+Democracy&hl=en-US&gl=US&ceid=US:en",
+    "lean_category": "Lean Left",
+    "party_alignment": "Leans Democrat / Center-Left Intellectual",
+    "party_code": "D",
+    "lean_score": -42,
+    "factual_score": 87,
+    "factual_rating": "High Factual — Long-Form Magazine Investigations & Essays",
+    "allsides_rating": "Lean Left / Left",
+    "ad_fontes_zone": "Skews Left / High Reliability",
+    "pew_audience_split": "Read predominantly by Democratic-leaning and Never-Trump moderate voters",
+    "plain_english": "Founded in 1857, The Atlantic is America's flagship political and cultural print magazine. Its fact-checking department is rigorous, while its political essays and cover stories strongly favor Democratic governance, constitutional checks on Trump-aligned Republicans, and soc",
+    "voter_impact_translation": "The Atlantic connects individual congressional votes to bigger historical trends—showing how judicial appointments, voting laws, and healthcare bills reshape American society over decades.",
+    "framing_signature": "Constitutional democracy essays, deep profiles of cabinet officials, public health, and institutional norms.",
+    "blindspot_warning": "Long-form elite perspective that frequently alienates populist conservative and rural voters.",
+    "scraped_output": {
+      "scraped_count": 12,
+      "scraped_at": "2026-11-01",
+      "detected_left_signals": [],
+      "detected_right_signals": [],
+      "observed_output_lean": "Democratic / Liberal Framing",
+      "sample_headlines": [
+        {
+          "title": "The U.S. Is Bullying Europe Like Never Before",
+          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORFAwcDhOYWFEYjhHTnpraGpaUDFiNTdSYVZhYWJMNmtzSkRDczdUOW43Uk95c05IOWQ2d093dEEtNlYtWjFkZVMyUlVqT0diaGdieW80TkRldnp3YXhnNUhqRG9yR29BeUYxVEdQUTRtam5fT2NmU3MzSDg0Y2JLdnMwMHlrNVVCaVJucVVn?oc=5",
+          "published": "Sun, 01 Nov 2026 12:15:00 GMT"
+        },
+        {
+          "title": "Can Democracy Survive the Next Financial Crash?",
+          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQa3Zaby05UG9Wb0h6N0FyVHRjdUc2eEtZMEdrRzdZRk1WMFluSWpfMHB2ZVUtNHdCNlJJZDRDdk1TTDNpVnVHUE41TDBkYnFrLXdKSDFJZi1kYzl6OFlaZTIxeWd4NHZFVTJ6clN3MWRWcHRHTXd6UjByWmFaRDF6OFdUQXlOdGM?oc=5",
+          "published": "Thu, 29 Oct 2026 12:00:00 GMT"
+        },
+        {
+          "title": "Democrats Are Ready to Run Hegseth ‘Out of Town’",
+          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbXlSQkwyVkt3dWtaenMtSjhTMUQxZTVCcHIwcXhOWUthNHZ5cDg2eWZ6V3k3TEJaVk1SX3MyM0hlbzZTMk5TNUlTTHY3OGJXSXU5MDZFS2JYcklKbUNCTFVSSnNBTHRIT2lmbEZLYWRiS0pfQ01TZ04wZWJNSlNRSHVhWnVtV1VPWmxkUE1WSXp1eGdBc3hHNHdIUERWUQ?oc=5",
+          "published": "Thu, 29 Oct 2026 17:57:38 GMT"
+        },
+        {
+          "title": "Bernie Sanders Thinks the Democratic Party Is Moving Toward Him",
+          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSmpfNlhnVGp3cS1ab3BDTjNfRnpRWDBPVlU3OFRERGFkRTFBU2hyYjhwTS0yQVR2WXc1bGpTVld4bUpBN2xITjZ3eXZUdmgyLUxQTW1ZU19TNWxNNVRrX1dNMkx1QldfRzhfbU95ZFJTSEtLcUcxd0xRazlLV1hoTXlZRHBsbF9pYWc?oc=5",
+          "published": "Tue, 27 Oct 2026 16:46:46 GMT"
+        }
+      ]
+    },
+    "metric": "#20 The Atlantic (Print Magazine & Digital) (Print Magazine / Digital) — Lean Left (Leans Democrat / Center-Left Intellectual)",
+    "value": -42,
+    "unit": "lean_index_-100_to_+100",
+    "period": "2024-2026",
+    "geo": "US",
+    "source": {
+      "url": "https://www.pewresearch.org/journalism/fact-sheet/newspapers/",
+      "tier": "A",
+      "publisher": "Pew Research Center — Journalism & Magazine Studies",
+      "title": "Ideological Lean and Fact-Checking Standards in National Magazines",
+      "accessed": "2026-11-01"
+    },
+    "secondary_sources": [
+      {
+        "name": "AllSides Media Bias Rating — The Atlantic",
+        "url": "https://www.allsides.com/news-source/atlantic"
+      },
+      {
+        "name": "Ad Fontes Media Interactive Bias Chart — The Atlantic",
+        "url": "https://adfontesmedia.com/the-atlantic-bias-and-reliability/"
+      },
+      {
+        "name": "The Atlantic Politics Magazine",
+        "url": "https://www.theatlantic.com/politics/"
+      }
+    ],
+    "confidence": "high",
+    "verified": {
+      "by": "sheba",
+      "at": "2026-11-01",
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
+    }
+  }
+]
