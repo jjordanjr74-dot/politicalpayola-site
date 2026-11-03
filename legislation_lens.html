@@ -109,6 +109,16 @@ footer a { color:#5d4b2c; }
 </footer>
 
 <script>
+const LEGISLATION_LENS_API = 'http://127.0.0.1:5599/api/legislation-lens';
+
+// Show banner only on GH Pages (not when served locally)
+if (window.location.hostname !== '127.0.0.1' && window.location.hostname !== 'localhost') {
+  const banner = document.createElement('div');
+  banner.style.cssText = 'background:#fdf8f0;border:1px solid #d4c4a8;border-radius:8px;padding:1rem;margin-bottom:1rem;text-align:center;';
+  banner.innerHTML = '<strong>Legislation Lens runs locally.</strong> <a href="http://127.0.0.1:5599" style="color:#c0392b;font-weight:600;">Click here to open the tool →</a>';
+  const hero = document.querySelector('.hero');
+  if (hero) hero.parentNode.insertBefore(banner, hero);
+}
 const LEGISLATION_LENS_ENDPOINT = '/api/legislation-lens';
 
 const uploadZone = document.getElementById('uploadZone');
@@ -156,11 +166,18 @@ function handleFile(file) {
 
 function showLoading() { loadingCard.classList.remove('hidden'); resultCard.classList.add('hidden'); }
 
+function renderBullets(data) {
+  if (!data) return 'No information available.';
+  if (Array.isArray(data)) return '<ul style="padding-left:1.25rem;list-style:disc;margin:0;">' + data.map(b => '<li style="margin-bottom:0.5rem;">' + b + '</li>').join('') + '</ul>';
+  if (typeof data === 'string') return data;
+  return String(data);
+}
+
 function showResult(data) {
   loadingCard.classList.add('hidden');
   resultCard.classList.remove('hidden');
-  plainExplanation.textContent = data.plain_english || 'No explanation available.';
-  impactExplanation.textContent = data.how_it_affects_you || 'No impact analysis available.';
+  plainExplanation.innerHTML = renderBullets(data.plain_english);
+  impactExplanation.innerHTML = renderBullets(data.how_it_affects_you);
   if (data.terms_decoded && data.terms_decoded.length) {
     termsDecoded.innerHTML = '<ul style="padding-left:1.25rem;list-style:disc;">' + data.terms_decoded.map(t => `<li><strong>${t.term}:</strong> ${t.meaning}</li>`).join('') + '</ul>';
   } else { termsDecoded.textContent = 'No key terms identified.'; }
