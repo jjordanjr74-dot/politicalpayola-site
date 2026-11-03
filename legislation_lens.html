@@ -109,10 +109,7 @@ footer a { color:#5d4b2c; }
 </footer>
 
 <script>
-const LEGISLATION_LENS_ENDPOINTS = [
-    'http://127.0.0.1:5599/api/legislation-lens',  // Local server
-];
-const LEGISLATION_LENS_ENDPOINT = LEGISLATION_LENS_ENDPOINTS[0];
+const LEGISLATION_LENS_ENDPOINT = '/api/legislation-lens';
 
 const uploadZone = document.getElementById('uploadZone');
 const fileInput = document.getElementById('fileInput');
@@ -180,21 +177,17 @@ function resetUI() {
   cameraInput.value = '';
 }
 
-async function tryEndpoints(body) {
-  for (const url of LEGISLATION_LENS_ENDPOINTS) {
-    try {
-      const resp = await fetch(url, {method:'POST',headers:{'Content-Type':'application/json'},body:JSON.stringify(body)});
-      if (resp.ok) return await resp.json();
-    } catch(e) { continue; }
-  }
-  throw new Error('Legislation Lens server is not running. Start it locally: python tools/legislation_lens_server.py');
-}
-
 async function analyzeImage() {
   if (!currentImageData) return;
   showLoading();
   try {
-    showResult(await tryEndpoints({image_data:currentImageData}));
+    const resp = await fetch(LEGISLATION_LENS_ENDPOINT, {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({image_data:currentImageData})
+    });
+    if (!resp.ok) { const err=await resp.json().catch(()=>({})); throw new Error(err.error||`Server error (${resp.status})`); }
+    showResult(await resp.json());
   } catch(e) {
     loadingCard.classList.add('hidden');
     alert('Analysis failed: ' + e.message);
@@ -206,7 +199,13 @@ async function analyzeText() {
   if (!text) { alert('Paste some text first.'); return; }
   showLoading();
   try {
-    showResult(await tryEndpoints({text:text}));
+    const resp = await fetch(LEGISLATION_LENS_ENDPOINT, {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({text:text})
+    });
+    if (!resp.ok) { const err=await resp.json().catch(()=>({})); throw new Error(err.error||`Server error (${resp.status})`); }
+    showResult(await resp.json());
   } catch(e) {
     loadingCard.classList.add('hidden');
     alert('Analysis failed: ' + e.message);
