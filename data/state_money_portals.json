@@ -1,0 +1,630 @@
+{
+  "generated_at": "2026-11-03T13:36:34.068175+00:00",
+  "discovery_source": {
+    "name": "State Politics Tracker",
+    "url": "https://statepoliticstracker.com/",
+    "bundle": "https://statepoliticstracker.com/assets/index-wmvU9Z11.js"
+  },
+  "authority_note": "Each portal below is the state agency that actually publishes the filings. State Politics Tracker is credited for the discovery index; the agencies are the authority.",
+  "states": [
+    {
+      "code": "al",
+      "name": "Alabama"
+    },
+    {
+      "code": "ak",
+      "name": "Alaska"
+    },
+    {
+      "code": "az",
+      "name": "Arizona"
+    },
+    {
+      "code": "ar",
+      "name": "Arkansas"
+    },
+    {
+      "code": "ca",
+      "name": "California"
+    },
+    {
+      "code": "co",
+      "name": "Colorado"
+    },
+    {
+      "code": "ct",
+      "name": "Connecticut"
+    },
+    {
+      "code": "de",
+      "name": "Delaware"
+    },
+    {
+      "code": "fl",
+      "name": "Florida"
+    },
+    {
+      "code": "ga",
+      "name": "Georgia"
+    },
+    {
+      "code": "hi",
+      "name": "Hawaii"
+    },
+    {
+      "code": "id",
+      "name": "Idaho"
+    },
+    {
+      "code": "il",
+      "name": "Illinois"
+    },
+    {
+      "code": "in",
+      "name": "Indiana"
+    },
+    {
+      "code": "ia",
+      "name": "Iowa"
+    },
+    {
+      "code": "ks",
+      "name": "Kansas"
+    },
+    {
+      "code": "ky",
+      "name": "Kentucky"
+    },
+    {
+      "code": "la",
+      "name": "Louisiana"
+    },
+    {
+      "code": "me",
+      "name": "Maine"
+    },
+    {
+      "code": "md",
+      "name": "Maryland"
+    },
+    {
+      "code": "ma",
+      "name": "Massachusetts"
+    },
+    {
+      "code": "mi",
+      "name": "Michigan"
+    },
+    {
+      "code": "mn",
+      "name": "Minnesota"
+    },
+    {
+      "code": "ms",
+      "name": "Mississippi"
+    },
+    {
+      "code": "mo",
+      "name": "Missouri"
+    },
+    {
+      "code": "mt",
+      "name": "Montana"
+    },
+    {
+      "code": "ne",
+      "name": "Nebraska"
+    },
+    {
+      "code": "nv",
+      "name": "Nevada"
+    },
+    {
+      "code": "nh",
+      "name": "New Hampshire"
+    },
+    {
+      "code": "nj",
+      "name": "New Jersey"
+    },
+    {
+      "code": "nm",
+      "name": "New Mexico"
+    },
+    {
+      "code": "ny",
+      "name": "New York"
+    },
+    {
+      "code": "nc",
+      "name": "North Carolina"
+    },
+    {
+      "code": "nd",
+      "name": "North Dakota"
+    },
+    {
+      "code": "oh",
+      "name": "Ohio"
+    },
+    {
+      "code": "ok",
+      "name": "Oklahoma"
+    },
+    {
+      "code": "or",
+      "name": "Oregon"
+    },
+    {
+      "code": "pa",
+      "name": "Pennsylvania"
+    },
+    {
+      "code": "ri",
+      "name": "Rhode Island"
+    },
+    {
+      "code": "sc",
+      "name": "South Carolina"
+    },
+    {
+      "code": "sd",
+      "name": "South Dakota"
+    },
+    {
+      "code": "tn",
+      "name": "Tennessee"
+    },
+    {
+      "code": "tx",
+      "name": "Texas"
+    },
+    {
+      "code": "ut",
+      "name": "Utah"
+    },
+    {
+      "code": "vt",
+      "name": "Vermont"
+    },
+    {
+      "code": "va",
+      "name": "Virginia"
+    },
+    {
+      "code": "wa",
+      "name": "Washington"
+    },
+    {
+      "code": "wv",
+      "name": "West Virginia"
+    },
+    {
+      "code": "wi",
+      "name": "Wisconsin"
+    },
+    {
+      "code": "wy",
+      "name": "Wyoming"
+    }
+  ],
+  "portal_count": 26,
+  "portals_verified": 24,
+  "portals": [
+    {
+      "name": "Alabama Secretary of State \u2014 FCPA",
+      "url": "https://fcpa.alabamavotes.gov/",
+      "state": "Alabama",
+      "status": 200,
+      "final_url": "https://fcpa.alabamavotes.gov/page.request.do?page=page.homePage",
+      "ok": true,
+      "title": "Alabama Campaign Finance"
+    },
+    {
+      "name": "Alaska Public Offices Commission",
+      "url": "https://aws.state.ak.us/ApocReports/",
+      "state": "Alaska",
+      "status": 403,
+      "final_url": "https://aws.state.ak.us/ApocReports/",
+      "ok": false,
+      "title": "",
+      "note": "HTTP 403 to scripted client"
+    },
+    {
+      "name": "Arizona Secretary of State \u2014 See The Money",
+      "url": "https://seethemoney.az.gov/",
+      "state": "Arizona",
+      "status": 200,
+      "final_url": "https://seethemoney.az.gov/",
+      "ok": true,
+      "title": "SeeTheMoney"
+    },
+    {
+      "name": "Arkansas Secretary of State \u2014 Financial Disclosure",
+      "url": "https://ethics-disclosures.sos.arkansas.gov/",
+      "state": "Arkansas",
+      "status": 200,
+      "final_url": "https://ethics-disclosures.sos.arkansas.gov/",
+      "ok": true,
+      "title": "Financial Disclosure"
+    },
+    {
+      "name": "California Secretary of State (CAL-ACCESS)",
+      "url": "https://cal-access.sos.ca.gov/Campaign/",
+      "state": "California",
+      "status": 200,
+      "final_url": "https://cal-access.sos.ca.gov/Campaign/",
+      "ok": true,
+      "title": ""
+    },
+    {
+      "name": "Colorado Secretary of State \u2014 TRACER",
+      "url": "https://tracer.sos.colorado.gov/",
+      "state": "Colorado",
+      "status": 200,
+      "final_url": "https://Tracer.sos.colorado.gov/PublicSite/homepage.aspx",
+      "ok": true,
+      "title": ""
+    },
+    {
+      "name": "Connecticut State Elections Enforcement Commission \u2014 eCRIS",
+      "url": "https://seec.ct.gov/Portal/eCRIS/eCRISlanding",
+      "state": "Connecticut",
+      "status": 200,
+      "final_url": "https://seec.ct.gov/Portal/eCRIS/eCRISlanding",
+      "ok": true,
+      "title": "STATE ELECTION ENFORCEMENT COMMISSION"
+    },
+    {
+      "name": "Florida Division of Elections",
+      "url": "https://dos.fl.gov/elections/",
+      "state": "Florida",
+      "status": 200,
+      "final_url": "https://dos.fl.gov/elections/",
+      "ok": true,
+      "title": "Division of Elections  - Florida Department of State"
+    },
+    {
+      "name": "Georgia Government Transparency & Campaign Finance Commission",
+      "url": "https://ethics.ga.gov/",
+      "state": "Georgia",
+      "status": 200,
+      "final_url": "https://ethics.ga.gov/",
+      "ok": true,
+      "title": "Georgia Government Transparency &amp; Campaign Finance Commission"
+    },
+    {
+      "name": "Hawaii Campaign Spending Commission",
+      "url": "https://ags.hawaii.gov/campaign/",
+      "state": "Hawaii",
+      "status": 200,
+      "final_url": "https://ags.hawaii.gov/campaign/",
+      "ok": true,
+      "title": "Campaign Spending Commission &#8211; State of Hawaii"
+    },
+    {
+      "name": "Idaho Secretary of State \u2014 Sunshine",
+      "url": "https://sunshine.voteidaho.gov/",
+      "state": "Idaho",
+      "status": 200,
+      "final_url": "https://sunshine.voteidaho.gov/",
+      "ok": true,
+      "title": "Sunshine Financial Disclosure"
+    },
+    {
+      "name": "Illinois State Board of Elections",
+      "url": "https://elections.il.gov/",
+      "state": "Illinois",
+      "status": 200,
+      "final_url": "https://elections.il.gov/ElectionDayHome.aspx?T=639292881934508457",
+      "ok": true,
+      "title": "Election Day Information"
+    },
+    {
+      "name": "Iowa Ethics & Campaign Disclosure Board",
+      "url": "https://webapp.iecdb.iowa.gov/",
+      "state": "Iowa",
+      "status": 200,
+      "final_url": "https://webapp.iecdb.iowa.gov/",
+      "ok": true,
+      "title": "IECDB-WRS"
+    },
+    {
+      "name": "Kansas Public Disclosure Commission",
+      "url": "https://kpdc.kansas.gov/",
+      "state": "Kansas",
+      "status": 200,
+      "final_url": "https://kpdc.kansas.gov/",
+      "ok": true,
+      "title": "Kansas Public Disclosure Commission | KPDC"
+    },
+    {
+      "name": "Kentucky Registry of Election Finance",
+      "url": "https://kref.ky.gov/",
+      "state": "Kentucky",
+      "status": 200,
+      "final_url": "https://kref.ky.gov/Pages/default.aspx",
+      "ok": true,
+      "title": "Welcome\r\n\r\n        \r\n    Registry of Election Finance"
+    },
+    {
+      "name": "Maine Ethics Commission",
+      "url": "https://www.maine.gov/ethics/",
+      "state": "Maine",
+      "status": 200,
+      "final_url": "https://www.maine.gov/ethics/",
+      "ok": true,
+      "title": "Home | Maine Commission on Governmental Ethics and Election Practices"
+    },
+    {
+      "name": "Maryland State Board of Elections \u2014 MDCRIS",
+      "url": "https://campaignfinance.maryland.gov/",
+      "state": "Maryland",
+      "status": 200,
+      "final_url": "https://campaignfinance.maryland.gov/",
+      "ok": true,
+      "title": "Financial Disclosure"
+    },
+    {
+      "name": "Massachusetts Office of Campaign & Political Finance",
+      "url": "https://www.ocpf.us/",
+      "state": "Massachusetts",
+      "status": 200,
+      "final_url": "https://www.ocpf.us/",
+      "ok": true,
+      "title": "OCPF"
+    },
+    {
+      "name": "Michigan Dept. of State \u2014 Campaign Finance",
+      "url": "https://www.michigan.gov/sos/elections/disclosure",
+      "state": "Michigan",
+      "status": 200,
+      "final_url": "https://www.michigan.gov/sos/elections/disclosure",
+      "ok": true,
+      "title": ""
+    },
+    {
+      "name": "Minnesota Campaign Finance Board",
+      "url": "https://cfb.mn.gov/",
+      "state": "Minnesota",
+      "status": 200,
+      "final_url": "https://cfb.mn.gov/",
+      "ok": true,
+      "title": "Campaign Finance Board"
+    },
+    {
+      "name": "Nevada Secretary of State \u2014 Aurora",
+      "url": "https://www.nvsos.gov/sos/online-services/campaign-finance-disclosure",
+      "state": "Nevada",
+      "status": 200,
+      "final_url": "https://www.nvsos.gov/sos/online-services/campaign-finance-disclosure",
+      "ok": true,
+      "title": ""
+    },
+    {
+      "name": "Ohio Secretary of State \u2014 Campaign Finance",
+      "url": "https://campaignfinance.ohiosos.gov/",
+      "state": "Ohio",
+      "status": 403,
+      "final_url": "https://campaignfinance.ohiosos.gov/",
+      "ok": false,
+      "title": "",
+      "note": "HTTP 403 to scripted client"
+    },
+    {
+      "name": "Oregon Secretary of State \u2014 ORESTAR",
+      "url": "https://sos.oregon.gov/elections/Pages/orestar.aspx",
+      "state": "Oregon",
+      "status": 200,
+      "final_url": "https://sos.oregon.gov/elections/get-involved/pages/orestar.aspx",
+      "ok": true,
+      "title": "Oregon Secretary of State : Campaign Finance &amp; Disclosures : Get Involved : State of Oregon"
+    },
+    {
+      "name": "Pennsylvania Dept. of State \u2014 Campaign Finance",
+      "url": "https://www.pa.gov/agencies/dos/programs/voting-and-elections/campaign-finance.html",
+      "state": "Pennsylvania",
+      "status": 200,
+      "final_url": "https://www.pa.gov/agencies/dos/programs/voting-and-elections/campaign-finance",
+      "ok": true,
+      "title": "Campaign Finance | Department of State | Commonwealth of Pennsylvania"
+    },
+    {
+      "name": "Texas Ethics Commission",
+      "url": "https://www.ethics.state.tx.us/search/cf/",
+      "state": "Texas",
+      "status": 200,
+      "final_url": "https://www.ethics.state.tx.us/search/cf/",
+      "ok": true,
+      "title": "Search Campaign Finance"
+    },
+    {
+      "name": "Wisconsin Ethics Commission \u2014 CFIS",
+      "url": "https://cfis.wi.gov/",
+      "state": "Wisconsin",
+      "status": 200,
+      "final_url": "https://campaignfinance.wi.gov/",
+      "ok": true,
+      "title": ""
+    }
+  ],
+  "race_count": 22,
+  "races": [
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "alabama-governor-2026",
+      "state": "Alabama",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "alaska-governor-2026",
+      "state": "Alaska",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "arizona-governor-2026",
+      "state": "Arizona",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "arkansas-governor-2026",
+      "state": "Arkansas",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "california-governor-2026",
+      "state": "California",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "connecticut-governor-2026",
+      "state": "Connecticut",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "florida-governor-2026",
+      "state": "Florida",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "georgia-governor-2026",
+      "state": "Georgia",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "idaho-governor-2026",
+      "state": "Idaho",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "illinois-governor-2026",
+      "state": "Illinois",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "iowa-governor-2026",
+      "state": "Iowa",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "kansas-governor-2026",
+      "state": "Kansas",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "maine-governor-2026",
+      "state": "Maine",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "maryland-governor-2026",
+      "state": "Maryland",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "massachusetts-governor-2026",
+      "state": "Massachusetts",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "michigan-governor-2026",
+      "state": "Michigan",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "minnesota-governor-2026",
+      "state": "Minnesota",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "nevada-governor-2026",
+      "state": "Nevada",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "ohio-governor-2026",
+      "state": "Ohio",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "pennsylvania-governor-2026",
+      "state": "Pennsylvania",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "texas-governor-2026",
+      "state": "Texas",
+      "polling_fn": "wt"
+    },
+    {
+      "office": "governor",
+      "title": "Governor",
+      "general_date": "2026-11-03",
+      "slug": "wisconsin-governor-2026",
+      "state": "Wisconsin",
+      "polling_fn": "wt"
+    }
+  ]
+}

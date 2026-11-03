@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>What America buys for its health dollars — 21-nation comparison — Political Payola</title>
+<meta name="description" content="The U.S. spends more per person on health care than any other rich nation. This page shows the World Bank numbers side by side — spending, life expectancy, child mortality, out-of-pocket cost — with each country's data year and a live source link.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-family:'Inter',system-ui,sans-serif;background:linear-gradient(165deg,#fdf6ee,#faf3e6 40%,#e8f4f0);color:#2c2416;line-height:1.65}
+header{background:#fff;border-bottom:1px solid #e8dcc8;padding:1.1rem 2rem;display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:1rem}
+.logo{font-family:'EB Garamond',serif;font-size:1.55rem;font-weight:700;text-decoration:none;color:#2c2416}
+.logo span{color:#c0392b}
+.back{color:#5d4b2c;text-decoration:none;font-size:.9rem}
+main{max-width:1100px;margin:2rem auto;padding:0 1.4rem}
+h1{font-family:'EB Garamond',serif;font-size:clamp(1.9rem,4vw,2.7rem);line-height:1.15;margin-bottom:.5rem}
+.lede{font-size:1.12rem;color:#5d4b2c;max-width:70ch}
+.headline{display:grid;grid-template-columns:repeat(auto-fit,minmax(210px,1fr));gap:14px;margin:1.6rem 0}
+.hstat{background:#fff;border:1px solid #e8dcc8;border-radius:12px;padding:16px 18px;box-shadow:0 2px 12px rgba(0,0,0,.05)}
+.hstat b{display:block;font-size:2rem;line-height:1.1;color:#c0392b;font-family:'EB Garamond',serif}
+.hstat span{font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;color:#8b6b3d}
+table{width:100%;border-collapse:collapse;background:#fff;border:1px solid #e8dcc8;border-radius:12px;overflow:hidden;margin-top:1rem;font-size:.94rem}
+th,td{padding:.6rem .7rem;text-align:left;border-bottom:1px solid #f0e6d6;vertical-align:middle}
+th{background:#fdf8f0;font-size:.78rem;text-transform:uppercase;letter-spacing:.06em;color:#8b6b3d;cursor:pointer;user-select:none}
+th:focus-visible{outline:3px solid #c0392b}
+tr.us{background:#fff6ec;font-weight:600}
+td.money{position:relative;min-width:150px}
+.bar{height:7px;background:linear-gradient(90deg,#c0392b,#e08a3c);border-radius:4px;margin-top:4px}
+.yr{display:inline-block;margin-left:6px;font-size:.7rem;color:#a08a6a;font-weight:400}
+.rank{font-size:.8rem;color:#5d4b2c;white-space:nowrap}
+.note{background:#fff;border:1px solid #e8dcc8;border-left:4px solid #27ae60;border-radius:10px;padding:1rem 1.2rem;margin:1.4rem 0;font-size:.95rem}
+.note h3{font-family:'EB Garamond',serif;font-size:1.15rem;margin-bottom:.35rem}
+footer{text-align:center;padding:2rem;color:#8b6b3d;font-size:.85rem}
+footer a{color:#5d4b2c}
+.wrap-scroll{overflow-x:auto}
+@media print{header{position:static}table{font-size:.8rem}}
+</style>
+</head>
+<body>
+<header>
+  <a class="logo" href="/">Political<span>Payola</span></a>
+  <a class="back" href="/">← Back to Political Payola</a>
+</header>
+<main>
+  <h1>What America buys for its health dollars</h1>
+  <p class="lede">The United States spends more per person on health care than any other wealthy nation. This page puts the World Bank's own numbers side by side — spending, life expectancy, child mortality, and how much patients pay out of pocket — and shows the year behind every figure.</p>
+
+  <div class="headline">
+    <div class="hstat"><b>$13,473</b><span>U.S. health spending per person (2023)</span></div>
+    <div class="hstat"><b>#1 of 21</b><span>U.S. rank on spending (1 = highest)</span></div>
+    <div class="hstat"><b>78.9 yrs</b><span>U.S. life expectancy (2024) — rank #21 of 21</span></div>
+    <div class="hstat"><b>2.11×</b><span>U.S. spending vs. the median peer nation</span></div>
+  </div>
+
+  <div class="wrap-scroll">
+  <table id="tbl">
+    <caption class="sr-only" style="position:absolute;left:-9999px">Health spending and outcomes for the United States and 20 peer nations</caption>
+    <thead>
+      <tr>
+        <th scope="col" data-sort="name" tabindex="0">Country</th>
+        <th scope="col" data-sort="spend" tabindex="0">Spending per person</th>
+        <th scope="col" data-sort="gdp" tabindex="0">% of GDP</th>
+        <th scope="col" data-sort="life" tabindex="0">Life expectancy</th>
+        <th scope="col" data-sort="mort" tabindex="0">Under-5 mortality</th>
+        <th scope="col" data-sort="oop" tabindex="0">Out-of-pocket share</th>
+        <th scope="col">Rank</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr class="us" data-spend="13473.19335938" data-life="78.890243902439"><td class="cname">United States ★</td><td class="money">$13,473<span class="yr">2023</span><div class="bar" style="width:100.0%"></div></td><td>16.7%<span class="yr">2023</span></td><td>78.9<span class="yr">2024</span></td><td>6.5<span class="yr">2024</span></td><td>10.9%<span class="yr">2023</span></td><td class="rank">#1 spend / #21 life</td></tr><tr class="" data-spend="11783.66992188" data-life="84.4073170731707"><td class="cname">Switzerland</td><td class="money">$11,784<span class="yr">2023</span><div class="bar" style="width:87.5%"></div></td><td>11.7%<span class="yr">2023</span></td><td>84.4<span class="yr">2024</span></td><td>3.9<span class="yr">2024</span></td><td>22.0%<span class="yr">2023</span></td><td class="rank">#2 spend / #1 life</td></tr><tr class="" data-spend="8296.35546875" data-life="83.1609756097561"><td class="cname">Norway</td><td class="money">$8,296<span class="yr">2023</span><div class="bar" style="width:61.6%"></div></td><td>9.4%<span class="yr">2023</span></td><td>83.2<span class="yr">2024</span></td><td>2.5<span class="yr">2024</span></td><td>13.7%<span class="yr">2023</span></td><td class="rank">#3 spend / #7 life</td></tr><tr class="" data-spend="7394.85009766" data-life="83.009756097561"><td class="cname">Ireland</td><td class="money">$7,395<span class="yr">2024</span><div class="bar" style="width:54.9%"></div></td><td>6.9%<span class="yr">2024</span></td><td>83.0<span class="yr">2024</span></td><td>3.9<span class="yr">2024</span></td><td>10.6%<span class="yr">2024</span></td><td class="rank">#4 spend / #9 life</td></tr><tr class="" data-spend="6980.38525391" data-life="83.0512195121951"><td class="cname">Australia</td><td class="money">$6,980<span class="yr">2023</span><div class="bar" style="width:51.8%"></div></td><td>10.4%<span class="yr">2023</span></td><td>83.1<span class="yr">2024</span></td><td>3.6<span class="yr">2024</span></td><td>15.8%<span class="yr">2023</span></td><td class="rank">#5 spend / #8 life</td></tr><tr class="" data-spend="6849.26367188" data-life="80.7926829268293"><td class="cname">Germany</td><td class="money">$6,849<span class="yr">2024</span><div class="bar" style="width:50.8%"></div></td><td>12.3%<span class="yr">2024</span></td><td>80.8<span class="yr">2024</span></td><td>3.7<span class="yr">2024</span></td><td>10.7%<span class="yr">2024</span></td><td class="rank">#6 spend / #20 life</td></tr><tr class="" data-spend="6845.14208984" data-life="81.9658536585366"><td class="cname">Netherlands</td><td class="money">$6,845<span class="yr">2024</span><div class="bar" style="width:50.8%"></div></td><td>10.0%<span class="yr">2024</span></td><td>82.0<span class="yr">2024</span></td><td>3.9<span class="yr">2024</span></td><td>11.8%<span class="yr">2024</span></td><td class="rank">#7 spend / #18 life</td></tr><tr class="" data-spend="6745.06152344" data-life="82.2536585365854"><td class="cname">Denmark</td><td class="money">$6,745<span class="yr">2024</span><div class="bar" style="width:50.1%"></div></td><td>9.4%<span class="yr">2024</span></td><td>82.3<span class="yr">2024</span></td><td>4.0<span class="yr">2024</span></td><td>13.9%<span class="yr">2024</span></td><td class="rank">#8 spend / #14 life</td></tr><tr class="" data-spend="6739.30908203" data-life="81.9951219512195"><td class="cname">Austria</td><td class="money">$6,739<span class="yr">2024</span><div class="bar" style="width:50.0%"></div></td><td>11.8%<span class="yr">2024</span></td><td>82.0<span class="yr">2024</span></td><td>3.3<span class="yr">2024</span></td><td>16.5%<span class="yr">2024</span></td><td class="rank">#9 spend / #17 life</td></tr><tr class="" data-spend="6484.76464844" data-life="84.0634146341463"><td class="cname">Sweden</td><td class="money">$6,485<span class="yr">2024</span><div class="bar" style="width:48.1%"></div></td><td>11.2%<span class="yr">2024</span></td><td>84.1<span class="yr">2024</span></td><td>2.4<span class="yr">2024</span></td><td>13.4%<span class="yr">2024</span></td><td class="rank">#10 spend / #2 life</td></tr><tr class="" data-spend="6377.96875" data-life="82.1080487804878"><td class="cname">Canada</td><td class="money">$6,378<span class="yr">2024</span><div class="bar" style="width:47.3%"></div></td><td>11.3%<span class="yr">2024</span></td><td>82.1<span class="yr">2024</span></td><td>5.4<span class="yr">2024</span></td><td>15.3%<span class="yr">2024</span></td><td class="rank">#11 spend / #15 life</td></tr><tr class="" data-spend="5931.01464844" data-life="82.3"><td class="cname">Belgium</td><td class="money">$5,931<span class="yr">2023</span><div class="bar" style="width:44.0%"></div></td><td>10.8%<span class="yr">2023</span></td><td>82.3<span class="yr">2024</span></td><td>3.7<span class="yr">2024</span></td><td>21.5%<span class="yr">2023</span></td><td class="rank">#12 spend / #13 life</td></tr><tr class="" data-spend="5860.23925781" data-life="81.3868536585366"><td class="cname">United Kingdom</td><td class="money">$5,860<span class="yr">2024</span><div class="bar" style="width:43.5%"></div></td><td>11.1%<span class="yr">2024</span></td><td>81.4<span class="yr">2024</span></td><td>4.7<span class="yr">2024</span></td><td>14.6%<span class="yr">2024</span></td><td class="rank">#13 spend / #19 life</td></tr><tr class="" data-spend="5515.40478516" data-life="82.3365853658537"><td class="cname">Finland</td><td class="money">$5,515<span class="yr">2023</span><div class="bar" style="width:40.9%"></div></td><td>10.5%<span class="yr">2023</span></td><td>82.3<span class="yr">2024</span></td><td>2.4<span class="yr">2024</span></td><td>14.1%<span class="yr">2023</span></td><td class="rank">#14 spend / #12 life</td></tr><tr class="" data-spend="5327.43359375" data-life="82.9804878048781"><td class="cname">France</td><td class="money">$5,327<span class="yr">2024</span><div class="bar" style="width:39.5%"></div></td><td>11.5%<span class="yr">2024</span></td><td>83.0<span class="yr">2024</span></td><td>4.3<span class="yr">2024</span></td><td>9.2%<span class="yr">2024</span></td><td class="rank">#15 spend / #10 life</td></tr><tr class="" data-spend="5022.03271484" data-life="82.009756097561"><td class="cname">New Zealand</td><td class="money">$5,022<span class="yr">2024</span><div class="bar" style="width:37.3%"></div></td><td>10.1%<span class="yr">2024</span></td><td>82.0<span class="yr">2024</span></td><td>4.7<span class="yr">2024</span></td><td>12.7%<span class="yr">2024</span></td><td class="rank">#16 spend / #16 life</td></tr><tr class="" data-spend="3638.19287109" data-life="84.0363414634146"><td class="cname">Japan</td><td class="money">$3,638<span class="yr">2023</span><div class="bar" style="width:27.0%"></div></td><td>10.7%<span class="yr">2023</span></td><td>84.0<span class="yr">2024</span></td><td>2.4<span class="yr">2024</span></td><td>12.2%<span class="yr">2023</span></td><td class="rank">#17 spend / #3 life</td></tr><tr class="" data-spend="3397.68798828" data-life="83.9512195121951"><td class="cname">Italy</td><td class="money">$3,398<span class="yr">2024</span><div class="bar" style="width:25.2%"></div></td><td>8.4%<span class="yr">2024</span></td><td>84.0<span class="yr">2024</span></td><td>2.7<span class="yr">2024</span></td><td>22.3%<span class="yr">2024</span></td><td class="rank">#18 spend / #4 life</td></tr><tr class="" data-spend="3136.78564453" data-life="83.6292682926829"><td class="cname">South Korea</td><td class="money">$3,137<span class="yr">2024</span><div class="bar" style="width:23.3%"></div></td><td>8.7%<span class="yr">2024</span></td><td>83.6<span class="yr">2024</span></td><td>2.8<span class="yr">2024</span></td><td>33.7%<span class="yr">2024</span></td><td class="rank">#19 spend / #6 life</td></tr><tr class="" data-spend="3106.62011719" data-life="83.8878048780488"><td class="cname">Spain</td><td class="money">$3,107<span class="yr">2023</span><div class="bar" style="width:23.1%"></div></td><td>9.2%<span class="yr">2023</span></td><td>83.9<span class="yr">2024</span></td><td>3.2<span class="yr">2024</span></td><td>20.9%<span class="yr">2023</span></td><td class="rank">#20 spend / #5 life</td></tr><tr class="" data-spend="2971.03930664" data-life="82.3829268292683"><td class="cname">Portugal</td><td class="money">$2,971<span class="yr">2024</span><div class="bar" style="width:22.1%"></div></td><td>10.2%<span class="yr">2024</span></td><td>82.4<span class="yr">2024</span></td><td>3.2<span class="yr">2024</span></td><td>28.2%<span class="yr">2024</span></td><td class="rank">#21 spend / #11 life</td></tr>
+    </tbody>
+  </table>
+  </div>
+
+  <div class="note">
+    <h3>What these numbers do and do not say</h3>
+    <p><strong>They say:</strong> the U.S. pays the most per person and still posts a lower life expectancy and a higher child mortality rate than most of these peers. Patients also carry a larger share of the bill directly.</p>
+    <p><strong>They do not say why.</strong> Prices, insurance design, drug costs, population health, geography, inequality and reporting differences all move these figures. A spending-to-outcome comparison is a question, not an answer — and anyone who tells you it settles the argument is selling something.</p>
+    <p><strong>They are not a single-year snapshot.</strong> Each country's latest available year is shown in small type beside its figure. Years range across 2022–2024, so read the direction and the size of the gaps, not decimal places.</p>
+  </div>
+
+  <div class="note" style="border-left-color:#c0392b">
+    <h3>Source and refresh</h3>
+    <p>All figures pulled from the <a href="https://data.worldbank.org/">World Bank Open Data</a> API on 2026-11-03. Indicators:
+    <a href="https://data.worldbank.org/indicator/SH.XPD.CHEX.PC.CD">Health spending per person (current US$)</a> · <a href="https://data.worldbank.org/indicator/SH.XPD.CHEX.GD.ZS">Health spending as % of GDP</a> · <a href="https://data.worldbank.org/indicator/SP.DYN.LE00.IN">Life expectancy at birth (years)</a> · <a href="https://data.worldbank.org/indicator/SH.DYN.MORT">Under-5 mortality (per 1,000 live births)</a> · <a href="https://data.worldbank.org/indicator/SH.XPD.OOPC.CH.ZS">Share of health costs paid out of pocket (%)</a>.</p>
+    <p style="font-size:.85rem;color:#8b6b3d">Machine-readable copy: <a href="/data/healthcare_compare.json">/data/healthcare_compare.json</a> · Political Payola does not adjust, estimate or impute the source values.</p>
+  </div>
+</main>
+<footer>
+  Political Payola &copy; 2026 &mdash; <a href="/">Home</a> &middot; <a href="/METHODOLOGY.md">Methodology</a> &middot; <a href="/legislation_lens.html">Legislation Lens</a>
+</footer>
+<script>
+(function(){
+  var tbl=document.getElementById('tbl'), tb=tbl.tBodies[0];
+  var dir={};
+  function val(tr,key){
+    if(key==='name') return tr.cells[0].textContent.trim().toLowerCase();
+    var map={spend:1,gdp:2,life:3,mort:4,oop:5};
+    var raw=tr.cells[map[key]].textContent.replace(/[^0-9.]/g,'');
+    return parseFloat(raw)||0;
+  }
+  Array.prototype.forEach.call(tbl.tHead.rows[0].cells,function(th){
+    if(!th.dataset.sort) return;
+    function go(){
+      var key=th.dataset.sort; dir[key]=!dir[key];
+      var rows=Array.prototype.slice.call(tb.rows);
+      rows.sort(function(a,b){
+        var x=val(a,key),y=val(b,key);
+        if(key==='name') return dir[key]? (x<y?1:-1) : (x>y?1:-1);
+        return dir[key]? y-x : x-y;
+      });
+      rows.forEach(function(r){tb.appendChild(r);});
+      th.setAttribute('aria-sort',dir[key]?'descending':'ascending');
+    }
+    th.addEventListener('click',go);
+    th.addEventListener('keydown',function(e){if(e.key==='Enter'||e.key===' '){e.preventDefault();go();}});
+  });
+})();
+</script>
+</body>
+</html>
