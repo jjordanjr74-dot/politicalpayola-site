@@ -1,26 +1,38 @@
 {
   "schema_version": "webmcp-1.1",
   "site": "https://politicalpayola.com",
-  "name": "Political Payola — Verified Multi-Source Civic Atlas (1981–2026)",
+  "name": "Political Payola \u2014 Verified Multi-Source Civic Atlas (1981\u20132026)",
   "bilingual_languages": [
     "en",
     "es"
   ],
-  "description": "5,308 verified records across 26 modules (presidential vacations, 539 119th Congress portraits & demographics, 50-state x 25+ peer-reviewed medical/academic/economic metrics, 36 landmark federal laws since 1981, 177-case Federal & State Political Corruption Catalog 1980–2026, Top 20 News Outlets Media Bias & Scraped Output Radar, formal corruption scandals, and top-20 labor/police/firefighter union PACs), plus Oppo-in-a-Box Pro Data, WebMCP API, White-Label Union/Newsroom Embed Widgets, and Custom Station-Legal TV Ad Dossiers.",
+  "description": "5,308 verified records across 26 modules (presidential vacations, 539 119th Congress portraits & demographics, 50-state x 25+ peer-reviewed medical/academic/economic metrics, 36 landmark federal laws since 1981, 177-case Federal & State Political Corruption Catalog 1980\u20132026, Top 21 News Outlets Media Bias & Scraped Output Radar, formal corruption scandals, and top-20 labor/police/firefighter union PACs), plus Oppo-in-a-Box Pro Data, WebMCP API, White-Label Union/Newsroom Embed Widgets, and Custom Station-Legal TV Ad Dossiers.",
   "tools": [
     {
       "name": "query_media_bias_top20",
-      "description": "Filter and inspect the Top 20 News Outlets (Fox News, MSNBC, CNN, Reuters, AP News, NYT, WSJ, Washington Post, ABC, NBC, CBS, BBC, Al Jazeera, NPR, PBS NewsHour, NY Post, Politico, The Hill, Daily Wire, The Atlantic) by political lean (D=Democrat/Liberal, C=Center/Nonpartisan, R=Republican/Conservative) or medium (Cable, Broadcast, Print, Wire, Audio) with live scraped headlines and 10th-grade voter-impact translations.",
+      "description": "Filter and inspect the Top 21 News Outlets (Fox News, MSNBC, CNN, Reuters, AP News, NYT, WSJ, Washington Post, ABC, NBC, CBS, BBC, Al Jazeera, NPR, PBS NewsHour, NY Post, Politico, The Hill, Daily Wire, The Atlantic) by political lean (D=Democrat/Liberal, C=Center/Nonpartisan, R=Republican/Conservative) or medium (Cable, Broadcast, Print, Wire, Audio) with live scraped headlines and 10th-grade voter-impact translations.",
       "input_schema": {
         "type": "object",
         "properties": {
           "lean": {
             "type": "string",
-            "enum": ["ALL", "D", "C", "R"]
+            "enum": [
+              "ALL",
+              "D",
+              "C",
+              "R"
+            ]
           },
           "format": {
             "type": "string",
-            "enum": ["ALL", "Cable", "Broadcast", "Print", "Wire", "Audio"]
+            "enum": [
+              "ALL",
+              "Cable",
+              "Broadcast",
+              "Print",
+              "Wire",
+              "Audio"
+            ]
           },
           "query": {
             "type": "string"
@@ -31,28 +43,50 @@
     },
     {
       "name": "query_corruption_catalog",
-      "description": "Filter 177 verified Federal & State Political Corruption Cases (1980–2026) by party (D/R), level (Federal/State), chamber (U.S. Senate, U.S. House, State Senate, State House, Governor/Statewide), crime category (Bribery & Extortion, Campaign Finance & Wire Fraud, Sexual Misconduct & Abuse, Tax, Insider Trading & Financial, Obstruction, Perjury & Ethics Violations), or decade.",
+      "description": "Filter 177 verified Federal & State Political Corruption Cases (1980\u20132026) by party (D/R), level (Federal/State), chamber (U.S. Senate, U.S. House, State Senate, State House, Governor/Statewide), crime category (Bribery & Extortion, Campaign Finance & Wire Fraud, Sexual Misconduct & Abuse, Tax, Insider Trading & Financial, Obstruction, Perjury & Ethics Violations), or decade.",
       "input_schema": {
         "type": "object",
         "properties": {
           "party": {
             "type": "string",
-            "enum": ["ALL", "D", "R"]
+            "enum": [
+              "ALL",
+              "D",
+              "R"
+            ]
           },
           "level": {
             "type": "string",
-            "enum": ["ALL", "Federal", "State"]
+            "enum": [
+              "ALL",
+              "Federal",
+              "State"
+            ]
           },
           "chamber": {
             "type": "string",
-            "enum": ["ALL", "U.S. Senate", "U.S. House", "State Senate", "State House", "Governor/Statewide"]
+            "enum": [
+              "ALL",
+              "U.S. Senate",
+              "U.S. House",
+              "State Senate",
+              "State House",
+              "Governor/Statewide"
+            ]
           },
           "category": {
             "type": "string"
           },
           "decade": {
             "type": "string",
-            "enum": ["ALL", "1980s", "1990s", "2000s", "2010s", "2020s"]
+            "enum": [
+              "ALL",
+              "1980s",
+              "1990s",
+              "2000s",
+              "2010s",
+              "2020s"
+            ]
           }
         },
         "additionalProperties": false
@@ -60,7 +94,7 @@
     },
     {
       "name": "search_civic_records",
-      "description": "Search all 5,253 multi-sourced civic, medical, academic, and legislative records by keyword, state, lawmaker, president, or journal.",
+      "description": "Search all 5,309 multi-sourced civic, medical, academic, and legislative records by keyword, state, lawmaker, president, or journal.",
       "input_schema": {
         "type": "object",
         "properties": {
@@ -148,5 +182,16 @@
         "additionalProperties": false
       }
     }
-  ]
+  ],
+  "version": "2.5.0",
+  "total_records": 5309,
+  "total_modules": 26,
+  "governance_and_compliance": {
+    "methodology": "https://politicalpayola.com/METHODOLOGY.md",
+    "governance_and_ethics": "https://politicalpayola.com/GOVERNANCE_AND_ETHICS.md",
+    "irs_501c3_compliance": "https://politicalpayola.com/IRS_501C3_NONPARTISAN_COMPLIANCE.md",
+    "impact_and_evaluation": "https://politicalpayola.com/IMPACT_AND_EVALUATION.md",
+    "civics_curriculum_kit": "https://politicalpayola.com/CIVICS_CURRICULUM_KIT.md",
+    "citation_cff": "https://politicalpayola.com/CITATION.cff"
+  }
 }

@@ -1,10 +1,13 @@
-const CACHE_NAME = 'payola-v5';
+const CACHE_NAME = 'payola-v6';
 const ASSETS = [
   './',
   './index.html',
   './styles.css?v=20261020c',
   './app.js?v=20261020c',
   './data_bundle.js?v=20261020c',
+  './top20-bills.html',
+  './top20-scotus.html',
+  './js/top20_scotus_bundle.js',
   './manifest.json'
 ];
 

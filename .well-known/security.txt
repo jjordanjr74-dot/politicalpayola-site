@@ -1,0 +1,6 @@
+Contact: mailto:security@politicalpayola.com
+Contact: https://github.com/jjordanjr74-dot/politicalpayola-site/issues
+Expires: 2027-12-31T23:59:59.000Z
+Preferred-Languages: en, es
+Canonical: https://politicalpayola.com/.well-known/security.txt
+Policy: https://politicalpayola.com/GOVERNANCE_AND_ETHICS.md

@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 20 Supreme Court Decisions — Political Payola</title>
+  <meta name="description" content="Evidence-gated, nonpartisan analysis of the 20 most impactful Supreme Court decisions since 1987. Every impact number dual-sourced, every justice vote tracked.">
+  <link rel="canonical" href="https://politicalpayola.com/top20-scotus.html">
+  <link rel="alternate" hreflang="en" href="https://politicalpayola.com/top20-scotus.html">
+  <link rel="alternate" hreflang="es" href="https://politicalpayola.com/top20-scotus.html?lang=es">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Political Payola">
+  <meta property="og:title" content="Top 20 Most Impactful Supreme Court Decisions (1987–2022)">
+  <meta property="og:description" content="Evidence-gated, dual-sourced breakdown: how 20 Supreme Court rulings changed voting rights, criminal justice, corporate power, and civil rights — with every justice vote, lean, and appointing president.">
+  <meta property="og:url" content="https://politicalpayola.com/top20-scotus.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261103a">
+  <style>
+    :root {
+      --cat-democracy: #7c3aed;
+      --cat-civil: #059669;
+      --cat-labor: #d97706;
+      --cat-criminal: #dc2626;
+      --bg-card: #fafaf9;
+      --border-card: #e7e5e4;
+      --fg-body: #1c1917;
+      --fg-muted: #78716c;
+      --accent: #4338ca;
+    }
+
+    .top20-wrap { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    .top20-hero { margin: 3rem 0 2rem; }
+    .top20-hero h1 { font-family: 'Newsreader', serif; font-size: 2.8rem; font-weight: 600; line-height: 1.15; color: #0c0a09; margin: 0 0 0.75rem; }
+    .top20-hero .subtitle { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.1rem; color: #57534e; max-width: 700px; line-height: 1.6; }
+
+    .mode-bar { display: flex; gap: 0; margin: 2rem 0; border: 2px solid var(--border-card); border-radius: 12px; overflow: hidden; width: fit-content; }
+    .mode-bar button { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.9rem; font-weight: 600; padding: 0.65rem 1.5rem; background: white; color: var(--fg-muted); border: none; cursor: pointer; transition: all .15s; }
+    .mode-bar button.active { background: var(--accent); color: white; }
+    .mode-bar button:not(:last-child) { border-right: 2px solid var(--border-card); }
+    .mode-bar button:hover:not(.active) { background: #f5f5f4; color: var(--fg-body); }
+
+    .cat-tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1.5rem 0; }
+    .cat-tab { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.85rem; font-weight: 600; padding: 0.5rem 1rem; border-radius: 100px; border: 2px solid var(--border-card); background: white; cursor: pointer; transition: all .15s; }
+    .cat-tab.active { background: var(--fg-body); color: white; border-color: var(--fg-body); }
+    .cat-tab.democracy.active { background: var(--cat-democracy); border-color: var(--cat-democracy); }
+    .cat-tab.civil.active { background: var(--cat-civil); border-color: var(--cat-civil); }
+    .cat-tab.labor.active { background: var(--cat-labor); border-color: var(--cat-labor); }
+    .cat-tab.criminal.active { background: var(--cat-criminal); border-color: var(--cat-criminal); }
+
+    .impact-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1rem; }
+    .bill-card { background: white; border: 1.5px solid var(--border-card); border-radius: 12px; padding: 1.25rem; transition: box-shadow .15s, transform .15s; cursor: default; }
+    .bill-card:hover { box-shadow: 0 4px 24px rgba(0,0,0,.07); transform: translateY(-1px); }
+    .bill-card .cat-badge { display: inline-block; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 0.2rem 0.55rem; border-radius: 6px; margin-bottom: 0.65rem; }
+    .bill-card .cat-badge.democracy { background: #f5f3ff; color: var(--cat-democracy); }
+    .bill-card .cat-badge.civil { background: #ecfdf5; color: var(--cat-civil); }
+    .bill-card .cat-badge.labor { background: #fffbeb; color: var(--cat-labor); }
+    .bill-card .cat-badge.criminal { background: #fef2f2; color: var(--cat-criminal); }
+    .bill-card h3 { font-family: 'Newsreader', serif; font-size: 1.15rem; font-weight: 600; margin: 0 0 0.3rem; color: var(--fg-body); line-height: 1.3; }
+    .bill-card .docket { font-family: 'JetBrains Mono', monospace; font-size: 0.76rem; color: var(--fg-muted); margin-bottom: 0.6rem; }
+    .bill-card .holding { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.88rem; line-height: 1.5; color: #44403c; margin-bottom: 0.65rem; }
+    .impact-metric { display: flex; gap: 0.4rem; align-items: baseline; font-family: 'JetBrains Mono', monospace; font-size: 0.76rem; padding: 0.35rem 0; border-top: 1px solid #f5f5f4; }
+    .impact-metric .metric-label { color: var(--fg-muted); flex-shrink: 0; }
+    .impact-metric .metric-val { font-weight: 600; color: var(--fg-body); }
+    .bill-card .demos { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.5rem; }
+    .bill-card .demo-tag { font-size: 0.7rem; font-weight: 500; padding: 0.15rem 0.5rem; border-radius: 100px; background: #f5f5f4; color: #57534e; }
+    .bill-card .vote-row { display: flex; gap: 0.4rem; align-items: center; margin-top: 0.65rem; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; color: var(--fg-muted); }
+    .vote-row .vote-badge { font-weight: 700; }
+    .vote-row .vote-badge.yes { color: #0ea5e9; }
+    .vote-row .vote-badge.no { color: #ef4444; }
+
+    .justice-pills { display: flex; flex-wrap: wrap; gap: 0.25rem; margin-top: 0.4rem; }
+    .justice-pill { font-size: 0.65rem; font-family: 'JetBrains Mono', monospace; padding: 0.1rem 0.4rem; border-radius: 4px; border: 1px solid #d6d3d1; white-space: nowrap; }
+    .justice-pill.f { background: #e0f2fe; border-color: #7dd3fc; }
+    .justice-pill.a { background: #fce7f3; border-color: #f9a8d4; }
+
+    .story-view { display: none; }
+    .story-view.active { display: block; }
+    .story-card { max-width: 800px; margin: 0 auto; background: white; border: 1.5px solid var(--border-card); border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem; }
+    .story-card h2 { font-family: 'Newsreader', serif; font-size: 1.6rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--fg-body); }
+    .story-section { margin: 1.25rem 0; padding: 1rem 0; border-top: 1px solid #f5f5f4; }
+    .story-section h4 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--fg-muted); margin: 0 0 0.5rem; }
+    .story-section p { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.95rem; line-height: 1.65; color: #44403c; margin: 0 0 0.5rem; }
+    .story-section .num-block { background: #fafaf9; border-left: 3px solid var(--accent); padding: 1rem; margin: 1rem 0; }
+    .story-section .num-block .big-num { font-family: 'Newsreader', serif; font-size: 2rem; font-weight: 700; color: var(--accent); }
+    .story-section .num-block .num-label { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.85rem; color: var(--fg-muted); margin-top: 0.25rem; }
+    .source-cite { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--fg-muted); margin-top: 0.4rem; }
+    .source-cite a { color: var(--accent); }
+    .dissent-quote { font-style: italic; color: #57534e; border-left: 3px solid #fcd34d; padding: 0.5rem 0 0.5rem 1rem; margin: 0.75rem 0; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.9rem; line-height: 1.5; }
+
+    .stats-bar { background: #fafaf9; border: 1.5px solid var(--border-card); border-radius: 12px; padding: 1.25rem; margin: 1.5rem 0; display: flex; gap: 2rem; flex-wrap: wrap; }
+    .stats-bar .stat { font-family: 'JetBrains Mono', monospace; }
+    .stats-bar .stat .num { font-size: 1.5rem; font-weight: 700; color: var(--fg-body); }
+    .stats-bar .stat .lbl { font-size: 0.7rem; color: var(--fg-muted); text-transform: uppercase; letter-spacing: 0.5px; }
+
+    .bills-cta { background: linear-gradient(135deg, #f5f3ff, #ecfdf5); border-radius: 14px; padding: 1.5rem 2rem; margin: 3rem 0 1rem; display: flex; align-items: center; gap: 1.5rem; }
+    .bills-cta .icon { font-size: 2.5rem; }
+    .bills-cta p { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.5; margin: 0; }
+    .bills-cta a { color: var(--cat-democracy); font-weight: 600; }
+
+    @media (max-width: 768px) {
+      .top20-hero h1 { font-size: 2rem; }
+      .impact-grid { grid-template-columns: 1fr; }
+      .bills-cta, .stats-bar { flex-direction: column; }
+    }
+    .empty-state { text-align: center; padding: 3rem; color: var(--fg-muted); font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <a href="/" style="text-decoration:none;color:inherit;">
+        <span class="brand-wordmark">Political Payola</span>
+      </a>
+      <div class="brand-meta">
+        <h1>Top 20 Supreme Court Decisions</h1>
+        <div class="brand-sub">Evidence-Gated, Nonpartisan, Dual-Sourced · 1987–2022</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="top20-wrap">
+  <div class="top20-hero">
+    <h1>The 20 court decisions that<br>changed your rights the most</h1>
+    <p class="subtitle">From Citizens United's flood of corporate money to Vega v. Tekoh's gutting of your Miranda rights — every number here is backed by two independent sources and written at a 10th-grade reading level. Every justice's vote, their appointing president, and their lean are tracked. Zero advocacy. Just the receipts.</p>
+  </div>
+
+  <div class="mode-bar">
+    <button id="mode-cards" class="active" onclick="setMode('cards')">Browse by Topic</button>
+    <button id="mode-story" onclick="setMode('story')">Story Mode: How It Happened → Who It Affected</button>
+    <button id="mode-timeline" onclick="setMode('timeline')">Timeline</button>
+  </div>
+
+  <div class="cat-tabs" id="cat-tabs">
+    <button class="cat-tab active" data-cat="all" onclick="filterCategory('all')">All 20</button>
+    <button class="cat-tab democracy" data-cat="Campaign Finance & Democracy" onclick="filterCategory('Campaign Finance & Democracy')">Campaign Finance & Democracy</button>
+    <button class="cat-tab civil" data-cat="Civil Rights & Equal Protection" onclick="filterCategory('Civil Rights & Equal Protection')">Civil Rights & Equal Protection</button>
+    <button class="cat-tab labor" data-cat="Labor, Consumer & Corporate Power" onclick="filterCategory('Labor, Consumer & Corporate Power')">Labor, Consumer & Corp Power</button>
+    <button class="cat-tab criminal" data-cat="Criminal Justice & Privacy" onclick="filterCategory('Criminal Justice & Privacy')">Criminal Justice & Privacy</button>
+  </div>
+
+  <div class="stats-bar" id="stats-bar"></div>
+
+  <div id="view-cards" class="impact-grid"></div>
+  <div id="view-story" class="story-view"></div>
+  <div id="view-timeline" class="story-view" style="text-align:center;padding:4rem 0;">
+    <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.2rem;color:var(--fg-muted);">Timeline visualization loading...</div>
+    <div id="timeline-viz" style="margin-top:2rem;max-width:900px;margin-left:auto;margin-right:auto;"></div>
+  </div>
+
+  <div class="bills-cta">
+    <div class="icon">📜</div>
+    <div>
+      <p><strong>Looking for the laws behind these court battles?</strong><br>
+      The companion page — Top 20 Most Impactful Federal Laws — breaks down 20 bills from 1986–2017 with every congressional vote and dual-sourced cost estimates.
+      <a href="/top20-bills.html">View the Legislation Lens →</a></p>
+    </div>
+  </div>
+</div>
+
+<script src="js/top20_scotus_bundle.js"></script>
+<script>
+  var DATA = TOP20_SCOTUS || [];
+  var currentMode = 'cards';
+  var currentCat = 'all';
+
+  var catColors = {
+    'Campaign Finance & Democracy': 'democracy',
+    'Civil Rights & Equal Protection': 'civil',
+    'Labor, Consumer & Corporate Power': 'labor',
+    'Criminal Justice & Privacy': 'criminal'
+  };
+
+  function setMode(mode) {
+    currentMode = mode;
+    document.querySelectorAll('.mode-bar button').forEach(function(b) { b.classList.remove('active'); });
+    document.getElementById('mode-' + mode).classList.add('active');
+    document.getElementById('view-cards').style.display = mode === 'cards' ? '' : 'none';
+    document.getElementById('view-story').style.display = mode === 'story' ? '' : 'none';
+    document.getElementById('view-story').classList.toggle('active', mode === 'story');
+    document.getElementById('view-timeline').style.display = mode === 'timeline' ? '' : 'none';
+    document.getElementById('view-timeline').classList.toggle('active', mode === 'timeline');
+    document.getElementById('cat-tabs').style.display = mode === 'cards' ? '' : 'none';
+    document.getElementById('stats-bar').style.display = mode === 'cards' ? '' : 'none';
+    if (mode === 'cards') renderCards();
+    if (mode === 'story') renderStory();
+    if (mode === 'timeline') renderTimeline();
+  }
+
+  function filterCategory(cat) {
+    currentCat = cat;
+    document.querySelectorAll('.cat-tab').forEach(function(t) { t.classList.remove('active'); });
+    var sel = document.querySelector('.cat-tab[data-cat="' + cat.replace(/"/g, '&quot;') + '"]');
+    if (sel) sel.classList.add('active');
+    else document.querySelector('.cat-tab[data-cat="all"]').classList.add('active');
+    renderCards();
+  }
+
+  function getFiltered() {
+    if (currentCat === 'all') return DATA;
+    return DATA.filter(function(r) { return r.category === currentCat; });
+  }
+
+  function justicePill(j) {
+    return '<span class="justice-pill ' + (j.lean === 'liberal' ? 'f' : 'a') + '" title="' + j.name + ' · apptd by ' + j.appointed_by + ' (' + j.party_of_president + ')">' + j.name.split(' ').pop() + '</span>';
+  }
+
+  function renderCards() {
+    var el = document.getElementById('view-cards');
+    var cases = getFiltered();
+    if (!cases.length) { el.innerHTML = '<div class="empty-state">No records match this category</div>'; return; }
+
+    el.innerHTML = cases.map(function(c) {
+      var catColor = catColors[c.category] || '';
+      var metrics = (c.impact_numbers || []).slice(0, 2).map(function(m) {
+        return '<div class="impact-metric"><span class="metric-label">' + m.metric + ':</span> <span class="metric-val">' + m.value + '</span></div>';
+      }).join('');
+
+      var demos = (c.demographics_hit || []).map(function(d) {
+        return '<span class="demo-tag">' + d + '</span>';
+      }).join('');
+
+      var forPills = (c.justices_for || []).slice(0, 5).map(justicePill).join('');
+      var againstPills = (c.justices_against || []).slice(0, 4).map(justicePill).join('');
+
+      return '<div class="bill-card">' +
+        '<div class="cat-badge ' + catColor + '">' + c.category + '</div>' +
+        '<h3>' + c.case_name + '</h3>' +
+        '<div class="docket">Docket ' + c.docket + ' · Decided ' + (c.decided || c.year) + '</div>' +
+        '<div class="holding">' + c.holding_summary + '</div>' +
+        '<div class="vote-row"><span class="vote-badge yes">' + c.vote.yes + '</span>–<span class="vote-badge no">' + c.vote.no + '</span>' +
+        ' &nbsp;' + (c.majority_author ? '· Authored by ' + c.majority_author.name.split(' ').pop() : '') + '</div>' +
+        (c.constitutional_question ? '<div style="font-family:JetBrains Mono,monospace;font-size:0.7rem;color:var(--fg-muted);margin-top:0.45rem;">Q: ' + c.constitutional_question + '</div>' : '') +
+        metrics +
+        (demos ? '<div class="demos">' + demos + '</div>' : '') +
+        '<div class="justice-pills">' + forPills + againstPills + '</div>' +
+      '</div>';
+    }).join('');
+
+    // Stats bar
+    var forCount = cases.filter(function(r) { return (r.justices_for||[]).length > 0; }).reduce(function(s,r) { return s + r.justices_for.length; }, 0);
+    var againstCount = cases.filter(function(r) { return (r.justices_against||[]).length > 0; }).reduce(function(s,r) { return s + r.justices_against.length; }, 0);
+    var splits = {};
+    cases.forEach(function(r) { var k = r.vote.yes + '-' + r.vote.no; splits[k] = (splits[k]||0) + 1; });
+    document.getElementById('stats-bar').innerHTML =
+      '<div class="stat"><div class="num">' + cases.length + '</div><div class="lbl">Decisions shown</div></div>' +
+      '<div class="stat"><div class="num">' + (cases[0] ? (splits['5-4']||0) : 0) + '</div><div class="lbl">5-4 decisions</div></div>' +
+      '<div class="stat"><div class="num">' + (cases[0] ? (splits['6-3']||0) : 0) + '</div><div class="lbl">6-3 decisions</div></div>' +
+      '<div class="stat"><div class="num">' + Object.keys(catColors).length + '</div><div class="lbl">Categories</div></div>';
+  }
+
+  function renderStory() {
+    var el = document.getElementById('view-story');
+    if (!DATA.length) { el.innerHTML = '<div class="empty-state">No data loaded</div>'; return; }
+
+    el.innerHTML = DATA.map(function(c, i) {
+      var impactSection = (c.impact_numbers || []).map(function(m) {
+        return '<div class="num-block">' +
+          '<div class="big-num">' + m.value + '</div>' +
+          '<div class="num-label">' + m.metric + '</div>' +
+          (m.source_url ? '<div class="source-cite">Source: <a href="' + m.source_url + '" target="_blank" rel="noopener">' + m.source_name + '</a></div>' : '') +
+        '</div>';
+      }).join('');
+
+      var forNames = (c.justices_for || []).map(function(j) { return j.name + ' (' + j.lean + ')'; }).join(', ');
+      var againstNames = (c.justices_against || []).map(function(j) { return j.name + ' (' + j.lean + ')'; }).join(', ');
+
+      return '<div class="story-card" id="story-' + i + '">' +
+        '<h2>' + (i + 1) + '. ' + c.case_name + ' (' + c.year + ')</h2>' +
+        '<div class="cat-badge ' + (catColors[c.category] || '') + '">' + c.category + '</div>' +
+
+        '<div class="story-section">' +
+          '<h4>How It Happened</h4>' +
+          '<p>Argued ' + c.argued + ', decided ' + c.decided + '. Decided <strong>' + c.vote.yes + '–' + c.vote.no + '</strong> with the opinion written by ' + (c.majority_author ? c.majority_author.name + ', appointed by ' + c.majority_author.appointed_by + ' (' + c.majority_author.party_of_president + ').' : '.') + '</p>' +
+          '<p><strong>In favor:</strong> ' + forNames + '<br><strong>Against:</strong> ' + againstNames + '</p>' +
+        '</div>' +
+
+        '<div class="story-section">' +
+          '<h4>What the Court Decided</h4>' +
+          '<p>' + c.holding_summary + '</p>' +
+          (c.constitutional_question ? '<p style="font-size:0.85rem;color:var(--fg-muted);"><strong>Question before the Court:</strong> ' + c.constitutional_question + '</p>' : '') +
+        '</div>' +
+
+        '<div class="story-section">' +
+          '<h4>The Numbers</h4>' +
+          impactSection +
+          '<p>' + c.impact_summary + '</p>' +
+        '</div>' +
+
+        '<div class="story-section">' +
+          '<h4>Who It Affected</h4>' +
+          '<p>' + c.impact_on_you + '</p>' +
+          '<p><strong>Demographics hit hardest:</strong> ' + (c.demographics_hit || []).join(', ') + '</p>' +
+        '</div>' +
+
+        (c.key_dissent_quote ? '<div class="story-section">' +
+          '<h4>The Dissent</h4>' +
+          '<div class="dissent-quote">"' + c.key_dissent_quote + '"</div>' +
+        '</div>' : '') +
+      '</div>';
+    }).join('');
+  }
+
+  function renderTimeline() {
+    var sorted = [].concat(DATA).sort(function(a, b) { return a.year - b.year; });
+    var el = document.getElementById('timeline-viz');
+    el.innerHTML = '';
+
+    // Visual bar
+    var bar = document.createElement('div');
+    bar.style.cssText = 'position:relative;height:80px;margin:0 2rem;';
+    var minY = sorted[0].year, maxY = sorted[sorted.length-1].year;
+    sorted.forEach(function(c) {
+      var pct = ((c.year - minY) / Math.max(1, (maxY - minY))) * 100;
+      var catColor = catColors[c.category] || '';
+      var dot = document.createElement('div');
+      dot.style.cssText = 'position:absolute;left:' + pct + '%;bottom:20px;width:10px;height:10px;border-radius:50%;background:var(--cat-' + catColor + ');transform:translateX(-50%);';
+      bar.appendChild(dot);
+      var lbl = document.createElement('div');
+      lbl.style.cssText = 'position:absolute;left:' + pct + '%;bottom:0;transform:translateX(-50%);font-family:JetBrains Mono,monospace;font-size:0.68rem;color:var(--fg-muted);';
+      lbl.textContent = c.year;
+      bar.appendChild(lbl);
+    });
+    var line = document.createElement('div');
+    line.style.cssText = 'position:absolute;left:0;right:0;bottom:22px;height:2px;background:#d6d3d1;';
+    bar.appendChild(line);
+    el.appendChild(bar);
+
+    // List
+    var list = document.createElement('div');
+    list.style.cssText = 'text-align:left;max-width:700px;margin:2rem auto 0;';
+    list.innerHTML = sorted.map(function(c) {
+      return '<div style="padding:0.5rem 0;border-bottom:1px solid var(--border-card);font-family:Plus Jakarta Sans,sans-serif;text-align:left;">' +
+        '<strong>' + c.year + '</strong> — ' + c.case_name +
+        ' <span style="color:var(--fg-muted);font-size:0.82rem;">(' + c.category + ')</span>' +
+      '</div>';
+    }).join('');
+    el.appendChild(list);
+  }
+
+  window.addEventListener('DOMContentLoaded', function() {
+    if (!DATA.length) {
+      document.getElementById('view-cards').innerHTML = '<div class="empty-state">Loading data...</div>';
+      setTimeout(function() { if (typeof TOP20_SCOTUS !== 'undefined') { location.reload(); } }, 1500);
+      return;
+    }
+    renderCards();
+  });
+</script>
+</body>
+</html>

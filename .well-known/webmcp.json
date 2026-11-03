@@ -1,0 +1,10 @@
+{
+  "schema_version": "webmcp-1.0",
+  "name": "political-payola-civic-atlas",
+  "url": "https://politicalpayola.com",
+  "tools_endpoint": "https://politicalpayola.com/api/tools.json",
+  "mcp_discovery": "https://politicalpayola.com/.well-known/mcp.json",
+  "total_records": 5309,
+  "total_modules": 26,
+  "license": "CC-BY-4.0"
+}

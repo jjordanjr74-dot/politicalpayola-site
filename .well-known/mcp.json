@@ -1,0 +1,17 @@
+{
+  "mcpVersion": "2026-01",
+  "name": "political-payola-civic-atlas",
+  "title": "Political Payola — Verified Nonpartisan Civic, Legislative & Public-Health Atlas",
+  "description": "Open-access (CC-BY-4.0), bilingual (EN/ES) dataset of 5,309 primary-source verified civic, legislative, campaign-finance, corruption-docket, media-bias, and public-health records across 26 modules (1981-2026).",
+  "homepage": "https://politicalpayola.com",
+  "license": "CC-BY-4.0",
+  "toolsManifestUrl": "https://politicalpayola.com/api/tools.json",
+  "documentation": {
+    "methodology": "https://politicalpayola.com/METHODOLOGY.md",
+    "governanceAndEthics": "https://politicalpayola.com/GOVERNANCE_AND_ETHICS.md",
+    "irs501c3Compliance": "https://politicalpayola.com/IRS_501C3_NONPARTISAN_COMPLIANCE.md",
+    "impactAndEvaluation": "https://politicalpayola.com/IMPACT_AND_EVALUATION.md",
+    "civicsCurriculum": "https://politicalpayola.com/CIVICS_CURRICULUM_KIT.md",
+    "citationCff": "https://politicalpayola.com/CITATION.cff"
+  }
+}

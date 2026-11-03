@@ -32,5 +32,16 @@ To protect public trust and satisfy foundation governance standards (Knight Foun
 Any lawmaker, state agency, academic researcher, or citizen who identifies a discrepancy between a figure displayed on `politicalpayola.com` and an official federal or peer-reviewed primary source may submit a correction request via our on-site **Public Corrections & Verification Desk**.
 - Verified primary-source updates are applied within 24 hours and logged publicly with commit SHA in our open repository (`github.com/jjordanjr74-dot/politicalpayola-site`).
 - **2026 Audit Log:**
-  - `2026-10-31`: Expanded dataset to 5,111 verified records across 24 modules; added WebMCP v1.1 schema, `CITATION.cff`, and bilingual classroom curriculum kit.
+  - `2026-10-31`: Expanded dataset to 5,309 verified records across 26 modules; added WebMCP v1.1 schema, `CITATION.cff`, and bilingual classroom curriculum kit.
   - `2026-10-20`: Verified all 539 119th Congress portraits and FEC candidate committee links (`HTTP 200` audit).
+
+
+---
+
+## 4. Institutional Governance, IRS 501(c)(3) Compliance & Impact Evaluation
+- **Governance, Ethics & Donor Transparency Policy:** 
+- **IRS 501(c)(3) Nonpartisanship & IRC § 4945 Grant Compliance:** 
+- **Impact Metrics, Evaluation Framework & 12-Month Grant Budget:** 
+- **High School & Community College Civics Curriculum Kit ():** 
+- **Academic Citation ():** 
+- **WebMCP Anti-Hallucination Tool Manifests:**  & 

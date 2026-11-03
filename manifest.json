@@ -2,7 +2,7 @@
   "id": "/",
   "name": "Political Payola \u2014 Verified Civic Money Atlas",
   "short_name": "Political Payola",
-  "description": "Follow the money in US politics: 5,050+ primary-sourced FEC, Senate LDA, and stock trade records.",
+  "description": "Follow the money in US politics: 5,309 primary-sourced FEC, Congress.gov, CBO, DOJ, and peer-reviewed records across 26 modules: primary-sourced FEC, Senate LDA, and stock trade records.",
   "start_url": "/",
   "scope": "/",
   "display": "standalone",

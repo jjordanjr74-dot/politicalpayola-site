@@ -1,4 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://politicalpayola.com/</loc><lastmod>2026-10-19</lastmod></url>
-</urlset>
+  <url><loc>https://politicalpayola.com/</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://politicalpayola.com/METHODOLOGY.md</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://politicalpayola.com/GOVERNANCE_AND_ETHICS.md</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://politicalpayola.com/IRS_501C3_NONPARTISAN_COMPLIANCE.md</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://politicalpayola.com/IMPACT_AND_EVALUATION.md</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://politicalpayola.com/CIVICS_CURRICULUM_KIT.md</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://politicalpayola.com/CITATION.cff</loc><lastmod>2026-11-02</lastmod></url>
+  <url><loc>https://politicalpayola.com/top20-bills.html</loc><lastmod>2026-11-03</lastmod></url>
+    <url><loc>https://politicalpayola.com/top20-scotus.html</loc><lastmod>2026-11-03</lastmod></url>
+    <url><loc>https://politicalpayola.com/api/tools.json</loc><lastmod>2026-11-02</lastmod></url>
+    <url><loc>https://politicalpayola.com/.well-known/mcp.json</loc><lastmod>2026-11-02</lastmod></url>
+  </urlset>
