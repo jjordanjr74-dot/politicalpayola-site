@@ -212,36 +212,61 @@
     sel.innerHTML = metrics.map(m => `<option value="${esc(m)}">${esc(m)}</option>`).join('');
 
     function updateTable() {
-      const m = sel.value;
-      const rows = allStateRecs.filter(r => r.metric === m).sort((a,b) => b.value - a.value);
-      const top10 = rows.slice(0, 10);
-      let rCnt = 0, dCnt = 0, divCnt = 0, r24 = 0, d24 = 0;
-      top10.forEach(r => {
-        const sp = spMap[r.geo] || {};
-        if (sp.state_control === 'R') rCnt++;
-        else if (sp.state_control === 'D') dCnt++;
-        else divCnt++;
-        if (sp.presidential_2024_winner === 'R') r24++;
-        else if (sp.presidential_2024_winner === 'D') d24++;
-      });
-      if (summaryEl) {
-        summaryEl.innerHTML = `<strong>Top-10 Party Breakdown for "${esc(m)}":</strong> ` +
-          `${partyChip('R', rCnt + ' Republican Trifectas')} · ${partyChip('D', dCnt + ' Democratic Trifectas')} · ${partyChip('Divided', divCnt + ' Divided States')} ` +
-          `&nbsp;|&nbsp; <strong>2024 Presidential Vote of Top 10:</strong> <span style="color:#fca5a5">${r24} Trump (R)</span> vs. <span style="color:#93c5fd">${d24} Harris (D)</span>`;
-      }
-      tbody.innerHTML = rows.map((r, idx) => {
-        const sp = spMap[r.geo] || {};
-        return `<tr>
-          <td><strong>#${idx + 1}</strong></td>
-          <td><strong>${esc(r.geo)}</strong></td>
-          <td>${partyChip(sp.state_control || 'R', 'State: ' + (sp.state_control || '?'))} ${partyChip(sp.presidential_2024_winner || 'R', '2024: ' + (sp.presidential_2024_winner || '?'))}</td>
-          <td><strong style="color:var(--gold)">${r.value}</strong> <span style="color:var(--muted)">${esc(r.unit)}</span></td>
-          <td>${esc(r.period)}</td>
-          <td style="font-size:0.84rem">${esc(r.plain_english)}</td>
-          <td>${srcLinks(r.source)}</td>
-        </tr>`;
-      }).join('');
-    }
+          const m = sel.value;
+          const rows = allStateRecs.filter(r => r.metric === m).sort((a,b) => b.value - a.value);
+          const top10 = rows.slice(0, 10);
+          let rCnt = 0, dCnt = 0, divCnt = 0, r24 = 0, d24 = 0;
+          top10.forEach(r => {
+            const sp = spMap[r.geo] || {};
+            if (sp.state_control === 'R') rCnt++;
+            else if (sp.state_control === 'D') dCnt++;
+            else divCnt++;
+            if (sp.presidential_2024_winner === 'R') r24++;
+            else if (sp.presidential_2024_winner === 'D') d24++;
+          });
+          if (summaryEl) {
+            summaryEl.innerHTML = `<strong>Top-10 Party Breakdown for "${esc(m)}":</strong> ` +
+              `${partyChip('R', rCnt + ' Republican Trifectas')} · ${partyChip('D', dCnt + ' Democratic Trifectas')} · ${partyChip('Divided', divCnt + ' Divided States')} ` +
+              `&nbsp;|&nbsp; <strong>2024 Presidential Vote of Top 10:</strong> <span style="color:#fca5a5">${r24} Trump (R)</span> vs. <span style="color:#93c5fd">${d24} Harris (D)</span>`;
+          }
+          // Table view
+          tbody.innerHTML = rows.map((r, idx) => {
+            const sp = spMap[r.geo] || {};
+            return `<tr>
+              <td><strong>#${idx + 1}</strong></td>
+              <td><strong>${esc(r.geo)}</strong></td>
+              <td>${partyChip(sp.state_control || 'R', 'State: ' + (sp.state_control || '?'))} ${partyChip(sp.presidential_2024_winner || 'R', '2024: ' + (sp.presidential_2024_winner || '?'))}</td>
+              <td><strong style="color:var(--gold)">${r.value}</strong> <span style="color:var(--muted)">${esc(r.unit)}</span></td>
+              <td>${esc(r.period)}</td>
+              <td style="font-size:0.84rem">${esc(r.plain_english)}</td>
+              <td>${srcLinks(r.source)}</td>
+            </tr>`;
+          }).join('');
+
+          // Card dashboard view
+          const cardsEl = document.getElementById('state-cards-view');
+          if (cardsEl) {
+            cardsEl.innerHTML = rows.slice(0, 25).map((r, idx) => {
+              const sp = spMap[r.geo] || {};
+              const p24 = sp.presidential_2024_winner;
+              const stateCtrl = sp.state_control;
+              return `<div class="bill-card" style="position:relative">
+                <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:0.5rem">
+                  <span style="font-family:JetBrains Mono,monospace;font-size:0.75rem;font-weight:700;color:var(--fg-muted)">#${idx + 1}</span>
+                  <div style="display:flex;gap:0.3rem">
+                    <span class="chip chip-${stateCtrl === 'R' ? 'R' : stateCtrl === 'D' ? 'D' : 'Divided'}" style="font-size:0.65rem;padding:0.1rem 0.4rem">${stateCtrl}</span>
+                    <span class="chip chip-${p24 === 'R' ? 'R' : 'D'}" style="font-size:0.65rem;padding:0.1rem 0.4rem">${p24} '24</span>
+                  </div>
+                </div>
+                <h3 style="font-family:Newsreader,serif;font-size:1.1rem;font-weight:600;margin:0 0 0.25rem">${esc(r.geo)}</h3>
+                <div style="font-family:JetBrains Mono,monospace;font-weight:700;font-size:1.5rem;margin:0.5rem 0;color:var(--gold)">${r.value}<span style="font-size:0.85rem;color:var(--fg-muted);font-weight:400"> ${esc(r.unit)}</span></div>
+                <div style="font-family:Plus Jakarta Sans,sans-serif;font-size:0.82rem;line-height:1.45;color:var(--fg-body)">${esc(r.plain_english)}</div>
+                <div style="font-size:0.7rem;color:var(--fg-muted);margin-top:0.4rem">${esc(r.period)}</div>
+              </div>`;
+            }).join('');
+            if (rows.length > 25) cardsEl.innerHTML += `<div class="bill-card" style="display:flex;align-items:center;justify-content:center;color:var(--fg-muted);font-family:Plus Jakarta Sans,sans-serif;font-size:0.9rem">+ ${rows.length - 25} more states — switch to Data Table for full view</div>`;
+          }
+        }
     sel.addEventListener('change', updateTable);
     if (metrics.length) updateTable();
   }

@@ -116,6 +116,15 @@
       </div>
     </section>
 
+    <!-- TODAY'S SPOTLIGHT -->
+    <div class="spotlight-banner" style="margin:1.5rem 0;background:linear-gradient(135deg,#fef3c7,#fef9c3,#fef3c7);border:1.5px solid #fcd34d;border-radius:14px;padding:1.2rem 1.5rem;display:flex;gap:1rem;align-items:center;flex-wrap:wrap">
+      <div style="font-size:2.5rem">🗳️</div>
+      <div style="flex:1">
+        <h3 style="margin:0 0 0.25rem;font-size:1.1rem;font-weight:700">Election Day — November 3, 2026</h3>
+        <p style="margin:0;font-size:0.9rem;line-height:1.5;color:var(--fg-body)">Midterm polls close today. Every congressional seat, 36 governorships, and 5,800+ state legislature races are on the ballot. Track the money behind every candidate in our <a href="#panel-scandals" onclick="document.querySelector('[data-tab=scandals]').click()" style="font-weight:600;color:var(--accent)">Corruption Archive →</a> and see which laws are at stake in our <a href="/top20-bills.html" style="font-weight:600;color:var(--accent)">Top 20 Bills Lens →</a></p>
+      </div>
+    </div>
+
     <!-- PROPUBLICA-CALIBER FEATURED QUICK-ACTION TILES -->
     <div class="quick-jump-bar" id="quick-jump-bar">
       <button class="jump-btn" data-goto-tab="media" data-goto-id="media-bias-top" style="border-color:rgba(3,105,161,0.45);background:linear-gradient(135deg,#f0f9ff 0%,#fffbeb 52%,#fef2f2 100%)">
@@ -138,6 +147,11 @@
         <div class="jb-title">Top 25 PAC &amp; Corporate Money Recipients ➔</div>
         <div class="jb-sub">Ranked highest-to-lowest with verified FEC committee IDs, party affiliation, and exact percentage of total campaign funds.</div>
       </button>
+      <a href="/top20-scotus.html" class="jump-btn" style="text-decoration:none;border-color:rgba(124,58,237,0.45);background:linear-gradient(135deg,#f5f3ff 0%,#ecfdf5 100%);display:block">
+        <div class="jb-kicker" style="color:#7c3aed">TOP 20 SCOTUS DECISIONS · 1987–2022</div>
+        <div class="jb-title" style="color:#0f172a">Landmark Supreme Court Rulings That Changed Your Rights ➔</div>
+        <div class="jb-sub" style="color:#334155">Every justice vote tracked with appointing president. 20 cases across campaign finance, civil rights, criminal justice, and corporate power — with dual-sourced impact metrics.</div>
+      </a>
     </div>
 
 
@@ -394,15 +408,27 @@
       <div class="section-head">
         <div>
           <h2>50-State Rankings &amp; Party Correlation Explorer</h2>
-          <p>Select any of 25+ verified state metrics to see the full 50-state ranking, the Republican vs. Democratic count in the Top 10, and direct source links.</p>
+          <p>25+ verified metrics ranked across all 50 states. Every data point dual-sourced. Party trifecta control and 2024 presidential vote shown for every state.</p>
         </div>
       </div>
+
+      <!-- Mode toggle -->
+      <div class="mode-bar" style="margin:1rem 0">
+        <button id="state-mode-cards" class="active" onclick="document.getElementById('state-cards-view').style.display='';document.getElementById('state-table-wrap').style.display='none';this.classList.add('active');document.getElementById('state-mode-table').classList.remove('active')">Card Dashboard</button>
+        <button id="state-mode-table" onclick="document.getElementById('state-cards-view').style.display='none';document.getElementById('state-table-wrap').style.display='';this.classList.add('active');document.getElementById('state-mode-cards').classList.remove('active')">Data Table</button>
+      </div>
+
       <div class="filter-bar">
         <label for="state-metric-select"><strong>Choose Metric:</strong></label>
         <select id="state-metric-select" class="select-ctrl"></select>
       </div>
       <div id="state-correlation-summary" style="margin-bottom:14px;padding:12px 16px;background:var(--bg-card);border:1px solid var(--border);border-radius:10px"></div>
-      <div style="overflow-x:auto;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:12px">
+
+      <!-- Card Dashboard -->
+      <div id="state-cards-view" style="display:grid;grid-template-columns:repeat(auto-fill,minmax(280px,1fr));gap:0.75rem" class="state-card-grid"></div>
+
+      <!-- Data Table -->
+      <div id="state-table-wrap" style="display:none;overflow-x:auto;background:var(--bg-card);border:1px solid var(--border);border-radius:12px;padding:12px">
         <table class="data-table">
           <thead>
             <tr>
@@ -1049,6 +1075,17 @@
   })();
   </script>
   <script src="/assets/mobile-app-install.js" defer></script>
+
+<!-- SUPPORT THIS PROJECT -->
+<div style="background:linear-gradient(135deg,#eff6ff,#f0fdf4);border:1.5px solid #bfdbfe;border-radius:14px;padding:1.5rem 2rem;margin:2rem 0;display:flex;gap:1.5rem;align-items:flex-start;flex-wrap:wrap">
+  <div style="font-size:2.2rem">🏛️</div>
+  <div>
+    <h3 style="margin:0 0 0.4rem;font-size:1.1rem;font-weight:700;color:var(--fg-body)">Support This Project</h3>
+    <p style="margin:0 0 0.5rem;font-size:0.9rem;line-height:1.55;color:#334155">Political Payola is a nonpartisan civic atlas built and maintained by one team with zero outside funding. Every impact number is dual-sourced — no advocacy, no donor influence, just the receipts. Read our <a href="/METHODOLOGY.md" style="color:var(--accent);font-weight:600">Methodology</a>, <a href="/GOVERNANCE_AND_ETHICS.md" style="color:var(--accent);font-weight:600">Ethics Policy</a>, and <a href="/IRS_501C3_NONPARTISAN_COMPLIANCE.md" style="color:var(--accent);font-weight:600">501(c)(3) Compliance</a>.</p>
+    <p style="margin:0;font-size:0.82rem;color:var(--fg-muted)">To support this work or discuss partnership and grant opportunities: <a href="https://github.com/jjordanjr74-dot/politicalpayola-site" style="color:var(--accent);font-weight:500">GitHub (open data)</a> · <a href="/CITATION.cff" style="color:var(--accent);font-weight:500">Cite This Project</a> · <a href="/IMPACT_AND_EVALUATION.md" style="color:var(--accent);font-weight:500">Impact &amp; Evaluation</a></p>
+  </div>
+</div>
+
 <div class="footer-sister" style="margin-top:10px;padding-top:10px;border-top:1px solid rgba(128,128,128,0.2);font-size:13px;text-align:center;opacity:0.85;">Southern CO Sister Network: <a href="https://whereeatin.com/">Where We Eatin&#39;</a> &middot; <a href="https://restaurantradar.app/">Restaurant Radar</a> &middot; <a href="https://coloradobounceclub.com/">Colorado Bounce Club</a> &middot; <a href="https://beethelightmassage.com/">Bee The Light Massage</a> &middot; <a href="https://thesoapbook.com/">SOAP Autopilot</a> &middot; <a href="https://baadlandsfarms.com/">Baadlands Farms</a> &middot; <a href="https://politicalpayola.com/">Political Payola</a></div>
 <script src="/assets/funnel-beacon.js" defer></script></body>
 </html>
