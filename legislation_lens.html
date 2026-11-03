@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Legislation Lens — Political Payola</title>
+<meta name="description" content="Take a photo of any bill, policy, or law. We break it down in plain English at a 10th-grade reading level so you know exactly how it affects you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+body { font-family:'Inter',system-ui,sans-serif; background:linear-gradient(165deg,#fdf6ee 0%,#faf3e6 40%,#e8f4f0 100%); color:#2c2416; min-height:100vh; line-height:1.6; }
+header { background:#fff; border-bottom:1px solid #e8dcc8; padding:1.2rem 2rem; display:flex; align-items:center; justify-content:space-between; flex-wrap:wrap; gap:1rem; }
+.logo { font-family:'EB Garamond',serif; font-size:1.6rem; font-weight:700; color:#2c2416; }
+.logo span { color:#c0392b; }
+.back-link { color:#5d4b2c; text-decoration:none; font-size:0.9rem; font-weight:500; }
+.back-link:hover { text-decoration:underline; }
+main { max-width:800px; margin:2rem auto; padding:0 1.5rem; }
+.hero { text-align:center; margin-bottom:2.5rem; }
+.hero h1 { font-family:'EB Garamond',serif; font-size:2.4rem; font-weight:700; color:#2c2416; margin-bottom:0.5rem; }
+.hero p { font-size:1.1rem; color:#5d4b2c; max-width:560px; margin:0 auto; }
+.card { background:#fff; border-radius:12px; box-shadow:0 2px 12px rgba(0,0,0,0.06); padding:2rem; margin-bottom:1.5rem; }
+.card h2 { font-family:'EB Garamond',serif; font-size:1.5rem; margin-bottom:1rem; color:#2c2416; }
+.upload-zone { border:2px dashed #d4c4a8; border-radius:10px; padding:2.5rem; text-align:center; cursor:pointer; transition:border-color 0.2s,background 0.2s; }
+.upload-zone:hover, .upload-zone.dragover { border-color:#c0392b; background:#fdf8f0; }
+.upload-zone .icon { font-size:3rem; margin-bottom:0.75rem; }
+.upload-zone p { color:#5d4b2c; font-size:1rem; }
+.upload-zone .browse-btn { display:inline-block; margin-top:0.75rem; padding:0.6rem 1.5rem; background:#c0392b; color:#fff; border-radius:6px; font-weight:600; font-size:0.9rem; cursor:pointer; transition:background 0.2s; }
+.upload-zone .browse-btn:hover { background:#a93226; }
+.preview { margin-top:1rem; text-align:center; }
+.preview img { max-width:100%; max-height:320px; border-radius:8px; border:1px solid #e8dcc8; }
+.camera-btn { display:inline-block; margin-top:0.75rem; padding:0.6rem 1.5rem; background:#27ae60; color:#fff; border-radius:6px; font-weight:600; font-size:0.9rem; cursor:pointer; transition:0.2s; }
+.camera-btn:hover { background:#219a52; }
+.result { margin-top:1.5rem; padding:1.5rem; background:#fdf8f0; border-radius:8px; border-left:4px solid #c0392b; display:none; }
+.result.visible { display:block; }
+.result h3 { font-family:'EB Garamond',serif; font-size:1.3rem; margin-bottom:0.75rem; }
+.result .label { font-weight:700; color:#8b6b3d; font-size:0.85rem; text-transform:uppercase; letter-spacing:0.05em; margin-bottom:0.5rem; }
+.result .plain-explanation { font-size:1.05rem; line-height:1.8; margin-bottom:1.5rem; color:#2c2416; }
+.result .impact { font-size:1rem; line-height:1.7; padding:1rem; background:#fff; border-radius:8px; border:1px solid #e8dcc8; }
+.grade-badge { display:inline-block; padding:0.25rem 0.75rem; background:#27ae60; color:#fff; border-radius:20px; font-size:0.8rem; font-weight:600; margin-bottom:1rem; }
+.loading { padding:2rem; text-align:center; }
+.spinner { display:inline-block; width:40px; height:40px; border:3px solid #e8dcc8; border-top-color:#c0392b; border-radius:50%; animation:spin 0.8s linear infinite; }
+@keyframes spin { to { transform:rotate(360deg); } }
+.error { padding:1rem; background:#fdecea; border-radius:8px; color:#c0392b; font-size:0.95rem; text-align:center; }
+footer { text-align:center; padding:2rem; color:#8b6b3d; font-size:0.85rem; }
+footer a { color:#5d4b2c; }
+.hidden { display:none; }
+.sample-btn { display:inline-block; margin:0.5rem 0.25rem; padding:0.4rem 0.8rem; background:#f0e8d8; border:1px solid #d4c4a8; border-radius:4px; cursor:pointer; font-size:0.85rem; transition:0.15s; }
+.sample-btn:hover { background:#e8dcc8; }
+</style>
+</head>
+<body>
+<header>
+  <div class="logo">Political<span>Payola</span></div>
+  <a href="/" class="back-link">← Back to Political Payola</a>
+</header>
+<main>
+  <div class="hero">
+    <h1>Legislation Lens</h1>
+    <p>Snap a photo of any bill, policy, or law — we break it into plain English you can actually understand.</p>
+  </div>
+
+  <div class="card">
+    <h2>Upload or Take a Photo</h2>
+    <div class="upload-zone" id="uploadZone">
+      <div class="icon">📄</div>
+      <p>Drag a photo here, paste from clipboard, or</p>
+      <label class="browse-btn" for="fileInput">Browse Files</label>
+      <input type="file" id="fileInput" accept="image/*" class="hidden">
+      <button class="camera-btn" id="cameraBtn">📷 Use Camera</button>
+      <input type="file" id="cameraInput" accept="image/*" capture="environment" class="hidden">
+    </div>
+    <div class="preview hidden" id="preview">
+      <img id="previewImg" alt="Uploaded document">
+      <button class="sample-btn" id="analyzeBtn">🔍 Analyze This Document</button>
+    </div>
+  </div>
+
+  <div class="card hidden" id="loadingCard">
+    <div class="loading">
+      <div class="spinner"></div>
+      <p style="margin-top:1rem;color:#5d4b2c;">Reading and analyzing your document...</p>
+    </div>
+  </div>
+
+  <div class="card hidden" id="resultCard">
+    <h2>What This Document Means</h2>
+    <div class="result visible" id="result">
+      <div class="grade-badge" id="gradeBadge">10th Grade Level</div>
+      <div class="label">In Plain English</div>
+      <div class="plain-explanation" id="plainExplanation"></div>
+      <div class="label">How It Affects You</div>
+      <div class="impact" id="impactExplanation"></div>
+      <div class="label" style="margin-top:1rem;">Key Terms Decoded</div>
+      <div id="termsDecoded" style="font-size:0.95rem;line-height:1.7;"></div>
+    </div>
+    <button class="sample-btn" id="newDocBtn" style="margin-top:1rem;">📄 Analyze Another Document</button>
+  </div>
+
+  <div class="card" style="background:#fdf8f0;">
+    <h2>Try a Sample</h2>
+    <p style="color:#5d4b2c;margin-bottom:1rem;">Paste any text from a bill or law, and we'll decode it:</p>
+    <textarea id="sampleText" rows="6" placeholder="Paste bill text, legal language, or policy wording here..." style="width:100%;padding:0.8rem;border:1px solid #d4c4a8;border-radius:8px;font-family:inherit;font-size:0.95rem;resize:vertical;"></textarea>
+    <button class="sample-btn" id="analyzeTextBtn" style="margin-top:0.75rem;">🔍 Decode This Text</button>
+  </div>
+</main>
+<footer>
+  Political Payola &copy; 2026 &mdash; <a href="/">Home</a> &middot; <a href="/METHODOLOGY.md">Methodology</a> &middot; <a href="/CIVICS_CURRICULUM_KIT.md">Civics Curriculum</a>
+</footer>
+
+<script>
+const LEGISLATION_LENS_ENDPOINT = '/api/legislation-lens';
+
+const uploadZone = document.getElementById('uploadZone');
+const fileInput = document.getElementById('fileInput');
+const cameraInput = document.getElementById('cameraInput');
+const preview = document.getElementById('preview');
+const previewImg = document.getElementById('previewImg');
+const analyzeBtn = document.getElementById('analyzeBtn');
+const loadingCard = document.getElementById('loadingCard');
+const resultCard = document.getElementById('resultCard');
+const result = document.getElementById('result');
+const plainExplanation = document.getElementById('plainExplanation');
+const impactExplanation = document.getElementById('impactExplanation');
+const termsDecoded = document.getElementById('termsDecoded');
+const gradeBadge = document.getElementById('gradeBadge');
+const newDocBtn = document.getElementById('newDocBtn');
+const sampleText = document.getElementById('sampleText');
+const analyzeTextBtn = document.getElementById('analyzeTextBtn');
+
+let currentImageData = null;
+
+uploadZone.addEventListener('click', (e) => { if (e.target.tagName !== 'BUTTON' && e.target.tagName !== 'LABEL') fileInput.click(); });
+uploadZone.addEventListener('dragover', (e) => { e.preventDefault(); uploadZone.classList.add('dragover'); });
+uploadZone.addEventListener('dragleave', () => { uploadZone.classList.remove('dragover'); });
+uploadZone.addEventListener('drop', (e) => { e.preventDefault(); uploadZone.classList.remove('dragover'); handleFile(e.dataTransfer.files[0]); });
+fileInput.addEventListener('change', () => { if (fileInput.files[0]) handleFile(fileInput.files[0]); });
+cameraInput.addEventListener('change', () => { if (cameraInput.files[0]) handleFile(cameraInput.files[0]); });
+document.getElementById('cameraBtn').addEventListener('click', () => cameraInput.click());
+analyzeBtn.addEventListener('click', analyzeImage);
+analyzeTextBtn.addEventListener('click', analyzeText);
+newDocBtn.addEventListener('click', resetUI);
+document.addEventListener('paste', (e) => { const items = e.clipboardData?.items; if (items) for (const item of items) { if (item.type.startsWith('image/')) { handleFile(item.getAsFile()); break; } } });
+
+function handleFile(file) {
+  if (!file || !file.type.startsWith('image/')) return;
+  const reader = new FileReader();
+  reader.onload = (e) => {
+    currentImageData = e.target.result;
+    previewImg.src = currentImageData;
+    preview.classList.remove('hidden');
+    uploadZone.style.display = 'none';
+  };
+  reader.readAsDataURL(file);
+}
+
+function showLoading() { loadingCard.classList.remove('hidden'); resultCard.classList.add('hidden'); }
+
+function showResult(data) {
+  loadingCard.classList.add('hidden');
+  resultCard.classList.remove('hidden');
+  plainExplanation.textContent = data.plain_english || 'No explanation available.';
+  impactExplanation.textContent = data.how_it_affects_you || 'No impact analysis available.';
+  if (data.terms_decoded && data.terms_decoded.length) {
+    termsDecoded.innerHTML = '<ul style="padding-left:1.25rem;list-style:disc;">' + data.terms_decoded.map(t => `<li><strong>${t.term}:</strong> ${t.meaning}</li>`).join('') + '</ul>';
+  } else { termsDecoded.textContent = 'No key terms identified.'; }
+  gradeBadge.textContent = (data.reading_level || '10th Grade') + ' Level';
+}
+
+function resetUI() {
+  preview.classList.add('hidden');
+  uploadZone.style.display = '';
+  resultCard.classList.add('hidden');
+  loadingCard.classList.add('hidden');
+  currentImageData = null;
+  fileInput.value = '';
+  cameraInput.value = '';
+}
+
+async function analyzeImage() {
+  if (!currentImageData) return;
+  showLoading();
+  try {
+    const resp = await fetch(LEGISLATION_LENS_ENDPOINT, {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({image_data:currentImageData})
+    });
+    if (!resp.ok) { const err=await resp.json().catch(()=>({})); throw new Error(err.error||`Server error (${resp.status})`); }
+    showResult(await resp.json());
+  } catch(e) {
+    loadingCard.classList.add('hidden');
+    alert('Analysis failed: ' + e.message);
+  }
+}
+
+async function analyzeText() {
+  const text = sampleText.value.trim();
+  if (!text) { alert('Paste some text first.'); return; }
+  showLoading();
+  try {
+    const resp = await fetch(LEGISLATION_LENS_ENDPOINT, {
+      method:'POST',
+      headers:{'Content-Type':'application/json'},
+      body:JSON.stringify({text:text})
+    });
+    if (!resp.ok) { const err=await resp.json().catch(()=>({})); throw new Error(err.error||`Server error (${resp.status})`); }
+    showResult(await resp.json());
+  } catch(e) {
+    loadingCard.classList.add('hidden');
+    alert('Analysis failed: ' + e.message);
+  }
+}
+
+window.legislationLens = { handleFile, analyzeImage, analyzeText };
+</script>
+</body>
+</html>
