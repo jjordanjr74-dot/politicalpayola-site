@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Top 20 Most Impactful Laws (1986–2017) — Political Payola</title>
+  <meta name="description" content="Evidence-gated, nonpartisan analysis of the 20 most impactful federal laws from the Anti-Drug Abuse Act 1986 through the TCJA 2017. Every number dual-sourced.">
+  <link rel="canonical" href="https://politicalpayola.com/top20-bills.html">
+  <link rel="alternate" hreflang="en" href="https://politicalpayola.com/top20-bills.html">
+  <link rel="alternate" hreflang="es" href="https://politicalpayola.com/top20-bills.html?lang=es">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="Political Payola">
+  <meta property="og:title" content="Top 20 Most Impactful Federal Laws (1986–2017)">
+  <meta property="og:description" content="Evidence-gated, dual-sourced breakdown: what passed, who voted for it, what it actually cost you.">
+  <meta property="og:url" content="https://politicalpayola.com/top20-bills.html">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;0,6..72,600;0,6..72,700;1,6..72,400;1,6..72,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css?v=20261031a">
+  <style>
+    :root {
+      --cat-cj: #dc2626;
+      --cat-tax: #d97706;
+      --cat-hw: #059669;
+      --cat-cv: #7c3aed;
+      --bg-card: #fafaf9;
+      --border-card: #e7e5e4;
+      --fg-body: #1c1917;
+      --fg-muted: #78716c;
+      --accent: #2563eb;
+    }
+
+    .top20-wrap { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+    /* Intro hero */
+    .top20-hero { margin: 3rem 0 2rem; }
+    .top20-hero h1 { font-family: 'Newsreader', serif; font-size: 2.8rem; font-weight: 600; line-height: 1.15; color: #0c0a09; margin: 0 0 0.75rem; }
+    .top20-hero .subtitle { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.1rem; color: #57534e; max-width: 700px; line-height: 1.6; }
+
+    /* Mode toggle */
+    .mode-bar { display: flex; gap: 0; margin: 2rem 0; border: 2px solid var(--border-card); border-radius: 12px; overflow: hidden; width: fit-content; }
+    .mode-bar button { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.9rem; font-weight: 600; padding: 0.65rem 1.5rem; background: white; color: var(--fg-muted); border: none; cursor: pointer; transition: all .15s; }
+    .mode-bar button.active { background: var(--accent); color: white; }
+    .mode-bar button:not(:last-child) { border-right: 2px solid var(--border-card); }
+    .mode-bar button:hover:not(.active) { background: #f5f5f4; color: var(--fg-body); }
+
+    /* Category tabs */
+    .cat-tabs { display: flex; gap: 0.5rem; flex-wrap: wrap; margin: 1.5rem 0; }
+    .cat-tab { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.85rem; font-weight: 600; padding: 0.5rem 1rem; border-radius: 100px; border: 2px solid var(--border-card); background: white; cursor: pointer; transition: all .15s; }
+    .cat-tab.active { background: var(--fg-body); color: white; border-color: var(--fg-body); }
+    .cat-tab.cj.active { background: var(--cat-cj); border-color: var(--cat-cj); }
+    .cat-tab.tax.active { background: var(--cat-tax); border-color: var(--cat-tax); }
+    .cat-tab.hw.active { background: var(--cat-hw); border-color: var(--cat-hw); }
+    .cat-tab.cv.active { background: var(--cat-cv); border-color: var(--cat-cv); }
+
+    /* Impact Grid */
+    .impact-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(340px, 1fr)); gap: 1rem; }
+    .bill-card { background: white; border: 1.5px solid var(--border-card); border-radius: 12px; padding: 1.25rem; transition: box-shadow .15s, transform .15s; cursor: default; }
+    .bill-card:hover { box-shadow: 0 4px 24px rgba(0,0,0,.07); transform: translateY(-1px); }
+    .bill-card .cat-badge { display: inline-block; font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.72rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; padding: 0.2rem 0.55rem; border-radius: 6px; margin-bottom: 0.65rem; }
+    .bill-card .cat-badge.cj { background: #fef2f2; color: var(--cat-cj); }
+    .bill-card .cat-badge.tax { background: #fffbeb; color: var(--cat-tax); }
+    .bill-card .cat-badge.hw { background: #ecfdf5; color: var(--cat-hw); }
+    .bill-card .cat-badge.cv { background: #f5f3ff; color: var(--cat-cv); }
+    .bill-card h3 { font-family: 'Newsreader', serif; font-size: 1.2rem; font-weight: 600; margin: 0 0 0.3rem; color: var(--fg-body); line-height: 1.25; }
+    .bill-card .year { font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; color: var(--fg-muted); margin-bottom: 0.65rem; }
+    .bill-card .impact { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.88rem; line-height: 1.5; color: #44403c; margin-bottom: 0.75rem; }
+    .impact-metric { display: flex; gap: 0.4rem; align-items: baseline; font-family: 'JetBrains Mono', monospace; font-size: 0.78rem; padding: 0.35rem 0; border-top: 1px solid #f5f5f4; }
+    .impact-metric .metric-label { color: var(--fg-muted); flex-shrink: 0; }
+    .impact-metric .metric-val { font-weight: 600; color: var(--fg-body); }
+    .bill-card .demos { display: flex; flex-wrap: wrap; gap: 0.3rem; margin-top: 0.5rem; }
+    .bill-card .demo-tag { font-size: 0.7rem; font-weight: 500; padding: 0.15rem 0.5rem; border-radius: 100px; background: #f5f5f4; color: #57534e; }
+    .bill-card .vote-row { display: flex; gap: 0.5rem; margin-top: 0.65rem; font-size: 0.75rem; font-family: 'JetBrains Mono', monospace; color: var(--fg-muted); }
+    .vote-row span { font-weight: 600; }
+
+    /* Story mode */
+    .story-view { display: none; }
+    .story-view.active { display: block; }
+    .story-card { max-width: 800px; margin: 0 auto; background: white; border: 1.5px solid var(--border-card); border-radius: 16px; padding: 2rem; margin-bottom: 1.5rem; }
+    .story-card h2 { font-family: 'Newsreader', serif; font-size: 1.6rem; font-weight: 600; margin: 0 0 0.5rem; color: var(--fg-body); }
+    .story-section { margin: 1.25rem 0; padding: 1rem 0; border-top: 1px solid #f5f5f4; }
+    .story-section h4 { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.78rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.5px; color: var(--fg-muted); margin: 0 0 0.5rem; }
+    .story-section p { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.95rem; line-height: 1.65; color: #44403c; }
+    .story-section .num-block { background: #fafaf9; border-left: 3px solid var(--accent); padding: 1rem; margin: 1rem 0; }
+    .story-section .num-block .big-num { font-family: 'Newsreader', serif; font-size: 2rem; font-weight: 700; color: var(--accent); }
+    .story-section .num-block .num-label { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 0.85rem; color: var(--fg-muted); margin-top: 0.25rem; }
+    .source-cite { font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--fg-muted); margin-top: 0.4rem; }
+    .source-cite a { color: var(--accent); }
+
+    /* SCOTUS banner */
+    .scotus-banner { background: linear-gradient(135deg, #1e1b4b, #312e81); color: white; border-radius: 14px; padding: 1.5rem 2rem; margin: 3rem 0 1rem; display: flex; align-items: center; gap: 1.5rem; }
+    .scotus-banner .gavel { font-size: 2.5rem; }
+    .scotus-banner p { font-family: 'Plus Jakarta Sans', sans-serif; font-size: 1.05rem; line-height: 1.5; margin: 0; }
+    .scotus-banner a { color: #c7d2fe; font-weight: 600; }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+      .top20-hero h1 { font-size: 2rem; }
+      .impact-grid { grid-template-columns: 1fr; }
+      .scotus-banner { flex-direction: column; text-align: center; }
+    }
+
+    .empty-state { text-align: center; padding: 3rem; color: var(--fg-muted); font-family: 'Plus Jakarta Sans', sans-serif; }
+  </style>
+</head>
+<body>
+
+<header class="topbar">
+  <div class="topbar-inner">
+    <div class="brand">
+      <a href="/" style="text-decoration:none;color:inherit;">
+        <span class="brand-wordmark">Political Payola</span>
+      </a>
+      <div class="brand-meta">
+        <h1>Top 20 Most Impactful Laws</h1>
+        <div class="brand-sub">Evidence-Gated, Nonpartisan, Dual-Sourced · 1986–2017</div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="top20-wrap">
+  <div class="top20-hero">
+    <h1>The 20 federal laws that<br>changed your life the most</h1>
+    <p class="subtitle">From the crack sentencing disparity to the tax bill that poured $1.9 trillion onto the national debt — every number here is backed by two independent sources and written at a 10th-grade reading level. Zero advocacy. Just the receipts.</p>
+  </div>
+
+  <div class="mode-bar">
+    <button id="mode-cards" class="active" onclick="setMode('cards')">Browse by Topic</button>
+    <button id="mode-story" onclick="setMode('story')">Story Mode: How It Happened → Who It Affected</button>
+    <button id="mode-timeline" onclick="setMode('timeline')">Timeline</button>
+  </div>
+
+  <!-- Category tabs -->
+  <div class="cat-tabs" id="cat-tabs">
+    <button class="cat-tab active" data-cat="all" onclick="filterCategory('all')">All 20</button>
+    <button class="cat-tab cj" data-cat="Criminal Justice" onclick="filterCategory('Criminal Justice')">Criminal Justice</button>
+    <button class="cat-tab tax" data-cat="Tax & Economy" onclick="filterCategory('Tax & Economy')">Tax & Economy</button>
+    <button class="cat-tab hw" data-cat="Healthcare & Welfare" onclick="filterCategory('Healthcare & Welfare')">Healthcare & Welfare</button>
+    <button class="cat-tab cv" data-cat="Civil Rights & Voting" onclick="filterCategory('Civil Rights & Voting')">Civil Rights & Voting</button>
+  </div>
+
+  <!-- CARD MODE -->
+  <div id="view-cards" class="impact-grid"></div>
+
+  <!-- STORY MODE -->
+  <div id="view-story" class="story-view"></div>
+
+  <!-- TIMELINE MODE -->
+  <div id="view-timeline" class="story-view" style="text-align:center;padding:4rem 0;">
+    <div style="font-family:'Plus Jakarta Sans',sans-serif;font-size:1.2rem;color:var(--fg-muted);">
+      Timeline visualization loading...
+    </div>
+    <div id="timeline-viz" style="margin-top:2rem;"></div>
+  </div>
+
+  <!-- SCOTUS Banner -->
+  <div class="scotus-banner">
+    <div class="gavel">⚖️</div>
+    <div>
+      <p><strong>Legislation Lens also covers the Supreme Court.</strong><br>
+      The companion page — Top 20 Most Impactful SCOTUS Decisions — is compiling now.
+      <a href="/top20-scotus.html">Preview SCOTUS data →</a></p>
+    </div>
+  </div>
+</div>
+
+<script src="js/top20_bills_bundle.js"></script>
+<script>
+  const DATA = TOP20_BILLS || [];
+  let currentMode = 'cards';
+  let currentCat = 'all';
+
+  const catColors = {
+    'Criminal Justice': 'cj',
+    'Tax & Economy': 'tax',
+    'Healthcare & Welfare': 'hw',
+    'Civil Rights & Voting': 'cv'
+  };
+
+  function setMode(mode) {
+    currentMode = mode;
+    document.querySelectorAll('.mode-bar button').forEach(b => b.classList.remove('active'));
+    document.getElementById('mode-' + mode).classList.add('active');
+    document.getElementById('view-cards').style.display = mode === 'cards' ? '' : 'none';
+    document.getElementById('view-story').style.display = mode === 'story' ? '' : 'none';
+    document.getElementById('view-story').classList.toggle('active', mode === 'story');
+    document.getElementById('view-timeline').style.display = mode === 'timeline' ? '' : 'none';
+    document.getElementById('view-timeline').classList.toggle('active', mode === 'timeline');
+    document.getElementById('cat-tabs').style.display = mode === 'cards' ? '' : 'none';
+    if (mode === 'cards') renderCards();
+    if (mode === 'story') renderStory();
+    if (mode === 'timeline') renderTimeline();
+  }
+
+  function filterCategory(cat) {
+    currentCat = cat;
+    document.querySelectorAll('.cat-tab').forEach(t => t.classList.remove('active'));
+    document.querySelector(`.cat-tab[data-cat="${cat}"]`).classList.add('active');
+    renderCards();
+  }
+
+  function getFiltered() {
+    if (currentCat === 'all') return DATA;
+    return DATA.filter(r => r.category === currentCat);
+  }
+
+  function renderCards() {
+    const el = document.getElementById('view-cards');
+    const bills = getFiltered();
+    if (!bills.length) { el.innerHTML = '<div class="empty-state">No records match</div>'; return; }
+
+    el.innerHTML = bills.map(b => {
+      const catColor = catColors[b.category] || '';
+      const voteLine = b.vote_house && b.vote_house.total
+        ? `<div class="vote-row">House: <span>${b.vote_house.total}</span> &nbsp;|&nbsp; Senate: <span>${b.vote_senate ? b.vote_senate.total : 'N/A'}</span></div>`
+        : (b.vote ? `<div class="vote-row">SCOTUS: <span>${b.vote.yes}-${b.vote.no}</span></div>` : '');
+
+      const metrics = (b.impact_numbers || []).slice(0, 2).map(m =>
+        `<div class="impact-metric"><span class="metric-label">${m.metric}:</span> <span class="metric-val">${m.value}</span></div>`
+      ).join('');
+
+      const demos = (b.demographics_hit || []).map(d =>
+        `<span class="demo-tag">${d}</span>`
+      ).join('');
+
+      return `<div class="bill-card">
+        <div class="cat-badge ${catColor}">${b.category}</div>
+        <h3>${b.title}</h3>
+        <div class="year">${b.era || b.year} · ${b.sponsor ? b.sponsor.party + ' Party' : ''}</div>
+        <div class="impact">${b.impact_summary}</div>
+        ${metrics}
+        ${demos ? '<div class="demos">' + demos + '</div>' : ''}
+        ${voteLine}
+      </div>`;
+    }).join('');
+  }
+
+  function renderStory() {
+    const el = document.getElementById('view-story');
+    const bills = DATA;
+    if (!bills.length) { el.innerHTML = '<div class="empty-state">No data loaded</div>'; return; }
+
+    el.innerHTML = bills.map((b, i) => {
+      const impactSection = (b.impact_numbers || []).map(m =>
+        `<div class="num-block">
+          <div class="big-num">${m.value}</div>
+          <div class="num-label">${m.metric}</div>
+          ${m.source_url ? `<div class="source-cite">Source: <a href="${m.source_url}" target="_blank" rel="noopener">${m.source_name}</a></div>` : ''}
+        </div>`
+      ).join('');
+
+      return `<div class="story-card" id="story-${i}">
+        <h2>${i + 1}. ${b.title} (${b.year})</h2>
+        <div class="cat-badge ${catColors[b.category] || ''}">${b.category}</div>
+
+        <div class="story-section">
+          <h4>How It Happened</h4>
+          <p>${b.vote_house ? `Passed the House ${b.vote_house.total} and the Senate ${b.vote_senate ? b.vote_senate.total : 'by voice vote'}.` : (b.vote ? `Decided ${b.vote.yes}-${b.vote.no} by the Supreme Court.` : '')} Signed into law by ${b.president_signed ? b.president_signed.name + ' (' + b.president_signed.party + ')' : (b.era || '')}. ${b.sponsor ? 'Sponsored by ' + b.sponsor.name + ' (' + b.sponsor.party + '-' + b.sponsor.state + ').' : ''}</p>
+        </div>
+
+        <div class="story-section">
+          <h4>Who It Affected</h4>
+          <p>${b.impact_on_you}</p>
+          <p><strong>Demographics hit hardest:</strong> ${(b.demographics_hit || []).join(', ')}</p>
+        </div>
+
+        <div class="story-section">
+          <h4>The Numbers</h4>
+          ${impactSection}
+        </div>
+
+        <div class="story-section">
+          <h4>${
+            b.category === 'Criminal Justice' ? 'Criminal Justice Impact' :
+            b.category === 'Tax & Economy' ? 'Economic Impact' :
+            b.category === 'Healthcare & Welfare' ? 'Healthcare Impact' :
+            'Impact'
+          }</h4>
+          <p>${b.impact_summary}</p>
+        </div>
+
+        <div class="story-section" style="border-top:2px solid var(--accent);">
+          <h4>Impact on You</h4>
+          <p style="font-weight:600;font-size:1.05rem;">${b.impact_on_you}</p>
+        </div>
+      </div>`;
+    }).join('');
+  }
+
+  function renderTimeline() {
+    // Sort by year
+    const sorted = [...DATA].sort((a, b) => a.year - b.year);
+    const el = document.getElementById('timeline-viz');
+    el.innerHTML = sorted.map((b, i) => {
+      const x = 40 + (i * (100 / sorted.length));
+      return `<div style="
+        position:absolute; left:${x}%; bottom:0; transform:translateX(-50%);
+        font-family:'JetBrains Mono',monospace; font-size:0.7rem; color:var(--fg-muted);
+        writing-mode:vertical-rl; text-orientation:mixed; height:60px;
+      ">${b.year}</div>`;
+    }).join('') + `<div style="
+      position:absolute; left:2rem; right:2rem; bottom:55px;
+      height:3px; background:linear-gradient(90deg, var(--cat-cj), var(--cat-tax), var(--cat-hw), var(--cat-cv));
+    "></div>`;
+
+    // List below
+    const listEl = document.createElement('div');
+    listEl.style.cssText = 'text-align:left;max-width:700px;margin:4rem auto 0;';
+    listEl.innerHTML = sorted.map(b =>
+      `<div style="padding:0.5rem 0;border-bottom:1px solid var(--border-card);font-family:'Plus Jakarta Sans',sans-serif;">
+        <strong>${b.year}</strong> — ${b.title} <span style="color:var(--fg-muted);font-size:0.85rem;">(${b.category})</span>
+      </div>`
+    ).join('');
+    el.appendChild(listEl);
+  }
+
+  // Init
+  window.addEventListener('DOMContentLoaded', () => {
+    if (!DATA.length) {
+      document.getElementById('view-cards').innerHTML = '<div class="empty-state">Loading data...</div>';
+      setTimeout(() => { if (typeof TOP20_BILLS !== 'undefined') { location.reload(); } }, 1500);
+      return;
+    }
+    renderCards();
+  });
+</script>
+</body>
+</html>
