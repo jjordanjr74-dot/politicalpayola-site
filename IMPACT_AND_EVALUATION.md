@@ -10,7 +10,7 @@
 
 | Institutional Readiness Metric | Verified Baseline (Live Today) | Verification Source / URL |
 | :--- | :--- | :--- |
-| **Total Verified Primary-Source Records** | **5,309 records** (1981–2026) | `https://politicalpayola.com/data_bundle.js` |
+| **Total Verified Primary-Source Records** | **5,308 records** (1981–2026) | `https://politicalpayola.com/data_bundle.js` |
 | **Indexed Civic & Scientific Modules** | **26 modules** (Congress, 50 States, Bills, PACs, Corruption, Media, Health, Economy, Unions, Wars) | `https://politicalpayola.com/api/tools.json` |
 | **119th U.S. Congress Coverage** | **539 / 539 lawmakers (100%)** with verified portraits & FEC links | `https://politicalpayola.com/#panel-congress` |
 | **State-Level Longitudinal Matrix** | **50 States + D.C.** across 25+ peer-reviewed medical, fiscal & crime indicators | `https://politicalpayola.com/#panel-states` |
@@ -29,7 +29,7 @@
 - **12-Month Measurable KPIs:**
   1. **50,000+ Unique Bilingual Civic Lookups:** Tracked via privacy-preserving, cookie-free aggregate pageview and tool-interaction counters (`connect-src 'self'`).
   2. **25+ High School & Community College Classrooms Onboarded:** Direct adoption of the free bilingual **Civics & Data Literacy Curriculum Kit (`CIVICS_CURRICULUM_KIT.md`)** across Southern Colorado and Title I districts.
-  3. **100% Zero-Paywall Public Access:** All 5,309+ records remain permanently free of paywalls, login walls, or intrusive ad trackers.
+  3. **100% Zero-Paywall Public Access:** All 5,308+ records remain permanently free of paywalls, login walls, or intrusive ad trackers.
 
 ### Outcome Pillar B: Local Newsroom & Public-Radio Data Infrastructure
 - **Target Population:** Local Colorado and regional investigative journalists, student newspapers, and community radio stations lacking dedicated data-journalism engineers.
@@ -48,7 +48,7 @@
 
 | Budget Category | National Tier ($75,000) | Regional Tier ($25,000) | Charitable & Educational Justification |
 | :--- | :--- | :--- | :--- |
-| **1. Civic Data Engineering & Primary-Source Verification** | $32,000 | $11,000 | Quarterly FEC/Congress/CBO ingestion, automated link-health verification across 5,309+ records, and WebMCP open-API maintenance. |
+| **1. Civic Data Engineering & Primary-Source Verification** | $32,000 | $11,000 | Quarterly FEC/Congress/CBO ingestion, automated link-health verification across 5,308+ records, and WebMCP open-API maintenance. |
 | **2. Bilingual (`EN/ES`) Translation & Grade-10 Literacy Review** | $18,000 | $6,500 | Human editorial audit of Spanish translations, plain-language kitchen-table summaries, and printable classroom worksheets. |
 | **3. Southern Colorado & Title I Classroom Curriculum Rollout** | $12,000 | $4,000 | Teacher workshop packets, printable bilingual lesson guides, and community library civic-data clinics across Pueblo & Southern CO. |
 | **4. Rural 3G CDN Hosting, Accessibility & Security Auditing** | $7,000 | $1,500 | Edge caching, offline PWA service-worker optimization, and WCAG 2.1 AA screen-reader compliance testing. |

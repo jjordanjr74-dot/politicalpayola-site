@@ -8,7 +8,7 @@
 ---
 
 ## 1. Nonpartisan 501(c)(3) Public-Charity Charter & Prohibited Political Activity
-Political Payola is an open-access, nonpartisan civic data, legislative transparency, and public-health literacy archive indexing **5,309 primary-source verified records across 26 modules** (1981–2026).
+Political Payola is an open-access, nonpartisan civic data, legislative transparency, and public-health literacy archive indexing **5,308 primary-source verified records across 26 modules** (1981–2026).
 
 In strict compliance with **Internal Revenue Code § 501(c)(3)**, **Revenue Ruling 2007-41**, and **Revenue Ruling 78-248**:
 1. **Zero Candidate Intervention:** Political Payola does not endorse, oppose, rate on a partisan scale, or contribute funds to any candidate for federal, state, or local public office, nor any political party or political action committee (PAC).
