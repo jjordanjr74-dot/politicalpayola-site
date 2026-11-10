@@ -87,7 +87,7 @@
             <div style="font-size:0.75rem;color:var(--muted)">Total Away incl. Camp David (${r.pct_term_total_away}%)</div>
           </div>
         </div>
-        <p style="font-size:0.88rem;color:#cbd5e1">${esc(r.plain_english)}</p>
+        <p style="font-size:0.88rem;color:#334155">${esc(r.plain_english)}</p>
         <div style="font-size:0.78rem;color:var(--muted)"><strong>Primary retreats:</strong> ${esc(r.primary_destinations)}</div>
         <div style="margin-top:auto;padding-top:8px">${srcLinks(r.source)}</div>
       </div>
@@ -227,7 +227,7 @@
           if (summaryEl) {
             summaryEl.innerHTML = `<strong>Top-10 Party Breakdown for "${esc(m)}":</strong> ` +
               `${partyChip('R', rCnt + ' Republican Trifectas')} · ${partyChip('D', dCnt + ' Democratic Trifectas')} · ${partyChip('Divided', divCnt + ' Divided States')} ` +
-              `&nbsp;|&nbsp; <strong>2024 Presidential Vote of Top 10:</strong> <span style="color:#fca5a5">${r24} Trump (R)</span> vs. <span style="color:#93c5fd">${d24} Harris (D)</span>`;
+              `&nbsp;|&nbsp; <strong>2024 Presidential Vote of Top 10:</strong> <span style="color:#b91c1c;font-weight:700">${r24} Trump (R)</span> vs. <span style="color:#1d4ed8;font-weight:700">${d24} Harris (D)</span>`;
           }
           // Table view
           tbody.innerHTML = rows.map((r, idx) => {
@@ -400,12 +400,12 @@
         return `<tr>
           <td>
             <div style="font-size:1.1rem;font-weight:800;color:var(--gold)">${r.period}</div>
-            <div style="font-weight:700;font-size:0.88rem;color:#f8fafc">${esc(r.matchup)}</div>
+            <div style="font-weight:700;font-size:0.88rem;color:#0f172a">${esc(r.matchup)}</div>
             <div style="font-size:0.8rem;color:var(--muted);margin-top:2px">Winner: <strong>${esc(r.winner)}</strong> (${r.overall.R}% R / ${r.overall.D}% D)</div>
-            <div style="font-size:0.78rem;color:#cbd5e1;margin-top:4px;max-width:280px">${esc(r.plain_english)}</div>
+            <div style="font-size:0.78rem;color:#334155;margin-top:4px;max-width:280px">${esc(r.plain_english)}</div>
           </td>
           <td>
-            <div style="font-size:0.8rem;line-height:1.45;color:#cbd5e1">
+            <div style="font-size:0.8rem;line-height:1.45;color:#334155">
               <div><strong>White (NH):</strong> ${pop.white_nh}% pop · ${vShare.white_nh}% voters</div>
               <div><strong>Hispanic:</strong> ${pop.hispanic}% pop · ${vShare.hispanic}% voters</div>
               <div><strong>Black:</strong> ${pop.black}% pop · ${vShare.black}% voters</div>
@@ -540,10 +540,10 @@
               ${sens.concat(reps).map(m => {
                 const isPacTop25 = m.fec_candidate_ids && m.fec_candidate_ids.some(id => pacCandidateIds.has(id));
                 return `
-                  <div style="display:flex;gap:10px;align-items:center;background:rgba(15,23,42,0.8);border:1px solid var(--border);border-radius:8px;padding:8px 10px">
+                  <div style="display:flex;gap:10px;align-items:center;background:#fffdf9;border:1px solid var(--border);border-radius:8px;padding:8px 10px">
                     <img src="${esc(m.photo_file || 'assets/members/' + m.bioguide_id + '.jpg')}" loading="lazy" style="width:44px;height:44px;border-radius:50%;object-fit:cover;border:2px solid ${m.party === 'R' ? '#ef4444' : m.party === 'D' ? '#3b82f6' : '#facc15'}" alt="${esc(m.name)}">
                     <div style="flex:1;min-width:0">
-                      <div style="font-weight:700;font-size:0.86rem;color:#f8fafc">${esc(m.name)} <span class="chip chip-${m.party}">${m.party}</span></div>
+                      <div style="font-weight:700;font-size:0.86rem;color:#0f172a">${esc(m.name)} <span class="chip chip-${m.party}">${m.party}</span></div>
                       <div style="font-size:0.76rem;color:var(--muted)">${esc(m.chamber)} · ${esc(m.geo)}${m.district ? '-' + m.district : ''}</div>
                       ${isPacTop25 ? `<div style="font-size:0.72rem;color:var(--gold);font-weight:700">★ Top 25 Corporate/PAC Money Recipient</div>` : ''}
                     </div>
@@ -574,7 +574,7 @@
       const dYea = v.D_yea || 0;
       const dNay = v.D_nay || 0;
       return `
-        <div style="margin-top:6px;background:rgba(15,23,42,0.7);border-radius:6px;padding:6px 8px;border:1px solid rgba(148,163,184,0.18)">
+        <div style="margin-top:6px;background:#f8fafc;border-radius:6px;padding:6px 8px;border:1px solid rgba(148,163,184,0.18)">
           <div style="display:flex;justify-content:space-between;font-size:0.76rem;font-weight:700">
             <span>${esc(title)}: <strong style="color:var(--gold)">${v.yea} Yea</strong> to <strong>${v.nay} Nay</strong></span>
           </div>
@@ -638,7 +638,7 @@
               <strong>Who Put It Up:</strong> ${esc(sp.name || 'Bipartisan')} ${sp.party ? partyChip(sp.party, sp.party) : ''} (${esc(sp.state || '')} · ${esc(sp.chamber || '')})
             </div>
 
-            <p style="font-size:0.86rem;color:#cbd5e1;line-height:1.42;margin:0 0 8px">
+            <p style="font-size:0.86rem;color:#334155;line-height:1.42;margin:0 0 8px">
               <strong>What It Does:</strong> ${esc(b.what_it_is)}
             </p>
 
@@ -735,7 +735,7 @@
       const dCnt = filtered.filter(m => m.party === 'D').length;
       if (countEl) {
         countEl.innerHTML = `Showing <strong>${filtered.length}</strong> lawmakers: ` +
-          `<span style="color:#f472b6"><strong>${wCnt} Women (${filtered.length ? Math.round(wCnt*100/filtered.length) : 0}%)</strong></span> · ` +
+          `<span style="color:#be185d"><strong>${wCnt} Women (${filtered.length ? Math.round(wCnt*100/filtered.length) : 0}%)</strong></span> · ` +
           `<strong>${mCnt} Men (${filtered.length ? Math.round(mCnt*100/filtered.length) : 0}%)</strong> &nbsp;|&nbsp; ` +
           `${partyChip('D', dCnt + ' Dem')} ${partyChip('R', rCnt + ' GOP')}`;
       }
@@ -804,7 +804,7 @@
             </div>
             ${partyChip(p, 'Signed by ' + p)}
           </div>
-          <p style="font-size:0.88rem;color:#e2e8f0">${esc(s.plain_english || r.plain_english)}</p>
+          <p style="font-size:0.88rem;color:#334155">${esc(s.plain_english || r.plain_english)}</p>
           <div style="font-size:0.8rem;color:var(--muted)">
             ${v.house ? `<div><strong>House Vote:</strong> ${esc(v.house.plain_english)}</div>` : ''}
             ${v.senate ? `<div><strong>Senate Vote:</strong> ${esc(v.senate.plain_english)}</div>` : ''}
@@ -1030,7 +1030,7 @@
             <h3 style="font-size:1rem">${esc(r.metric)}</h3>
             ${partyChip(p, p)}
           </div>
-          <p style="font-size:0.86rem;color:#cbd5e1">${esc(r.plain_english)}</p>
+          <p style="font-size:0.86rem;color:#334155">${esc(r.plain_english)}</p>
           <div style="margin-top:auto;padding-top:8px">${srcLinks(r.source)}</div>
         </div>`;
       }).join('');
@@ -1281,7 +1281,7 @@
         `<div class="grid-3">` + hits.slice(0, 24).map(r => `<div class="card gold-card">
           <div style="font-size:0.75rem;color:var(--muted)">Module: ${esc(r.module)} · ${esc(r.period)} · ${esc(r.geo)}</div>
           <div style="font-weight:800">${esc(r.metric)}</div>
-          <p style="font-size:0.85rem;color:#cbd5e1">${esc(r.plain_english)}</p>
+          <p style="font-size:0.85rem;color:#334155">${esc(r.plain_english)}</p>
           <div>${srcLinks(r.source)}</div>
         </div>`).join('') + `</div>`;
     });
