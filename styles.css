@@ -1013,3 +1013,36 @@ body.a11y-large-contrast li {
   .grid-2, .grid-3 { display: flex !important; flex-direction: column !important; gap: 14px !important; width: 100% !important; }
   .card { width: 100% !important; max-width: 100% !important; box-sizing: border-box !important; padding: 16px !important; }
 }
+/* c5: chip tap box via vertical padding only; display unchanged (inline). */
+.chip-src {
+  line-height: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  min-width: 44px;
+  text-align: center;
+}
+/* c6: 44px tap boxes for nav tabs, language switch, a11y/charter pills, search, footer links. Padding + min-height only. */
+.tab-btn {
+  min-height: 44px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.lang-btn {
+  min-height: 44px;
+  min-width: 44px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.a11y-btn,
+.charter-pill {
+  min-height: 44px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+}
+.search-input {
+  min-height: 44px;
+}
+footer a {
+  padding-top: 13px;
+  padding-bottom: 13px;
+}
