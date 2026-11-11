@@ -18,6 +18,11 @@
 
   function injectBar() {
     if (document.getElementById('sheba-mobile-app-bar')) return;
+    // Reserve page-bottom space so the last content (footer) scrolls clear of the fixed strip.
+    var clear = document.createElement('style');
+    clear.id = 'sheba-bar-clearance';
+    clear.textContent = 'body{padding-bottom:72px !important;}';
+    document.head.appendChild(clear);
     var bar = document.createElement('div');
     bar.id = 'sheba-mobile-app-bar';
     bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:9998;display:flex;align-items:center;justify-content:space-between;gap:8px;background:#fff8e7;color:#1c1917;border-top:2px solid #d4af37;padding:8px 12px;font-family:system-ui,-apple-system,sans-serif;font-size:13px;line-height:1.2;';
