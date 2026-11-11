@@ -1046,3 +1046,46 @@ footer a {
   padding-top: 13px;
   padding-bottom: 13px;
 }
+/* c7: 44px tap boxes for the remaining footer, sister-venture, install, and close controls. Padding/min-height only. */
+.footer-sister > a,
+.footer-sister a {
+  display: inline-flex;
+  align-items: center;
+  min-height: 44px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+}
+p > a[href] {
+  display: inline-block;
+  min-height: 44px;
+  line-height: 20px;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  box-sizing: border-box;
+}
+button.install-btn,
+a.apk-btn,
+button.close-btn {
+  min-height: 44px;
+  min-width: 44px;
+}
+/* c8: the last 3 controls use inline style= attributes, so they need attribute selectors + !important to beat inline. */
+button[aria-label="Dismiss mobile app bar"] {
+  min-width: 44px !important;
+  min-height: 44px !important;
+}
+a[download][href$=".apk"] {
+  display: inline-flex !important;
+  align-items: center !important;
+  min-height: 44px !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  box-sizing: border-box !important;
+}
+button[type="button"][style*="212, 175, 55"] {
+  min-height: 44px !important;
+  padding-top: 12px !important;
+  padding-bottom: 12px !important;
+  box-sizing: border-box !important;
+}
