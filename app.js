@@ -759,7 +759,6 @@
               ${m.contact_form ? `<a href="${esc(m.contact_form)}" target="_blank" rel="noopener">Contact ↗</a>` : ''}
               ${m.fec_candidate_url ? `<a href="${esc(m.fec_candidate_url)}" target="_blank" rel="noopener">FEC $ ↗</a>` : ''}
             </div>
-            <a href="https://buy.stripe.com/dRm5kwepBeThdtOd4R08g1i" target="_blank" rel="noopener" style="margin-top:4px;display:block;text-align:center;padding:5px 8px;border-radius:4px;background:#fef3c7;color:#92400e;border:1px solid #f59e0b;font-size:0.71rem;font-weight:800;text-decoration:none">★ Oppo Brief &amp; CSV ($99/mo)</a>
           </div>
         </div>`;
       }).join('');
