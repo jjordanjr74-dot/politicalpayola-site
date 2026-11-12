@@ -21,11 +21,11 @@
     // Reserve page-bottom space so the last content (footer) scrolls clear of the fixed strip.
     var clear = document.createElement('style');
     clear.id = 'sheba-bar-clearance';
-    clear.textContent = 'body{padding-bottom:72px !important;}';
+    clear.textContent = '';
     document.head.appendChild(clear);
     var bar = document.createElement('div');
     bar.id = 'sheba-mobile-app-bar';
-    bar.style.cssText = 'position:fixed;bottom:0;left:0;right:0;z-index:9998;display:flex;align-items:center;justify-content:space-between;gap:8px;background:#fff8e7;color:#1c1917;border-top:2px solid #d4af37;padding:8px 12px;font-family:system-ui,-apple-system,sans-serif;font-size:13px;line-height:1.2;';
+    bar.style.cssText = 'position:relative;z-index:10;display:flex;align-items:center;justify-content:center;gap:12px;background:#fff8e7;color:#1c1917;border-top:2px solid #d4af37;padding:12px 16px;margin-top:24px;font-family:system-ui,-apple-system,sans-serif;font-size:13px;line-height:1.2;';
     var isIOS = /iPad|iPhone|iPod/.test(navigator.userAgent || '') && !window.MSStream;
 
     var installBtn = document.createElement('button');
@@ -63,6 +63,13 @@
     bar.appendChild(apkLink);
     bar.appendChild(closeBtn);
     document.body.appendChild(bar);
+  var shownOnScroll = false;
+  window.addEventListener('scroll', function() {
+    if (!shownOnScroll && window.scrollY > 300 && !sessionStorage.getItem('sheba_app_bar_dismissed_politicalpayola')) {
+      shownOnScroll = true;
+      bar.style.display = 'flex';
+    }
+  }, { passive: true });
   }
 
   if (document.readyState === 'loading') {

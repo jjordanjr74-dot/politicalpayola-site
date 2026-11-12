@@ -6,7 +6,7 @@
     "en",
     "es"
   ],
-  "description": "5,308 verified records across 26 modules (presidential vacations, 539 119th Congress portraits & demographics, 50-state x 25+ peer-reviewed medical/academic/economic metrics, 36 landmark federal laws since 1981, 177-case Federal & State Political Corruption Catalog 1980\u20132026, Top 21 News Outlets Media Bias & Scraped Output Radar, formal corruption scandals, and top-20 labor/police/firefighter union PACs), plus Oppo-in-a-Box Pro Data, WebMCP API, White-Label Union/Newsroom Embed Widgets, and Custom Station-Legal TV Ad Dossiers.",
+  "description": "5,321 verified records across 27 modules (presidential vacations, 539 119th Congress portraits & demographics, 50-state x 25+ peer-reviewed medical/academic/economic metrics, 36 landmark federal laws since 1981, 177-case Federal & State Political Corruption Catalog 1980\u20132026, Top 21 News Outlets Media Bias & Scraped Output Radar, formal corruption scandals, and top-20 labor/police/firefighter union PACs), plus Oppo-in-a-Box Pro Data, WebMCP API, White-Label Union/Newsroom Embed Widgets, and Custom Station-Legal TV Ad Dossiers.",
   "tools": [
     {
       "name": "query_media_bias_top20",
@@ -94,7 +94,7 @@
     },
     {
       "name": "search_civic_records",
-      "description": "Search all 5,308 multi-sourced civic, medical, academic, and legislative records by keyword, state, lawmaker, president, or journal.",
+      "description": "Search all 5,321 multi-sourced civic, medical, academic, and legislative records by keyword, state, lawmaker, president, or journal.",
       "input_schema": {
         "type": "object",
         "properties": {
