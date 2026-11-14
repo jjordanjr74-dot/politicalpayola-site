@@ -20,7 +20,7 @@ Political Payola is an empirical, citation-locked public-interest civic data atl
 To protect public trust and satisfy foundation governance standards (Knight Foundation, Democracy Fund, Hewlett Foundation, MacArthur Foundation, Colorado Media Project):
 - **Strict Editorial Firewall:** No foundation grantmaker, fiscal sponsor, commercial API subscriber, union licensee, or individual reader supporter has any authority to review, edit, delay, or suppress any dataset, state ranking, roll-call record, or FEC donor table prior to publication.
 - **501(c)(3) Ring-Fencing of Philanthropic Grants:** 100% of foundation grants and tax-exempt civic contributions are strictly ring-fenced for:
-  1. Free, open-access bilingual (`EN/ES`) voter and health-policy literacy at a 10th-grade reading level.
+  1. Free, open-access bilingual (`EN/ES`) voter and health-policy literacy in clear plain English.
   2. Title I high school and community college civics curriculum modules.
   3. Southern & Rural Colorado information-equity reporting (covering Colorado's 64 counties, including Pueblo, Huerfano, Las Animas, Otero, Fremont, Custer, and El Paso).
   4. Open-source WebMCP (`/api/tools.json`) anti-hallucination schemas for public-interest AI research.

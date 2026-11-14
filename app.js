@@ -1498,7 +1498,7 @@
         ${renderSpectrumBar(r.lean_score)}
         <div class="grid-2" style="gap:14px;margin-top:12px">
           <div style="background:#f8fafc;border:1px solid #d6cfc2;border-radius:10px;padding:14px">
-            <div style="font-size:0.74rem;font-weight:800;color:#0369a1;text-transform:uppercase;margin-bottom:4px">10TH-GRADE PLAIN-ENGLISH SUMMARY</div>
+            <div style="font-size:0.74rem;font-weight:800;color:#0369a1;text-transform:uppercase;margin-bottom:4px">PLAIN-ENGLISH SUMMARY</div>
             <p style="margin:0 0 10px;font-size:0.9rem;color:#111827;line-height:1.5">${esc(r.plain_english)}</p>
             <div style="font-size:0.74rem;font-weight:800;color:#b45309;text-transform:uppercase;margin-bottom:4px">HOW THIS OUTLET TRANSLATES CONGRESSIONAL VOTES TO YOUR LIFE</div>
             <p style="margin:0 0 10px;font-size:0.88rem;color:#1e293b;line-height:1.5">${esc(r.voter_impact_translation)}</p>

@@ -1,7 +1,7 @@
 # Political Payola (`politicalpayola.com`) — High School, Community College & Civic Literacy Curriculum Kit (Bilingual EN/ES)
 
-**Grade Level:** 9th–12th Grade Civics / AP U.S. Government / Community College Political Science & Data Literacy  
-**Reading Accessibility:** Grade-10 Plain-English & Español Parity  
+**Target Courses:** High School Civics / AP U.S. Government / Community College Political Science & Data Literacy  
+**Reading Accessibility:** Plain-English & Español Parity  
 **License:** Free Open Educational Resource (`CC-BY-4.0`) — Printable & Classroom-Ready  
 
 ---

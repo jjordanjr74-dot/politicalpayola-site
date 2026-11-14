@@ -16,7 +16,7 @@
 | **State-Level Longitudinal Matrix** | **50 States + D.C.** across 25+ peer-reviewed medical, fiscal & crime indicators | `https://politicalpayola.com/#panel-states` |
 | **Bipartisan Corruption Docket Archive** | **177 verified cases** (**93 D · 84 R · 12 Colorado**) with DOJ/Ethics dockets | `https://politicalpayola.com/#panel-scandals` |
 | **Media Bias & Live Output Radar** | **Top 21 U.S. & global news outlets** (**248 scraped headlines** + blind survey scores) | `https://politicalpayola.com/#panel-media` |
-| **Language & Reading Accessibility** | **100% English & Español (`EN/ES`)** parity at a **Grade-10 reading level** | Top-nav `EN | ES` toggle + `CIVICS_CURRICULUM_KIT.md` |
+| **Language & Reading Accessibility** | **100% English & Español (`EN/ES`)** parity with **Plain-Language Accessibility** | Top-nav `EN | ES` toggle + `CIVICS_CURRICULUM_KIT.md` |
 | **Open-Data & Academic Licensing** | **`CC-BY-4.0`** + GitHub **`CITATION.cff`** + **`METHODOLOGY.md`** | `https://politicalpayola.com/CITATION.cff` |
 | **Anti-Hallucination AI Discovery** | **WebMCP (`/api/tools.json` + `/.well-known/mcp.json`)** + `llms.txt` | `https://politicalpayola.com/.well-known/mcp.json` |
 
@@ -49,7 +49,7 @@
 | Budget Category | National Tier ($75,000) | Regional Tier ($25,000) | Charitable & Educational Justification |
 | :--- | :--- | :--- | :--- |
 | **1. Civic Data Engineering & Primary-Source Verification** | $32,000 | $11,000 | Quarterly FEC/Congress/CBO ingestion, automated link-health verification across 5,308+ records, and WebMCP open-API maintenance. |
-| **2. Bilingual (`EN/ES`) Translation & Grade-10 Literacy Review** | $18,000 | $6,500 | Human editorial audit of Spanish translations, plain-language kitchen-table summaries, and printable classroom worksheets. |
+| **2. Bilingual (`EN/ES`) Translation & Plain-Language Clarity Review** | $18,000 | $6,500 | Human editorial audit of Spanish translations, plain-language kitchen-table summaries, and printable classroom worksheets. |
 | **3. Southern Colorado & Title I Classroom Curriculum Rollout** | $12,000 | $4,000 | Teacher workshop packets, printable bilingual lesson guides, and community library civic-data clinics across Pueblo & Southern CO. |
 | **4. Rural 3G CDN Hosting, Accessibility & Security Auditing** | $7,000 | $1,500 | Edge caching, offline PWA service-worker optimization, and WCAG 2.1 AA screen-reader compliance testing. |
 | **5. 501(c)(3) Fiscal Sponsor Administrative Fee (8%)** | $6,000 | $2,000 | Standard fiscal sponsorship accounting, IRS Form 990 compliance, and independent grant fund auditing. |

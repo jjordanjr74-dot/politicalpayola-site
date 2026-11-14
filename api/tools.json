@@ -10,7 +10,7 @@
   "tools": [
     {
       "name": "query_media_bias_top20",
-      "description": "Filter and inspect the Top 21 News Outlets (Fox News, MSNBC, CNN, Reuters, AP News, NYT, WSJ, Washington Post, ABC, NBC, CBS, BBC, Al Jazeera, NPR, PBS NewsHour, NY Post, Politico, The Hill, Daily Wire, The Atlantic) by political lean (D=Democrat/Liberal, C=Center/Nonpartisan, R=Republican/Conservative) or medium (Cable, Broadcast, Print, Wire, Audio) with live scraped headlines and 10th-grade voter-impact translations.",
+      "description": "Filter and inspect the Top 21 News Outlets (Fox News, MSNBC, CNN, Reuters, AP News, NYT, WSJ, Washington Post, ABC, NBC, CBS, BBC, Al Jazeera, NPR, PBS NewsHour, NY Post, Politico, The Hill, Daily Wire, The Atlantic) by political lean (D=Democrat/Liberal, C=Center/Nonpartisan, R=Republican/Conservative) or medium (Cable, Broadcast, Print, Wire, Audio) with live scraped headlines and plain-English voter-impact translations.",
       "input_schema": {
         "type": "object",
         "properties": {

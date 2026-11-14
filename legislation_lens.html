@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Legislation Lens — Decode Any Bill in Plain English — Political Payola</title>
-<meta name="description" content="Point your camera at any bill, policy, or law and get a plain-English breakdown at a 10th-grade reading level: what it actually does, who it affects, and the jargon decoded.">
+<meta name="description" content="Point your camera at any bill, policy, or law and get a direct plain-English breakdown: what it actually does, who it affects, and the jargon decoded.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
@@ -115,7 +115,7 @@ footer a{color:#5d4b2c}
   <div class="card" id="resultCard" style="display:none">
     <h2 id="resultTitle">What this document means</h2>
     <div class="result on" id="result">
-      <div class="grade-badge" id="gradeBadge">Reading level</div>
+      <div class="grade-badge" id="gradeBadge">Plain English</div>
       <div class="label">Bottom line</div>
       <div class="plain" id="bottomLine"></div>
       <div class="label">In plain English</div>
@@ -330,7 +330,7 @@ footer a{color:#5d4b2c}
     setText('impactExplanation', d.how_it_affects_you || d.impact || '');
     setText('hiddenCatch', d.hidden_catch || d.what_it_hides || d.catch || '');
     renderTerms(d.terms_decoded || d.key_terms);
-    var g = d.reading_grade_level || d.reading_level || 'Plain language';
+    var g = d.reading_clarity || d.reading_level || 'Plain language';
     $('gradeBadge').textContent = String(g);
     resultCard.scrollIntoView({ behavior: 'smooth', block: 'start' });
   }

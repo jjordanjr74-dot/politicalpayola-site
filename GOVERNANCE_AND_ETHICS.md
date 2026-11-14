@@ -34,7 +34,7 @@ Political Payola maintains an absolute firewall between revenue/philanthropic fu
 ## 3. Advisory & Peer-Review Governance Structure
 To satisfy institutional foundation governance requirements while operating as an agile civic-technology project:
 1. **Project Director & Lead Researcher:** **Tristan Jordan** (B.A. Political Science; Pueblo, Colorado) oversees primary-source schema design, nonpartisan balance verification, and bilingual community partnerships across Southern Colorado.
-2. **Independent Civic, Academic & Journalism Advisory Review:** Dataset methodologies, grade-10 readability translations, and classroom civics modules undergo open public review via GitHub pull requests (`jjordanjr74-dot/politicalpayola-site`) and advisory review by Colorado secondary civics educators, public-health translators, and open-data engineers.
+2. **Independent Civic, Academic & Journalism Advisory Review:** Dataset methodologies, plain-language readability translations, and classroom civics modules undergo open public review via GitHub pull requests (`jjordanjr74-dot/politicalpayola-site`) and advisory review by Colorado secondary civics educators, public-health translators, and open-data engineers.
 3. **Conflict-of-Interest Recusal Rule:** Any contributor, advisor, or researcher who has worked for, advised, or donated to a candidate or campaign within the past 24 months is barred from authoring or editing records pertaining to that race or jurisdiction without independent dual-key verification against raw federal filings (`FEC.gov` / `Congress.gov`).
 
 ---
