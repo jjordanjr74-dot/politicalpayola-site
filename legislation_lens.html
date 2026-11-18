@@ -28,8 +28,10 @@ main{max-width:840px;margin:2rem auto;padding:0 1.5rem}
 .btn{display:inline-flex;align-items:center;justify-content:center;min-height:44px;margin:.35rem .25rem 0;padding:.7rem 1.4rem;border:0;border-radius:8px;font-weight:600;font-size:.92rem;cursor:pointer;transition:.2s}
 .btn-primary{background:#c0392b;color:#fff}
 .btn-primary:hover{background:#a93226}
-.btn-camera{background:#27ae60;color:#fff}
-.btn-camera:hover{background:#1f8b4c}
+.btn-camera{background:#c0392b;color:#fff}
+.btn-camera:hover{background:#a93226}
+.btn-secondary{background:transparent;border:1.5px solid #c0392b;color:#c0392b}
+.btn-secondary:hover{background:#c0392b;color:#fff}
 .btn-ghost{background:#f0e8d8;border:1px solid #d4c4a8;color:#2c2416}
 .btn-ghost:hover{background:#e8dcc8}
 .btn:disabled{opacity:.55;cursor:not-allowed}
@@ -88,7 +90,7 @@ footer a{display:inline-block;min-height:44px;line-height:44px;padding:0 .35rem;
     <div class="upload-zone" id="uploadZone" role="button" tabindex="0" aria-label="Choose a photo of a document">
       <div class="icon" aria-hidden="true">📄</div>
       <p>Drag a photo here, paste from clipboard, or</p>
-      <label class="btn btn-primary" for="fileInput">Browse files</label>
+      <label class="btn btn-secondary" for="fileInput">Browse files</label>
       <input type="file" id="fileInput" accept="image/*" class="sr-only">
       <button type="button" class="btn btn-camera" id="cameraBtn">📷 Open camera</button>
       <input type="file" id="cameraInput" accept="image/*" capture="environment" class="sr-only">
