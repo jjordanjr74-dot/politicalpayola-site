@@ -75,7 +75,14 @@ footer a{color:#5d4b2c}
     <p>Point your camera at a bill, policy, or law — or paste the text — and get it in plain English: what it actually does, who it hits, and what the jargon means.</p>
   </div>
 
-  <div class="card">
+  <div class="card" id="lensLive" style="display:none">
+    <h2>Open the live Bill Decoder</h2>
+    <p class="hint">The decoder runs on our own server, not in the page. One tap opens it full-screen — camera, photo upload, and paste-text all work there.</p>
+    <p><a class="btn btn-primary" id="lensLiveLink" href="https://app.thesoapbook.com/t/lens">🔍 Open the Bill Decoder</a></p>
+    <p class="hint" style="margin-top:.75rem">Plain-English summary of any bill, ballot measure, policy, or law — what it does, who it hits, and what the fine print means.</p>
+  </div>
+
+  <div class="card" id="lensTool">
     <h2>Decode a document</h2>
     <p class="hint">Works on phone or desktop. Nothing is stored on our side; the page sends the image or text to the decoder and shows the answer.</p>
     <div class="upload-zone" id="uploadZone" role="button" tabindex="0" aria-label="Choose a photo of a document">
@@ -156,10 +163,31 @@ footer a{color:#5d4b2c}
     // Local dev talks straight to the lens server.
     var HOST = location.hostname;
     var LOCAL = (HOST === '127.0.0.1' || HOST === 'localhost' || HOST === '');
+    // Production uses the RELATIVE path on purpose. It is same-origin only when this page
+    // is served from the machine that runs the decoder (app.thesoapbook.com -> funnel
+    // collector). On GitHub Pages the relative path 405s AND a cross-origin call to
+    // app.thesoapbook.com is blocked by CORS (Cloudflare strips Access-Control-Allow-Origin
+    // from that hostname, verified), so the UI below hands off to the live decoder instead
+    // of rendering controls that cannot answer. Do not "fix" this by hardcoding the host.
     var ENDPOINT = LOCAL ? 'http://127.0.0.1:5599/api/legislation-lens'
                          : '/t/bill-decode';
+    var LIVE_DECODER = 'https://app.thesoapbook.com/t/lens';
+    // The decoder answers only when the page is same-origin with it.
+    var CAN_DECODE = LOCAL || HOST === 'app.thesoapbook.com';
 
   var $ = function (id) { return document.getElementById(id); };
+
+  // GitHub Pages cannot reach the decoder (the relative path 405s; a cross-origin call is
+  // CORS-blocked). Show the honest handoff instead of a decode form that can never answer.
+  if (!CAN_DECODE) {
+    var livePanel = $('lensLive'), toolPanel = $('lensTool');
+    if (livePanel) {
+      livePanel.style.display = '';
+      var liveLink = $('lensLiveLink');
+      if (liveLink) { liveLink.href = LIVE_DECODER; }
+    }
+    if (toolPanel) { toolPanel.style.display = 'none'; }
+  }
   var uploadZone = $('uploadZone'), fileInput = $('fileInput'), cameraInput = $('cameraInput');
   var camWrap = $('camWrap'), cam = $('cam'), camStatus = $('camStatus');
   var preview = $('preview'), previewImg = $('previewImg');
