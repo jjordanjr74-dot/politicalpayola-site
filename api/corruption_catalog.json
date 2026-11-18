@@ -193,7 +193,7 @@
     }
   },
   {
-    "id": "corruption_catalog.jes_s_g_chuy_garc_a.2025",
+    "id": "corruption_catalog.jesus_g_chuy_garcia.2025",
     "module": "corruption_catalog",
     "person": "Jesús G. 'Chuy' García",
     "party": "D",
@@ -698,7 +698,7 @@
     }
   },
   {
-    "id": "corruption_catalog.campbell_christina_stetson_2023.conviction",
+    "id": "corruption_catalog.tran_dean.conviction",
     "module": "corruption_catalog",
     "person": "Dean Tran",
     "party": "R",
@@ -1250,7 +1250,7 @@
     }
   },
   {
-    "id": "corruption_catalog.leblond_steve_von_ehrenkrook_2023.expulsion",
+    "id": "corruption_catalog.slaton_bryan.expulsion",
     "module": "corruption_catalog",
     "person": "Bryan Slaton",
     "party": "R",
@@ -1641,9 +1641,9 @@
     }
   },
   {
-    "id": "corruption_catalog.marble_lori_saine_tracey_bernstine_2023.conviction",
+    "id": "corruption_catalog.bernett_tracey.2023.conviction",
     "module": "corruption_catalog",
-    "person": "Tracey Bernstine",
+    "person": "Tracey Bernett",
     "party": "D",
     "state": "CO",
     "geo": "CO",
@@ -1658,31 +1658,32 @@
     "outcome_badge": "Guilty Plea to Attempt to Influence a Public Servant (Resigned Jan 2023 Over Residence Fraud)",
     "crime_summary": "Democratic Colorado State Representative resigned before taking the oath for her second term in January 2023 and pleaded guilty in May 2023 to attempting to influence a public servant and perpetrating a fraud in an election after prosecutors proved she rented out her Adams County district home, lived outside HD-29 in broomfield/ERIE area, and fabricated lease records.",
     "sentence_or_penalty": "Resigned from the Colorado House on Jan 8, 2023; sentenced in Adams County District Court (May 2023) to 2 years probation, 100 hours of community service, and $2,500 fine.",
-    "plain_english": "In 2023, Tracey Bernstine (D-CO, Colorado State Representative (HD-29, Adams County)) faced formal accountability (Convicted / Guilty Plea): Democratic Colorado State Representative resigned before taking the oath for her second term in January 2023 and pleaded guilty in…",
-    "metric": "Tracey Bernstine (D-CO, State House, 2023) — Obstruction, Perjury & Ethics Violations: Convicted / Guilty Plea",
+    "plain_english": "In 2023, Tracey Bernett (D-CO, Colorado State Representative (HD-29, Adams County)) faced formal accountability (Convicted / Guilty Plea): Democratic Colorado State Representative resigned before taking the oath for her second term in January 2023 and pleaded guilty in…",
+    "metric": "Tracey Bernett (D-CO, State House, 2023) — Obstruction, Perjury & Ethics Violations: Convicted / Guilty Plea",
     "value": 2500,
     "unit": "convicted_/_guilty_plea",
     "amount_usd": 2500,
     "source": {
-      "name": "Colorado 17th Judicial District Attorney's Office — People v. Tracey Bernstine (Adams County District Court, 2023)",
-      "url": "https://www.courtlistener.com/?q=Tracey+Bernstine+Colorado+2023",
+      "name": "Colorado Sun — 'Tracey Bernett pleads guilty to lying about her residence' (Feb 10, 2023)",
+      "url": "https://coloradosun.com/2023/02/10/tracey-bernett-pleads-guilty",
+      "manual_check": true,
       "accessed": "2026-10-31",
       "tier": "B",
-      "publisher": "Colorado 17th Judicial District Attorney's Office",
-      "title": "People v. Tracey Bernstine (Adams County District Court, 2023)"
+      "publisher": "Colorado Sun",
+      "title": "'Tracey Bernett pleads guilty to lying about her residence' (Feb 10, 2023)"
     },
     "secondary_sources": [
       {
-        "name": "Colorado Sun — 'Former Colorado state Rep. Tracey Bernstine pleads guilty to charges stemming from residency questions'",
+        "name": "Colorado Sun — 'Former Colorado state Rep. Tracey Bernett pleads guilty to charges stemming from residency questions'",
         "url": "https://web.archive.org/web/*/https://coloradosun.com/2023/05/05/tracey-bernstine-guilty-plea-residency/"
       },
       {
-        "name": "The Denver Post — 'Former Democratic state Rep. Tracey Bernstine pleads guilty in residency fraud case'",
+        "name": "The Denver Post — 'Former Democratic state Rep. Tracey Bernett pleads guilty in residency fraud case'",
         "url": "https://www.denverpost.com/2023/02/10/former-rep-tracey-bernett-pleads-guilty-is-sentenced-to-deferred-judgment-and-probation/"
       },
       {
-        "name": "The New York Times Contemporary Archive — 'Tracey Bernstine (State House) Case Clippings (2023)'",
-        "url": "https://www.nytimes.com/search?query=Tracey+Bernstine+2023"
+        "name": "The New York Times Contemporary Archive — 'Tracey Bernett (State House) Case Clippings (2023)'",
+        "url": "https://www.nytimes.com/search?query=Tracey+Bernett+2023"
       }
     ],
     "confidence": "high",
@@ -1693,7 +1694,7 @@
     }
   },
   {
-    "id": "corruption_catalog.espinal_wendell.2024.plea",
+    "id": "corruption_catalog.jones_emil_iii_sandoval_martin.2022.charge",
     "module": "corruption_catalog",
     "person": "Emil Jones III & Martin Sandoval",
     "party": "D",
@@ -1717,7 +1718,8 @@
     "amount_usd": 255000,
     "source": {
       "name": "U.S. Attorney's Office, N.D. Ill. — federal charges against Illinois State Sen. Emil Jones III (filing, Sept 20, 2022; PDF via Capitol News Illinois)",
-      "url": "https://www.courtlistener.com/?q=Emil+Jones+III+&+Martin+Sandoval+2022",
+      "url": "https://capitolnewsillinois.com/wp-content/uploads/2022/12/Emil-Jones-charges-0920.pdf",
+      "manual_check": true,
       "accessed": "2026-10-31",
       "tier": "B",
       "publisher": "U.S. Attorney's Office, N.D. Ill.",
@@ -1792,7 +1794,7 @@
     }
   },
   {
-    "id": "corruption_catalog.taylor_latoya_cantrell_2025.indictment",
+    "id": "corruption_catalog.peterson_carter.indictment",
     "module": "corruption_catalog",
     "person": "Karen Carter Peterson",
     "party": "D",
@@ -2151,7 +2153,7 @@
     }
   },
   {
-    "id": "corruption_catalog.hernandez_daniel_terry_2023.conviction",
+    "id": "corruption_catalog.woodburn_jeffrey.conviction",
     "module": "corruption_catalog",
     "person": "Jeffrey Woodburn",
     "party": "D",
@@ -2396,7 +2398,7 @@
     }
   },
   {
-    "id": "corruption_catalog.boyd_von_ehrenkrook_bouchard_2023.conviction",
+    "id": "corruption_catalog.folmer_mike.conviction",
     "module": "corruption_catalog",
     "person": "Mike Folmer",
     "party": "R",
@@ -3104,7 +3106,7 @@
     }
   },
   {
-    "id": "corruption_catalog.luis_v_guti_rrez.2018",
+    "id": "corruption_catalog.luis_v_gutierrez.2018",
     "module": "corruption_catalog",
     "person": "Luis V. Gutiérrez",
     "party": "D",
@@ -4222,9 +4224,9 @@
     "amount_usd": 175000,
     "source": {
       "name": "Supreme Court of the United States — McDonnell v. United States, 579 U.S. 550 (2016)",
-      "url": "https://web.archive.org/web/20250911032608/https://web.archive.org/web/20250911032608/https://www.supremecourt.gov/opinions/15pdf/15-474_ljgm.pdf",
+      "url": "https://web.archive.org/web/20250911032608/https://www.supremecourt.gov/opinions/15pdf/15-474_ljgm.pdf",
       "accessed": "2026-10-31",
-      "tier": "A",
+      "tier": "B",
       "publisher": "Supreme Court of the United States",
       "title": "McDonnell v. United States, 579 U.S. 550 (2016)"
     },
