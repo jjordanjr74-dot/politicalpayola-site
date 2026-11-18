@@ -264,7 +264,7 @@
     "amount_usd": 0,
     "source": {
       "name": "U.S. Department of Justice (DMN) — 'Minnesota State Senator Charged Federally with Attempted Coercion and Enticement of a Minor' (March 19, 2025)",
-      "url": "https://www.justice.gov/usao-mn/pr/minnesota-state-senator-charged-federally-attempted-coercion-and-enticement-minor",
+      "url": "https://www.justice.gov/usao-mn/pr/minnesota-state-senator-charged-attempted-coercion-and-enticement-minor",
       "accessed": "2026-10-31",
       "tier": "A",
       "publisher": "U.S. Department of Justice (DMN)",
@@ -1716,12 +1716,12 @@
     "unit": "indicted_/_guilty_plea",
     "amount_usd": 255000,
     "source": {
-      "name": "U.S. Department of Justice (NDIL) — 'Illinois State Senator Emil Jones III Charged With Bribery and Making False Statements to the FBI' (Sept 20, 2022)",
-      "url": "https://www.justice.gov/usao-ndil/pr/illinois-state-senator-charged-bribery-and-making-false-statements-fbi",
+      "name": "U.S. Attorney's Office, N.D. Ill. — federal charges against Illinois State Sen. Emil Jones III (filing, Sept 20, 2022; PDF via Capitol News Illinois)",
+      "url": "https://www.courtlistener.com/?q=Emil+Jones+III+&+Martin+Sandoval+2022",
       "accessed": "2026-10-31",
-      "tier": "A",
-      "publisher": "U.S. Department of Justice (NDIL)",
-      "title": "'Illinois State Senator Emil Jones III Charged With Bribery and Making False Statements to the FBI' (Sept 20, 2022)"
+      "tier": "B",
+      "publisher": "U.S. Attorney's Office, N.D. Ill.",
+      "title": "federal charges against Illinois State Sen. Emil Jones III (filing, Sept 20, 2022; PDF via Capitol News Illinois)"
     },
     "secondary_sources": [
       {
@@ -1868,7 +1868,7 @@
     "amount_usd": 32500,
     "source": {
       "name": "U.S. Department of Justice (NDIL) — 'Former Illinois State Representative Luis Arroyo Sentenced to Nearly Five Years in Federal Prison for Bribery Scheme' (May 3, 2022)",
-      "url": "https://www.justice.gov/usao-ndil/pr/former-illinois-state-representative-sentenced-nearly-five-years-federal-prison-bribery",
+      "url": "https://www.justice.gov/usao-ndil/pr/former-illinois-state-representative-sentenced-nearly-five-years-federal-prison",
       "accessed": "2026-10-31",
       "tier": "A",
       "publisher": "U.S. Department of Justice (NDIL)",
@@ -3222,7 +3222,7 @@
     "amount_usd": 1600000,
     "source": {
       "name": "U.S. Department of Justice (WDAR) — 'Former Arkansas State Senator Jon Woods Sentenced To 220 Months In Federal Prison For Fraud And Money Laundering' (Sept 5, 2018)",
-      "url": "https://www.justice.gov/usao-wdar/pr/former-arkansas-state-senator-jon-woods-sentenced-220-months-federal-prison-fraud-and",
+      "url": "https://www.justice.gov/usao-wdar/pr/former-arkansas-state-senator-sentenced-220-months-federal-prison-wire-fraud-mail-fraud",
       "accessed": "2026-10-31",
       "tier": "A",
       "publisher": "U.S. Department of Justice (WDAR)",
