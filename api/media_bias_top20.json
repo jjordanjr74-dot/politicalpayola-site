@@ -19,36 +19,38 @@
     "allsides_rating": "Right",
     "ad_fontes_zone": "Skews Right / Hyper-Partisan Right (Opinion)",
     "pew_audience_split": "86% of regular viewers identify as Republican or lean Republican (Pew Research Center)",
-    "plain_english": "Fox News is America's highest-rated cable network and strongly favors Republican lawmakers and conservative causes. Its daytime reporters cover breaking Capitol Hill news, but its prime-time hosts heavily attack Democratic spending bills while promoting GOP tax cuts, border ",
+    "plain_english": "Fox News is America's highest-rated cable network and strongly favors Republican lawmakers and conservative causes. Its daytime reporters cover breaking Capitol Hill news, but its prime-time hosts heavily attack Democratic spending bills while promoting GOP tax cuts, border…",
     "voter_impact_translation": "When Congress votes on taxes, border funding, or Medicaid, Fox frames Republican 'Yea' votes as protecting taxpayers and border security, while framing Democratic programs as inflationary government waste.",
     "framing_signature": "Heavy emphasis on border security, tax relief, government spending, religious liberty, and culture-war debates.",
     "blindspot_warning": "Often downplays CBO deficit projections on Republican tax cuts and corporate deregulation.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
-      "detected_left_signals": [],
+      "scraped_at": "2026-11-18",
+      "detected_left_signals": [
+        "social security"
+      ],
       "detected_right_signals": [],
       "observed_output_lean": "Republican / Conservative Framing",
       "sample_headlines": [
         {
-          "title": "Connecticut Dem Sen Chris Murphy hospitalized Saturday for stroke",
-          "url": "https://www.foxnews.com/politics/connecticut-dem-sen-chris-murphy-hospitalized-stroke",
-          "published": "Sun, 01 Nov 2026 13:33:11 -0400"
+          "title": "Mullin defends TSA shoes-on policy after congressman calls classified briefing ‘very concerning’",
+          "url": "https://www.foxnews.com/politics/mullin-defends-tsa-shoes-on-policy-after-congressman-calls-classified-briefing-very-concerning",
+          "published": "Wed, 18 Nov 2026 15:55:51 -0500"
         },
         {
-          "title": "'Squad' rakes in record $2.35M while slamming the door on cop donations",
-          "url": "https://www.foxnews.com/politics/squad-rakes-record-2-35m-slamming-door-cop-donations",
-          "published": "Sun, 01 Nov 2026 12:50:54 -0400"
+          "title": "Hundreds of subpoenas fly in DOJ’s ‘Decoy Dan’ probe as Democrat Peltola declared winner in Alaska",
+          "url": "https://www.foxnews.com/politics/hundreds-subpoenas-fly-doj-decoy-dan-probe-democrat-peltola-declared-winner-alaska",
+          "published": "Wed, 18 Nov 2026 14:54:54 -0500"
         },
         {
-          "title": "Democrat Haley Stevens endorses GOP Senate nominee Mike Rogers at Detroit church",
-          "url": "https://www.foxnews.com/politics/haley-stevens-appears-alongside-gop-rival-mike-rogers-detroit-church",
-          "published": "Sun, 01 Nov 2026 12:04:03 -0400"
+          "title": "Jeffries brushes off opposition from far-left Dems who voted no: 'We’re going to work together'",
+          "url": "https://www.foxnews.com/politics/jeffries-brushes-off-opposition-far-left-dems-voted-no-work-together",
+          "published": "Wed, 18 Nov 2026 14:35:32 -0500"
         },
         {
-          "title": "Inside top Trump bulldog’s plan to save House GOP majority and defy history",
-          "url": "https://www.foxnews.com/politics/inside-top-trump-bulldog-plan-save-house-gop-majority-defy-history",
-          "published": "Sun, 01 Nov 2026 12:00:47 -0400"
+          "title": "DHS denounces TX officials for allegedly planning to end cooperation with ICE",
+          "url": "https://www.foxnews.com/politics/dhs-denounces-tx-officials-allegedly-planning-end-cooperation-ice",
+          "published": "Wed, 18 Nov 2026 14:23:45 -0500"
         }
       ]
     },
@@ -105,13 +107,13 @@
     "allsides_rating": "Left",
     "ad_fontes_zone": "Skews Left / Hyper-Partisan Left (Prime-Time)",
     "pew_audience_split": "89% of regular viewers identify as Democrat or lean Democrat (Pew Research Center)",
-    "plain_english": "MSNBC is the primary progressive cable network and consistently favors Democratic lawmakers, voting-rights bills, labor unions, and federal court oversight. Its hosts focus heavily on Republican corruption scandals, threats to democratic norms, and social safety-net expansio",
+    "plain_english": "MSNBC is the primary progressive cable network and consistently favors Democratic lawmakers, voting-rights bills, labor unions, and federal court oversight. Its hosts focus heavily on Republican corruption scandals, threats to democratic norms, and social safety-net…",
     "voter_impact_translation": "When Congress debates healthcare, abortion access, or billionaire taxes, MSNBC highlights how Republican cuts hurt working families, while rarely questioning the long-term price tag of Democratic spending bills.",
     "framing_signature": "High focus on voting rights, DOJ indictments, judicial ethics, labor unions, Medicaid, and climate legislation.",
     "blindspot_warning": "Frequently under-covers voter frustration over border crossings, regulatory costs on small businesses, and Democratic machine corruption.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
+      "scraped_at": "2026-11-18",
       "detected_left_signals": [
         "union"
       ],
@@ -124,19 +126,19 @@
           "published": "Wed, 21 Oct 2026 07:00:00 GMT"
         },
         {
-          "title": "MS NOW LIVE Presents: Together In Texas: We the People 2026",
-          "url": "https://news.google.com/rss/articles/CBMiiAFBVV95cUxQYkZZNkxWdEN5ak9HWXFBRjJ5X0RxbEQ5b3lEOVJ2NjBHc0hqbmFIVUpIdjNVcFE0amZEODZqLTlFdERURGRQUmRWWVoyVzVqYlpyc3FfdDBMT0gtZXZYYk9JMzFpcnVrMldEaXRBUDgzWmI3YklveDR2X1o2NUVIWTdvblN3cFJL?oc=5",
-          "published": "Fri, 25 Sep 2026 11:57:47 GMT"
-        },
-        {
-          "title": "Chris Hayes and Rachel Maddow Say They Didn't Believe Graham Platner Last Month When He Said There Were No More Scandals Waiting",
-          "url": "https://news.google.com/rss/articles/CBMilgFBVV95cUxORUttVXg3VHZPbjZ3bjFxbFJBWjBtSkxwRUZmbkt2VXYyN3J6cno3cTIyUEh1WXdPOVBrdUM0dzJYR1d2T2hnUmFDeWZ0bEMzNFFKd0JCalRKMm9GNkZGeHNiVFBxREl4Uk9fR2tMUDY5XzNPWHl2REU0d25EYW1teTdCbzc3TUlMN3k5dlZDMWN5YUFBNmc?oc=5",
-          "published": "Tue, 07 Jul 2026 07:00:00 GMT"
-        },
-        {
           "title": "Together In Texas: We the People 2026",
           "url": "https://news.google.com/rss/articles/CBMiZkFVX3lxTE5OVFpiUkI2U0xlM2ItbzdVb2Z1SDlfU3JHdEZTdktvUHZnZGh3QjRtczZFM2REQ0pNMlRxT0pRZmV1LVpIaHVCZ0MwT2dPSGRmRThTc0VLa2JRci1jWDhKZGVETzAtQQ?oc=5",
           "published": "Wed, 15 Jul 2026 02:29:37 GMT"
+        },
+        {
+          "title": "MS NOW Overhauls Lineup From ‘Morning Joe’ Through ‘The 11th Hour’ In Major Move",
+          "url": "https://news.google.com/rss/articles/CBMiuAFBVV95cUxOMXZyRDR4aWh5ci1Yd1hyT3hRSHoweHBOUVI3ZDNhU1FWNWtUS3A2Wl95dThJcFNXUzRIS043RkExQk1mSTVpQnB1ZTBFTXlKUlc0eE9yWWgyNWtqbHc0cFhRSFFmRWN4d2VGYWhyY0l3S0VsRXlLTWlucnFmLVV5Z05vQzNrWjVnYkdqejdHbW5TQllabW1WRVJTd1lBZngxZ2ZjRUdBR3hYdmk5VnlraWxnV2xsbnk5?oc=5",
+          "published": "Wed, 18 Mar 2026 07:00:00 GMT"
+        },
+        {
+          "title": "Chris Hayes Podcast Episode With Rachel Maddow to Air as MSNBC Primetime Special",
+          "url": "https://news.google.com/rss/articles/CBMickFVX3lxTE80c1Mwc3RFX01wOEtJdHNXZ1d3NExuRGpQenQtR2szeTR6MmtoUkZpSzFFR1RkWTVoSExENi11QVVvU3I5THh6RlNGUmp1VVdBM2VncEpvSE5JWmZFOUpjVWM1VUo4S1JOUHNoZTBqWDdXdw?oc=5",
+          "published": "Fri, 24 Nov 2023 08:00:00 GMT"
         }
       ]
     },
@@ -199,30 +201,30 @@
     "blindspot_warning": "Tends to obsess over Washington drama and poll swings over rural and working-class economic realities.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
+      "scraped_at": "2026-11-18",
       "detected_left_signals": [],
       "detected_right_signals": [],
       "observed_output_lean": "Democratic / Liberal Framing",
       "sample_headlines": [
         {
-          "title": "Judge throws out DOJ attempt to delay certification of Alaska Senate race",
-          "url": "https://news.google.com/rss/articles/CBMidEFVX3lxTE1reWNnZUhhVC0tM2Y4dHd5ZjFXNEN3X3RwRUVaMlgweVYweURlekJlUXJZS0hUM3JNa1RHY1EwUUh1UnpZUTJlR3ZQY3lxbXdESm1QUlQwOEJPdmxQbi1ISmd5M3p4a0xmSmpZdEhPQnVKTlFY?oc=5",
-          "published": "Sun, 01 Nov 2026 17:57:58 GMT"
+          "title": "Russia and China are not America’s friends. Why does Trump think they are?",
+          "url": "https://news.google.com/rss/articles/CBMidkFVX3lxTFBZenFxaXhndk94aFhBaVl3RHR1TWZXWWtkN1EyNGhuNzFfb0trNGlyYkZLQ0k1ZG5NeC1YZTVqRXR6d1l3R2JWZW5QeTJtcTFwRTVpVkxaYW5vQVVLdnZYV256OE50MlBmanVuY0dlNkp1blp1SlE?oc=5",
+          "published": "Wed, 18 Nov 2026 18:24:37 GMT"
         },
         {
-          "title": "Sen. Dan Sullivan says he will accept election results of Alaska Senate race",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxNNzRXV0hSenVHUEdYU1VFVDdCeURuZ2M2QXhFS19rakNvTWlJekJfN19obFJFMDNqTmdTQmtvbjhrV3BXY3U5V3dNbjB1UmtsN3c2RHcydmdXRHVxWXRvQ2UwSEJUbjd1SFdOVzNvWk9uUl9ZRWJYYjh3akt2TER5d2pUdDM?oc=5",
-          "published": "Sun, 01 Nov 2026 14:14:36 GMT"
+          "title": "Hakeem Jeffries overwhelmingly wins House speaker nomination despite threats from ultra-progressives",
+          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxNYVlDaEVsVkNjNjVsTHhFZE03bXpoQkFJbGRncWRDRzdPZUZqOW95c0JyZXBoLV9DWTBVNEpMeWJ3YnAwdXY2R3lCem14Tkwtdk1aWnpaZWtyaVVwc0dVUFFrbWFRRWVkZkxwLXBralM2Z1ZEVmhpWXJQYllkRldRWnZ3MmJpUVRLVlg3bzlTd2lCUEl6MUV3?oc=5",
+          "published": "Wed, 18 Nov 2026 15:32:26 GMT"
         },
         {
-          "title": "Bitter spat between Poland’s pro-Europe PM and pro-Trump president erupts",
-          "url": "https://news.google.com/rss/articles/CBMihAFBVV95cUxPQU9wNTJvemVMSURuUU1uYXU1ellGZnp2Z19sS1NkQnYtX0t2dGl6d1RsZVJtdmozakh4WU5JMEV2WXAxaW9oZjcxU1lvMElPX3NNeGZUQzJzcTNJa2ZMV044Wk5yZU1jYklNcVJuYnhCSllyaWx2X19tRGl2cGVzRWhkSTc?oc=5",
-          "published": "Sun, 01 Nov 2026 14:28:41 GMT"
+          "title": "Sen. Cornyn blocks judicial nominee because Trump didn’t choose Texas",
+          "url": "https://news.google.com/rss/articles/CBMipgFBVV95cUxPenRockMyb0xwZEpMYWc1dmhRZmt2bEU4S21jR00zMEkzb2xVa21LM3kySDFqR3hJRnlVNzBMRUYwUzVKMjFIRUQybmNVWXRKRmkyMF84S0FjMU1FUWxQeHlzS0psVDFKM3BjSXEtVWJJcGVTOThuZ2xhZ3ZOWEZEdUxiUDFJR2JqUVgtemNoLVFLUHdxeU10b1Z6MXVNaEVmREVUY2ln?oc=5",
+          "published": "Wed, 18 Nov 2026 20:32:04 GMT"
         },
         {
-          "title": "Mamdani says Trump agrees to grant visa to mother of teen from Ghana killed in Bronx shooting",
-          "url": "https://news.google.com/rss/articles/CBMid0FVX3lxTE4wUlJwUjRVQ09odmRwbXVkcXRvSkU1WlQ0bWNJX2dOQjI1UHdtMjV0RmN6dEdZbklXVEJycDN5aFNNMzVIX0p1c3lpMW92QUg1OWpZenVCTHJwSFBTUHRhYlZYU3BVczNoMnluQlpUYlBUMV8yVXlR?oc=5",
-          "published": "Sat, 31 Oct 2026 22:37:55 GMT"
+          "title": "Democrats send letters to dozens of Trump officials and allies putting them on notice",
+          "url": "https://news.google.com/rss/articles/CBMifkFVX3lxTE56YldsTXI4Q291eVFsZWVzTFBFTnpPWXBjYThOUXVVMVROdngzbW5TZFlKVWJ2Z3FuZjB2Qmp1MWd2QU1YcVJsRHJvZHl2dHdkU2dQVWRSdzE2a201b3F4Mkt2ZnFwU0wzcTk1WjRzMmVQUjJhQUd6VkhrWHJuQQ?oc=5",
+          "published": "Wed, 18 Nov 2026 10:00:15 GMT"
         }
       ]
     },
@@ -285,30 +287,30 @@
     "blindspot_warning": "Written for fast institutional accuracy, so it rarely pauses to explain long-term neighborhood inequality.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
+      "scraped_at": "2026-11-18",
       "detected_left_signals": [],
       "detected_right_signals": [],
       "observed_output_lean": "Balanced / Nonpartisan Wire Framing",
       "sample_headlines": [
         {
-          "title": "Trump White House maps path to govern without Congress if Democrats win",
-          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxOOXdkX2hvMlBTTmRRRGlTbndZSTFnWnZyYkJ5STRjNFBOUkdwQ3VDUjRuTUQySzhQMkp2UXh0MW5VS3E4WHVXeEhQQ2JnRnUxV0pIVTM3T1J6Y0o3Y1JWamZ4YXMwNEtjazNiU3pERzRaWC1XNXZBZk56UU1KSUFNMWtZS0hrUjNUSW5ILW9kdWVQa3BqYkNPSl9tQk90SEtWcDdXRjZXdkdUT1IzS2ViaTgwTmE5MnlCclh1T0pB?oc=5",
-          "published": "Sun, 01 Nov 2026 18:01:24 GMT"
+          "title": "Democrat Mary Peltola wins in Alaska, securing 56-44 US Senate majority",
+          "url": "https://news.google.com/rss/articles/CBMiqwFBVV95cUxQcDhNX2ltb0xDNjBoTzlRcFZtcGl4V0FhOE94dTEyMHZVSDItM1ZMYUR2SW1NZVRpamgzQ2g5cXNrcE1wWG5oZlJDNFBWZ1MxeUhUcWhUSF9qM3Y0RXFiY28zT0xiMXdlbU8xX2JoZkUtLW9WejVlX3p0NGtxT0JUNUh2QldjcU5aYThDNWdNcUxUTVo2dTBKTG16NGZrNGQ1WUR6ejUwUnZxM1U?oc=5",
+          "published": "Wed, 18 Nov 2026 03:27:00 GMT"
         },
         {
-          "title": "Democratic wins would shift Congress' trade debate but fall short of US tariff rollbacks",
-          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxObVJlTmFuVEh3WkZZZS12S0NPTjRoamIzUVJCNURKWHl6QzR5eHpjT0pobGt0b0ZSLWw0TE1seWV0S1ZLRjJOb1ByZWVCVmJEcXRlZ29kbzA0X0ppTmVTZ1M4cHVSRnhWMy1USGxhTmtROFU0V3luU1lsWTlkeVFqU3BwUXlQaTU2NEpPNC1xRTE0TlFyRjJYd1ZCNlhsZHFiaFpFbGNlem9pdm0teVZaUExyY2x6QTFnWUQzamdDYlpVT0hlUXdfY1h0bks0Zw?oc=5",
-          "published": "Sun, 01 Nov 2026 11:14:38 GMT"
+          "title": "US Senate elevates judge appointed in Trump's first term to appeals court",
+          "url": "https://news.google.com/rss/articles/CBMiuwFBVV95cUxQekowMjRkN2FTZkJNMFo3TmxpY0pISERUcTMwUWgxcnZkcktxTGVuSGo2cm9fSE9yWEk0UExBM2pHRGEzazBVWXV3eHZBNG1DU2Z4WnZ0UzEtODBOSFk2Z2NlNFV1cU5rRVNia1o4NVJpWkg2YmJSMk5lNFhhMHZoUWNsaWZWZTdCQ1pwT0xfdmkyMDdhT1RVeTc5UjMwT0RoZlRiS1FMTDkwa2dpbTZ4NTk0MHc0bVdSUGxF?oc=5",
+          "published": "Tue, 17 Nov 2026 00:11:00 GMT"
         },
         {
-          "title": "US Senate candidate El-Sayed wants Democratic rival to stay away, source says",
-          "url": "https://news.google.com/rss/articles/CBMiugFBVV95cUxOZk1TVThad3BBcnFwSU44RFlBSjU5NWNaOUxuTEFVQnp2c0tjU3h2Qmc3eUh1RWZGZVpnenlXRk5jcXczZmVhUENIcm53dFBPVm1pQnZxdDhGbmRRRHBXaTdBeHlaRjl3X05USjI3X1ViamRPX19Lc0ZrendnN2N0allNR0tLekhuM0ZCZFpmeWJROTdYY0YtbkdoZ2VEXzFiMlBIRzkwUUpxNXFPdFJERTNxRzNLMzZRUWc?oc=5",
-          "published": "Sat, 31 Oct 2026 18:20:00 GMT"
+          "title": "US lawmakers want Mercedes-Benz to disclose details of Chinese ties",
+          "url": "https://news.google.com/rss/articles/CBMixgFBVV95cUxNNmtwSlNUMklELUpvTkJmSldENTJRdTBxTjlEYVBUYk1Cb2tvUFRoVjJpQl9uczV2OXZRaWtGSDJWS1ZheDRXWnoyNU5QOUx4QlI2STc1RVlZZjhZU3R2N250VDdSV1hjcDh4U3lPYnhBMkVDUXQtSkJpZjRCdXpWWHFtbEQzMlNRSmVlZDE2UkdCckFSMndaMmN3dzQ3azA1SlVqblNWNFoyTWcwYWpCYm5KLURlWVc3WDBweHFXYjc5MGxpUEE?oc=5",
+          "published": "Tue, 17 Nov 2026 16:57:05 GMT"
         },
         {
-          "title": "Trump heads to Iowa, Kansas with Senate control in balance",
-          "url": "https://news.google.com/rss/articles/CBMilwFBVV95cUxQX2FHcHFUc2FHcFNFdlgyU2xwdjFlUDZ4ZG1aQjk1aDdCYnNFaE5WSXM5Q0E5cHB5Z0tKaWp0QXZ2dThVYjU2ZW1VemZmYmswcm1lUHA3TXhNVVBmUWdSQnRBTVJBdFlHQmlvempGUkFnTFo1aHBTZTZGeU53T3pIYUxXUTFaVGtaLXFldGwyUGRFNTNlWWtn?oc=5",
-          "published": "Sun, 01 Nov 2026 17:46:12 GMT"
+          "title": "Trump's judge appointment blitz faces Republican resistance",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxQYTg5d09JVTFvR2R5VTRRVWZPV3NRcGx4UlBRRHEybkdwV0FvMUViaTJDejNTSkFuSkxZSE9UMnBPRWJLQngzdklQMUZUQndnc2xXemdSTmpqdTdSQjZZRlJLMEQ1akp1eHdqVmczSFI4MFE4SHFSSUNlVmtaVk5mT1dsMkI1YVl4WjdUWXZVak5xY05ISW14eGpOUGd2UDUzY1JvZ1JtSXFlclU4MFhfWg?oc=5",
+          "published": "Sun, 15 Nov 2026 11:04:45 GMT"
         }
       ]
     },
@@ -365,38 +367,36 @@
     "allsides_rating": "Center / Lean Left",
     "ad_fontes_zone": "Middle / Most Reliable for News",
     "pew_audience_split": "Read across 1,300+ local U.S. newspapers spanning red and blue states",
-    "plain_english": "The Associated Press is the cooperative wire service that supplies statehouse and Washington reporting to almost every local newspaper and TV station in America. Its straight news is strictly verified, with a slight center-left tilt in which social topics it chooses to spotl",
+    "plain_english": "The Associated Press is the cooperative wire service that supplies statehouse and Washington reporting to almost every local newspaper and TV station in America. Its straight news is strictly verified, with a slight center-left tilt in which social topics it chooses to…",
     "voter_impact_translation": "AP is the best source for tracking what your own state legislature (including the Colorado General Assembly) and local U.S. House member actually voted on this week.",
     "framing_signature": "Verified roll-call tallies, official election call math (AP VoteCast), and 50-state capitol reporting.",
     "blindspot_warning": "Stylebook terminology shifts on social issues occasionally draw criticism from conservative lawmakers.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
+      "scraped_at": "2026-11-18",
       "detected_left_signals": [],
-      "detected_right_signals": [
-        "socialist"
-      ],
+      "detected_right_signals": [],
       "observed_output_lean": "Balanced / Nonpartisan Wire Framing",
       "sample_headlines": [
         {
-          "title": "El-Sayed's primary opponent stuns Democrats by endorsing Republican opponent in Michigan Senate race",
-          "url": "https://news.google.com/rss/articles/CBMirgFBVV95cUxNZTZaeEZ3WHhrS2s0VVVXSWpRLVVLb185QTR6djh1R3UtZ1F0SFJCS1BWbDBaUmZxeEI4ekkyMVBObTV3R1RyZktuX0dISE9rTmFVd2tVY3NnMm8xTUQ5SGo1VFc1bWoySVdkNHp2c2JmR0g4a2hQOEJfdFVVaFZTQ2hSZWwwMHc1Sm81clYxelpTN1JGbFJZOEpEMlRVWkRBSTdCU0RzX1VWdDRrQXc?oc=5",
-          "published": "Sun, 01 Nov 2026 20:35:00 GMT"
+          "title": "Takeaways from Mullin's House testimony on cyber outages, the Texas-LSU flight and immigration",
+          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxPRDEtcVdMZnJyYmFnRzhTLVJHcHZNYXZuTzZPM1JlQW5HTVVJSWdMZk54ajE1NjF2V0laVjhScWh3LURPNlBmTnVBd0VvTERPeFU4ZXNKN1UwZVVDcEN6MnU5VVBDTEluVUFrUWt6VHlCSHJHUjBWQ29GYm50ZUpWUmRGY3cycHp0d042YmtBV0Y3amFOaTdJX3VUSzhoalA2djJDMDczTWppaHYxVm5vYUliSQ?oc=5",
+          "published": "Wed, 18 Nov 2026 19:43:00 GMT"
         },
         {
-          "title": "Judge dismisses lawsuit seeking to block certification of Alaska Senate race if GOP incumbent loses",
-          "url": "https://news.google.com/rss/articles/CBMirAFBVV95cUxNNDIwVGtzRDN4cGg1V0ZoV3Nlb1Y3WGV6TGlpVmwtNVJxR1ZsTDFRd2NEZlJjWlRmV0hlMzk3a1RyREJCa0Z4Snk0cVRrd01SS3lkMUZyc2FMM3JNZWw5eE1iQm1MemZSUk13UWlMRjdVTUh0MUdOQ2taYVY5d3NNd2NoRU4zOEhlTmpkYjFCTU9qS2lFNWxLZzRHNVctazdQdVVldXhCMkg0STBl?oc=5",
-          "published": "Sun, 01 Nov 2026 18:42:00 GMT"
+          "title": "Democrat Mary Peltola wins US Senate race in Alaska, beating incumbent Republican Dan Sullivan",
+          "url": "https://news.google.com/rss/articles/CBMioAFBVV95cUxOVkFROVltMWlvNVFIRVN4MTZTb1lWM04xUGRtM05odzZYUk9zNWxxZnVKZlluYnVfeG5PX3lYOTZTejdVSEIzS3A5b291STRFeW1seWM1cWJKU2ZoNm1kSHp3MW1Pa1p1bV9ZY2NNZEgyNzhGRnlKa1pMNXFOR3k2bThMWXk5ZHdYTmlrb1RDS19OWVZ2dU9wRDN4dmd1SWpF?oc=5",
+          "published": "Wed, 18 Nov 2026 06:25:00 GMT"
         },
         {
-          "title": "Attorneys for Alaska say 'meritless' Trump demand to set aside Senate ballots 'not even possible'",
-          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxNSHh0LVpYdmRNYXJIcW9jQ1BOTlNfZDRqcG5KM2FtSFR5cXg2YWFXUHpiaml0R3hrY3VGMVdFbW56UEI1NDNjVmtrQUh3ZVVhSnY3SXQ3TzB4RWhYc0haZkYzM0VrTHIwMEhuNGNlT1dkcUNUU2RtMlFhQTlTYnZWYUNla3pFVmNsUTUyY0NaOU00OEhvNkM1aXl2QjhEU3h2OHc?oc=5",
-          "published": "Sat, 31 Oct 2026 20:30:00 GMT"
+          "title": "Democrats flipped 9 US Senate seats — the most in almost 70 years",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxOTkVLZlFfMk1SeWVQNGxXcHhCZjJ5M3pKUm4tQWxkbHQyaHJRbGZ3dlpyNkZYRnIxczFMdm85LW01UWQtckpmeUs4NTl5OXcybnlvUVZYUmY2VDZYcVZEM2xVUUphMFlyRXlhSlRrYjNmRFc5TXkyaElqczBQLVRkZFJaMm5mOFoyT3N4RTEwUjA?oc=5",
+          "published": "Wed, 18 Nov 2026 03:39:21 GMT"
         },
         {
-          "title": "Meet the democratic socialists likely on their way to Congress",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbmdJTVZyUzBrOC10dFBTM1BDNkZkYjN3Yl9USDRFLTJ4ZlRfc1FXRDNSYlVYd2xWT0NaNi1FemJ4ZF9wMjNtelFpMlo4ZEI4ZldoM0JOTmg1dTFYd0dyM1hZMHdRQnRvZTRtRWN1bWRuOVY1QmhMTlBCNVowakZQMkdmMk85VTZQTnV3TTZOQXVCMFZUZVZSWkRNczYxZw?oc=5",
-          "published": "Sat, 31 Oct 2026 12:26:00 GMT"
+          "title": "Why AP called the Alaska Senate race for Democrat Mary Peltola",
+          "url": "https://news.google.com/rss/articles/CBMilAFBVV95cUxQTkcxemRyR01zdlRpb29VSWt1RVdLVU95M2tJTGRXV3VYLUxyU091cVduTlUtQ0RTNFhMQnVpRTNDTkVtemxDZjZlTENHT3FuYjNqZjY1UTVOMlpLWTRXZ3ZTMHFONTFFdFF0UXNtYkEwT2RSVVhmRVlpOU1pUE45b1NPVlZENUdhY0ZTX0owOEVQcmVx?oc=5",
+          "published": "Wed, 18 Nov 2026 03:51:00 GMT"
         }
       ]
     },
@@ -459,30 +459,30 @@
     "blindspot_warning": "Can reflect coastal cultural assumptions and under-appreciate how federal energy or land rules hit rural Western towns.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
+      "scraped_at": "2026-11-18",
       "detected_left_signals": [],
       "detected_right_signals": [],
       "observed_output_lean": "Democratic / Liberal Framing",
       "sample_headlines": [
         {
-          "title": "Senator Chris Murphy Is ‘Awake and Alert’ After Suffering a Stroke",
-          "url": "https://www.nytimes.com/2026/11/01/us/politics/chris-murphy-stroke.html",
-          "published": "Sun, 01 Nov 2026 19:02:09 +0000"
+          "title": "New Members Get a Congress Crash Course With Grade School Vibes",
+          "url": "https://www.nytimes.com/2026/11/18/us/politics/new-members-congress.html",
+          "published": "Wed, 18 Nov 2026 20:04:41 +0000"
         },
         {
-          "title": "Some Americans Are Fearful of Federal Interference on Election Day",
-          "url": "https://www.nytimes.com/2026/11/01/us/politics/election-fears.html",
-          "published": "Sun, 01 Nov 2026 17:54:17 +0000"
+          "title": "Trump, Xi and Putin Will Sit Down for the First Time. It Won’t Be Like Yalta.",
+          "url": "https://www.nytimes.com/2026/11/18/us/politics/trump-xi-putin-summit-yalta.html",
+          "published": "Wed, 18 Nov 2026 20:12:59 +0000"
         },
         {
-          "title": "Democrats Want to Prove They Can Win in the Rapidly Changing South",
-          "url": "https://www.nytimes.com/2026/11/01/us/politics/southern-democrats-midterms.html",
-          "published": "Sun, 01 Nov 2026 12:50:36 +0000"
+          "title": "Trump Arrives in China Focused on Friendship With Xi, Not Nvidia Spy Scandal",
+          "url": "https://www.nytimes.com/2026/11/18/us/politics/trump-xi-shenzhen-spy-scandal.html",
+          "published": "Wed, 18 Nov 2026 18:52:04 +0000"
         },
         {
-          "title": "A Midterm Campaign Dominated by Concerns Over High Prices Nears Its End",
-          "url": "https://www.nytimes.com/2026/11/01/us/politics/election-mood-affordability.html",
-          "published": "Sun, 01 Nov 2026 17:42:25 +0000"
+          "title": "Mark Carney Says Canada Will Not Back Down in Trade Talks With U.S.",
+          "url": "https://www.nytimes.com/2026/11/18/business/dealbook/mark-carney-canada-us-trade.html",
+          "published": "Wed, 18 Nov 2026 17:58:08 +0000"
         }
       ]
     },
@@ -545,7 +545,7 @@
     "blindspot_warning": "Its Editorial Board consistently opposes minimum-wage hikes, union expansions, and public healthcare subsidies.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
+      "scraped_at": "2026-11-18",
       "detected_left_signals": [
         "climate"
       ],
@@ -636,30 +636,30 @@
     "blindspot_warning": "Heavy D.C.-insider perspective that often treats federal bureaucracy growth as the default solution.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
+      "scraped_at": "2026-11-18",
       "detected_left_signals": [],
       "detected_right_signals": [],
       "observed_output_lean": "Democratic / Liberal Framing",
       "sample_headlines": [
         {
-          "title": "Democrat Haley Stevens endorses Michigan GOP Senate candidate Mike Rogers",
-          "url": "https://news.google.com/rss/articles/CBMiwgFBVV95cUxOV2VIWjBwNWdIYU1xNlFMQU5TazlOcnNhLS0tcG5aRjVrTVE4azlZUm1YRVJKTzRTSEE1UUZhX2NhLUtnTlVGbjJLREFPS1BYVlJnQWszZklmNndnV2R5MU1LRmg2RVV4dWVsSUFpZGRHT3FSYjVWeS1fS3ZWMVdvaXdMOHdNV0FJeElqMnJfNHlyQ1FXMlRoQ2REQmpzY3BERmRVTjIwLTJhSFp1dVY1SWM1Mk9xTGVvdUNrak9BQWVWZw?oc=5",
-          "published": "Sun, 01 Nov 2026 20:11:08 GMT"
+          "title": "These are the Senate Democrats backing Schumer and Van Hollen for majority leader",
+          "url": "https://news.google.com/rss/articles/CBMizgFBVV95cUxQVExmN0praFZhQkpOQUJVUUV4N242ZG5IM0F2OU1UY0xtWjJraWdzZmktWjlseGtKNUhTSUhiQ3Q1WGp1cmpZX3dwdWw2YTA4Z3lxYUZPeHdFb083RWhfeHhrRFBDX1Myc0xYYUN3MUJ1ZFZQRy0wN0NLaFIzaGsxMjNaWlc5OHFwX1I3Y2IzYXhaenlOb19QQ04ybzAtNkdxT3Y4ZVMxTGhHUVNtSDJrNUdDMVNmQXZ2cDhEaENKN2YxSzljb3FHYTZMU1NJQQ?oc=5",
+          "published": "Wed, 18 Nov 2026 20:51:18 GMT"
         },
         {
-          "title": "Judge tosses DOJ’s attempt to delay Alaska Senate results if Republican loses",
-          "url": "https://news.google.com/rss/articles/CBMiwwFBVV95cUxQb01VY1hzaERwaUN0dGt1enZaNTROVmE5N3ZYMmNjeTgycGhTOFN2NFZHR2NHMkdwTGswMEtGNWxjMlFrNEVMajNWVDBuV1pYWW5mV09DVW5FeHJ5akZXdXFFRlVRWG5kTVNYMGtLZDhwWDNkQkRBdk9zaDR1QW1Relh3ejMzRWtjQncyczAwbVFlN0kyNlpPejAwS1RfczVoclg3X3ZJcmF1T0NVUFNja0otcC1KOEh4NDg5Ul96TXRMMHM?oc=5",
-          "published": "Sun, 01 Nov 2026 20:01:45 GMT"
+          "title": "‘Put on your seat belt’: Bernie Sanders unveils wish list for new Congress",
+          "url": "https://news.google.com/rss/articles/CBMisAFBVV95cUxOdml5cUwydnlDVTRTMURSei00RmpGNTR4UzdPbGw4UEV5M3V1bXdyM0c1X1NFYzlJQUhVSGxRaWJKWGZZQ3hVS2o4UXpOeC1BSGlIeEZ5dEJ6bzhFakw3bUUtZ3VYbURmdjVyeE16M2F1YmhCQnotRW1UNUtHRzNwMUhFZEZKUDlETzhaYXhQUWVVODhQM1lIZXFVMENraWxIVWN3UWZuV1lMTkp5am9DXw?oc=5",
+          "published": "Wed, 18 Nov 2026 20:36:47 GMT"
         },
         {
-          "title": "Losing Michigan Senate candidate Haley Stevens: ‘Go vote!’",
-          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNbVVFMDZydF9DWTc4VnIyTzNqV0cwWnFwaDVRcklRZVMxMHkyMkMyUFk2UEk3YVA2cV9wRld0c05ZaXdQSE5vMEhXeEFBLWlEcnNtaWNZdS00RlEwcmtoNDRqdUxFRXExSkhtZlhTTm9PdkJUZE5GUzFjYUVqNEVJWjVXdGJIckhQVXhTcTlYQmw1V25RekM1dWR2eEJnZFFRaUEwZzBuWnIwQQ?oc=5",
-          "published": "Sun, 01 Nov 2026 19:04:55 GMT"
+          "title": "Mary Peltola flips Alaska seat, giving Democrats a 56-44 edge in Senate",
+          "url": "https://news.google.com/rss/articles/CBMivgFBVV95cUxPOHlDZmRXbTJwaXgzUUlqOEx1X1VjN2ZQTlNjeEYxZ29MTGtmYnFnVExyS1NKOHlYbDFHamoxUkVtaDNpSzJkRHhySzBEQkpnWXF5LU90YlBReTVQcXdJYXVaZVR1ZnFtb1M0UHJzUVpNcTFmNFdzR092NXl3LTRTQ2d1bHFXZWQ1MHBINk5YOXFqYkI4S3hZUXdkdnY2TC1ySDd6ZmNWb2xKdUlsWHVXR1hGZ0ViOGM0WVMtTE5R?oc=5",
+          "published": "Wed, 18 Nov 2026 16:56:47 GMT"
         },
         {
-          "title": "Analysis | The Senate is an uphill battle for Democrats, even with the wind at their back",
-          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxNcW5aQ3AzZmhUN0hvTnRIaTJfRlM2SHhMX0QzSDEzb2NEN0EzdXBxTGZMRmkxNnRwTzIwcnlST2M1TGQ0anEybVpQNTkwMTBHYm5RVzhCMFktM3loTHRxdVRTUm5MQnBHQlc0dXoxY1h4a3ROU3JoTjVfdDJlbVJWYlNMTEZWdGFmRnRnYzd0UnVxWk02ZmNyOXVXUTBSanFtTTg3bE5jaw?oc=5",
-          "published": "Sun, 01 Nov 2026 18:00:00 GMT"
+          "title": "Peltola win doesn’t end DOJ scrutiny of Alaska Senate race, officials say",
+          "url": "https://news.google.com/rss/articles/CBMiyAFBVV95cUxNclRqakVXUkJrNkk2MjRUR3ZWNlpvMmM1c0dFYTI0bE9KX3lpUTlmcnF3VWhRSUhZMTJ6c3N2R0NGZWxfMVA4c0hKR0lqR3ZxWVRvbndQWkFtdzlVbFZtM2IxbTczeEJ1WWZackRJQzhIeGtjejBNOFkzNE9QbE5CX2pkVkRaTURJZDg2OGt3OUthR3BtZU9YLXl6M244cTBPUy1kVGJoaUVVVjhNdFMyZWNjWE05Z2IyaGhucGRELXdKV0JucFZTWA?oc=5",
+          "published": "Wed, 18 Nov 2026 20:00:29 GMT"
         }
       ]
     },
@@ -722,30 +722,30 @@
     "blindspot_warning": "Short broadcast segments compress complex tax or budget bills into 90-second soundbites.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
+      "scraped_at": "2026-11-18",
       "detected_left_signals": [],
       "detected_right_signals": [],
       "observed_output_lean": "Democratic / Liberal Framing",
       "sample_headlines": [
         {
-          "title": "Trump administration promises US farmers $15 billion in weeks before the midterms",
-          "url": "https://abcnews.com/Politics/wireStory/trump-administration-promises-us-farmers-15-billion-weeks-137746731",
-          "published": "Sun, 01 Nov 2026 09:50:24 -0500"
+          "title": "College football picks: Nebraska gets shot to end decade-long skid against Top 25 teams vs. Buckeyes",
+          "url": "https://abcnews.com/Politics/wireStory/college-football-picks-nebraska-gets-shot-end-decade-138257755",
+          "published": "Wed, 18 Nov 2026 15:54:34 -0500"
         },
         {
-          "title": "Miami, Georgia, Utah, Notre Dame would be top-four seeds in a CFP bracket based on AP Top 25 poll",
-          "url": "https://abcnews.com/Politics/wireStory/miami-georgia-utah-notre-dame-top-seeds-cfp-137753201",
-          "published": "Sun, 01 Nov 2026 14:58:57 -0500"
+          "title": "Hakeem Jeffries faces test to becoming House speaker during leadership elections",
+          "url": "https://abcnews.com/Politics/wireStory/democrat-hakeem-jeffries-faces-test-becoming-house-speaker-138238553",
+          "published": "Wed, 18 Nov 2026 08:54:22 -0500"
         },
         {
-          "title": "Trump administration's social media posts ahead of elections criticized for being inflammatory",
-          "url": "https://abcnews.com/Politics/wireStory/trump-administrations-social-media-posts-ahead-elections-criticized-137743037",
-          "published": "Sun, 01 Nov 2026 00:22:19 -0400"
+          "title": "House Democrats prepare to elect leaders for the new Congress as party pushes for change",
+          "url": "https://abcnews.com/Politics/wireStory/house-democrats-prepare-elect-leaders-new-congress-party-138228920",
+          "published": "Tue, 17 Nov 2026 17:25:51 -0500"
         },
         {
-          "title": "Over 40% of names on DOJ list of alleged noncitizens are not on Calif. voter rolls, analysis finds",
-          "url": "https://abcnews.com/Politics/wireStory/40-names-doj-list-alleged-noncitizens-californias-voter-137737426",
-          "published": "Sat, 31 Oct 2026 18:42:14 -0400"
+          "title": "Chargers show enough progress on offense to finally end 11-game losing streak",
+          "url": "https://abcnews.com/Politics/wireStory/chargers-show-progress-offense-finally-end-11-game-138227718",
+          "published": "Tue, 17 Nov 2026 16:34:42 -0500"
         }
       ]
     },
@@ -808,30 +808,30 @@
     "blindspot_warning": "Often frames conservative fiscal or populist objections primarily as political obstacles rather than policy debates.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
+      "scraped_at": "2026-11-18",
       "detected_left_signals": [],
       "detected_right_signals": [],
       "observed_output_lean": "Democratic / Liberal Framing",
       "sample_headlines": [
         {
-          "title": "Poll: Voters demand change and a check on Trump, fueling a steep Democratic midterm advantage",
-          "url": "https://www.nbcnews.com/politics/2026-election/poll-voters-demand-change-check-trump-fueling-steep-democratic-midterm-rcna606183",
-          "published": "Sun, 01 Nov 2026 14:00:40 GMT"
+          "title": "House Democrats select Jeffries as leader, setting him up as the first Black speaker",
+          "url": "https://www.nbcnews.com/politics/congress/democrats-formally-nominate-rep-hakeem-jeffries-paving-way-first-black-rcna609619",
+          "published": "Wed, 18 Nov 2026 15:31:34 GMT"
         },
         {
-          "title": "Federal judge dismisses Trump attempt to interfere in Alaska Senate race",
-          "url": "https://www.nbcnews.com/politics/2026-election/federal-judge-dismisses-trump-attempt-ballots-alaska-senate-race-rcna606838",
-          "published": "Sun, 01 Nov 2026 19:03:25 GMT"
+          "title": "Trump to hold one-on-one with Putin on the sidelines of Asia summit",
+          "url": "https://www.nbcnews.com/politics/trump-administration/trump-putin-bilateral-meeting-asia-summit-ukraine-rcna609997",
+          "published": "Wed, 18 Nov 2026 15:39:07 GMT"
         },
         {
-          "title": "Rep. Haley Stevens endorses GOP candidate Mike Rogers in Michigan Senate race",
-          "url": "https://www.nbcnews.com/politics/2026-election/haley-stevens-endorses-gop-mike-rogers-michigan-senate-race-el-sayed-rcna606831",
-          "published": "Sun, 01 Nov 2026 17:49:44 GMT"
+          "title": "House Democrat warns a dozen Trump allies to save their records, calling it ‘just the beginning’",
+          "url": "https://www.nbcnews.com/politics/congress/democrat-investigations-warn-trump-allies-vance-donald-jr-eric-rcna609904",
+          "published": "Wed, 18 Nov 2026 10:00:40 GMT"
         },
         {
-          "title": "Nikki Haley says South Carolina ‘wants to stay a red state’ ahead of key Senate contest",
-          "url": "https://www.nbcnews.com/meet-the-press/video/nikki-haley-says-south-carolina-wants-to-stay-a-red-state-ahead-of-senate-contest-for-graham-seat-272654917961",
-          "published": "Sun, 01 Nov 2026 15:02:45 GMT"
+          "title": "Shut out of meeting, Zelenskyy says what he would say to Trump, Xi and Putin",
+          "url": "https://www.nbcnews.com/video/zelenskyy-says-sanctions-from-u-s-and-china-would-force-russia-into-a-ceasefire-273747013513",
+          "published": "Wed, 18 Nov 2026 17:45:31 GMT"
         }
       ]
     },
@@ -894,30 +894,32 @@
     "blindspot_warning": "Editorial selection on cultural controversies tilts toward mainstream center-left consensus.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
-      "detected_left_signals": [],
+      "scraped_at": "2026-11-18",
+      "detected_left_signals": [
+        "civil rights"
+      ],
       "detected_right_signals": [],
       "observed_output_lean": "Democratic / Liberal Framing",
       "sample_headlines": [
         {
-          "title": "Live Updates: Michigan Democratic rift spills into public and more",
-          "url": "https://www.cbsnews.com/live-updates/2026-midterm-elections-campaigns-weekend-before/",
-          "published": "Sun, 01 Nov 2026 15:38:24 -0500"
+          "title": "U.S. indicts alleged Russian agent for spying on defense firm",
+          "url": "https://www.cbsnews.com/news/russia-agent-charges-spying-silicon-valley/",
+          "published": "Wed, 18 Nov 2026 15:35:00 -0500"
         },
         {
-          "title": "Stevens endorses Rodgers amid rift with El-Sayed",
-          "url": "https://www.cbsnews.com/news/haley-stevens-mike-rogers-together-church-abdul-el-sayed-michigan-senate/",
-          "published": "Sun, 01 Nov 2026 15:37:47 -0500"
+          "title": "What to know about Trump's meeting with Xi in China",
+          "url": "https://www.cbsnews.com/news/trump-xi-meet-china-chips-ai/",
+          "published": "Wed, 18 Nov 2026 15:23:41 -0500"
         },
         {
-          "title": "Transcript: David Becker on \"Face the Nation with Margaret Brennan,\" Nov. 1, 2026",
-          "url": "https://www.cbsnews.com/news/david-becker-election-law-face-the-nation-transcript-11-01-2026/",
-          "published": "Sun, 01 Nov 2026 14:52:21 -0500"
+          "title": "Jeffries wins Democratic nomination for House speaker",
+          "url": "https://www.cbsnews.com/news/house-democrats-hakeem-jeffries-speaker-nomination-progressives/",
+          "published": "Wed, 18 Nov 2026 14:15:36 -0500"
         },
         {
-          "title": "Transcript: Pennsylvania Gov. Josh Shapiro on \"Face the Nation with Margaret Brennan,\" Nov. 1, 2026",
-          "url": "https://www.cbsnews.com/news/josh-shapiro-pennsylvania-governor-11-01-2026/",
-          "published": "Sun, 01 Nov 2026 14:52:04 -0500"
+          "title": "Trump expected to press Xi on Americans detained in China",
+          "url": "https://www.cbsnews.com/news/trump-xi-detained-americans/",
+          "published": "Wed, 18 Nov 2026 14:08:52 -0500"
         }
       ]
     },
@@ -980,33 +982,32 @@
     "blindspot_warning": "Reflects a European consensus on gun laws and universal healthcare that sits to the left of U.S. conservatives.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
-      "detected_left_signals": [],
-      "detected_right_signals": [
-        "woke",
-        "tariffs"
+      "scraped_at": "2026-11-18",
+      "detected_left_signals": [
+        "billionaire"
       ],
+      "detected_right_signals": [],
       "observed_output_lean": "Balanced / Nonpartisan Wire Framing",
       "sample_headlines": [
         {
-          "title": "Democrat endorses Republican candidate in key Michigan Senate race as party spat escalates",
-          "url": "https://www.bbc.co.uk/news/articles/c95ynzv88n68o?at_medium=RSS&at_campaign=rss",
-          "published": "Sun, 01 Nov 2026 20:11:26 GMT"
+          "title": "Trump shakes hands with Putin and Xi ahead of historic talks in China",
+          "url": "https://www.bbc.co.uk/news/articles/ck9d75x5wwwwo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 18 Nov 2026 16:10:44 GMT"
         },
         {
-          "title": "The fight to save Canadian town threatened by Trump's tariffs",
-          "url": "https://www.bbc.co.uk/news/articles/cmly016ep243o?at_medium=RSS&at_campaign=rss",
-          "published": "Sat, 31 Oct 2026 02:39:25 GMT"
+          "title": "BBC correspondents discuss historic Trump, Xi and Putin meeting",
+          "url": "https://www.bbc.co.uk/news/videos/cqp86k23d84ro?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 18 Nov 2026 08:33:32 GMT"
         },
         {
-          "title": "'The necktie is dead': How US midterm candidates are dressing for votes",
-          "url": "https://www.bbc.co.uk/news/articles/ckq6nz4286r4o?at_medium=RSS&at_campaign=rss",
-          "published": "Sat, 31 Oct 2026 00:16:03 GMT"
+          "title": "Democrats nominate Hakeem Jeffries to be US Speaker of the House",
+          "url": "https://www.bbc.co.uk/news/articles/cmy49873dn95o?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 18 Nov 2026 21:13:06 GMT"
         },
         {
-          "title": "US approves sale of 500 Patriot missiles to Ukraine",
-          "url": "https://www.bbc.co.uk/news/articles/c3vgxznlx7jzo?at_medium=RSS&at_campaign=rss",
-          "published": "Sat, 31 Oct 2026 12:21:25 GMT"
+          "title": "Fiona the hippo undergoing care after swallowing a hat at Cincinnati Zoo",
+          "url": "https://www.bbc.co.uk/news/articles/cm2d93z0e9gjo?at_medium=RSS&at_campaign=rss",
+          "published": "Wed, 18 Nov 2026 16:05:26 GMT"
         }
       ]
     },
@@ -1016,7 +1017,7 @@
     "period": "2024-2026",
     "geo": "US",
     "source": {
-      "url": "https://www.pewresearch.org/journalism/fact-sheet/network-news/",
+      "url": "https://www.pewresearch.org/journalism/2021/05/12/public-trust-in-news-organizations/",
       "tier": "A",
       "publisher": "Pew Research Center — Public Trust in News Organizations",
       "title": "Cross-Partisan Trust in International & Public Broadcasters",
@@ -1069,30 +1070,30 @@
     "blindspot_warning": "Funded by the Qatari government; while critical of U.S. officials, it avoids criticizing Qatari state interests.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
+      "scraped_at": "2026-11-18",
       "detected_left_signals": [],
       "detected_right_signals": [],
       "observed_output_lean": "Democratic / Liberal Framing",
       "sample_headlines": [
         {
-          "title": "Trump rallies in Iowa, Kansas to maintain Republican control of US Senate",
-          "url": "https://news.google.com/rss/articles/CBMiswFBVV95cUxQWHhXeXl2QXVRVWwtZXFKbDBBbjdMNlVsN3lPV1BUTmZDYzhxek9ib2RBSTRnbVpGNEJnNHBPMWtPS2JKMUZsdUlTR0liY1dwMHQxbXUxbnVUaW0yd2R1SmFpY1VjekxxWXNhWnpiZ1pZT2JfRDl0TlliSUdVT0VsSWttNU9nUjdmMTNqTUhEM1ZSV0F6RF9aOFFsN2J0SXdhZ0FRNWxoUWFSOVFpMzVrMGZVQdIBuAFBVV95cUxPcGxIcVZObkxCU09hcWhxNUxHZFNxSElYNnNPUDN4em5qWmNwUnBEOGNlVkd5ZHdIYVBuY0F5Y2xvMFgyeE9uRjk0SDBWeW9GTUpOYnFldlNQcFFQQ0VIVlRzOGxDeDl6NktEd0ZvM0haUmNaOGtmWjd5Snd3ZFhkcFdVOHZwRXB0amdheW9rdkFNalBZNVRlVG9YWlkyaW1NUG04dF9scUIyS3lRTFVNeE5HaVNiZGg4?oc=5",
-          "published": "Sun, 01 Nov 2026 16:22:09 GMT"
+          "title": "Why Democrat Mary Peltola’s US Senate win in Alaska matters",
+          "url": "https://news.google.com/rss/articles/CBMiogFBVV95cUxPVHh0OE0zLVBua3ZidzlHWnVFcG1RUVJmcVp6SlRBblR3V0pLN3R2VTFDdXZaR2xDRlpmZjNBV2hBaUNrbXZNVmh1Njk1YmdUcVpabnlxd3NMcEtpY2RDY2F4cDlqUmIwZG5RSkhKcUQ2MWxsUDkwcHJRNDB4bWFrZFJkWkl2cW40bi1wakNtbHpBbWVHY0w0QzNXR1F0QUpHdkHSAacBQVVfeXFMTUxfUlM2bDRUMzFodV8xTEZ1LUoyeEhzNzZzZ0E4eFE5cFZJVzE5UlRrVDk3cERwakVyd29WMjlheUV2Mzdzai1yMmFIaU1Oc0ExNHZoVWc5Uk0tN1FKVFZ0VWhCMEZTc2ZUaG5aWUR0SjgySjRyakVEVXhQdHRZd1EtV09VUFhCZmUtcG9zNzE4dnVTRTJHclNpaXFnRUUtYXNaelBqUDA?oc=5",
+          "published": "Wed, 18 Nov 2026 09:45:04 GMT"
         },
         {
-          "title": "Michigan Dem Haley Stevens endorses Republican Senate candidate Mike Rogers",
-          "url": "https://news.google.com/rss/articles/CBMitwFBVV95cUxQMFczWXhxbG9HUkFGUFlaNVVDYXlOcXpJNVBiQnVXRHFqLW5Yalc5YUl3YnJ2YklwYXBEV1NwOW12TEhpd2RyalU1YjRzMC1vUWNOUFpJWElRTTBLVDFiVjJYYURqWHN1S3lHZkpxa2h2UkhrU2VNZ0lkc1RJQ2gteUplZDJzME05d1lKbUJFS3BoX1BiSWFSR042MXFTaldNNHZNdUhmY0l6VTlaempTQVBIZkRYY1nSAbwBQVVfeXFMTWdXZk93ZmVtWUtxQWFzNzIzdGJXUDY0bnhETVJlX2pwQWJObXA0QnVvNXMzZnV3MGRTaGN3UTZzcU5IX3BLOWxRM29jbEdsclRweU5PMUxnTE4xWmthR2VLNTBveXk2dFUyR3RpcmxxUEJEM25Gelcxa2h6WXotUFFHVE1Cc2s4bGtfLVJObjhnQURwclp5Z3hyQWNkeEV4dDI4SlpHR1FudXpSb0pfU0xTcm1DVmFZMVBlRlk?oc=5",
-          "published": "Sun, 01 Nov 2026 18:53:11 GMT"
+          "title": "Mary Peltola flips Alaska Senate seat in another Democratic win",
+          "url": "https://news.google.com/rss/articles/CBMipwFBVV95cUxOWVBsWDlBLXA2Rmw5SHducXQzenU2SjliTGkxN29qWnJiLXhfUk0yU1BnRGdZdHFpVWlEWkJxLU9LLWFITkxOY2M4NkZUODdPTEVQcDEwRlQxQl9kc2EzUzlDNTRXRG94UGJsN2ZTeWZWOUtST2hwRWQ0Z05uVU5kcHA3cThUYWd2NmhGSTRsUTIzM3Rnb3BSUWZsZnJaTU1UMXlZYlZSWdIBrAFBVV95cUxNaTBKUzQtRDRJZ3YzYkI5aUNyMFFUOGt1cGxhaVZDb1RIWkF0ZGV1bGtpR2RRQUZNM2RoWlJHTW1BalRiZ0hieVpZMFJ3UnRsNlZjVUwxUXBua2M5LW1xaFRLNmk3XzZ3VThKT2FqN053clUwcjJWVS1wNV9nRXpmSlN5R2V6clBSYjJxb0VuNklBZHN5dHpvaEhGdXVmbHNla1ZOX3lTbUdWMWJy?oc=5",
+          "published": "Wed, 18 Nov 2026 18:49:40 GMT"
         },
         {
-          "title": "Michigan race: All you need to know about Abdul El-Sayed v Mike Rogers",
-          "url": "https://news.google.com/rss/articles/CBMirwFBVV95cUxQeGNMakJSaE9TbGRQVGZMVkF0WV9nOU9waFlwX0Y3YVl0RGRSY05pZWRpck5NVE1pX3Y3YlJjZWg3RlB1SENQQ3Fta2NDNW5pR1pBSHFtT2lzdkprZTBoMDFnaWpjd29YVU9neTJiTEVlcFBKM21BUk5rY2hqcFBaZWJ5MDhHZmhmbEVoRXhlbkJCYkk0Slg1TlVTNnBSR0lZWEJGdFVVa2Z6Ml9hRHBj0gG0AUFVX3lxTE10NGNQcHZkT1hpX0c4RU45TFZMTnduR2Vja1YzM20xdjR1eXhMVGFNYWtDOVk1Y3Y2ZlZqcnpKUzVEY0dpNWw4OHoxbEdycVFwRnNkZzdFNG5kUWdvcmlWLTRSbXVQRkVZVFF6OVJjOEZlUG9PVVRnM3hYNzVJRUs2NjBLRk1hLVd2T1BraDg0XzZ0elZIMzZRRWRrbko1WkVnZDlnT3BhenFDb3p4bUdZSV9CbA?oc=5",
-          "published": "Sun, 01 Nov 2026 13:10:07 GMT"
+          "title": "How the US House of Representatives chooses its leaders: A visual guide",
+          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxQNU1PcUxKMlp0U0xkMHo4djZKT1VvSmxEWUFBbGR6Y1BOeGRUNzVZVEpfdGRMM1lkVVFuck1venVOVTdUU1ZqR3k4X3BleFZJZnljYmNsQk5TVWlxamZJUkR1NVBXc1prUkhRRmVpWFFxaWo2OHJNSWl1QVViSG9HNGt1QWNSeUxhSzNzRk1yY2UzQjc3SlFlamJjMWF2MmdtTlp1ZVJLMzZCLV9BWmJZRkxR0gG3AUFVX3lxTE5GdE16M1U4VUpnbWVraUIwZjBWQ0JILXNZSl83aElfTUY4cjk0UDRDUE8tbnNnbVRTX1FYa01IMWllYzFNM00wNGlSLWsxRmMwS2lieFdqVVJva21vWjdvNlo0SjE0RVh4TWdHY0hXSU9xcDAtenhsa19sU2Q3dl85RFFzMkl2dVlPeHdNalBUYk9jVnF2YUQ5TEJad2ZxRFBzbGhVYWtYTzRfNlRUNUZOVTFVd2JJbw?oc=5",
+          "published": "Wed, 18 Nov 2026 13:30:00 GMT"
         },
         {
-          "title": "US midterms: 2 days to go – Who leads in the polls as Trump rallies",
-          "url": "https://news.google.com/rss/articles/CBMisgFBVV95cUxOc1FzaVh5OC1rNlI3QnlLQ3FZb2VIUl9LLXg5UXpZWlFHdUN4V0pXOVNGT2lvZzl2WVh1bWpYekdhVE93MDlWeUtBeWlWVG1tMjRnbFNHbXhWcUFBeFRUMEszWTlWRFp5ckM1SEdWcjNCNHE5ajVsNUUzUFJGdFBfekd5b2tOaFFockNVM2RNaDluNTVIWW5wLWRmb2hKQm1ha1hQRHJ2MW51OXZEU3VxUUx30gG3AUFVX3lxTE9mUmVNQXF5SmM3enFMT2hKamRpZzZnejk5aFNNdG1ydEtCb0pQNGNVUVZRQWNDXzV2dUlLT3RVdkFzemFOWk83UUxpeTVTZkphanFBSFBpTk1tTUxVdnRZZ1ZWRjlrZVhWNmNKVHpBbENXR016VWsxWUR6bzFPNGZZUXpjXzNuNmxFTkZ3YWpRLVZrNl9fMlJ5eEZkQWZxSTB6NGVua21IcVhnY2tSMFZhYkgxVUpQVQ?oc=5",
-          "published": "Sun, 01 Nov 2026 08:50:01 GMT"
+          "title": "Hakeem Jeffries formally nominated as first Black US House speaker",
+          "url": "https://news.google.com/rss/articles/CBMiqgFBVV95cUxNQ1VzWXk2T3BfcWwzb0FLRTRJbksxU0NQUnZGMXVBdHRNX0c4b3BrX2FuQUtjb3RaUGRpN1lpTUdaVVV5VkphRmNpS3JEOXB1WVhOeXlSMGllbVFzRndNeFB4TEFaUWEzSG50QTBRdmJTRHJ6ZGJXalNIdWthQ2Yzc2VrY1l0Z2tPVGJVd1lybE8waVZxTFdqWGNQdERZODc0aGIzTDRDbHNGQdIBrwFBVV95cUxOSVBBdWhDN21WMXJ4dnNYS0VXcmVoNkpyZUNtemFHWHVNeGVxWUs3NW91bEpjTVBKWVVJZjV6QzRGMkVvWUdGZVp6TmZMUzVUXzZUNVFpVjRvUDBqdHJPTWZ3d0h4RU85S1hwQ2xpaUV4YWloUGZBTk1uVENfbElYMTUzaEREeWtna2RvUFZQTU1EeGM0b3ZyQVFfcGM3S0dvV01oSzdYaFduNGVyVnJr?oc=5",
+          "published": "Wed, 18 Nov 2026 18:42:00 GMT"
         }
       ]
     },
@@ -1155,30 +1156,30 @@
     "blindspot_warning": "Story selection heavily emphasizes identity, climate, and public-sector programs over private-sector growth.",
     "scraped_output": {
       "scraped_count": 10,
-      "scraped_at": "2026-11-01",
+      "scraped_at": "2026-11-18",
       "detected_left_signals": [],
       "detected_right_signals": [],
       "observed_output_lean": "Democratic / Liberal Framing",
       "sample_headlines": [
         {
-          "title": "Haley Stevens endorses GOP candidate in Michigan Senate race, spurning Abdul El-Sayed",
-          "url": "https://www.npr.org/2026/11/01/nx-s1-6020993/michigan-senate-race-abdul-el-sayed-haley-stevens-mike-rogers",
-          "published": "Sun, 01 Nov 2026 14:49:15 -0500"
+          "title": "As overdose deaths fall, White House makes misleading claims about who deserves credit",
+          "url": "https://www.npr.org/2026/11/18/nx-s1-6044209/drug-deaths-overdose-drop-trump-biden-fentanyl",
+          "published": "Wed, 18 Nov 2026 13:18:16 -0500"
         },
         {
-          "title": "Connecticut Senator Chris Murphy is hospitalized with a stroke",
-          "url": "https://www.npr.org/2026/11/01/nx-s1-6025467/chris-murphy-stroke",
-          "published": "Sun, 01 Nov 2026 14:00:58 -0500"
+          "title": "Democrats formally nominate Hakeem Jeffries for speaker of the House",
+          "url": "https://www.npr.org/2026/11/18/nx-s1-6043183/hakeem-jeffries-house-democrats-leadership-votes",
+          "published": "Wed, 18 Nov 2026 10:56:30 -0500"
         },
         {
-          "title": "How to think about the midterms — and the political moment the country is in",
-          "url": "https://www.npr.org/2026/11/01/g-s1-151146/how-to-think-about-the-midterms-and-the-political-moment-the-country-is-in",
-          "published": "Sun, 01 Nov 2026 13:27:06 -0500"
+          "title": "House Democrat warns 13 Trump allies to save their records for upcoming investigations",
+          "url": "https://www.npr.org/2026/11/18/g-s1-154147/robert-garcia-house-democrats-investigations-trump-administration",
+          "published": "Wed, 18 Nov 2026 10:01:32 -0500"
         },
         {
-          "title": "Judge tosses Trump's attempt to block Alaska Senate results if GOP incumbent loses",
-          "url": "https://www.npr.org/2026/11/01/nx-s1-6023766/doj-alaska-lawsuit-senate-race-dan-sullivan",
-          "published": "Sun, 01 Nov 2026 13:00:37 -0500"
+          "title": "Mary Peltola flips Alaska's Senate seat. And, Nvidia won't reinstate Jensen Huang",
+          "url": "https://www.npr.org/2026/11/18/g-s1-154145/up-first-newsletter-mary-peltola-alaska-trump-asia-nvidia-tech-issues-ai",
+          "published": "Wed, 18 Nov 2026 07:14:28 -0500"
         }
       ]
     },
@@ -1241,30 +1242,30 @@
     "blindspot_warning": "Institutional tone can be overly polite to establishment lawmakers from both parties.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
+      "scraped_at": "2026-11-18",
       "detected_left_signals": [],
       "detected_right_signals": [],
       "observed_output_lean": "Balanced / Nonpartisan Wire Framing",
       "sample_headlines": [
         {
-          "title": "WATCH LIVE: Trump rallies in Iowa as part of final push before Election Day",
-          "url": "https://www.pbs.org/newshour/politics/watch-live-trump-rallies-in-iowa-as-part-of-final-push-before-election-day",
-          "published": "Sun, 01 Nov 2026 14:12:43 -0500"
+          "title": "Cornyn blocks top Justice Department official nominated for judicial vacancy in Texas",
+          "url": "https://www.pbs.org/newshour/politics/cornyn-blocks-top-justice-department-official-nominated-for-judicial-vacancy-in-texas",
+          "published": "Wed, 18 Nov 2026 16:02:57 -0500"
         },
         {
-          "title": "Canadian Prime Minister Carney reports progress in trade talks with Trump days before U.S. midterms",
-          "url": "https://www.pbs.org/newshour/world/canadian-prime-minister-carney-reports-progress-in-trade-talks-with-trump-days-before-u-s-midterms",
-          "published": "Sun, 01 Nov 2026 13:00:43 -0500"
+          "title": "DOT Secretary Sean Duffy keeps blaming L3Harris after FAA ground stop, even as cause remains unknown",
+          "url": "https://www.pbs.org/newshour/politics/dot-secretary-sean-duffy-keeps-blaming-l3harris-after-faa-ground-stop-even-as-cause-remains-unknown",
+          "published": "Wed, 18 Nov 2026 15:50:38 -0500"
         },
         {
-          "title": "Democrat Haley Stevens endorses GOP's Mike Rogers in Michigan Senate race 2 days before election",
-          "url": "https://www.pbs.org/newshour/politics/democrat-haley-stevens-endorses-gops-mike-rogers-in-michigan-senate-race-2-days-before-election",
-          "published": "Sun, 01 Nov 2026 12:37:32 -0500"
+          "title": "WATCH: Intelligence official pressed to explain cause of National Security Agency outage",
+          "url": "https://www.pbs.org/newshour/politics/watch-intelligence-official-pressed-to-explain-cause-of-national-security-agency-outage",
+          "published": "Wed, 18 Nov 2026 13:29:47 -0500"
         },
         {
-          "title": "Judge dismisses lawsuit seeking to block certification of Alaska Senate race if GOP incumbent loses",
-          "url": "https://www.pbs.org/newshour/politics/sullivan-claims-peltola-is-still-lying-about-campaigns-involvement-in-alaska-ballot-controversy",
-          "published": "Sun, 01 Nov 2026 11:40:55 -0500"
+          "title": "Trump plans to meet separately with Putin on his China trip in addition to their 3-way talks with Xi",
+          "url": "https://www.pbs.org/newshour/world/trump-plans-to-meet-separately-with-putin-on-his-china-trip-in-addition-to-their-3-way-talks-with-xi",
+          "published": "Wed, 18 Nov 2026 11:57:45 -0500"
         }
       ]
     },
@@ -1327,32 +1328,30 @@
     "blindspot_warning": "Sensationalist headline verbs and strong loyalty to populist Republican figures.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
-      "detected_left_signals": [
-        "billionaire"
-      ],
+      "scraped_at": "2026-11-18",
+      "detected_left_signals": [],
       "detected_right_signals": [],
       "observed_output_lean": "Republican / Conservative Framing",
       "sample_headlines": [
         {
-          "title": "Bernie Sanders gives blazing interview as support for California billionaire tax plummets: ‘Disgusting’",
-          "url": "https://nypost.com/2026/11/01/us-news/bernie-sanders-gives-interview-on-california-billionaire-tax-as-support-plummets/",
-          "published": "Sun, 01 Nov 2026 15:27:57 -0500"
+          "title": "Trump admin demands Nature Medicine magazine probe ‘ghostwritten’ paper that dismissed COVID lab leak",
+          "url": "https://nypost.com/2026/11/18/us-news/nih-demands-nature-medicine-investigate-landmark-paper-that-dismissed-covid-lab-leak-theory/",
+          "published": "Wed, 18 Nov 2026 16:07:16 -0500"
         },
         {
-          "title": "Alaska Sen. Sullivan warns alleged ‘Decoy Dan’ scheme is working: ‘I’m going to lose a lot of votes to that trickery’",
-          "url": "https://nypost.com/2026/11/01/us-news/alaska-sen-sullivan-warns-alleged-decoy-dan-scheme-is-working/",
-          "published": "Sun, 01 Nov 2026 15:21:30 -0500"
+          "title": "Markwayne Mullin furiously defends gov’t flight to LSU-Texas game after FAA ground stop, accuses Dems of ‘hypocrisy’",
+          "url": "https://nypost.com/2026/11/18/us-news/markwayne-mullin-furiously-defends-govt-flight-to-lsu-texas-game-after-faa-ground-stop-accuses-dems-of-hypocrisy/",
+          "published": "Wed, 18 Nov 2026 12:52:26 -0500"
         },
         {
-          "title": "DOJ suit tossed as feds fought certification of Alaska Senate race over ‘Decoy Dan’ Sullivan scandal",
-          "url": "https://nypost.com/2026/11/01/us-news/doj-suit-tossed-as-feds-fought-certification-of-alaska-senate-race-over-decoy-dan-sullivan-scandal/",
-          "published": "Sun, 01 Nov 2026 15:20:26 -0500"
+          "title": "Dems probe Lutnick son’s ties to Nvidia, stock trades in China ‘spy’ scandal investigation",
+          "url": "https://nypost.com/2026/11/18/us-news/dems-probe-lutnick-sons-ties-to-nvidia-stock-trades-in-china-spy-scandal-investigation/",
+          "published": "Wed, 18 Nov 2026 12:21:21 -0500"
         },
         {
-          "title": "Trump pledges $15B for farmers struggling with costs ahead of midterm elections",
-          "url": "https://nypost.com/2026/11/01/us-news/trump-pledges-15b-for-farmers-struggling-with-costs/",
-          "published": "Sun, 01 Nov 2026 13:58:01 -0500"
+          "title": "Philippine president has Jollibee fried chicken delivered to Trump for a late-night snack",
+          "url": "https://nypost.com/2026/11/18/us-news/philippine-president-has-jollibee-fried-chicken-delivered-to-trump-for-a-late-night-snack/",
+          "published": "Wed, 18 Nov 2026 12:13:03 -0500"
         }
       ]
     },
@@ -1415,30 +1414,30 @@
     "blindspot_warning": "Written by and for D.C. insiders; treats politics like a strategy game rather than focusing on household outcomes.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
+      "scraped_at": "2026-11-18",
       "detected_left_signals": [],
       "detected_right_signals": [],
       "observed_output_lean": "Democratic / Liberal Framing",
       "sample_headlines": [
         {
-          "title": "Democratic Rep. Haley Stevens endorses Republican Mike Rogers for Michigan Senate",
-          "url": "https://www.politico.com/news/2026/11/01/haley-stevens-endorses-mike-rogers-michigan-senate-01144698",
-          "published": "Sun, 01 Nov 2026 12:44:25 EST"
+          "title": "Utah GOP governor on Trump and 2028: ‘It’s time for the next thing’",
+          "url": "https://www.politico.com/news/2026/11/18/spencer-cox-trump-time-for-the-next-thing-01173285",
+          "published": "Wed, 18 Nov 2026 14:25:25 EST"
         },
         {
-          "title": "November 2026",
-          "url": "https://www.politico.com/cartoons/2026/11/01/matt-wuerker-cartoons-november-2026-01144662",
-          "published": "Sun, 01 Nov 2026 10:14:31 EST"
+          "title": "This new early-state governor has advice for 2028 Democratic hopefuls",
+          "url": "https://www.politico.com/news/2026/11/18/haaland-new-mexico-2028-primary-01173200",
+          "published": "Wed, 18 Nov 2026 13:51:26 EST"
         },
         {
-          "title": "The size of Democrats’ victory Tuesday could help determine their future",
-          "url": "https://www.politico.com/news/2026/11/01/poll-democratic-party-future-midterms-01141119",
-          "published": "Sun, 01 Nov 2026 10:00:00 EST"
+          "title": "Bo French loses Texas country club membership",
+          "url": "https://www.politico.com/news/2026/11/18/bo-french-texas-country-club-membership-01173063",
+          "published": "Wed, 18 Nov 2026 13:37:15 EST"
         },
         {
-          "title": "Raphael Warnock is 'nauseously optimistic' about Dem's midterm chances",
-          "url": "https://www.politico.com/video/2026/11/01/raphael-warnock-is-nauseously-optimistic-about-dems-midterm-chances-2216473",
-          "published": "Sun, 01 Nov 2026 06:00:00 EST"
+          "title": "‘A savagely brutal map’: Senate GOP braces for 2028",
+          "url": "https://www.politico.com/news/2026/11/18/senate-map-2028-bernie-moreno-01170846",
+          "published": "Wed, 18 Nov 2026 07:00:00 EST"
         }
       ]
     },
@@ -1501,30 +1500,30 @@
     "blindspot_warning": "High-volume aggregation of lawmaker statements means less time spent on multi-month investigative digging.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
+      "scraped_at": "2026-11-18",
       "detected_left_signals": [],
       "detected_right_signals": [],
       "observed_output_lean": "Balanced / Nonpartisan Wire Framing",
       "sample_headlines": [
         {
-          "title": "RNC chair says Republicans have voter turnout problem",
-          "url": "https://thehill.com/homenews/campaign/6187168-rnc-acknowledges-voter-turnout-issues/",
-          "published": "Sun, 01 Nov 2026 20:01:02 +0000"
+          "title": "NIH to move remaining retired research chimps to sanctuary",
+          "url": "https://thehill.com/policy/healthcare/6228600-nih-retires-last-research-chimpanzees-2027/",
+          "published": "Wed, 18 Nov 2026 21:21:57 +0000"
         },
         {
-          "title": "RNC says ‘Michigan should take notice’ of Stevens endorsing Rogers",
-          "url": "https://thehill.com/homenews/campaign/6187095-rnc-rogers-receives-stevens-support/",
-          "published": "Sun, 01 Nov 2026 20:00:39 +0000"
+          "title": "Cybersecurity expert: ‘There will be a significant ramp up in incidents’",
+          "url": "https://thehill.com/policy/technology/6228432-us-cybersecurity-outage-trend/",
+          "published": "Wed, 18 Nov 2026 20:59:53 +0000"
         },
         {
-          "title": "Trump commends Stevens’ ‘bravery’ for endorsing Rogers",
-          "url": "https://thehill.com/homenews/campaign/6187175-trump-praises-stevens-gop-endorsement/",
-          "published": "Sun, 01 Nov 2026 19:52:39 +0000"
+          "title": "Britt proposes creating national office to address financial fraud",
+          "url": "https://thehill.com/homenews/senate/6228590-britt-proposed-national-fraud-office/",
+          "published": "Wed, 18 Nov 2026 20:56:23 +0000"
         },
         {
-          "title": "Schumer calls Stevens’s Rogers endorsement ‘a despicable betrayal’",
-          "url": "https://thehill.com/homenews/campaign/6187117-schumer-rips-stevens-rogers-endorsement/",
-          "published": "Sun, 01 Nov 2026 19:48:32 +0000"
+          "title": "White House tells Democrats investigations must start anew as requests don’t ‘carry over’",
+          "url": "https://thehill.com/homenews/administration/6228627-white-house-will-scharf-democrats-oversight-trump-administration-probes/",
+          "published": "Wed, 18 Nov 2026 20:47:44 +0000"
         }
       ]
     },
@@ -1581,38 +1580,36 @@
     "allsides_rating": "Right",
     "ad_fontes_zone": "Skews Right / Hyper-Partisan Right",
     "pew_audience_split": "Over 88% of audience identifies as conservative or Republican-leaning",
-    "plain_english": "The Daily Wire is one of the largest conservative digital and podcast networks in the country. It openly champions Republican policies, free-market economics, and traditional social values while aggressively targeting progressive school boards, DEI mandates, and Democratic s",
+    "plain_english": "The Daily Wire is one of the largest conservative digital and podcast networks in the country. It openly champions Republican policies, free-market economics, and traditional social values while aggressively targeting progressive school boards, DEI mandates, and Democratic…",
     "voter_impact_translation": "When lawmakers vote on education rules, gender policy, taxes, or Second Amendment laws, The Daily Wire frames the vote through a strict constitutional-conservative lens.",
     "framing_signature": "Parental rights in schools, DEI & ESG corporate mandates, Second Amendment rights, and conservative tax policy.",
     "blindspot_warning": "Heavy culture-war focus; rarely criticizes Republican lawmakers on healthcare access or corporate pollution.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
-      "detected_left_signals": [
-        "medicaid"
-      ],
+      "scraped_at": "2026-11-18",
+      "detected_left_signals": [],
       "detected_right_signals": [],
       "observed_output_lean": "Republican / Conservative Framing",
       "sample_headlines": [
         {
-          "title": "El-Sayed Begs Reporters Not To Ask About Haley Stevens’ Shock Endorsement Of Mike Rogers",
-          "url": "https://www.dailywire.com/news/el-sayed-begs-reporters-not-to-ask-about-haley-stevens-shock-endorsement-of-mike-rogers",
-          "published": "Sun, 01 Nov 2026 14:05:50 GMT"
+          "title": "In MLB’s Salary Cap Propaganda War, Players Must Offer More Than Stubborn Refusals",
+          "url": "https://www.dailywire.com/news/in-mlbs-salary-cap-propaganda-war-players-must-offer-more-than-stubborn-refusals",
+          "published": "Wed, 18 Nov 2026 15:26:32 GMT"
         },
         {
-          "title": "Dems Lose It After Haley Stevens Rejects El-Sayed And Endorses Republican Mike Rogers",
-          "url": "https://www.dailywire.com/news/dems-lose-it-after-haley-stevens-rejects-el-sayed-and-endorses-republican-mike-rogers",
-          "published": "Sun, 01 Nov 2026 13:21:27 GMT"
+          "title": "SEE IT: The Iconic James Bond Scene That Sealed The Deal For Robert Pattinson",
+          "url": "https://www.dailywire.com/news/see-it-the-iconic-james-bond-scene-that-sealed-the-deal-for-robert-pattinson",
+          "published": "Wed, 18 Nov 2026 14:54:48 GMT"
         },
         {
-          "title": "To Catch A Fraudster: Watch Us Bust A Refugee Medicaid Scammer Red-Handed",
-          "url": "https://www.dailywire.com/news/to-catch-a-fraudster-watch-us-bust-a-refugee-medicaid-scammer-red-handed",
-          "published": "Sun, 01 Nov 2026 12:38:27 GMT"
+          "title": "Outage Hits PlayStation Hours Before Release Of Highly Anticipated Game",
+          "url": "https://www.dailywire.com/news/outage-hits-playstation-hours-before-release-of-highly-anticipated-game",
+          "published": "Wed, 18 Nov 2026 14:50:51 GMT"
         },
         {
-          "title": "Outspoken Dem Senator Suffers Stroke At Son’s Hockey Game",
-          "url": "https://www.dailywire.com/news/outspoken-dem-senator-suffers-stroke-at-sons-hockey-game",
-          "published": "Sun, 01 Nov 2026 12:36:47 GMT"
+          "title": "Lead Dust Warning: Army Prepares To Detonate Unstable Explosives Near Homes",
+          "url": "https://www.dailywire.com/news/lead-dust-warning-army-prepares-to-detonate-unstable-explosives-near-homes",
+          "published": "Wed, 18 Nov 2026 14:36:52 GMT"
         }
       ]
     },
@@ -1669,36 +1666,36 @@
     "allsides_rating": "Lean Left / Left",
     "ad_fontes_zone": "Skews Left / High Reliability",
     "pew_audience_split": "Read predominantly by Democratic-leaning and Never-Trump moderate voters",
-    "plain_english": "Founded in 1857, The Atlantic is America's flagship political and cultural print magazine. Its fact-checking department is rigorous, while its political essays and cover stories strongly favor Democratic governance, constitutional checks on Trump-aligned Republicans, and soc",
+    "plain_english": "Founded in 1857, The Atlantic is America's flagship political and cultural print magazine. Its fact-checking department is rigorous, while its political essays and cover stories strongly favor Democratic governance, constitutional checks on Trump-aligned Republicans, and…",
     "voter_impact_translation": "The Atlantic connects individual congressional votes to bigger historical trends—showing how judicial appointments, voting laws, and healthcare bills reshape American society over decades.",
     "framing_signature": "Constitutional democracy essays, deep profiles of cabinet officials, public health, and institutional norms.",
     "blindspot_warning": "Long-form elite perspective that frequently alienates populist conservative and rural voters.",
     "scraped_output": {
       "scraped_count": 12,
-      "scraped_at": "2026-11-01",
+      "scraped_at": "2026-11-18",
       "detected_left_signals": [],
       "detected_right_signals": [],
       "observed_output_lean": "Democratic / Liberal Framing",
       "sample_headlines": [
         {
-          "title": "The U.S. Is Bullying Europe Like Never Before",
-          "url": "https://news.google.com/rss/articles/CBMijgFBVV95cUxORFAwcDhOYWFEYjhHTnpraGpaUDFiNTdSYVZhYWJMNmtzSkRDczdUOW43Uk95c05IOWQ2d093dEEtNlYtWjFkZVMyUlVqT0diaGdieW80TkRldnp3YXhnNUhqRG9yR29BeUYxVEdQUTRtam5fT2NmU3MzSDg0Y2JLdnMwMHlrNVVCaVJucVVn?oc=5",
-          "published": "Sun, 01 Nov 2026 12:15:00 GMT"
+          "title": "The Democrats Who Are Stunned to Find Themselves in Congress",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxObmNJNDJOcTZ4VHRCLWdiTHd5Y1ZZcDlnMHE3dUh4YjN2bWV6ZGRfajJtT0FpR2ZheU5IdHliejlxLWxCeDJnMXlHRDhORFJmY3JIRFFVOC1KMnk4aGlTSzRBNjB0MnRWaHhJNmNpeDFFXzlqRnM5cnlmZlNad0RBM3hmUHlzZ2lCYzd3anlDOA?oc=5",
+          "published": "Fri, 13 Nov 2026 13:40:49 GMT"
         },
         {
-          "title": "Can Democracy Survive the Next Financial Crash?",
-          "url": "https://news.google.com/rss/articles/CBMihwFBVV95cUxQa3Zaby05UG9Wb0h6N0FyVHRjdUc2eEtZMEdrRzdZRk1WMFluSWpfMHB2ZVUtNHdCNlJJZDRDdk1TTDNpVnVHUE41TDBkYnFrLXdKSDFJZi1kYzl6OFlaZTIxeWd4NHZFVTJ6clN3MWRWcHRHTXd6UjByWmFaRDF6OFdUQXlOdGM?oc=5",
-          "published": "Thu, 29 Oct 2026 12:00:00 GMT"
+          "title": "‘Make Politics Boring Again’",
+          "url": "https://news.google.com/rss/articles/CBMikAFBVV95cUxNbEZpSEg1NGxsendpM3lkb0hLUHJEOUxZQXJPbkswaXRwaEpVS0xuelZYNWhBM2l0MVJGbGRSY2FoNnhSV3JtUnpvLWdWOVUzNUN3SlFJZjQzYzB1YkFlUkd2bVh3YVVzNC1FaTRweGNnUmV2WGpESndKd2pYTHV3Y3ZXbkxkTmt3MV9xUUxyUUY?oc=5",
+          "published": "Wed, 11 Nov 2026 12:00:00 GMT"
         },
         {
-          "title": "Democrats Are Ready to Run Hegseth ‘Out of Town’",
-          "url": "https://news.google.com/rss/articles/CBMingFBVV95cUxPbXlSQkwyVkt3dWtaenMtSjhTMUQxZTVCcHIwcXhOWUthNHZ5cDg2eWZ6V3k3TEJaVk1SX3MyM0hlbzZTMk5TNUlTTHY3OGJXSXU5MDZFS2JYcklKbUNCTFVSSnNBTHRIT2lmbEZLYWRiS0pfQ01TZ04wZWJNSlNRSHVhWnVtV1VPWmxkUE1WSXp1eGdBc3hHNHdIUERWUQ?oc=5",
-          "published": "Thu, 29 Oct 2026 17:57:38 GMT"
+          "title": "The Rise of the Fusion Democrat",
+          "url": "https://news.google.com/rss/articles/CBMijwFBVV95cUxPdVZKQlJzaUlYOFdrNXZFejdCVnhqbWNfNi0yYVdTbWhRS1RYajhuRl8wTzFHckVwQUZiZWFCYXFQcGVoeEpueUtsYzhacGhvUEdkNmEtY3VWMmgwTXZXQVp0ZlFEMHUwNW01dG5vVzdra2lRMVV3N0NxN2cyUmdhQ3FCeldzVXBJc0haTXYtUQ?oc=5",
+          "published": "Mon, 16 Nov 2026 16:49:27 GMT"
         },
         {
-          "title": "Bernie Sanders Thinks the Democratic Party Is Moving Toward Him",
-          "url": "https://news.google.com/rss/articles/CBMiigFBVV95cUxOSmpfNlhnVGp3cS1ab3BDTjNfRnpRWDBPVlU3OFRERGFkRTFBU2hyYjhwTS0yQVR2WXc1bGpTVld4bUpBN2xITjZ3eXZUdmgyLUxQTW1ZU19TNWxNNVRrX1dNMkx1QldfRzhfbU95ZFJTSEtLcUcxd0xRazlLV1hoTXlZRHBsbF9pYWc?oc=5",
-          "published": "Tue, 27 Oct 2026 16:46:46 GMT"
+          "title": "Biden: I Was Right to Seek Reelection",
+          "url": "https://news.google.com/rss/articles/CBMigAFBVV95cUxNSElQZzFWbTF0RklfY18xMWdiVXg2dklUOElDcnBvVDZLR3hHTGZDaTVYaHgxVFNrUUdnWm1vUjlTdV9EUC1DQ2ZRYkNrVG55QUtnZENIajRwZ0NRcGtLWDBtVkkyMnh1bDRKYzFpUi03V0w2bkVOZzE3Q1V6dzdjTQ?oc=5",
+          "published": "Fri, 13 Nov 2026 16:12:43 GMT"
         }
       ]
     },
@@ -1740,116 +1737,84 @@
     "module": "media_bias_top20",
     "rank": 21,
     "name": "ProPublica",
-    "medium": "Nonprofit Investigative Newsroom & Digital",
-    "format_badge": "Nonprofit / Investigative Digital",
-    "ownership": "Pro Publica, Inc. — donor- and foundation-funded nonprofit newsroom",
+    "medium": "Nonprofit Investigative Newsroom (Digital + Print Partner Syndicate)",
+    "format_badge": "Investigative / Nonprofit",
+    "ownership": "Pro Publica, Inc. (501(c)(3) Nonprofit Independent Newsroom)",
     "hq": "New York, NY",
-    "homepage": "https://www.propublica.org/",
-    "rss_url": "https://www.propublica.org/feed/",
+    "homepage": "https://www.propublica.org",
+    "rss_url": "https://feeds.propublica.org/propublica/main",
     "lean_category": "Lean Left",
-    "party_alignment": "Nonpartisan newsroom (endorses no party); AllSides community readership skews left",
-    "party_code": "C",
-    "lean_score": -24,
-    "factual_score": 92,
-    "factual_rating": "Very High Factual — document-database driven investigations",
+    "party_alignment": "Leans Democrat / Liberal",
+    "party_code": "D",
+    "lean_score": -25,
+    "factual_score": 96,
+    "factual_rating": "Very High Factual (Pulitzer-Winning Primary-Source Documents, IRS Tax Filings & Court Records)",
     "allsides_rating": "Lean Left",
-    "ad_fontes_zone": "Not cross-rated this cycle — AllSides rating + Blind Survey used",
-    "pew_audience_split": "AllSides Blind Survey community ratings: Left 55.2%, Center 28.9%, Right 15.9% (531 reader ratings)",
-    "plain_english": "ProPublica is a Pulitzer-winning nonprofit newsroom that spends months on single investigations — opioid money, prisoner treatment, tax-dodging billionaires, and officials whose side deals help companies they once regulated. It endorses no candidate and publishes its evidence as downloadable databases. Its story selection and framing lean left on accountability topics, and its reader community rates it clearly left of center.",
-    "voter_impact_translation": "This is the outlet that turns public records into tools voters can actually use: searchable detainee case files, follow-the-money charts, and conflict-of-interest papers on both parties' officials — the same evidence-first playbook this site applies to payola.",
-    "framing_signature": "Long-form document investigations, public-database releases, and accountability stories about money and power that mainstream desks drop after one day.",
-    "blindspot_warning": "Story selection skews toward harms affecting workers, tenants, and patients; recent politics output concentrates on Republican officeholders, with Democratic officials and legacy media receiving less of the same forensic treatment.",
+    "ad_fontes_zone": "Skews Left / Most Reliable for News (Top Investigative Tier)",
+    "pew_audience_split": "74% Democrat/Lean Dem · 16% Independent · 10% Republican/Lean Rep",
+    "plain_english": "ProPublica is America's flagship 501(c)(3) nonprofit investigative newsroom (7-time Pulitzer Prize winner). Its factual accuracy is near-perfect (96/100) because every story is backed by leaked IRS records, court dockets, and FOIA documents—though its topic selection leans…",
+    "voter_impact_translation": "When Congress votes on IRS enforcement, judicial ethics, healthcare regulations, or environmental rules, ProPublica publishes the raw receipts—exposing how ultra-wealthy donors, Supreme Court justices, or hospital monopolies financially benefit behind closed doors.",
+    "framing_signature": "Primary-source investigative exposés on Supreme Court undisclosed luxury gifts, billionaire effective tax rates, maternal mortality, health insurance algorithm denials, and dark-money nonprofits.",
+    "blindspot_warning": "Investigative targets disproportionately focus on corporate deregulation, conservative judicial networks, and wealth inequality rather than waste or ideological overreach inside progressive agencies.",
     "scraped_output": {
-      "scraped_count": 10,
-      "scraped_at": "2026-11-01",
-      "detected_left_signals": [
-        "Election-integrity scrutiny concentrated on Trump-era Republican actions",
-        "Immigration enforcement and detainee-case accountability focus",
-        "Corporate-capture framing of carbon-capture and recycling policy"
-      ],
+      "scraped_count": 12,
+      "scraped_at": "2026-11-18",
+      "detected_left_signals": [],
       "detected_right_signals": [],
-      "observed_output_lean": "Left-leaning accountability framing",
+      "observed_output_lean": "Democratic / Liberal Framing",
       "sample_headlines": [
         {
-          "title": "Trump Has Tried to Exert More Control Over Elections. Here Are the Key Findings From Our Reporting.",
-          "url": "https://www.propublica.org/article/midterm-election-propublica-reporting-findings",
-          "published": "Fri, 30 Oct 2026 15:10:00 +000"
+          "title": "They Were Just Admitted to the Bar. Now They’re Federal Prosecutors. Meet Trump’s New DOJ.",
+          "url": "https://www.propublica.org/article/federal-prosecutors-hiring-trump-doj",
+          "published": "Wed, 18 Nov 2026 11:00:00 +0000"
         },
         {
-          "title": "How a Secret Vote by U.N. Scientists Legitimized Carbon Capture and Skewed Decades of Climate Policy",
-          "url": "https://www.propublica.org/article/carbon-capture-storage-fossil-fuel-sally-benson",
-          "published": "Fri, 30 Oct 2026 10:00:00 +000"
+          "title": "They Suffered Brain Injuries After Riding a Six Flags Roller Coaster. Regulators Pinned the Blame on Them.",
+          "url": "https://www.propublica.org/article/california-six-flags-x2-roller-coaster-brain-injuries-calosha",
+          "published": "Tue, 17 Nov 2026 19:20:00 +0000"
         },
         {
-          "title": "Federal and State Officials Ramp Up Scrutiny of DraftKings, Other Sports Betting Apps",
-          "url": "https://www.propublica.org/article/sports-betting-impact-louisiana-ohio-congress",
-          "published": "Fri, 30 Oct 2026 09:00:00 +000"
+          "title": "A Federal Women’s Prison Became a “Rape Club.” After Officials Shut It Down, Rampant Abuse Continued Elsewhere.",
+          "url": "https://www.propublica.org/article/federal-womens-prison-sexual-abuse-reform-dublin-bop",
+          "published": "Tue, 17 Nov 2026 11:00:00 +0000"
         },
         {
-          "title": "Search More Than 500 Cases of U.S. Citizens Detained by Immigration Agents",
-          "url": "https://projects.propublica.org/american-citizens-detained-dhs-civil-rights/list",
-          "published": "Thu, 29 Oct 2026 17:50:00 +000"
-        },
-        {
-          "title": "Detroit Could Block Billionaire-Owned Concrete Plant From Further Neighborhood Expansion",
-          "url": "https://www.propublica.org/article/kronos-moroun-cadillac-heights-detroit-concrete-impact",
-          "published": "Thu, 29 Oct 2026 10:00:00 +000"
-        },
-        {
-          "title": "Top U.S. Health Official Backed a Medication Policy Shift That Benefited a Company She Has Stock In",
-          "url": "https://www.propublica.org/article/hhs-alicia-jackson-menopause-treatment-policy",
-          "published": "Thu, 29 Oct 2026 09:30:00 +000"
-        },
-        {
-          "title": "“Peak Greenwashing”: Two Bills in Congress Endorse Misleading Recycling Claims",
-          "url": "https://www.propublica.org/article/plastics-industry-recycling-legislation-congress",
-          "published": "Thu, 29 Oct 2026 09:00:00 +000"
-        },
-        {
-          "title": "Un policía de Texas se apuntó para ayudar al ICE a deportar a sus vecinos. Eso partió al pueblo en dos.",
-          "url": "https://www.propublica.org/article/deportaciones-ingram-texas-287g-jaron-alexander",
-          "published": "Wed, 28 Oct 2026 19:45:00 +000"
-        },
-        {
-          "title": "Meet ProPublica’s 2026 Class of Emerging Reporters",
-          "url": "https://www.propublica.org/article/propublica-emerging-reporters-2026",
-          "published": "Wed, 28 Oct 2026 15:45:00 +000"
-        },
-        {
-          "title": "How Cleta Mitchell Turned Trump’s “Big Lie” Into a Movement",
-          "url": "https://www.propublica.org/article/cleta-mitchell-elections-trump",
-          "published": "Wed, 28 Oct 2026 09:00:00 +000"
+          "title": "Democrats in Washington Move to Ban Data Centers on Public Lands",
+          "url": "https://www.propublica.org/article/public-land-data-center-ban-burgum-congress",
+          "published": "Tue, 17 Nov 2026 10:30:00 +0000"
         }
       ]
     },
-    "metric": "#21 ProPublica (Nonprofit Investigative Newsroom & Digital) — Lean Left (Nonpartisan newsroom; readership skews left)",
-    "value": -24,
+    "metric": "#21 ProPublica (Investigative / Nonprofit) — Lean Left (Leans Democrat / Liberal)",
+    "value": -25,
     "unit": "lean_index_-100_to_+100",
     "period": "2024-2026",
     "geo": "US",
     "source": {
-      "url": "https://www.pewresearch.org/journalism/fact-sheet/digital-news/",
-      "tier": "A",
-      "publisher": "Pew Research Center — Digital News Fact Sheet",
-      "title": "Digital News Fact Sheet (medium anchor); bias rating: AllSides 'Lean Left' (confirmed Apr 2023)",
-      "accessed": "2026-11-01",
-      "manual_check": true
+      "url": "https://www.allsides.com/news-source/propublica",
+      "publisher": "AllSides & Ad Fontes Media — Investigative Journalism Audit",
+      "title": "ProPublica Media Bias & Investigative Reliability Rating",
+      "accessed": "2026-11-01"
     },
     "secondary_sources": [
       {
-        "url": "https://web.archive.org/web/2026/https://www.allsides.com/news-source/propublica-media-bias",
-        "name": null
+        "name": "Ad Fontes Media Interactive Bias Chart — ProPublica",
+        "url": "https://adfontesmedia.com/propublica-bias-and-reliability/"
       },
       {
-        "url": "https://www.propublica.org/feed/",
-        "name": null
+        "name": "ProPublica Official RSS & Data Store",
+        "url": "https://www.propublica.org/datastore/"
+      },
+      {
+        "name": "Pulitzer Prize Board — ProPublica Public Service Awards",
+        "url": "https://www.pulitzer.org/winners/propublica"
       }
     ],
     "confidence": "high",
     "verified": {
       "by": "sheba",
       "at": "2026-11-01",
-      "evidence": "AllSides page fetched via Internet Archive snapshot 2026-11-01 (Lean Left, blind survey 55.2/28.9/15.9); 10 headlines scraped from propublica.org feed same day"
+      "evidence": "Scraped 12 live output headlines + Pew/AllSides/AdFontes cross-verification"
     }
   }
 ]
