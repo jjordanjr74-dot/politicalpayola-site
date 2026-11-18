@@ -1035,7 +1035,13 @@
         if (ch !== 'ALL' && m.chamber !== ch) return false;
         if (p !== 'ALL' && m.party !== p) return false;
         if (g !== 'ALL' && (m.gender || 'M') !== g) return false;
-        if (q && !(m.name.toLowerCase().includes(q) || m.geo.toLowerCase().includes(q))) return false;
+        if (q) {
+          // accept the 2-letter code AND the spelled-out state ('TX' or 'texas'):
+          // the input invites a state, and typing 'Texas' used to return 0 lawmakers.
+          const hit = m.name.toLowerCase().includes(q) || m.geo.toLowerCase().includes(q)
+            || (STATE_NAMES[m.geo] || '').toLowerCase().includes(q);
+          if (!hit) return false;
+        }
         return true;
       });
 
