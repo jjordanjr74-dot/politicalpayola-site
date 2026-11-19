@@ -37,5 +37,5 @@
     else if (h.indexOf("checkout.stripe.com") > -1 || h.indexOf("buy.stripe.com") > -1) { send("checkout_click"); }
   }, true);
 
-  window.addEventListener("load", function () { send("view"); });
+  window.addEventListener("load", function () { setTimeout(function () { send("view"); }, 0); });
 })();
